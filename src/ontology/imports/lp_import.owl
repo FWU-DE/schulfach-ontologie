@@ -1,0 +1,52 @@
+Prefix(:=<https://w3id.org/schulfach/sf/imports/lp_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://w3id.org/schulfach/sf/imports/lp_import.owl>
+<https://w3id.org/schulfach/sf/releases/2025-10-08/imports/lp_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/lehrplan/ontology/1.0.0-6>)
+Annotation(owl:versionInfo "2025-10-08")
+
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000001>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#closeMatch>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#editorialNote>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#exactMatch>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.org/dc/terms/creator> (creator)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/creator> "creator")
+
+# Annotation Property: <http://purl.org/dc/terms/description> (description)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/description> "description")
+
+# Annotation Property: <http://purl.org/dc/terms/title> (title)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/title> "title")
+AnnotationPropertyRange(<http://purl.org/dc/terms/title> xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0000001> (school subject)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000001> "Schulfach"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000001> "school subject"@en)
+
+
+)

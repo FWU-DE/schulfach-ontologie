@@ -1,0 +1,37 @@
+id: sf
+title: "Schulfach Ontology"
+github_org: FWU-DE
+git_main_branch: main
+repo: schulfach-ontologie
+uribase: https://w3id.org/schulfach
+#uribase_suffix: 
+release_artefacts:
+  - full
+primary_release: full
+export_formats:
+  - ttl
+remove_owl_nothing: true
+import_group:
+  products:
+    - id: bl
+      mirror_from: https://raw.githubusercontent.com/dini-ag-kim/school-curriculum-pg/refs/heads/main/src/ontology/components/states.owl
+      module_type: mirror
+    - id: lp 
+      mirror_from: https://w3id.org/lehrplan/ontology
+      module_type: slme
+      module_type_slme: SUBSET
+    - id: kim
+      module_type: custom
+      mirror_type: no_mirror
+components:
+  products:
+    - filename: bw-subjects.owl
+      use_template: true
+
+robot_java_args: "-Xmx8G"
+robot_report:
+  use_labels: TRUE
+  fail_on: ERROR
+  custom_profile: TRUE
+  report_on:
+    - edit

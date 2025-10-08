@@ -1,0 +1,31 @@
+Prefix(:=<https://w3id.org/schulfach/sf/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://w3id.org/schulfach>
+Import(<https://w3id.org/schulfach/sf/components/bw-subjects.owl>)
+Import(<https://w3id.org/schulfach/sf/imports/bl_import.owl>)
+Import(<https://w3id.org/schulfach/sf/imports/kim_import.owl>)
+Import(<https://w3id.org/schulfach/sf/imports/lp_import.owl>)
+Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-6378-2618>)
+Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-7192-7143>)
+Annotation(<http://purl.org/dc/terms/creator> "Almut Steinlein"@de)
+Annotation(<http://purl.org/dc/terms/creator> "Cindy Bloes"@de)
+Annotation(<http://purl.org/dc/terms/creator> "Laura Junghanns"@de)
+Annotation(<http://purl.org/dc/terms/title> "Schulfach Ontologie"@de)
+Annotation(<http://purl.org/dc/terms/title> "German School Subjects Ontology"@en)
+
+Annotation(<http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/>)
+
+Annotation(<http://purl.org/dc/terms/description> "Ontologie der Schulfächer der Bundesländer."@de)
+Annotation(<http://purl.org/dc/terms/description> "Ontology of the German school subjects."@en)
+
+
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
+
+
+)

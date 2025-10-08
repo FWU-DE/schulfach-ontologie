@@ -1,0 +1,1 @@
+https://w3id.org/lehrplan/ontology/LP_0000001   # Schulfach
