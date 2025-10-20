@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                0839495de3dbce22bc290f459d3374a879dcb330957b7daef4c038f9b10f5776
+CONFIG_HASH=                775d77f7516ad1e5b6ae652242f88c89307545ea029ee75c2ac3eff6c216077b
 
 
 # ----------------------------------------
@@ -58,7 +58,7 @@ OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
 ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) convert -f ofn --output $@.tmp.owl && mv $@.tmp.owl $@
-OTHER_SRC =                 $(COMPONENTSDIR)/bw-subjects.owl 
+OTHER_SRC =                 $(COMPONENTSDIR)/bw-subjects.owl $(COMPONENTSDIR)/hb-subjects.owl $(COMPONENTSDIR)/he-subjects.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
@@ -188,7 +188,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  bl lp kim
+IMPORTS =  bl lp kim skos
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -384,7 +384,7 @@ $(IMPORTSEED): $(PRESEED) | $(TMPDIR)
 
 T_IMPORTSEED = --term-file $(IMPORTSEED)
 
-ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 OMO:0002000 
+ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 skos:definition 
 
 # ----------------------------------------
 # Import modules
@@ -448,6 +448,25 @@ $(IMPORTDIR)/kim_import.owl:
 	@echo "       This rule needs to be overwritten in sf.Makefile!"
 	@false
 
+## Module for ontology: skos (slme)
+$(IMPORTDIR)/skos_import.owl: $(MIRRORDIR)/skos.owl $(IMPORTDIR)/skos_terms.txt $(IMPORTSEED) | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/skos_terms.txt $(T_IMPORTSEED) \
+		         --copy-ontology-annotations true --force true \
+		         --individuals include \
+		         --method SUBSET \
+		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+		        --term rdfs:label \
+		        --term IAO:0000115 \
+		        --term OMO:0002000 \
+		        --term-file $(IMPORTDIR)/skos_terms.txt $(T_IMPORTSEED) \
+		        --select complement --select annotation-properties \
+		 odk:normalize --base-iri https://w3id.org/schulfach \
+		               --subset-decls true --synonym-decls true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE)
+
 endif # IMP=true
 
 .PHONY: refresh-imports
@@ -486,11 +505,15 @@ all_components: $(OTHER_SRC)
 .PHONY: recreate-components
 recreate-components:
 	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-bw-subjects.owl \
+		--assume-new=$(TMPDIR)/stamp-component-hb-subjects.owl \
+		--assume-new=$(TMPDIR)/stamp-component-he-subjects.owl \
 		COMP=true IMP=false MIR=true PAT=true all_components
 
 .PHONY: no-mirror-recreate-components
 no-mirror-recreate-components:
 	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-bw-subjects.owl \
+		--assume-new=$(TMPDIR)/stamp-component-hb-subjects.owl \
+		--assume-new=$(TMPDIR)/stamp-component-he-subjects.owl \
 		COMP=true IMP=false MIR=false PAT=true all_components
 
 .PHONY: recreate-%
@@ -512,10 +535,22 @@ $(TMPDIR)/stamp-component-%.owl: | $(TMPDIR)
 .PRECIOUS: $(TMPDIR)/stamp-component-%.owl
 
 $(COMPONENTSDIR)/bw-subjects.owl: $(TEMPLATEDIR)/bw-subjects.tsv $(TMPDIR)/stamp-component-bw-subjects.owl
-	$(ROBOT) template  \
+	$(ROBOT) template --input sf-edit.owl \
 		 --template $(TEMPLATEDIR)/bw-subjects.tsv \
 		 $(ANNOTATE_CONVERT_FILE)
 .PRECIOUS: $(COMPONENTSDIR)/bw-subjects.owl
+
+$(COMPONENTSDIR)/hb-subjects.owl: $(TEMPLATEDIR)/hb-subjects.tsv $(TMPDIR)/stamp-component-hb-subjects.owl
+	$(ROBOT) template --input sf-edit.owl \
+		 --template $(TEMPLATEDIR)/hb-subjects.tsv \
+		 $(ANNOTATE_CONVERT_FILE)
+.PRECIOUS: $(COMPONENTSDIR)/hb-subjects.owl
+
+$(COMPONENTSDIR)/he-subjects.owl: $(TEMPLATEDIR)/he-subjects.tsv $(TMPDIR)/stamp-component-he-subjects.owl
+	$(ROBOT) template --input sf-edit.owl \
+		 --template $(TEMPLATEDIR)/he-subjects.tsv \
+		 $(ANNOTATE_CONVERT_FILE)
+.PRECIOUS: $(COMPONENTSDIR)/he-subjects.owl
 
 endif # COMP=true
 # ----------------------------------------
@@ -541,6 +576,13 @@ mirror-lp: | $(TMPDIR)
 
 ## ONTOLOGY: kim
 ## You have configured your default mirror type to no_mirror.
+
+
+## ONTOLOGY: skos
+.PHONY: mirror-skos
+.PRECIOUS: $(MIRRORDIR)/skos.owl
+mirror-skos: | $(TMPDIR)
+	$(ROBOT) convert -I http://www.w3.org/TR/skos-reference/skos.rdf -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

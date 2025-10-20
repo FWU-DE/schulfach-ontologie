@@ -7,36 +7,12 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/schulfach/sf/imports/lp_import.owl>
-<https://w3id.org/schulfach/sf/releases/2025-10-08/imports/lp_import.owl>
+<https://w3id.org/schulfach/sf/releases/2025-10-20/imports/lp_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/lehrplan/ontology/1.0.0-6>)
-Annotation(owl:versionInfo "2025-10-08")
+Annotation(owl:versionInfo "2025-10-20")
 
 Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000001>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
-Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#closeMatch>))
-Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#editorialNote>))
-Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#exactMatch>))
-############################
-#   Annotation Properties
-############################
-
-# Annotation Property: <http://purl.org/dc/terms/creator> (creator)
-
-AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/creator> "creator")
-
-# Annotation Property: <http://purl.org/dc/terms/description> (description)
-
-AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/description> "description")
-
-# Annotation Property: <http://purl.org/dc/terms/title> (title)
-
-AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/title> "title")
-AnnotationPropertyRange(<http://purl.org/dc/terms/title> xsd:string)
-
 
 
 ############################
