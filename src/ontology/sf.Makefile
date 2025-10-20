@@ -23,6 +23,16 @@ $(IMPORTDIR)/lp_import.owl: $(MIRRORDIR)/lp.owl $(IMPORTDIR)/lp_terms.txt | all_
 		 $(ANNOTATE_CONVERT_FILE)
 
 
+
+## Module for ontology: lp (slme)
+$(IMPORTDIR)/lp_import.owl: $(MIRRORDIR)/lp.owl $(IMPORTDIR)/lp_terms.txt | all_robot_plugins
+	$(ROBOT) extract --input $< --upper-terms $(IMPORTDIR)/lp_terms.txt --lower-terms $(IMPORTDIR)/lp_terms.txt  \
+		         --copy-ontology-annotations true --force true \
+		         --individuals include \
+		         --method MIREOT \
+		 $(ANNOTATE_CONVERT_FILE)
+
+
 $(TEMPLATEDIR)/bw-subjects.tsv:
 	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=949672233&output=tsv' -o $@
 

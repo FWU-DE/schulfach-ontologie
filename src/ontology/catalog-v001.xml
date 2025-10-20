@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
   <group id="odk-managed-catalog" prefer="public">
-    <uri name="https://w3id.org/schulfach/sf/imports/bl_import.owl" uri="imports/bl_import.owl" />
     <uri name="https://w3id.org/schulfach/sf/imports/lp_import.owl" uri="imports/lp_import.owl" />
     <uri name="https://w3id.org/schulfach/sf/imports/kim_import.owl" uri="imports/kim_import.owl" />
     <uri name="https://w3id.org/schulfach/sf/imports/skos_import.owl" uri="imports/skos_import.owl" />

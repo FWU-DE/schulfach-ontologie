@@ -1,1 +1,19 @@
-https://w3id.org/lehrplan/ontology/LP_0000001   # Schulfach
+https://w3id.org/lehrplan/ontology/LP_0000001 # Schulfach
+https://w3id.org/lehrplan/ontology/LP_0000029 # von Schulfach
+
+https://w3id.org/lehrplan/ontology/LP_3000031
+https://w3id.org/lehrplan/ontology/LP_3000043
+https://w3id.org/lehrplan/ontology/LP_3000044
+https://w3id.org/lehrplan/ontology/LP_3000045
+https://w3id.org/lehrplan/ontology/LP_3000046
+https://w3id.org/lehrplan/ontology/LP_3000047
+https://w3id.org/lehrplan/ontology/LP_3000048
+https://w3id.org/lehrplan/ontology/LP_3000049
+https://w3id.org/lehrplan/ontology/LP_3000050
+https://w3id.org/lehrplan/ontology/LP_3000051
+https://w3id.org/lehrplan/ontology/LP_3000052 
+https://w3id.org/lehrplan/ontology/LP_3000053
+https://w3id.org/lehrplan/ontology/LP_3000054
+https://w3id.org/lehrplan/ontology/LP_3000055
+https://w3id.org/lehrplan/ontology/LP_3000056
+https://w3id.org/lehrplan/ontology/LP_3000057

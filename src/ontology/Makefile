@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                775d77f7516ad1e5b6ae652242f88c89307545ea029ee75c2ac3eff6c216077b
+CONFIG_HASH=                7950558e9b368ddbd7069891083c5354fa24590856a0f65cd4003fe56ca5e987
 
 
 # ----------------------------------------
@@ -188,7 +188,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  bl lp kim skos
+IMPORTS =  lp kim skos
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -414,15 +414,6 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms.txt \
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
-## Module for ontology: bl (mirror)
-$(IMPORTDIR)/bl_import.owl: $(MIRRORDIR)/bl.owl | all_robot_plugins
-	$(ROBOT) annotate --input $< --remove-annotations \
-		 odk:normalize --base-iri https://w3id.org/schulfach \
-		               --subset-decls true --synonym-decls true \
-		               --add-source true \
-		 repair --merge-axiom-annotations true \
-		 $(ANNOTATE_CONVERT_FILE)
-
 ## Module for ontology: lp (slme)
 $(IMPORTDIR)/lp_import.owl: $(MIRRORDIR)/lp.owl $(IMPORTDIR)/lp_terms.txt $(IMPORTSEED) | all_robot_plugins
 	$(ROBOT) annotate --input $< --remove-annotations \
@@ -558,13 +549,6 @@ endif # COMP=true
 # ----------------------------------------
 
 ifeq ($(MIR),true)
-
-
-## ONTOLOGY: bl
-.PHONY: mirror-bl
-.PRECIOUS: $(MIRRORDIR)/bl.owl
-mirror-bl: | $(TMPDIR)
-	$(ROBOT) convert -I https://raw.githubusercontent.com/dini-ag-kim/school-curriculum-pg/refs/heads/main/src/ontology/components/states.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: lp

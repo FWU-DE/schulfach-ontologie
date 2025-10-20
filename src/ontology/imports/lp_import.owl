@@ -8,11 +8,59 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<https://w3id.org/schulfach/sf/imports/lp_import.owl>
 <https://w3id.org/schulfach/sf/releases/2025-10-20/imports/lp_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/lehrplan/ontology/1.0.0-6>)
+Annotation(<http://purl.org/dc/terms/bibliographicCitation> "Lehrplan Ontology. Version 1.0.0-6, https://w3id.org/lehrplan/ontology")
+Annotation(<http://purl.org/dc/terms/created> "2025-09-22")
+Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-6378-2618>)
+Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-7192-7143>)
+Annotation(<http://purl.org/dc/terms/creator> "Almut Steinlein"@de)
+Annotation(<http://purl.org/dc/terms/creator> "Cindy Bloes"@de)
+Annotation(<http://purl.org/dc/terms/creator> "Johann Bergh"@de)
+Annotation(<http://purl.org/dc/terms/creator> "Laura Junghanns"@de)
+Annotation(<http://purl.org/dc/terms/description> "Diese Ontologie ist eine formale Repräsentation, die die grundlegenden Konzepte und ihre Beziehungen zueinander im Bereich der Lehrplangestaltung und -umsetzung im deutschen Schulsystem erfasst."@de)
+Annotation(<http://purl.org/dc/terms/description> "This ontology is a formal representation that captures the fundamental concepts and their relationships to one another in the field of curriculum design and implementation of the German school system."@en)
+Annotation(<http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/>)
+Annotation(<http://purl.org/dc/terms/title> "Curriculum Ontology"@en)
+Annotation(<http://purl.org/dc/terms/title> "Lehrplan Ontologie"@de)
+Annotation(owl:versionInfo "1.0.0-6")
 Annotation(owl:versionInfo "2025-10-20")
 
 Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000001>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(ObjectProperty(<https://w3id.org/lehrplan/ontology/LP_0000029>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000031>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000043>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000044>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000045>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000046>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000047>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000048>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000049>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000050>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000051>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000052>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000053>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000054>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000055>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000056>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000057>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/bibliographicCitation>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+Declaration(AnnotationProperty(rdfs:comment))
+Declaration(AnnotationProperty(rdfs:label))
+Declaration(AnnotationProperty(rdfs:seeAlso))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#altLabel>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <https://w3id.org/lehrplan/ontology/LP_0000029> (von Bundesland)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000029> "von Bundesland"@de)
+
 
 
 ############################
@@ -21,8 +69,104 @@ Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 
 # Class: <https://w3id.org/lehrplan/ontology/LP_0000001> (school subject)
 
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000001> "A \"Schulfach\" is an “information content entity”.
+It refers to the designation of a subject taught at school.
+It represents the thematic structure of what is considered general school education.
+A \"Schulfach\" is a subject area that organizes teaching lessons by content.
+Examples of \"Schulfächer\" include German, mathematics, history, and biology."@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000001> "Ein “Schulfach” ist eine “Informationseinheit”.
+Es handelt sich um die Bezeichnung eines an der Schule unterrichteten Fachs. 
+Es ist der Ausdruck für die thematische Gliederung dessen, was jeweils unter allgemeiner schulischer Bildung verstanden wird. 
+Das Schulfach ist ein Themengebiet, das den Unterricht inhaltlich unterteilt. Beispiele für Schulfächer sind Deutsch, Mathematik, Geschichte und Biologie."@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000001> "Schulfach"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000001> "school subject"@en)
+AnnotationAssertion(rdfs:seeAlso <https://w3id.org/lehrplan/ontology/LP_0000001> <https://de.wikipedia.org/wiki/Unterrichtsfach>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0000001> "Fach")
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000031> (Thüringen)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000031> "Thüringen"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000031> "TH")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000043> (Niedersachsen)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000043> "Niedersachsen"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000043> "NI")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000044> (Nordrhein-Westfalen)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000044> "Nordrhein-Westfalen"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000044> "NW")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000045> (Hamburg)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000045> "Hamburg"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000045> "HH")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000046> (Rheinland-Pfalz)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000046> "Rheinland-Pfalz"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000046> "RP")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000047> (Sachsen)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000047> "Sachsen"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000047> "SN")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000048> (Berlin)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000048> "Berlin"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000048> "BE")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000049> (Baden-Württemberg)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000049> "Baden-Württemberg"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000049> "BW")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000050> (Hessen)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000050> "Hessen"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000050> "HE")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000051> (Bayern)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000051> "Bayern"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000051> "BY")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000052> (Mecklenburg-Vorpommern)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000052> "Mecklenburg-Vorpommern"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000052> "MV")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000053> (Sachsen-Anhalt)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000053> "Sachsen-Anhalt"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000053> "ST")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000054> (Schleswig-Holstein)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000054> "Schleswig-Holstein"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000054> "SH")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000055> (Saarland)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000055> "Saarland"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000055> "SL")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000056> (Bremen)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000056> "Bremen"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000056> "HB")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000057> (Brandenburg)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000057> "Brandenburg"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000057> "BB")
 
 
 )

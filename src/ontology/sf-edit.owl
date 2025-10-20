@@ -10,7 +10,6 @@ Ontology(<https://w3id.org/schulfach>
 Import(<https://w3id.org/schulfach/sf/components/bw-subjects.owl>)
 Import(<https://w3id.org/schulfach/sf/components/hb-subjects.owl>)
 Import(<https://w3id.org/schulfach/sf/components/he-subjects.owl>)
-Import(<https://w3id.org/schulfach/sf/imports/bl_import.owl>)
 Import(<https://w3id.org/schulfach/sf/imports/kim_import.owl>)
 Import(<https://w3id.org/schulfach/sf/imports/lp_import.owl>)
 Import(<https://w3id.org/schulfach/sf/imports/skos_import.owl>)

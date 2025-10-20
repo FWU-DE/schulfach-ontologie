@@ -1,5 +1,4 @@
 @prefix : <https://w3id.org/schulfach/sf.ttl#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -28,8 +27,12 @@
 #    Annotation properties
 #################################################################
 
-###  http://purl.org/dc/elements/1.1/source
-dc:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/bibliographicCitation
+terms:bibliographicCitation rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+terms:created rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/creator
@@ -46,6 +49,18 @@ terms:license rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/terms/title
 terms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#altLabel
@@ -106,8 +121,7 @@ skos:topConceptOf rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_0000029
-ontology:LP_0000029 rdf:type owl:ObjectProperty ;
-                    rdfs:label "von Bundesland" .
+ontology:LP_0000029 rdf:type owl:ObjectProperty .
 
 
 #################################################################
@@ -129,8 +143,19 @@ skos:ConceptScheme rdf:type owl:Class ;
 
 ###  https://w3id.org/lehrplan/ontology/LP_0000001
 ontology:LP_0000001 rdf:type owl:Class ;
+                    rdfs:comment """A \"Schulfach\" is an “information content entity”.
+It refers to the designation of a subject taught at school.
+It represents the thematic structure of what is considered general school education.
+A \"Schulfach\" is a subject area that organizes teaching lessons by content.
+Examples of \"Schulfächer\" include German, mathematics, history, and biology."""@en ,
+                                 """Ein “Schulfach” ist eine “Informationseinheit”.
+Es handelt sich um die Bezeichnung eines an der Schule unterrichteten Fachs. 
+Es ist der Ausdruck für die thematische Gliederung dessen, was jeweils unter allgemeiner schulischer Bildung verstanden wird. 
+Das Schulfach ist ein Themengebiet, das den Unterricht inhaltlich unterteilt. Beispiele für Schulfächer sind Deutsch, Mathematik, Geschichte und Biologie."""@de ;
                     rdfs:label "Schulfach"@de ,
-                               "school subject"@en .
+                               "school subject"@en ;
+                    rdfs:seeAlso <https://de.wikipedia.org/wiki/Unterrichtsfach> ;
+                    skos:altLabel "Fach" .
 
 
 #################################################################
@@ -441,82 +466,98 @@ ontology:LP_0000001 rdf:type owl:Class ;
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000031
 ontology:LP_3000031 rdf:type owl:NamedIndividual ;
-                    rdfs:label "TH" .
+                    rdfs:label "Thüringen"@de ;
+                    skos:altLabel "TH" .
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000043
 ontology:LP_3000043 rdf:type owl:NamedIndividual ;
-                    rdfs:label "NI" .
+                    rdfs:label "Niedersachsen"@de ;
+                    skos:altLabel "NI" .
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000044
 ontology:LP_3000044 rdf:type owl:NamedIndividual ;
-                    rdfs:label "NW" .
+                    rdfs:label "Nordrhein-Westfalen"@de ;
+                    skos:altLabel "NW" .
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000045
 ontology:LP_3000045 rdf:type owl:NamedIndividual ;
-                    rdfs:label "HH" .
+                    rdfs:label "Hamburg"@de ;
+                    skos:altLabel "HH" .
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000046
 ontology:LP_3000046 rdf:type owl:NamedIndividual ;
-                    rdfs:label "RP" .
+                    rdfs:label "Rheinland-Pfalz"@de ;
+                    skos:altLabel "RP" .
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000047
 ontology:LP_3000047 rdf:type owl:NamedIndividual ;
-                    rdfs:label "SN" .
+                    rdfs:label "Sachsen"@de ;
+                    skos:altLabel "SN" .
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000048
 ontology:LP_3000048 rdf:type owl:NamedIndividual ;
-                    rdfs:label "BE" .
+                    rdfs:label "Berlin"@de ;
+                    skos:altLabel "BE" .
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000049
 ontology:LP_3000049 rdf:type owl:NamedIndividual ;
-                    rdfs:label "BW" .
+                    rdfs:label "Baden-Württemberg"@de ;
+                    skos:altLabel "BW" .
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000050
 ontology:LP_3000050 rdf:type owl:NamedIndividual ;
-                    rdfs:label "HE" .
+                    rdfs:label "Hessen"@de ;
+                    skos:altLabel "HE" .
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000051
 ontology:LP_3000051 rdf:type owl:NamedIndividual ;
-                    rdfs:label "BY" .
+                    rdfs:label "Bayern"@de ;
+                    skos:altLabel "BY" .
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000052
 ontology:LP_3000052 rdf:type owl:NamedIndividual ;
-                    rdfs:label "MV" .
+                    rdfs:label "Mecklenburg-Vorpommern"@de ;
+                    skos:altLabel "MV" .
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000053
 ontology:LP_3000053 rdf:type owl:NamedIndividual ;
-                    rdfs:label "ST" .
+                    rdfs:label "Sachsen-Anhalt"@de ;
+                    skos:altLabel "ST" .
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000054
 ontology:LP_3000054 rdf:type owl:NamedIndividual ;
-                    rdfs:label "SH" .
+                    rdfs:label "Schleswig-Holstein"@de ;
+                    skos:altLabel "SH" .
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000055
 ontology:LP_3000055 rdf:type owl:NamedIndividual ;
-                    rdfs:label "SL" .
+                    rdfs:label "Saarland"@de ;
+                    skos:altLabel "SL" .
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000056
 ontology:LP_3000056 rdf:type owl:NamedIndividual ;
-                    rdfs:label "HB" .
+                    rdfs:label "Bremen"@de ;
+                    skos:altLabel "HB" .
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000057
 ontology:LP_3000057 rdf:type owl:NamedIndividual ;
-                    rdfs:label "BB" .
+                    rdfs:label "Brandenburg"@de ;
+                    skos:altLabel "BB" .
 
 
 ###  https://w3id.org/schulfach/BW_000000

@@ -14,9 +14,9 @@ remove_owl_nothing: true
 import_group:
   annotation_properties: ['rdfs:label', 'IAO:0000115', 'skos:definition']
   products:
-    - id: bl
-      mirror_from: https://raw.githubusercontent.com/dini-ag-kim/school-curriculum-pg/refs/heads/main/src/ontology/components/states.owl
-      module_type: mirror
+#    - id: bl
+#      mirror_from: https://raw.githubusercontent.com/dini-ag-kim/school-curriculum-pg/refs/heads/main/src/ontology/components/states.owl
+#      module_type: mirror
     - id: lp 
       mirror_from: https://w3id.org/lehrplan/ontology
       module_type: slme
