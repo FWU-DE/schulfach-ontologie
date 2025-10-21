@@ -1,0 +1,79 @@
+URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+https://w3id.org/schulfach/BW_0000000	Schulfächer (Baden-Württemberg)	skos:ConceptScheme		Baden-Württemberg				
+https://w3id.org/schulfach/BW_0000001	Alevitische Religionslehre	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg			FEHLT	
+https://w3id.org/schulfach/BW_0000002	Alltagskultur, Ernährung und Soziales (AES) - Wahlpflichtfach	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Ernährung (KIM-Schulfach)		FEHLT	Sek I (ausser Gymnasium)
+https://w3id.org/schulfach/BW_0000003	Altkatholische Religionslehre	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg			FEHLT	
+https://w3id.org/schulfach/BW_0000004	Astronomie - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Astronomie (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BW_0000005	Aufbaukurs Informatik	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Informatik (KIM-Schulfach)			Jahrgangsstufe 7
+https://w3id.org/schulfach/BW_0000006	Basiskurs Medienbildung	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Medienbildung (KIM-Schulfach)			Jahrgangsstufe 5
+https://w3id.org/schulfach/BW_0000007	Bewegung, Spiel und Sport	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Sport (KIM-Schulfach)			nur Primarstufe
+https://w3id.org/schulfach/BW_0000008	Bildende Kunst	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Kunst (KIM-Schulfach)			Sek I, Sek II + Profilfach extra
+https://w3id.org/schulfach/BW_0000009	Biologie	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Biologie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/BW_0000010	Biologie, Naturphänomene und Technik (BNT)	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Biologie (KIM-Schulfach)		FEHLT	Jahrgangsstufe 5 und 6
+https://w3id.org/schulfach/BW_0000011	Chemie	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Chemie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/BW_0000012	Chinesisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Chinesisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BW_0000013	Darstellende Geometrie - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg			FEHLT	Sek II
+https://w3id.org/schulfach/BW_0000014	Deutsch	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Deutsch (KIM-Schulfach)			
+https://w3id.org/schulfach/BW_0000015	Deutsch als Fremdsprache	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg			FEHLT	https://www.schule-bw.de/themen-und-impulse/migration-integration-bildung/vkl_vabo/vkl/mehrsprachigkeit/curriculum
+https://w3id.org/schulfach/BW_0000016	Digitale mathematische Werkzeuge (DmW) - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg			FEHLT	Sek II
+https://w3id.org/schulfach/BW_0000017	Englisch	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Englisch (KIM-Schulfach)			Primarstufe, Sek II
+https://w3id.org/schulfach/BW_0000018	Englisch als erste Fremdsprache	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Englisch (KIM-Schulfach)			Sek I 
+https://w3id.org/schulfach/BW_0000019	Englisch als zweite Fremdsprache	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Englisch (KIM-Schulfach)			nur Gymnasium
+https://w3id.org/schulfach/BW_0000020	Englisch als zweite Fremdsprache - Wahlpflichtfach	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Englisch (KIM-Schulfach)			Sek I (ausser Gymnasium)
+https://w3id.org/schulfach/BW_0000021	Ethik	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Ethik (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/BW_0000022	Evangelische Religionslehre	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Religionslehre (evangelische) (KIM-Schulfach)			
+https://w3id.org/schulfach/BW_0000023	Französisch	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Französisch (KIM-Schulfach)			Primarstufe, Sek II
+https://w3id.org/schulfach/BW_0000024	Französisch als dritte Fremdsprache - Profilfach	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Französisch (KIM-Schulfach)			nur Gymnasium Sek I
+https://w3id.org/schulfach/BW_0000025	Französisch als erste Fremdsprache	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Französisch (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/BW_0000026	Französisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe 	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Französisch (KIM-Schulfach)			nur Gymnasium Sek I, Sek II
+https://w3id.org/schulfach/BW_0000027	Französisch als zweite Fremdsprache - Wahlpflichtfach	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Französisch (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/BW_0000028	Gemeinschaftskunde	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg			FEHLT	Sek I, Sek II
+https://w3id.org/schulfach/BW_0000029	Geographie	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Geografie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/BW_0000030	Geologie - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg			FEHLT	Sek II
+https://w3id.org/schulfach/BW_0000031	Geschichte	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Geschichte (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/BW_0000032	Griechisch als dritte Fremdsprache - Profilfach	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Neugriechisch (KIM-Schulfach)			ab Jahrgangsstufe 8 (nur Gymnasium)
+https://w3id.org/schulfach/BW_0000033	Griechisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Neugriechisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BW_0000034	Hebräisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Hebräisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BW_0000035	Imformatik, Mathematik, Physik (IMP) - Profilfach	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg		Informatik (KIM-Schulfach),Mathematik (KIM-Schulfach),Physik (KIM-Schulfach)		ab Jahrgangsstufe 8
+https://w3id.org/schulfach/BW_0000036	Informatik - Wahlfach in der Oberstufe (Schulversuch)	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Informatik (KIM-Schulfach)			ab Jahrgangsstufe 11
+https://w3id.org/schulfach/BW_0000037	Informatik (Schulversuch)	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Informatik (KIM-Schulfach)			ab Jahrgangsstufe 9
+https://w3id.org/schulfach/BW_0000038	Islamische Religionslehre sunnitischer Prägung	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Religionslehre (islamisch) (KIM-Schulfach)			
+https://w3id.org/schulfach/BW_0000039	Italienisch als dritte Fremdsprache - Profilfach	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Italienisch (KIM-Schulfach)			ab Jahrgangsstufe 8 (nur Gymnasium)
+https://w3id.org/schulfach/BW_0000040	Italienisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Italienisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BW_0000041	Japanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Japanisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BW_0000042	Jüdische Religionslehre	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg			FEHLT	
+https://w3id.org/schulfach/BW_0000043	Katholische Religionslehre	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Religionslehre (katholische) (KIM-Schulfach)			
+https://w3id.org/schulfach/BW_0000044	Kunst/Werken	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Kunst (KIM-Schulfach)			nur Primarstufe
+https://w3id.org/schulfach/BW_0000045	Latein als dritte Fremdsprache - Profilfach	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Latein (KIM-Schulfach)			ab Jahrgangsstufe 8 (nur Gymnasium)
+https://w3id.org/schulfach/BW_0000046	Latein als erste Fremdsprache	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Latein (KIM-Schulfach)			ab Jahrgangsstufe 5 (nur Gymnasium)
+https://w3id.org/schulfach/BW_0000047	Latein als spät beginnende Fremdsprache - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Latein (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BW_0000048	Latein als zweite Fremdsprache	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Latein (KIM-Schulfach)			ab Jahrgangsstufe 6 (nur Gymnasium)
+https://w3id.org/schulfach/BW_0000049	Literatur - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg			FEHLT	Sek II
+https://w3id.org/schulfach/BW_0000050	Literatur und Theater	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Darstellendes Spiel (KIM-Schulfach)		FEHLT	Sek II
+https://w3id.org/schulfach/BW_0000051	Mathematik	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Mathematik (KIM-Schulfach)			
+https://w3id.org/schulfach/BW_0000052	Musik	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Musik (KIM-Schulfach)			
+https://w3id.org/schulfach/BW_0000053	Musik - Profilfach	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Musik (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/BW_0000054	Naturwissenschaft und Technik (NwT) - Basisfach in der Kursstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg			FEHLT	nur Gymnasium Sek II
+https://w3id.org/schulfach/BW_0000055	Naturwissenschaft und Technik (NwT) - Profilfach	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg			FEHLT	Sek I, Sek II
+https://w3id.org/schulfach/BW_0000056	Naturwissenschaft und Technik (NwT) - Schulversuch Leistungsfach in der Kursstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg			FEHLT	nur Gymnasium Sek II
+https://w3id.org/schulfach/BW_0000057	Orthodoxe Religionslehre	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg			FEHLT	Sek I alle Schularten, Sek II nur Gymnasium
+https://w3id.org/schulfach/BW_0000058	Philosophie - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Philosophie (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BW_0000059	Physik	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Physik (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/BW_0000060	Portugiesisch als dritte Fremdsprache - Profilfach	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Portugiesisch (KIM-Schulfach)			ab Jahrgangsstufe 8 (nur Gymnasium)
+https://w3id.org/schulfach/BW_0000061	Portugiesisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Portugiesisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BW_0000062	Psychologie - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Psychologie (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BW_0000063	Russisch als dritte Fremdsprache - Profilfach	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Russisch (KIM-Schulfach)			ab Jahrgangsstufe 8 (nur Gymnasium)
+https://w3id.org/schulfach/BW_0000064	Russisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Russisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BW_0000065	Russisch als zweite Fremdsprache	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Russisch (KIM-Schulfach)			ab Jahrgangsstufe 6 (nur Gymnasium)
+https://w3id.org/schulfach/BW_0000066	Sachunterricht	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Sachunterricht (KIM-Schulfach)			nur Primarstufe
+https://w3id.org/schulfach/BW_0000067	Spanisch als dritte Fremdsprache - Profilfach	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Spanisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/BW_0000068	Spanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Spanisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BW_0000069	Sport	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Sport (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/BW_0000070	Sport - Profilfach	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Sport (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/BW_0000071	Sport - Wahlpflichtfach	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Sport (KIM-Schulfach)			nur Realschule
+https://w3id.org/schulfach/BW_0000072	Syrisch-Orthodoxe Religionslehre	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg			FEHLT	
+https://w3id.org/schulfach/BW_0000073	Technik - Wahlpflichtfach 	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg			FEHLT	Sek I
+https://w3id.org/schulfach/BW_0000074	Türkisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Türkisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BW_0000075	Wirtschaft	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Wirtschaftskunde (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BW_0000076	Wirtschaft / Berufs- und Studienorientierung (WBS)	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Sek I, Sek II

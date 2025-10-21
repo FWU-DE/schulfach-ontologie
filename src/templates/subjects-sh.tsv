@@ -1,0 +1,38 @@
+URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+https://w3id.org/schulfach/SH_0000000	Schulfächer (Schleswig-Holstein)	skos:ConceptScheme		Schleswig-Holstein				
+https://w3id.org/schulfach/SH_0000001	Biologie	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Biologie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/SH_0000002	Chemie	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Chemie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/SH_0000003	Chinesisch	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Chinesisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/SH_0000004	Dänisch	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein			FEHLT	Sek I, Sek II
+https://w3id.org/schulfach/SH_0000005	Darstellendes Spiel	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Darstellendes Spiel (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/SH_0000006	Deutsch	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Deutsch (KIM-Schulfach)			
+https://w3id.org/schulfach/SH_0000007	Englisch	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Englisch (KIM-Schulfach)			
+https://w3id.org/schulfach/SH_0000008	Evangelische Religion	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Religionslehre (evangelische) (KIM-Schulfach)			
+https://w3id.org/schulfach/SH_0000009	Französisch	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Französisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/SH_0000010	Friesisch	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein			FEHLT	Primarstufe
+https://w3id.org/schulfach/SH_0000011	Geographie	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Geografie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/SH_0000012	Geschichte	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Geschichte (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/SH_0000013	Gestalten	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein			FEHLT	Sek I
+https://w3id.org/schulfach/SH_0000014	Griechisch	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Neugriechisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/SH_0000015	Informatik	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Informatik (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/SH_0000016	Islamunterricht	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Religionslehre (islamisch) (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/SH_0000017	Italienisch	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Italienisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/SH_0000018	Katholische Religion	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Religionslehre (katholische) (KIM-Schulfach)			
+https://w3id.org/schulfach/SH_0000019	Kunst	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Kunst (KIM-Schulfach)			
+https://w3id.org/schulfach/SH_0000020	Latein	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Latein (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/SH_0000021	Mathematik	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Mathematik (KIM-Schulfach)			
+https://w3id.org/schulfach/SH_0000022	Musik	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Musik (KIM-Schulfach)			
+https://w3id.org/schulfach/SH_0000023	Naturwissenschaften	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein			FEHLT	Sek I
+https://w3id.org/schulfach/SH_0000024	Philosophie	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Philosophie (KIM-Schulfach)			
+https://w3id.org/schulfach/SH_0000025	Physik	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Physik (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/SH_0000026	Russisch	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Russisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/SH_0000027	Sachunterricht	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Sachunterricht (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/SH_0000028	Spanisch	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Spanisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/SH_0000029	Sport	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Sport (KIM-Schulfach)			
+https://w3id.org/schulfach/SH_0000030	Technik	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein			FEHLT	
+https://w3id.org/schulfach/SH_0000031	Textillehre	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein			FEHLT	
+https://w3id.org/schulfach/SH_0000032	Verbraucherbildung	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein			FEHLT	Sek I
+https://w3id.org/schulfach/SH_0000033	Weltkunde	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein			FEHLT	Sek I
+https://w3id.org/schulfach/SH_0000034	Wirtschaft/Politik	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein		Wirtschaftskunde (KIM-Schulfach),Politik (KIM-Schulfach)		Sek I, Sek II
+https://w3id.org/schulfach/SH_0000035	Wirtschaftslehre	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Wirtschaftskunde (KIM-Schulfach)			Sek I

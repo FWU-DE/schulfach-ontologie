@@ -1,0 +1,49 @@
+URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+https://w3id.org/schulfach/HB_0000000	Schulfächer (Bremen)	skos:ConceptScheme		Bremen				
+https://w3id.org/schulfach/HB_0000001	Ästhetik	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Kunst (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/HB_0000002	Bildungsplan fortgeführte Fremdsprachen	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen			FEHLT	Sek II - Englisch, Spanisch, Türkisch, Russisch, Französisch
+https://w3id.org/schulfach/HB_0000003	Biologie	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Biologie (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HB_0000004	Biologie bilingual	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Biologie (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HB_0000005	Chemie	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Chemie (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HB_0000006	Chinesisch	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Chinesisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HB_0000007	Darstellendes Spiel	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Darstellendes Spiel (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/HB_0000008	Deutsch	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Deutsch (KIM-Schulfach)			
+https://w3id.org/schulfach/HB_0000009	Deutsch als Zweitsprache	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Deutsch als Zweitsprache (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/HB_0000010	Englisch	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Englisch (KIM-Schulfach)			Primarstufe, Sek I
+https://w3id.org/schulfach/HB_0000011	European Studies	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen			FEHLT	Jahrgangsstufe 8 und 9 Gymnasium
+https://w3id.org/schulfach/HB_0000012	Französisch	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Französisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HB_0000013	Französisch und Spanisch	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen		Französisch (KIM-Schulfach),Spanisch (KIM-Schulfach)		Oberschule
+https://w3id.org/schulfach/HB_0000014	Französisch/Spanisch 2. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen		Französisch (KIM-Schulfach),Spanisch (KIM-Schulfach)		nur Gymnasium Sek I
+https://w3id.org/schulfach/HB_0000015	Französisch/Spanisch 3. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen		Französisch (KIM-Schulfach),Spanisch (KIM-Schulfach)		nur Gymnasium Sek I
+https://w3id.org/schulfach/HB_0000016	Geographie	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Geografie (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HB_0000017	Geschichte	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Geschichte (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HB_0000018	Geschichte bilingual	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Geschichte (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HB_0000019	Gesellschaft und Politik	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen		Gesellschaftswissenschaften (KIM-Schulfach),Politik (KIM-Schulfach)		nur Oberschule Sek I
+https://w3id.org/schulfach/HB_0000020	Herkunftssprachen 	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen			FEHLT	Primarstufe
+https://w3id.org/schulfach/HB_0000021	Informatik	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Informatik (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/HB_0000022	Kunst	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Kunst (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/HB_0000023	Latein	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Latein (KIM-Schulfach)			Oberschule, Sek II
+https://w3id.org/schulfach/HB_0000024	Latein 2. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Latein (KIM-Schulfach)			nur Gymnasium Sek I
+https://w3id.org/schulfach/HB_0000025	Latein 3. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Latein (KIM-Schulfach)			nur Gymnasium Sek I
+https://w3id.org/schulfach/HB_0000026	Mathematik	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Mathematik (KIM-Schulfach)			
+https://w3id.org/schulfach/HB_0000027	Medienbildung	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Medienbildung (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/HB_0000028	Musik	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Musik (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/HB_0000029	Naturwissenschaften, Biologie, Chemie, Physik	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen		Biologie (KIM-Schulfach),Chemie (KIM-Schulfach),Physik (KIM-Schulfach)		Sek I
+https://w3id.org/schulfach/HB_0000030	Pädagogik	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen			FEHLT	Sek II
+https://w3id.org/schulfach/HB_0000031	Philosophie	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Philosophie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/HB_0000032	Physik	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Physik (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HB_0000033	Politik	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Politik (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HB_0000034	Polnisch	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Polnisch (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/HB_0000035	Psychologie	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Psychologie (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HB_0000036	Religion	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen			FEHLT	ohne Konfession
+https://w3id.org/schulfach/HB_0000037	Russisch	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Russisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/HB_0000038	Sachunterricht	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Sachunterricht (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/HB_0000039	Soziologie	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen			FEHLT	Sek II
+https://w3id.org/schulfach/HB_0000040	Spanisch	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Spanisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HB_0000041	Sport	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Sport (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/HB_0000042	Türkisch	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Türkisch (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/HB_0000043	Welt-Umweltkunde, Geschichte, Geographie, Politik	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen		Geschichte (KIM-Schulfach),Geografie (KIM-Schulfach),Politik (KIM-Schulfach)		Gymnasium Sek I
+https://w3id.org/schulfach/HB_0000044	Wirtschaft-Arbeit-Technik	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Gymnasium
+https://w3id.org/schulfach/HB_0000045	Wirtschaft/Arbeit/Technik	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Oberschule
+https://w3id.org/schulfach/HB_0000046	Wirtschaftslehre	Schulfach,skos:Concept	Schulfächer (Bremen)	Bremen	Wirtschaftskunde (KIM-Schulfach)			Sek II

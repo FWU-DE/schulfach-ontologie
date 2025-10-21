@@ -1,0 +1,41 @@
+URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+https://w3id.org/schulfach/ST_0000000	Schulfächer (Sachsen-Anhalt)	skos:ConceptScheme		Sachsen-Anhalt				
+https://w3id.org/schulfach/ST_0000001	Angewandte Naturwissenschaften	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt			FEHLT	Sekundarschule
+https://w3id.org/schulfach/ST_0000002	Astronomie	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Astronomie (KIM-Schulfach)			Sekundarschule, Gymnasium Wahlpflichtfach (Sek I, Sek II)
+https://w3id.org/schulfach/ST_0000003	Biologie	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Biologie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/ST_0000004	Chemie	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Chemie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/ST_0000005	Deutsch	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Deutsch (KIM-Schulfach)			
+https://w3id.org/schulfach/ST_0000006	Deutsch als Zweitsprache	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Deutsch als Zweitsprache (KIM-Schulfach)			
+https://w3id.org/schulfach/ST_0000007	Englisch	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Englisch (KIM-Schulfach)			
+https://w3id.org/schulfach/ST_0000008	Ethikunterricht	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Ethik (KIM-Schulfach)			
+https://w3id.org/schulfach/ST_0000009	Evangelischer Religionsunterricht	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Religionslehre (evangelische) (KIM-Schulfach)			
+https://w3id.org/schulfach/ST_0000010	Französisch	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Französisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/ST_0000011	Geographie	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Geografie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/ST_0000012	Geschichte	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Geschichte (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/ST_0000013	Gestalten	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt			FEHLT	Primarstufe
+https://w3id.org/schulfach/ST_0000014	Griechisch	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Neugriechisch (KIM-Schulfach)			Gymnasium Sek I, Sek II
+https://w3id.org/schulfach/ST_0000015	Hauswirtschaft	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt			FEHLT	Sekundarschule
+https://w3id.org/schulfach/ST_0000016	Informatik	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Informatik (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/ST_0000017	Italienisch	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Italienisch (KIM-Schulfach)			Gymnasium Sek I, Sek II
+https://w3id.org/schulfach/ST_0000018	Katholischer Religionsunterricht	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Religionslehre (katholische) (KIM-Schulfach)			
+https://w3id.org/schulfach/ST_0000019	Kunst (Kunsterziehung)	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Kunst (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/ST_0000020	Latein	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Latein (KIM-Schulfach)			Gymnasium Sek I, Sek II
+https://w3id.org/schulfach/ST_0000021	Lernen in der digitalen Welt	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt			FEHLT	Gymnasium Sek I
+https://w3id.org/schulfach/ST_0000022	Lernmethoden, Arbeit am PC und moderne Medienwelten	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Medienbildung (KIM-Schulfach)		FEHLT	Gymnasium Sek I
+https://w3id.org/schulfach/ST_0000023	Mathematik	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Mathematik (KIM-Schulfach)			
+https://w3id.org/schulfach/ST_0000024	Moderne Medienwelten	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Medienbildung (KIM-Schulfach)			Sekundarschule
+https://w3id.org/schulfach/ST_0000025	Musik	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Musik (KIM-Schulfach)			
+https://w3id.org/schulfach/ST_0000026	Philosophie	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Philosophie (KIM-Schulfach)			Gymnasium Wahlpflichtfach (Sek I, Sek II)
+https://w3id.org/schulfach/ST_0000027	Physik	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Physik (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/ST_0000028	Planen, Bauen und Gestalten	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt			FEHLT	Sekundarschule
+https://w3id.org/schulfach/ST_0000029	Psychologie	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Psychologie (KIM-Schulfach)			Gymnasium Wahlpflichtfach (Sek I, Sek II)
+https://w3id.org/schulfach/ST_0000030	Rechtskunde	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt			FEHLT	Sekundarschule, Gymnasium Wahlpflichtfach (Sek I, Sek II)
+https://w3id.org/schulfach/ST_0000031	Russisch	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Russisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/ST_0000032	Sachunterricht	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Sachunterricht (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/ST_0000033	Sozialkunde	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt			FEHLT	Sek I, Sek II
+https://w3id.org/schulfach/ST_0000034	Spanisch	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Spanisch (KIM-Schulfach)			Gymnasium Sek I, Sek II
+https://w3id.org/schulfach/ST_0000035	Sport	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Sport (KIM-Schulfach)			
+https://w3id.org/schulfach/ST_0000036	Technik	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt			FEHLT	Sekundarschule, Gymnasium Wahlpflichtfach (Sek I, Sek II)
+https://w3id.org/schulfach/ST_0000037	Wirtschaft	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Wirtschaftskunde (KIM-Schulfach)			Sekundarschule
+https://w3id.org/schulfach/ST_0000038	Wirtschaftslehre	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Wirtschaftskunde (KIM-Schulfach)			Gymnasium Wahlpflichtfach (Sek I, Sek II)

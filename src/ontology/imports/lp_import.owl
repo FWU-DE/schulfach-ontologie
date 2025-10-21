@@ -7,7 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/schulfach/sf/imports/lp_import.owl>
-<https://w3id.org/schulfach/sf/releases/2025-10-20/imports/lp_import.owl>
+<https://w3id.org/schulfach/sf/releases/2025-10-21/imports/lp_import.owl>
 Annotation(<http://purl.org/dc/terms/bibliographicCitation> "Lehrplan Ontology. Version 1.0.0-6, https://w3id.org/lehrplan/ontology")
 Annotation(<http://purl.org/dc/terms/created> "2025-09-22")
 Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-6378-2618>)
@@ -22,7 +22,7 @@ Annotation(<http://purl.org/dc/terms/license> <https://creativecommons.org/licen
 Annotation(<http://purl.org/dc/terms/title> "Curriculum Ontology"@en)
 Annotation(<http://purl.org/dc/terms/title> "Lehrplan Ontologie"@de)
 Annotation(owl:versionInfo "1.0.0-6")
-Annotation(owl:versionInfo "2025-10-20")
+Annotation(owl:versionInfo "2025-10-21")
 
 Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000001>))
 Declaration(ObjectProperty(<https://w3id.org/lehrplan/ontology/LP_0000029>))

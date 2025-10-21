@@ -1,0 +1,48 @@
+URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+https://w3id.org/schulfach/MV_0000000	Schulfächer (Mecklenburg-Vorpommern)	skos:ConceptScheme		Mecklenburg-Vorpommern				
+https://w3id.org/schulfach/MV_0000001	Astronomie	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Astronomie (KIM-Schulfach)			nur Jahrgangsstufe 9
+https://w3id.org/schulfach/MV_0000002	AWT	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Sek I ab Jahrgangsstufe 7
+https://w3id.org/schulfach/MV_0000003	Berufliche Orientierung	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern			FEHLT	nur Jahrgangsstufe 11
+https://w3id.org/schulfach/MV_0000004	Biologie	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Biologie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/MV_0000005	Chemie	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Chemie (KIM-Schulfach)			Sek I ab Jahrgangsstufe 8, Sek II
+https://w3id.org/schulfach/MV_0000006	Darstellendes Spiel	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Darstellendes Spiel (KIM-Schulfach)			Primarstufe, Sek I
+https://w3id.org/schulfach/MV_0000007	Deutsch	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Deutsch (KIM-Schulfach)			
+https://w3id.org/schulfach/MV_0000008	Deutsch als Zweitsprache	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Deutsch als Zweitsprache (KIM-Schulfach)			
+https://w3id.org/schulfach/MV_0000009	Deutsche Gebärdensprache	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Deutsche Gebärdensprache (KIM-Schulfach)			
+https://w3id.org/schulfach/MV_0000010	Englisch	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Englisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/MV_0000011	Evangelische Religion	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Religionslehre (evangelische) (KIM-Schulfach)			
+https://w3id.org/schulfach/MV_0000012	Französisch	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Französisch (KIM-Schulfach)			Sek I ab Jahrgangsstufe 7, Sek II
+https://w3id.org/schulfach/MV_0000013	Fremdsprachen an Grundschulen	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern			FEHLT	Primarstufe
+https://w3id.org/schulfach/MV_0000014	Geografie	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Geografie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/MV_0000015	Geschichte	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Geschichte (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/MV_0000016	Geschichte und politische Bildung	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern		Geschichte (KIM-Schulfach),Politik (KIM-Schulfach)		Sek II
+https://w3id.org/schulfach/MV_0000017	Gesellschaftswissenschaften	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Gesellschaftswissenschaften (KIM-Schulfach)			nur Jahrgangsstufe 5 und 6 
+https://w3id.org/schulfach/MV_0000018	Griechisch	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Neugriechisch (KIM-Schulfach)			Sek I, Sek II - ab Jahrgangsstufe 7
+https://w3id.org/schulfach/MV_0000019	Informatik	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Informatik (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/MV_0000020	Informatik und Medienbildung	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern		Informatik (KIM-Schulfach),Medienbildung (KIM-Schulfach)		Sek I
+https://w3id.org/schulfach/MV_0000021	Katholische Religion	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Religionslehre (katholische) (KIM-Schulfach)			
+https://w3id.org/schulfach/MV_0000022	Kunst	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Kunst (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/MV_0000023	Kunst und Gestaltung	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Kunst (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/MV_0000024	Latein	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Latein (KIM-Schulfach)			Sek I, Sek II ab Jahrgangsstufe 5
+https://w3id.org/schulfach/MV_0000025	Mathematik	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Mathematik (KIM-Schulfach)			
+https://w3id.org/schulfach/MV_0000026	MINT	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	MINT (KIM-Schulfach)			
+https://w3id.org/schulfach/MV_0000027	Musik	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Musik (KIM-Schulfach)			
+https://w3id.org/schulfach/MV_0000028	Musikensemble	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Musik (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/MV_0000029	Naturwissenschaften	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern			FEHLT	nur Jahrgangsstufe 5 und 6 
+https://w3id.org/schulfach/MV_0000030	Niederdeutsch	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern			FEHLT	Sek I, Sek II
+https://w3id.org/schulfach/MV_0000031	Philosophie	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Philosophie (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/MV_0000032	Philosophieren mit Kindern	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Philosophie (KIM-Schulfach)			Primarstufe Sek I
+https://w3id.org/schulfach/MV_0000033	Physik	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Physik (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/MV_0000034	Polnisch	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Polnisch (KIM-Schulfach)			Sek I ab Jahrgangsstufe 7, Sek II
+https://w3id.org/schulfach/MV_0000035	Russisch	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Russisch (KIM-Schulfach)			Sek I ab Jahrgangsstufe 7, Sek II
+https://w3id.org/schulfach/MV_0000036	Sachunterricht	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Sachunterricht (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/MV_0000037	Schwedisch	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern			FEHLT	Sek I ab Jahrgangsstufe 7, Sek II
+https://w3id.org/schulfach/MV_0000038	Sozialkunde	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern			FEHLT	Sek I ab Jahrgangsstufe 7, Sek II
+https://w3id.org/schulfach/MV_0000039	Spanisch	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Spanisch (KIM-Schulfach)			Sek I ab Jahrgangsstufe 7, Sek II
+https://w3id.org/schulfach/MV_0000040	Sport	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Sport (KIM-Schulfach)			
+https://w3id.org/schulfach/MV_0000041	System Erde	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern			FEHLT	Wahlpflichtkurs in Jahrgangsstufe 9 und 10 (Gymnasium, Gesamtschule)
+https://w3id.org/schulfach/MV_0000042	Theater/Darstellendes Spiel	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Darstellendes Spiel (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/MV_0000043	Weltkunde	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern			FEHLT	nur Jahrgangsstufe 5 und 6
+https://w3id.org/schulfach/MV_0000044	Werken	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern			FEHLT	Primarstufe, Jahrgangsstufe 5 und 6
+https://w3id.org/schulfach/MV_0000045	Wirtschaft	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Wirtschaftskunde (KIM-Schulfach)			Sek II

@@ -1,0 +1,67 @@
+URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+https://w3id.org/schulfach/SL_0000000	Schulfächer (Saarland)	skos:ConceptScheme		Saarland				
+https://w3id.org/schulfach/SL_0000001	Allgemeine Ethik	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Ethik (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/SL_0000002	Arbeitslehre	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland			FEHLT	Gemeinschaftsschule Jahrgangsstufe 5 und 6
+https://w3id.org/schulfach/SL_0000003	Beruf und Wirtschaft	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Gemeinschaftsschule Jahrgangsstufe 7-10
+https://w3id.org/schulfach/SL_0000004	Bildende Kunst	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Kunst (KIM-Schulfach)			
+https://w3id.org/schulfach/SL_0000005	Biologie	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Biologie (KIM-Schulfach)			Gymnasium ab Jahrgangsstufe7 (G9) ab 8 (G8), Sek II
+https://w3id.org/schulfach/SL_0000006	Biologie Themenfelder	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Biologie (KIM-Schulfach)			Gemeinschaftsschule Jahrgangsstufe 9 und 10
+https://w3id.org/schulfach/SL_0000007	Chemie	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Chemie (KIM-Schulfach)			Gymnasium G9 ab Jahrgangsstufe 8, Sek II
+https://w3id.org/schulfach/SL_0000008	Chemie Themenfelder	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Chemie (KIM-Schulfach)			Gemeinschaftsschule Jahrgangsstufe 9 und 10
+https://w3id.org/schulfach/SL_0000009	Darstellendes Spiel	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Darstellendes Spiel (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/SL_0000010	Deutsch	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Deutsch (KIM-Schulfach)			
+https://w3id.org/schulfach/SL_0000011	Englisch	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Englisch (KIM-Schulfach)			(wird nur in Sek II für Grund- und Leistungskurs benutzt)
+https://w3id.org/schulfach/SL_0000012	Englisch (1. und 2. Fremdsprache)	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Englisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/SL_0000013	Englisch 1. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Englisch (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/SL_0000014	Englisch 2. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Englisch (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/SL_0000015	Englisch 3. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Englisch (KIM-Schulfach)			Sek I nur Gymnasium, Sek II
+https://w3id.org/schulfach/SL_0000016	Erdkunde	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Geografie (KIM-Schulfach)			Sek I nur Gymnasium, Sek II
+https://w3id.org/schulfach/SL_0000017	Erdkunde bilingual deutsch-englisch	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Geografie (KIM-Schulfach)			Sek I Gymnasium, Sek II
+https://w3id.org/schulfach/SL_0000018	Erdkunde bilingual deutsch-französisch	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Geografie (KIM-Schulfach)			Sek I Gymnasium
+https://w3id.org/schulfach/SL_0000019	Erdkunde Themenfelder	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Geografie (KIM-Schulfach)			Gemeinschaftsschule Jahrgangsstufe 9 und 10
+https://w3id.org/schulfach/SL_0000020	Evangelische Religion	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Religionslehre (evangelische) (KIM-Schulfach)			
+https://w3id.org/schulfach/SL_0000021	Französisch	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Französisch (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/SL_0000022	Französisch (1. und 2. Fremdsprache)	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Französisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/SL_0000023	Französisch 1. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Französisch (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/SL_0000024	Französisch 2. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Französisch (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/SL_0000025	Französisch 3. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Französisch (KIM-Schulfach)			Sek I nur Gymnasium, Sek II
+https://w3id.org/schulfach/SL_0000026	Geschichte	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Geschichte (KIM-Schulfach)			Sek I nur Gymnasium, Sek II
+https://w3id.org/schulfach/SL_0000027	Geschichte bilingual deutsch-englisch	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Geschichte (KIM-Schulfach)			Sek I Gymnasium, Sek II
+https://w3id.org/schulfach/SL_0000028	Geschichte bilingual deutsch-französisch	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Geschichte (KIM-Schulfach)			Sek I Gymnasium
+https://w3id.org/schulfach/SL_0000029	Geschichte Themenfelder	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Geschichte (KIM-Schulfach)			Gemeinschaftsschule Jahrgangsstufe 9 und 10
+https://w3id.org/schulfach/SL_0000030	Gesellschaftswissenschaften	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Gesellschaftswissenschaften (KIM-Schulfach)			Gemeinschaftsschule
+https://w3id.org/schulfach/SL_0000031	Gesellschaftswissenschaften Themenfelder	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Gesellschaftswissenschaften (KIM-Schulfach)			Gemeinschaftsschule Jahrgangsstufe 9 und 10
+https://w3id.org/schulfach/SL_0000032	Griechisch 	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Neugriechisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/SL_0000033	Griechisch 3. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Neugriechisch (KIM-Schulfach)			Sek I Gymnasium
+https://w3id.org/schulfach/SL_0000034	Herkunftssprachlicher Unterricht	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland			FEHLT	Primarstufe, Sek I
+https://w3id.org/schulfach/SL_0000035	Informatik	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Informatik (KIM-Schulfach)			ab Jahrgangsstufe 7 in Gemeinschaftsschule und Gymnasium G9, Sek II
+https://w3id.org/schulfach/SL_0000036	Informatik / Informationstechnische Grundbildung	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Informatik (KIM-Schulfach)			Gymnasium G8 nur Jahrgangsstufe 5
+https://w3id.org/schulfach/SL_0000037	Islamischer Religionsunterricht	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Religionslehre (islamisch) (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/SL_0000038	Italienisch	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Italienisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/SL_0000039	Italienisch 3. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Italienisch (KIM-Schulfach)			Sek I Gymnasium
+https://w3id.org/schulfach/SL_0000040	Katholische Religion	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Religionslehre (katholische) (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/SL_0000041	Katholischer Religionsunterricht	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Religionslehre (katholische) (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/SL_0000042	Latein	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Latein (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/SL_0000043	Latein 1. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Latein (KIM-Schulfach)			Sek I Gymnasium
+https://w3id.org/schulfach/SL_0000044	Latein 2. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Latein (KIM-Schulfach)			Sek I Gymnasium
+https://w3id.org/schulfach/SL_0000045	Latein 3. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Latein (KIM-Schulfach)			Sek I Gymnasium
+https://w3id.org/schulfach/SL_0000046	Lernen lernen	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland			FEHLT	Gemeinschaftsschule Jahrgangsstufe 5 und 6
+https://w3id.org/schulfach/SL_0000047	Mathematik	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Mathematik (KIM-Schulfach)			
+https://w3id.org/schulfach/SL_0000048	Musik	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Musik (KIM-Schulfach)			
+https://w3id.org/schulfach/SL_0000049	Naturwissenschaften	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland			FEHLT	Sek I (Gymnasium nur Jahrgangsstufe 5 und 6, bei Gemeinschaftsschule bis 8)
+https://w3id.org/schulfach/SL_0000050	Philosophie	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Philosophie (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/SL_0000051	Physik	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Physik (KIM-Schulfach)			Gymnasium G9 ab Jahrgangsstufe 7, Sek II
+https://w3id.org/schulfach/SL_0000052	Physik Themenfelder	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Physik (KIM-Schulfach)			Gemeinschaftsschule Jahrgangsstufe 9 und 10
+https://w3id.org/schulfach/SL_0000053	Politik	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Politik (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/SL_0000054	Politik bilingual deutsch-englisch	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Politik (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/SL_0000055	Sachunterricht	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Sachunterricht (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/SL_0000056	Sozialkunde	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland			FEHLT	Sek I Gymnasium, Sek II
+https://w3id.org/schulfach/SL_0000057	Sozialkunde bilingual deutsch-englisch	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland			FEHLT	nur G8, Sek II
+https://w3id.org/schulfach/SL_0000058	Sozialkunde bilingual deutsch-französisch	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland			FEHLT	nur G8
+https://w3id.org/schulfach/SL_0000059	Sozialkunde Themenfelder	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland			FEHLT	Gemeinschaftsschule Jahrgangsstufe 9 und 10
+https://w3id.org/schulfach/SL_0000060	Spanisch	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Spanisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/SL_0000061	Spanisch 3. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Spanisch (KIM-Schulfach)			Sek I Gymansium
+https://w3id.org/schulfach/SL_0000062	Sport	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Sport (KIM-Schulfach)			
+https://w3id.org/schulfach/SL_0000063	Technik	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland			FEHLT	Sek II
+https://w3id.org/schulfach/SL_0000064	Wirtschaftslehre	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Wirtschaftskunde (KIM-Schulfach)			Sek II

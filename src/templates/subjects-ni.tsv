@@ -1,0 +1,53 @@
+URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+https://w3id.org/schulfach/NI_0000000	Schulfächer (Niedersachsen)	skos:ConceptScheme		Niedersachsen				
+https://w3id.org/schulfach/NI_0000001	Arbeit-Wirtschaft-Technik	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Wirtschaftskunde (KIM-Schulfach)		FEHLT	nur IGS
+https://w3id.org/schulfach/NI_0000002	Biologie	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Biologie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/NI_0000003	Chemie	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Chemie (KIM-Schulfach)			Sek I Sek II
+https://w3id.org/schulfach/NI_0000004	Chinesisch	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Chinesisch (KIM-Schulfach)			Sek, Sek II
+https://w3id.org/schulfach/NI_0000005	Darstellendes Spiel	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Darstellendes Spiel (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/NI_0000006	Deutsch	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Deutsch (KIM-Schulfach)			
+https://w3id.org/schulfach/NI_0000007	Deutsch als Zweitsprache	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Deutsch als Zweitsprache (KIM-Schulfach)			
+https://w3id.org/schulfach/NI_0000008	Deutsche Gebärdensprache	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Deutsche Gebärdensprache (KIM-Schulfach)			in Entwicklung
+https://w3id.org/schulfach/NI_0000009	Englisch	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Englisch (KIM-Schulfach)			
+https://w3id.org/schulfach/NI_0000010	Erdkunde	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Geografie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/NI_0000011	Evangelische Religion	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Religionslehre (evangelische) (KIM-Schulfach)			
+https://w3id.org/schulfach/NI_0000012	Französisch	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Französisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/NI_0000013	Geschichte	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Geschichte (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/NI_0000014	Gesellschaftslehre	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Gesellschaftswissenschaften (KIM-Schulfach)			nur IGS
+https://w3id.org/schulfach/NI_0000015	Gestaltendes Werken	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen			FEHLT	Primarstufe, Hauptschule, Realschule, Oberschule
+https://w3id.org/schulfach/NI_0000016	Griechisch	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Neugriechisch (KIM-Schulfach)			Sek I nur Gymnasium ab Jahrgangsstufe 8, Sek II
+https://w3id.org/schulfach/NI_0000017	Hauswirtschaft	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen			FEHLT	Oberschule, Hauptschule, Realschule
+https://w3id.org/schulfach/NI_0000018	Herkunftssprachlicher Unterricht 	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen			FEHLT	Primarstufe
+https://w3id.org/schulfach/NI_0000019	Informatik	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Informatik (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/NI_0000020	Islamische Religion	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Religionslehre (islamisch) (KIM-Schulfach)			
+https://w3id.org/schulfach/NI_0000021	Italienisch	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Italienisch (KIM-Schulfach)			nur EPAS
+https://w3id.org/schulfach/NI_0000022	Japanisch	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Japanisch (KIM-Schulfach)			nur EPAS
+https://w3id.org/schulfach/NI_0000023	Katholische Religion	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Religionslehre (katholische) (KIM-Schulfach)			
+https://w3id.org/schulfach/NI_0000024	Kunst	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Kunst (KIM-Schulfach)			
+https://w3id.org/schulfach/NI_0000025	Latein	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Latein (KIM-Schulfach)			Sek I nur Gymnasium, Oberschule und IGS, Sek II
+https://w3id.org/schulfach/NI_0000026	Mathematik	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Mathematik (KIM-Schulfach)			
+https://w3id.org/schulfach/NI_0000027	Musik	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Musik (KIM-Schulfach)			
+https://w3id.org/schulfach/NI_0000028	Naturwissenchaften	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen			FEHLT	Sek I
+https://w3id.org/schulfach/NI_0000029	Niederdeutsch	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen			FEHLT	Sek I
+https://w3id.org/schulfach/NI_0000030	Niederländisch	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen			FEHLT	Sek I, Sek II
+https://w3id.org/schulfach/NI_0000031	Philosophie	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Philosophie (KIM-Schulfach)			nur EPAS
+https://w3id.org/schulfach/NI_0000032	Physik	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Physik (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/NI_0000033	Politik	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Politik (KIM-Schulfach)			Sek I Oberschule, Realschule und Hauptschule
+https://w3id.org/schulfach/NI_0000034	Politik-Wirtschaft	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen		Politik (KIM-Schulfach),Wirtschaftskunde (KIM-Schulfach)		Sek I Gymnasium, Sek II
+https://w3id.org/schulfach/NI_0000035	Polnisch	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Polnisch (KIM-Schulfach)			nur EPAS
+https://w3id.org/schulfach/NI_0000036	Profil Gesundheit und Soziales	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Gesundheit (KIM-Schulfach)		FEHLT	Realschule
+https://w3id.org/schulfach/NI_0000037	Profil Technik	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen			FEHLT	Realschule
+https://w3id.org/schulfach/NI_0000038	Profil Wirtschaft	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Wirtschaftskunde (KIM-Schulfach)			Realschule
+https://w3id.org/schulfach/NI_0000039	Psychologie	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Psychologie (KIM-Schulfach)			nur EPAS
+https://w3id.org/schulfach/NI_0000040	Recht	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen			FEHLT	nur EPAS
+https://w3id.org/schulfach/NI_0000041	Russisch	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Russisch (KIM-Schulfach)			Sek I Gymnasium , IGS, Sek II
+https://w3id.org/schulfach/NI_0000042	Sachunterricht	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Sachunterricht (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/NI_0000043	Spanisch	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Spanisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/NI_0000044	Sport	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Sport (KIM-Schulfach)			
+https://w3id.org/schulfach/NI_0000045	Technik	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen			FEHLT	Oberschule, Hauptschule, Realschule
+https://w3id.org/schulfach/NI_0000046	Textiles Gestalten	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen			FEHLT	Primarstufe, Hauptschule, Realschule, Oberschule
+https://w3id.org/schulfach/NI_0000047	Theater / Darstellendes Spiel	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Darstellendes Spiel (KIM-Schulfach)			Sek I (Gymnasium, Gesamtschule)
+https://w3id.org/schulfach/NI_0000048	Türkisch	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Türkisch (KIM-Schulfach)			nur EPAS
+https://w3id.org/schulfach/NI_0000049	Werte und Normen	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Ethik (KIM-Schulfach)			
+https://w3id.org/schulfach/NI_0000050	Wirtschaft	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Wirtschaftskunde (KIM-Schulfach)			Oberschule, Hauptschule, Realschule

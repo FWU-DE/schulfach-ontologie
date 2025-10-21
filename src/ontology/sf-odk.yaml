@@ -30,18 +30,34 @@ import_group:
       module_type_slme: SUBSET
 components:
   products:
-    - filename: bw-subjects.owl
-      #source: "\"http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=949672233&output=tsv\""
+    - filename: subjects-bw.owl
       use_template: true
       template_options: --input sf-edit.owl
-    - filename: hb-subjects.owl
-      #source: "\"http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=1932405643&output=tsv\""
+    - filename: subjects-hb.owl
       use_template: true
       template_options: --input sf-edit.owl
-    - filename: he-subjects.owl
-      #source: "\"http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=1932405643&output=tsv\""
+    - filename: subjects-he.owl
       use_template: true
       template_options: --input sf-edit.owl
+    - filename: subjects-mv.owl
+      use_template: true
+      template_options: --input sf-edit.owl
+    - filename: subjects-ni.owl
+      use_template: true
+      template_options: --input sf-edit.owl
+    - filename: subjects-nw.owl
+      use_template: true
+      template_options: --input sf-edit.owl
+    - filename: subjects-sl.owl
+      use_template: true
+      template_options: --input sf-edit.owl
+    - filename: subjects-st.owl
+      use_template: true
+      template_options: --input sf-edit.owl
+    - filename: subjects-sh.owl
+      use_template: true
+      template_options: --input sf-edit.owl
+
 
 
 

@@ -1,0 +1,521 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/schulfach/BW_0000010>
+        a                   skos:Concept ;
+        skos:editorialNote  "Jahrgangsstufe 5 und 6" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1001> ;
+        skos:prefLabel      "Biologie, Naturphänomene und Technik (BNT)" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000051>
+        a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1017> ;
+        skos:prefLabel     "Mathematik" ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000023>
+        a                   skos:Concept ;
+        skos:editorialNote  "Primarstufe, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1009> ;
+        skos:prefLabel      "Französisch" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000064>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1027> ;
+        skos:prefLabel      "Russisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000036>
+        a                   skos:Concept ;
+        skos:editorialNote  "ab Jahrgangsstufe 11" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1013> ;
+        skos:prefLabel      "Informatik - Wahlfach in der Oberstufe (Schulversuch)" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000008>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I, Sek II + Profilfach extra" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1015> ;
+        skos:prefLabel      "Bildende Kunst" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000049>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:prefLabel      "Literatur - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000030>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:prefLabel      "Geologie - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000002>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I (ausser Gymnasium)" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1044> ;
+        skos:prefLabel      "Alltagskultur, Ernährung und Soziales (AES) - Wahlpflichtfach" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000071>
+        a                   skos:Concept ;
+        skos:editorialNote  "nur Realschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1031> ;
+        skos:prefLabel      "Sport - Wahlpflichtfach" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000043>
+        a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1026> ;
+        skos:prefLabel     "Katholische Religionslehre" ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000015>
+        a                   skos:Concept ;
+        skos:editorialNote  "https://www.schule-bw.de/themen-und-impulse/migration-integration-bildung/vkl_vabo/vkl/mehrsprachigkeit/curriculum" ;
+        skos:prefLabel      "Deutsch als Fremdsprache" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000056>
+        a                   skos:Concept ;
+        skos:editorialNote  "nur Gymnasium Sek II" ;
+        skos:prefLabel      "Naturwissenschaft und Technik (NwT) - Schulversuch Leistungsfach in der Kursstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000028>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I, Sek II" ;
+        skos:prefLabel      "Gemeinschaftskunde" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000069>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1031> ;
+        skos:prefLabel      "Sport" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000050>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1004> ;
+        skos:prefLabel      "Literatur und Theater" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000022>
+        a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1024> ;
+        skos:prefLabel     "Evangelische Religionslehre" ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000063>
+        a                   skos:Concept ;
+        skos:editorialNote  "ab Jahrgangsstufe 8 (nur Gymnasium)" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1027> ;
+        skos:prefLabel      "Russisch als dritte Fremdsprache - Profilfach" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000035>
+        a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1017> , <http://w3id.org/kim/schulfaecher/s1022> , <http://w3id.org/kim/schulfaecher/s1013> ;
+        skos:editorialNote  "ab Jahrgangsstufe 8" ;
+        skos:prefLabel      "Imformatik, Mathematik, Physik (IMP) - Profilfach" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000007>
+        a                   skos:Concept ;
+        skos:editorialNote  "nur Primarstufe" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1031> ;
+        skos:prefLabel      "Bewegung, Spiel und Sport" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000076>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
+        skos:prefLabel      "Wirtschaft / Berufs- und Studienorientierung (WBS)" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000048>
+        a                   skos:Concept ;
+        skos:editorialNote  "ab Jahrgangsstufe 6 (nur Gymnasium)" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1016> ;
+        skos:prefLabel      "Latein als zweite Fremdsprache" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000001>
+        a                  skos:Concept ;
+        skos:prefLabel     "Alevitische Religionslehre" ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000070>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1031> ;
+        skos:prefLabel      "Sport - Profilfach" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000042>
+        a                  skos:Concept ;
+        skos:prefLabel     "Jüdische Religionslehre" ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000014>
+        a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1005> ;
+        skos:prefLabel     "Deutsch" ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000055>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I, Sek II" ;
+        skos:prefLabel      "Naturwissenschaft und Technik (NwT) - Profilfach" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000027>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1009> ;
+        skos:prefLabel      "Französisch als zweite Fremdsprache - Wahlpflichtfach" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000068>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1030> ;
+        skos:prefLabel      "Spanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000021>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1008> ;
+        skos:prefLabel      "Ethik" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000062>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1043> ;
+        skos:prefLabel      "Psychologie - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000034>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1034> ;
+        skos:prefLabel      "Hebräisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000006>
+        a                   skos:Concept ;
+        skos:editorialNote  "Jahrgangsstufe 5" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1046> ;
+        skos:prefLabel      "Basiskurs Medienbildung" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000075>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
+        skos:prefLabel      "Wirtschaft" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000047>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1016> ;
+        skos:prefLabel      "Latein als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000019>
+        a                   skos:Concept ;
+        skos:editorialNote  "nur Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1007> ;
+        skos:prefLabel      "Englisch als zweite Fremdsprache" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000000>
+        a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/creator>
+                "Laura Junghans" , "Almut Steinlein" , "Jörg Waitelonis" , "Steffen Roertgen" , "Cindy Bloes" ;
+        <http://purl.org/dc/terms/license>
+                <https://creativecommons.org/licenses/by/4.0/> ;
+        skos:prefLabel  "Schulfächer (Baden-Württemberg)" .
+
+<https://w3id.org/schulfach/BW_0000041>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1035> ;
+        skos:prefLabel      "Japanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000013>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:prefLabel      "Darstellende Geometrie - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000054>
+        a                   skos:Concept ;
+        skos:editorialNote  "nur Gymnasium Sek II" ;
+        skos:prefLabel      "Naturwissenschaft und Technik (NwT) - Basisfach in der Kursstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000026>
+        a                   skos:Concept ;
+        skos:editorialNote  "nur Gymnasium Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1009> ;
+        skos:prefLabel      "Französisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe " ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000067>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1030> ;
+        skos:prefLabel      "Spanisch als dritte Fremdsprache - Profilfach" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000039>
+        a                   skos:Concept ;
+        skos:editorialNote  "ab Jahrgangsstufe 8 (nur Gymnasium)" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1014> ;
+        skos:prefLabel      "Italienisch als dritte Fremdsprache - Profilfach" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000020>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I (ausser Gymnasium)" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1007> ;
+        skos:prefLabel      "Englisch als zweite Fremdsprache - Wahlpflichtfach" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000061>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1038> ;
+        skos:prefLabel      "Portugiesisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000033>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1036> ;
+        skos:prefLabel      "Griechisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000005>
+        a                   skos:Concept ;
+        skos:editorialNote  "Jahrgangsstufe 7" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1013> ;
+        skos:prefLabel      "Aufbaukurs Informatik" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000074>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1032> ;
+        skos:prefLabel      "Türkisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000046>
+        a                   skos:Concept ;
+        skos:editorialNote  "ab Jahrgangsstufe 5 (nur Gymnasium)" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1016> ;
+        skos:prefLabel      "Latein als erste Fremdsprache" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000018>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I " ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1007> ;
+        skos:prefLabel      "Englisch als erste Fremdsprache" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_000000>
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" .
+
+<https://w3id.org/schulfach/BW_0000059>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1022> ;
+        skos:prefLabel      "Physik" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000040>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1014> ;
+        skos:prefLabel      "Italienisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000012>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1003> ;
+        skos:prefLabel      "Chinesisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000053>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1020> ;
+        skos:prefLabel      "Musik - Profilfach" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000025>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1009> ;
+        skos:prefLabel      "Französisch als erste Fremdsprache" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000066>
+        a                   skos:Concept ;
+        skos:editorialNote  "nur Primarstufe" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1028> ;
+        skos:prefLabel      "Sachunterricht" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000038>
+        a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1025> ;
+        skos:prefLabel     "Islamische Religionslehre sunnitischer Prägung" ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000060>
+        a                   skos:Concept ;
+        skos:editorialNote  "ab Jahrgangsstufe 8 (nur Gymnasium)" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1038> ;
+        skos:prefLabel      "Portugiesisch als dritte Fremdsprache - Profilfach" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000032>
+        a                   skos:Concept ;
+        skos:editorialNote  "ab Jahrgangsstufe 8 (nur Gymnasium)" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1036> ;
+        skos:prefLabel      "Griechisch als dritte Fremdsprache - Profilfach" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000004>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1040> ;
+        skos:prefLabel      "Astronomie - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000073>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I" ;
+        skos:prefLabel      "Technik - Wahlpflichtfach " ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000045>
+        a                   skos:Concept ;
+        skos:editorialNote  "ab Jahrgangsstufe 8 (nur Gymnasium)" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1016> ;
+        skos:prefLabel      "Latein als dritte Fremdsprache - Profilfach" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000017>
+        a                   skos:Concept ;
+        skos:editorialNote  "Primarstufe, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1007> ;
+        skos:prefLabel      "Englisch" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000058>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1021> ;
+        skos:prefLabel      "Philosophie - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000011>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1002> ;
+        skos:prefLabel      "Chemie" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000052>
+        a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1020> ;
+        skos:prefLabel     "Musik" ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000024>
+        a                   skos:Concept ;
+        skos:editorialNote  "nur Gymnasium Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1009> ;
+        skos:prefLabel      "Französisch als dritte Fremdsprache - Profilfach" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000065>
+        a                   skos:Concept ;
+        skos:editorialNote  "ab Jahrgangsstufe 6 (nur Gymnasium)" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1027> ;
+        skos:prefLabel      "Russisch als zweite Fremdsprache" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000037>
+        a                   skos:Concept ;
+        skos:editorialNote  "ab Jahrgangsstufe 9" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1013> ;
+        skos:prefLabel      "Informatik (Schulversuch)" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000009>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1001> ;
+        skos:prefLabel      "Biologie" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000031>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1011> ;
+        skos:prefLabel      "Geschichte" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000003>
+        a                  skos:Concept ;
+        skos:prefLabel     "Altkatholische Religionslehre" ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000072>
+        a                  skos:Concept ;
+        skos:prefLabel     "Syrisch-Orthodoxe Religionslehre" ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000044>
+        a                   skos:Concept ;
+        skos:editorialNote  "nur Primarstufe" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1015> ;
+        skos:prefLabel      "Kunst/Werken" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000016>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek II" ;
+        skos:prefLabel      "Digitale mathematische Werkzeuge (DmW) - Wahlfach in der Oberstufe" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000057>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I alle Schularten, Sek II nur Gymnasium" ;
+        skos:prefLabel      "Orthodoxe Religionslehre" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://w3id.org/schulfach/BW_0000029>
+        a                   skos:Concept ;
+        skos:editorialNote  "Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1010> ;
+        skos:prefLabel      "Geographie" ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .

@@ -33,22 +33,41 @@ $(IMPORTDIR)/lp_import.owl: $(MIRRORDIR)/lp.owl $(IMPORTDIR)/lp_terms.txt | all_
 		 $(ANNOTATE_CONVERT_FILE)
 
 
-$(TEMPLATEDIR)/bw-subjects.tsv:
+$(TEMPLATEDIR)/subjects-bw.tsv:
 	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=949672233&output=tsv' -o $@
 
-$(TEMPLATEDIR)/hb-subjects.tsv:
+$(TEMPLATEDIR)/subjects-hb.tsv:
 	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=1932405643&output=tsv' -o $@
 
-$(TEMPLATEDIR)/he-subjects.tsv:
+$(TEMPLATEDIR)/subjects-he.tsv:
 	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=117904402&output=tsv' -o $@
+
+$(TEMPLATEDIR)/subjects-mv.tsv:
+	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=1177344865&output=tsv' -o $@
+
+$(TEMPLATEDIR)/subjects-ni.tsv:
+	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=184614800&output=tsv' -o $@
+
+$(TEMPLATEDIR)/subjects-nw.tsv:
+	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=33460254&output=tsv' -o $@
+
+$(TEMPLATEDIR)/subjects-sl.tsv:
+	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=378379644&output=tsv' -o $@
+
+$(TEMPLATEDIR)/subjects-st.tsv:
+	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=174422951&output=tsv' -o $@
+
+$(TEMPLATEDIR)/subjects-sh.tsv:
+	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=1314666209&output=tsv' -o $@
 
 
 $(IMPORTDIR)/kim_import.owl: 
 	echo "update KIM manually if needed (see imports directory)"
 
-sf-%-skos.ttl: 
-	$(ROBOT) remove --input sf-edit.owl  --select imports --trim false merge --input components/$*-subjects.owl --output $(TMPDIR)/$*-schulfach.ttl  
-	echo "<https://w3id.org/schulfach/$(shell echo $* | tr  '[:lower:]' '[:upper:]')_000000> <http://purl.org/dc/terms/created> \"2025-10-21\" ."  >> $(TMPDIR)/$*-schulfach.ttl 
-	$(ROBOT) merge --input $(TMPDIR)/$*-schulfach.ttl query --update ../sparql/skos1.sparql query --query ../sparql/skos2.sparql $@
+
+skos-%.ttl: 
+	$(ROBOT) remove --input sf-edit.owl  --select imports --trim false merge --input components/subjects-$*.owl --output $(TMPDIR)/schulfach-$*.ttl  
+	echo "<https://w3id.org/schulfach/$(shell echo $* | tr  '[:lower:]' '[:upper:]')_000000> <http://purl.org/dc/terms/created> \"2025-10-21\" ."  >> $(TMPDIR)/schulfach-$*.ttl 
+	$(ROBOT) merge --input $(TMPDIR)/schulfach-$*.ttl query --update ../sparql/skos1.sparql query --query ../sparql/skos2.sparql $@
 
 

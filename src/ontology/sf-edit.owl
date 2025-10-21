@@ -7,9 +7,15 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/schulfach>
-Import(<https://w3id.org/schulfach/sf/components/bw-subjects.owl>)
-Import(<https://w3id.org/schulfach/sf/components/hb-subjects.owl>)
-Import(<https://w3id.org/schulfach/sf/components/he-subjects.owl>)
+Import(<https://w3id.org/schulfach/sf/components/subjects-bw.owl>)
+Import(<https://w3id.org/schulfach/sf/components/subjects-hb.owl>)
+Import(<https://w3id.org/schulfach/sf/components/subjects-he.owl>)
+Import(<https://w3id.org/schulfach/sf/components/subjects-mv.owl>)
+Import(<https://w3id.org/schulfach/sf/components/subjects-ni.owl>)
+Import(<https://w3id.org/schulfach/sf/components/subjects-nw.owl>)
+Import(<https://w3id.org/schulfach/sf/components/subjects-sh.owl>)
+Import(<https://w3id.org/schulfach/sf/components/subjects-sl.owl>)
+Import(<https://w3id.org/schulfach/sf/components/subjects-st.owl>)
 Import(<https://w3id.org/schulfach/sf/imports/kim_import.owl>)
 Import(<https://w3id.org/schulfach/sf/imports/lp_import.owl>)
 Import(<https://w3id.org/schulfach/sf/imports/skos_import.owl>)
