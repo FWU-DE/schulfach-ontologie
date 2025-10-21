@@ -1,5 +1,5 @@
 
-sh run.sh prepare_release
+sh run.sh make -B prepare_release
 
 #sh run.sh make skos-bb.ttl
 #sh run.sh make skos-be.ttl

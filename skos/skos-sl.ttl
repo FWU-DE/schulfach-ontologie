@@ -97,6 +97,8 @@
 
 <https://w3id.org/schulfach/SL_0000000>
         a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" ;
         <http://purl.org/dc/terms/creator>
                 "Laura Junghans" , "Cindy Bloes" , "Almut Steinlein" , "Jörg Waitelonis" , "Steffen Roertgen" ;
         <http://purl.org/dc/terms/license>
@@ -279,10 +281,6 @@
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1009> ;
         skos:prefLabel      "Französisch 2. Fremdsprache" ;
         skos:topConceptOf   <https://w3id.org/schulfach/SL_0000000> .
-
-<https://w3id.org/schulfach/SL_000000>
-        <http://purl.org/dc/terms/created>
-                "2025-10-21" .
 
 <https://w3id.org/schulfach/SL_0000037>
         a                   skos:Concept ;

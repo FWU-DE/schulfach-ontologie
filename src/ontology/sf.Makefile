@@ -67,7 +67,7 @@ $(IMPORTDIR)/kim_import.owl:
 
 skos-%.ttl: 
 	$(ROBOT) remove --input sf-edit.owl  --select imports --trim false merge --input components/subjects-$*.owl --output $(TMPDIR)/schulfach-$*.ttl  
-	echo "<https://w3id.org/schulfach/$(shell echo $* | tr  '[:lower:]' '[:upper:]')_000000> <http://purl.org/dc/terms/created> \"2025-10-21\" ."  >> $(TMPDIR)/schulfach-$*.ttl 
+	echo "<https://w3id.org/schulfach/$(shell echo $* | tr  '[:lower:]' '[:upper:]')_0000000> <http://purl.org/dc/terms/created> \"2025-10-21\" ."  >> $(TMPDIR)/schulfach-$*.ttl 
 	$(ROBOT) merge --input $(TMPDIR)/schulfach-$*.ttl query --update ../sparql/skos1.sparql query --query ../sparql/skos2.sparql $@
 
 

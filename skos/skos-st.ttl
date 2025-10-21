@@ -68,6 +68,8 @@
 
 <https://w3id.org/schulfach/ST_0000000>
         a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" ;
         <http://purl.org/dc/terms/creator>
                 "Jörg Waitelonis" , "Steffen Roertgen" , "Almut Steinlein" , "Laura Junghans" , "Cindy Bloes" ;
         <http://purl.org/dc/terms/license>
@@ -152,10 +154,6 @@
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1014> ;
         skos:prefLabel      "Italienisch" ;
         skos:topConceptOf   <https://w3id.org/schulfach/ST_0000000> .
-
-<https://w3id.org/schulfach/ST_000000>
-        <http://purl.org/dc/terms/created>
-                "2025-10-21" .
 
 <https://w3id.org/schulfach/ST_0000011>
         a                   skos:Concept ;

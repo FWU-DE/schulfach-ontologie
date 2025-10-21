@@ -49,10 +49,6 @@
         skos:prefLabel      "WP Sozialwissenschaften" ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 
-<https://w3id.org/schulfach/NW_000000>
-        <http://purl.org/dc/terms/created>
-                "2025-10-21" .
-
 <https://w3id.org/schulfach/NW_0000037>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
@@ -309,6 +305,8 @@
 
 <https://w3id.org/schulfach/NW_0000000>
         a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" ;
         <http://purl.org/dc/terms/creator>
                 "Jörg Waitelonis" , "Almut Steinlein" , "Laura Junghans" , "Cindy Bloes" , "Steffen Roertgen" ;
         <http://purl.org/dc/terms/license>

@@ -87,10 +87,6 @@
         skos:prefLabel     "Katholische Religion" ;
         skos:topConceptOf  <https://w3id.org/schulfach/MV_0000000> .
 
-<https://w3id.org/schulfach/MV_000000>
-        <http://purl.org/dc/terms/created>
-                "2025-10-21" .
-
 <https://w3id.org/schulfach/MV_0000034>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I ab Jahrgangsstufe 7, Sek II" ;
@@ -114,6 +110,8 @@
 
 <https://w3id.org/schulfach/MV_0000000>
         a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" ;
         <http://purl.org/dc/terms/creator>
                 "Laura Junghans" , "Steffen Roertgen" , "Almut Steinlein" , "Jörg Waitelonis" , "Cindy Bloes" ;
         <http://purl.org/dc/terms/license>

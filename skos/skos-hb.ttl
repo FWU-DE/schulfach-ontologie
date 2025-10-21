@@ -83,10 +83,6 @@
         skos:prefLabel      "Medienbildung" ;
         skos:topConceptOf   <https://w3id.org/schulfach/HB_0000000> .
 
-<https://w3id.org/schulfach/HB_000000>
-        <http://purl.org/dc/terms/created>
-                "2025-10-21" .
-
 <https://w3id.org/schulfach/HB_0000021>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I, Sek II" ;
@@ -117,6 +113,8 @@
 
 <https://w3id.org/schulfach/HB_0000000>
         a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" ;
         <http://purl.org/dc/terms/creator>
                 "Cindy Bloes" , "Steffen Roertgen" , "Almut Steinlein" , "Jörg Waitelonis" , "Laura Junghans" ;
         <http://purl.org/dc/terms/license>

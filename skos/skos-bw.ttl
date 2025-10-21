@@ -241,6 +241,8 @@
 
 <https://w3id.org/schulfach/BW_0000000>
         a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" ;
         <http://purl.org/dc/terms/creator>
                 "Laura Junghans" , "Almut Steinlein" , "Jörg Waitelonis" , "Steffen Roertgen" , "Cindy Bloes" ;
         <http://purl.org/dc/terms/license>
@@ -335,10 +337,6 @@
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1007> ;
         skos:prefLabel      "Englisch als erste Fremdsprache" ;
         skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
-
-<https://w3id.org/schulfach/BW_000000>
-        <http://purl.org/dc/terms/created>
-                "2025-10-21" .
 
 <https://w3id.org/schulfach/BW_0000059>
         a                   skos:Concept ;

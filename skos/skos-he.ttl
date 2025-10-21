@@ -57,6 +57,8 @@
 
 <https://w3id.org/schulfach/HE_0000000>
         a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" ;
         <http://purl.org/dc/terms/creator>
                 "Almut Steinlein" , "Laura Junghans" , "Cindy Bloes" , "Steffen Roertgen" , "Jörg Waitelonis" ;
         <http://purl.org/dc/terms/license>
@@ -241,10 +243,6 @@
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1010> ;
         skos:prefLabel      "Geographie" ;
         skos:topConceptOf   <https://w3id.org/schulfach/HE_0000000> .
-
-<https://w3id.org/schulfach/HE_000000>
-        <http://purl.org/dc/terms/created>
-                "2025-10-21" .
 
 <https://w3id.org/schulfach/HE_0000028>
         a                   skos:Concept ;

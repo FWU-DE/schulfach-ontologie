@@ -30,6 +30,8 @@
 
 <https://w3id.org/schulfach/SH_0000000>
         a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" ;
         <http://purl.org/dc/terms/creator>
                 "Laura Junghans" , "Cindy Bloes" , "Steffen Roertgen" , "Almut Steinlein" , "Jörg Waitelonis" ;
         <http://purl.org/dc/terms/license>
@@ -130,10 +132,6 @@
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1030> ;
         skos:prefLabel      "Spanisch" ;
         skos:topConceptOf   <https://w3id.org/schulfach/SH_0000000> .
-
-<https://w3id.org/schulfach/SH_000000>
-        <http://purl.org/dc/terms/created>
-                "2025-10-21" .
 
 <https://w3id.org/schulfach/SH_0000003>
         a                   skos:Concept ;
