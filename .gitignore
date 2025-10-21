@@ -14,9 +14,6 @@ bin/
 
 .github/token.txt
 
-/sf.owl
-/sf.obo
-/sf.json
 /sf.db
 /sf-base.*
 /sf-basic.*
