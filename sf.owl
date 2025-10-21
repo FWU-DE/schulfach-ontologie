@@ -1,0 +1,3071 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/schulfach/sf/sf-full.owl#"
+     xml:base="https://w3id.org/schulfach/sf/sf-full.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ontology="https://w3id.org/lehrplan/ontology/">
+    <owl:Ontology rdf:about="https://w3id.org/schulfach/sf/sf-full.owl">
+        <owl:versionIRI rdf:resource="https://w3id.org/schulfach/sf/releases/2025-10-21/sf-full.owl"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0001-6378-2618"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
+        <terms:creator xml:lang="de">Almut Steinlein</terms:creator>
+        <terms:creator xml:lang="de">Cindy Bloes</terms:creator>
+        <terms:creator xml:lang="de">Laura Junghanns</terms:creator>
+        <terms:description xml:lang="de">Ontologie der Schulfächer der Bundesländer.</terms:description>
+        <terms:description xml:lang="en">Ontology of the German school subjects.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <terms:title xml:lang="en">German School Subjects Ontology</terms:title>
+        <terms:title xml:lang="de">Schulfach Ontologie</terms:title>
+        <owl:versionInfo>2025-10-21</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <skos:definition xml:lang="en">A statement or formal explanation of the meaning of a concept.</skos:definition>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote">
+        <rdfs:label xml:lang="en">editorial note</rdfs:label>
+        <skos:definition xml:lang="en">A note for an editor, translator or maintainer of the vocabulary.</skos:definition>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label xml:lang="en">has close match</rdfs:label>
+        <skos:definition xml:lang="en">skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of &quot;compound errors&quot; when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has exact match</rdfs:label>
+        <skos:definition xml:lang="en">skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">has top concept</rdfs:label>
+        <skos:definition xml:lang="en">Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:label xml:lang="en">is top concept in scheme</rdfs:label>
+        <skos:definition xml:lang="en">Relates a concept to the concept scheme that it is a top level concept of.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_0000029 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/lehrplan/ontology/LP_0000029">
+        <rdfs:label xml:lang="de">von Bundesland</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <skos:definition xml:lang="en">An idea or notion; a unit of thought.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+        <rdfs:label xml:lang="en">Concept Scheme</rdfs:label>
+        <skos:definition xml:lang="en">A set of concepts, optionally including statements about semantic relationships between those concepts.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_0000001 -->
+
+    <owl:Class rdf:about="https://w3id.org/lehrplan/ontology/LP_0000001">
+        <rdfs:comment xml:lang="en">A &quot;Schulfach&quot; is an “information content entity”.
+It refers to the designation of a subject taught at school.
+It represents the thematic structure of what is considered general school education.
+A &quot;Schulfach&quot; is a subject area that organizes teaching lessons by content.
+Examples of &quot;Schulfächer&quot; include German, mathematics, history, and biology.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein “Schulfach” ist eine “Informationseinheit”.
+Es handelt sich um die Bezeichnung eines an der Schule unterrichteten Fachs. 
+Es ist der Ausdruck für die thematische Gliederung dessen, was jeweils unter allgemeiner schulischer Bildung verstanden wird. 
+Das Schulfach ist ein Themengebiet, das den Unterricht inhaltlich unterteilt. Beispiele für Schulfächer sind Deutsch, Mathematik, Geschichte und Biologie.</rdfs:comment>
+        <rdfs:label xml:lang="de">Schulfach</rdfs:label>
+        <rdfs:label xml:lang="en">school subject</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://de.wikipedia.org/wiki/Unterrichtsfach"/>
+        <skos:altLabel>Fach</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1000 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1000">
+        <rdfs:label>Alt-Griechisch (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Alt-Griechisch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1001 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1001">
+        <rdfs:label>Biologie (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Biologie</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1002 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1002">
+        <rdfs:label>Chemie (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Chemie</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1003 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1003">
+        <rdfs:label>Chinesisch (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Chinesisch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1004 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1004">
+        <rdfs:label>Darstellendes Spiel (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Theater</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Darstellendes Spiel</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1005 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1005">
+        <rdfs:label>Deutsch (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Deutsch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1006 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1006">
+        <rdfs:label>Deutsch als Zweitsprache (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">DaZ</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Deutsch als Zweitsprache</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1007 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1007">
+        <rdfs:label>Englisch (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Englisch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1008 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1008">
+        <rdfs:label>Ethik (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Werte und Normen</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Ethik</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1009 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1009">
+        <rdfs:label>Französisch (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Französisch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1010 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1010">
+        <rdfs:label>Geografie (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Erdkunde</skos:altLabel>
+        <skos:altLabel xml:lang="de">Geographie</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Geografie</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1011 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1011">
+        <rdfs:label>Geschichte (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Geschichte</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1012 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1012">
+        <rdfs:label>Gesundheit (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Gesundheitserziehung</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Gesundheit</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1013 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1013">
+        <rdfs:label>Informatik (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Informations- und Kommunikationstechnologie</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Informatik</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1014 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1014">
+        <rdfs:label>Italienisch (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Italienisch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1015 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1015">
+        <rdfs:label>Kunst (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Bildende Kunst</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Kunst</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1016 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1016">
+        <rdfs:label>Latein (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Latein</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1017 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1017">
+        <rdfs:label>Mathematik (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Mathematik</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1019 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1019">
+        <rdfs:label>MINT (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Chemie, Physik, Biologie</skos:altLabel>
+        <skos:altLabel xml:lang="de">Naturwissenschaften</skos:altLabel>
+        <skos:prefLabel xml:lang="de">MINT</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1020 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1020">
+        <rdfs:label>Musik (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Musik</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1021 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1021">
+        <rdfs:label>Philosophie (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Philosophie</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1022 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1022">
+        <rdfs:label>Physik (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Physik</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1023 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1023">
+        <rdfs:label>Politik (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Politische Bildung</skos:altLabel>
+        <skos:altLabel xml:lang="de">Sozialkunde</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Politik</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1024 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1024">
+        <rdfs:label>Religionslehre (evangelische) (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Evangelischer Religionsunterricht</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Religionslehre (evangelische)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1025 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1025">
+        <rdfs:label>Religionslehre (islamisch) (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Islamischer Religionsunterricht</skos:altLabel>
+        <skos:editorialNote xml:lang="de">EAF 28009 hat hauptsächlich christliche Themen, aber auch einen Abschnitt mit nicht-christlichen Religionen</skos:editorialNote>
+        <skos:prefLabel xml:lang="de">Religionslehre (islamisch)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1026 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1026">
+        <rdfs:label>Religionslehre (katholische) (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Katholischer Religionsunterricht</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Religionslehre (katholische)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1027 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1027">
+        <rdfs:label>Russisch (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Russisch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1028 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1028">
+        <rdfs:label>Sachunterricht (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Heimatunterricht</skos:altLabel>
+        <skos:altLabel xml:lang="de">Sachkunde</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Sachunterricht</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1029 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1029">
+        <rdfs:label>Sexualerziehung (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Sexualerziehung</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1030 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1030">
+        <rdfs:label>Spanisch (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Spanisch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1031 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1031">
+        <rdfs:label>Sport (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Sport</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1032 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1032">
+        <rdfs:label>Türkisch (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Türkisch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1033 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1033">
+        <rdfs:label>Wirtschaftskunde (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Wirtschaftskunde</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1034 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1034">
+        <rdfs:label>Hebräisch (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Hebräisch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1035 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1035">
+        <rdfs:label>Japanisch (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Japanisch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1036 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1036">
+        <rdfs:label>Neugriechisch (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Neugriechisch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1037 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1037">
+        <rdfs:label>Polnisch (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Polnisch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1038 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1038">
+        <rdfs:label>Portugiesisch (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Portugiesisch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1039 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1039">
+        <rdfs:label>Sorbisch (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Wendisch</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Sorbisch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1040 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1040">
+        <rdfs:label>Astronomie (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Astronomie</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1041 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1041">
+        <rdfs:label>Deutsche Gebärdensprache (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Deutsche Gebärdensprache</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1042 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1042">
+        <rdfs:label>Gesellschaftswissenschaften (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Gesellschaftswissenschaften</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1043 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1043">
+        <rdfs:label>Psychologie (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Psychologie</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1044 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1044">
+        <rdfs:label>Ernährung (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Ernährung</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1045 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1045">
+        <rdfs:label>Erziehungswissenschaften (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Pädagogik</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Erziehungswissenschaften</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1046 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1046">
+        <rdfs:label>Medienbildung (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Medienbildung</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1047 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1047">
+        <rdfs:label>Hauswirtschaft (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Hauswirtschaft</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_3000031 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_3000031">
+        <rdfs:label xml:lang="de">Thüringen</rdfs:label>
+        <skos:altLabel>TH</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_3000043 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_3000043">
+        <rdfs:label xml:lang="de">Niedersachsen</rdfs:label>
+        <skos:altLabel>NI</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_3000044 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_3000044">
+        <rdfs:label xml:lang="de">Nordrhein-Westfalen</rdfs:label>
+        <skos:altLabel>NW</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_3000045 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_3000045">
+        <rdfs:label xml:lang="de">Hamburg</rdfs:label>
+        <skos:altLabel>HH</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_3000046 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_3000046">
+        <rdfs:label xml:lang="de">Rheinland-Pfalz</rdfs:label>
+        <skos:altLabel>RP</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_3000047 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_3000047">
+        <rdfs:label xml:lang="de">Sachsen</rdfs:label>
+        <skos:altLabel>SN</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_3000048 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_3000048">
+        <rdfs:label xml:lang="de">Berlin</rdfs:label>
+        <skos:altLabel>BE</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_3000049 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_3000049">
+        <rdfs:label xml:lang="de">Baden-Württemberg</rdfs:label>
+        <skos:altLabel>BW</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_3000050 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_3000050">
+        <rdfs:label xml:lang="de">Hessen</rdfs:label>
+        <skos:altLabel>HE</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_3000051 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_3000051">
+        <rdfs:label xml:lang="de">Bayern</rdfs:label>
+        <skos:altLabel>BY</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_3000052 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_3000052">
+        <rdfs:label xml:lang="de">Mecklenburg-Vorpommern</rdfs:label>
+        <skos:altLabel>MV</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_3000053 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_3000053">
+        <rdfs:label xml:lang="de">Sachsen-Anhalt</rdfs:label>
+        <skos:altLabel>ST</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_3000054 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_3000054">
+        <rdfs:label xml:lang="de">Schleswig-Holstein</rdfs:label>
+        <skos:altLabel>SH</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_3000055 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_3000055">
+        <rdfs:label xml:lang="de">Saarland</rdfs:label>
+        <skos:altLabel>SL</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_3000056 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_3000056">
+        <rdfs:label xml:lang="de">Bremen</rdfs:label>
+        <skos:altLabel>HB</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_3000057 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_3000057">
+        <rdfs:label xml:lang="de">Brandenburg</rdfs:label>
+        <skos:altLabel>BB</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000000 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000000">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Schulfächer (Baden-Württemberg)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000001 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Alevitische Religionslehre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000002 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000002">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1044"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Alltagskultur, Ernährung und Soziales (AES) - Wahlpflichtfach</rdfs:label>
+        <skos:editorialNote>Sek I (ausser Gymnasium)</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000003 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000003">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Altkatholische Religionslehre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000004 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000004">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1040"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Astronomie - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000005 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000005">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1013"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Aufbaukurs Informatik</rdfs:label>
+        <skos:editorialNote>Jahrgangsstufe 7</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000006 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000006">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1046"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Basiskurs Medienbildung</rdfs:label>
+        <skos:editorialNote>Jahrgangsstufe 5</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000007 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000007">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1031"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Bewegung, Spiel und Sport</rdfs:label>
+        <skos:editorialNote>nur Primarstufe</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000008 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000008">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1015"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Bildende Kunst</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II + Profilfach extra</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000009 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000009">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Biologie</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000010 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000010">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Biologie, Naturphänomene und Technik (BNT)</rdfs:label>
+        <skos:editorialNote>Jahrgangsstufe 5 und 6</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000011 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000011">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1002"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Chemie</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000012 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000012">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1003"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Chinesisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000013 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000013">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Darstellende Geometrie - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000014 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000014">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1005"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Deutsch</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000015 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000015">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Deutsch als Fremdsprache</rdfs:label>
+        <skos:editorialNote>https://www.schule-bw.de/themen-und-impulse/migration-integration-bildung/vkl_vabo/vkl/mehrsprachigkeit/curriculum</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000016 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000016">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Digitale mathematische Werkzeuge (DmW) - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000017 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000017">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1007"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Englisch</rdfs:label>
+        <skos:editorialNote>Primarstufe, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000018 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000018">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1007"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Englisch als erste Fremdsprache</rdfs:label>
+        <skos:editorialNote>Sek I </skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000019 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000019">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1007"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Englisch als zweite Fremdsprache</rdfs:label>
+        <skos:editorialNote>nur Gymnasium</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000020 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000020">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1007"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Englisch als zweite Fremdsprache - Wahlpflichtfach</rdfs:label>
+        <skos:editorialNote>Sek I (ausser Gymnasium)</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000021 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000021">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1008"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Ethik</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000022 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000022">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1024"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Evangelische Religionslehre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000023 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000023">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1009"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Französisch</rdfs:label>
+        <skos:editorialNote>Primarstufe, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000024 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000024">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1009"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Französisch als dritte Fremdsprache - Profilfach</rdfs:label>
+        <skos:editorialNote>nur Gymnasium Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000025 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000025">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1009"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Französisch als erste Fremdsprache</rdfs:label>
+        <skos:editorialNote>Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000026 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000026">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1009"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Französisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe </rdfs:label>
+        <skos:editorialNote>nur Gymnasium Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000027 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000027">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1009"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Französisch als zweite Fremdsprache - Wahlpflichtfach</rdfs:label>
+        <skos:editorialNote>Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000028 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000028">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Gemeinschaftskunde</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000029 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000029">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1010"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Geographie</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000030 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000030">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Geologie - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000031 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000031">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1011"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Geschichte</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000032 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000032">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1036"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Griechisch als dritte Fremdsprache - Profilfach</rdfs:label>
+        <skos:editorialNote>ab Jahrgangsstufe 8 (nur Gymnasium)</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000033 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000033">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1036"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Griechisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000034 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000034">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1034"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Hebräisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000035 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000035">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1013"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1017"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1022"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Imformatik, Mathematik, Physik (IMP) - Profilfach</rdfs:label>
+        <skos:editorialNote>ab Jahrgangsstufe 8</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000036 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000036">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1013"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Informatik - Wahlfach in der Oberstufe (Schulversuch)</rdfs:label>
+        <skos:editorialNote>ab Jahrgangsstufe 11</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000037 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000037">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1013"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Informatik (Schulversuch)</rdfs:label>
+        <skos:editorialNote>ab Jahrgangsstufe 9</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000038 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000038">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1025"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Islamische Religionslehre sunnitischer Prägung</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000039 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000039">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1014"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Italienisch als dritte Fremdsprache - Profilfach</rdfs:label>
+        <skos:editorialNote>ab Jahrgangsstufe 8 (nur Gymnasium)</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000040 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000040">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1014"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Italienisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000041 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000041">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1035"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Japanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000042 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000042">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Jüdische Religionslehre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000043 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000043">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1026"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Katholische Religionslehre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000044 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000044">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1015"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Kunst/Werken</rdfs:label>
+        <skos:editorialNote>nur Primarstufe</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000045 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000045">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1016"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Latein als dritte Fremdsprache - Profilfach</rdfs:label>
+        <skos:editorialNote>ab Jahrgangsstufe 8 (nur Gymnasium)</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000046 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000046">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1016"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Latein als erste Fremdsprache</rdfs:label>
+        <skos:editorialNote>ab Jahrgangsstufe 5 (nur Gymnasium)</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000047 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000047">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1016"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Latein als spät beginnende Fremdsprache - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000048 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000048">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1016"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Latein als zweite Fremdsprache</rdfs:label>
+        <skos:editorialNote>ab Jahrgangsstufe 6 (nur Gymnasium)</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000049 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000049">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Literatur - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000050 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000050">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1004"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Literatur und Theater</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000051 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000051">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1017"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Mathematik</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000052 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000052">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1020"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Musik</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000053 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000053">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1020"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Musik - Profilfach</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000054 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000054">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Naturwissenschaft und Technik (NwT) - Basisfach in der Kursstufe</rdfs:label>
+        <skos:editorialNote>nur Gymnasium Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000055 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000055">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Naturwissenschaft und Technik (NwT) - Profilfach</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000056 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000056">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Naturwissenschaft und Technik (NwT) - Schulversuch Leistungsfach in der Kursstufe</rdfs:label>
+        <skos:editorialNote>nur Gymnasium Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000057 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000057">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Orthodoxe Religionslehre</rdfs:label>
+        <skos:editorialNote>Sek I alle Schularten, Sek II nur Gymnasium</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000058 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000058">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1021"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Philosophie - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000059 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000059">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1022"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Physik</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000060 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000060">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1038"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Portugiesisch als dritte Fremdsprache - Profilfach</rdfs:label>
+        <skos:editorialNote>ab Jahrgangsstufe 8 (nur Gymnasium)</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000061 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000061">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1038"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Portugiesisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000062 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000062">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1043"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Psychologie - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000063 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000063">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1027"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Russisch als dritte Fremdsprache - Profilfach</rdfs:label>
+        <skos:editorialNote>ab Jahrgangsstufe 8 (nur Gymnasium)</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000064 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000064">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1027"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Russisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000065 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000065">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1027"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Russisch als zweite Fremdsprache</rdfs:label>
+        <skos:editorialNote>ab Jahrgangsstufe 6 (nur Gymnasium)</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000066 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000066">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1028"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Sachunterricht</rdfs:label>
+        <skos:editorialNote>nur Primarstufe</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000067 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000067">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1030"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Spanisch als dritte Fremdsprache - Profilfach</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000068 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000068">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1030"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Spanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000069 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000069">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1031"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Sport</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000070 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000070">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1031"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Sport - Profilfach</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000071 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000071">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1031"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Sport - Wahlpflichtfach</rdfs:label>
+        <skos:editorialNote>nur Realschule</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000072 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000072">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Syrisch-Orthodoxe Religionslehre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000073 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000073">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Technik - Wahlpflichtfach </rdfs:label>
+        <skos:editorialNote>Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000074 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000074">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1032"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Türkisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000075 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000075">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Wirtschaft</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BW_000076 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_000076">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
+        <rdfs:label>Wirtschaft / Berufs- und Studienorientierung (WBS)</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000000 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000000">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Schulfächer (Bremen)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000001 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1015"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Ästhetik</rdfs:label>
+        <skos:editorialNote>Primarstufe</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000002 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000002">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Bildungsplan fortgeführte Fremdsprachen</rdfs:label>
+        <skos:editorialNote>Sek II - Englisch, Spanisch, Türkisch, Russisch, Französisch</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000003 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000003">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Biologie</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000004 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000004">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Biologie bilingual</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000005 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000005">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1002"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Chemie</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000006 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000006">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1003"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Chinesisch</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000007 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000007">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1004"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Darstellendes Spiel</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000008 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000008">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1005"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Deutsch</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000009 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000009">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1006"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Deutsch als Zweitsprache</rdfs:label>
+        <skos:editorialNote>Primarstufe</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000010 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000010">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1007"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Englisch</rdfs:label>
+        <skos:editorialNote>Primarstufe, Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000011 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000011">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>European Studies</rdfs:label>
+        <skos:editorialNote>Jahrgangsstufe 8 und 9 Gymnasium</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000012 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000012">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1009"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Französisch</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000013 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000013">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1009"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1030"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Französisch und Spanisch</rdfs:label>
+        <skos:editorialNote>Oberschule</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000014 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000014">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1009"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1030"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Französisch/Spanisch 2. Fremdsprache</rdfs:label>
+        <skos:editorialNote>nur Gymnasium Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000015 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000015">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1009"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1030"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Französisch/Spanisch 3. Fremdsprache</rdfs:label>
+        <skos:editorialNote>nur Gymnasium Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000016 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000016">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1010"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Geographie</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000017 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000017">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1011"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Geschichte</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000018 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000018">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1011"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Geschichte bilingual</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000019 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000019">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1023"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1042"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Gesellschaft und Politik</rdfs:label>
+        <skos:editorialNote>nur Oberschule Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000020 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000020">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Herkunftssprachen </rdfs:label>
+        <skos:editorialNote>Primarstufe</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000021 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000021">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1013"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Informatik</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000022 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000022">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1015"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Kunst</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000023 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000023">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1016"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Latein</rdfs:label>
+        <skos:editorialNote>Oberschule, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000024 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000024">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1016"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Latein 2. Fremdsprache</rdfs:label>
+        <skos:editorialNote>nur Gymnasium Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000025 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000025">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1016"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Latein 3. Fremdsprache</rdfs:label>
+        <skos:editorialNote>nur Gymnasium Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000026 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000026">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1017"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Mathematik</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000027 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000027">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1046"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Medienbildung</rdfs:label>
+        <skos:editorialNote>Primarstufe</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000028 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000028">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1020"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Musik</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000029 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000029">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1002"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1022"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Naturwissenschaften, Biologie, Chemie, Physik</rdfs:label>
+        <skos:editorialNote>Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000030 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000030">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Pädagogik</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000031 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000031">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1021"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Philosophie</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000032 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000032">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1022"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Physik</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000033 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000033">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1023"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Politik</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000034 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000034">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1037"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Polnisch</rdfs:label>
+        <skos:editorialNote>Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000035 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000035">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1043"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Psychologie</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000036 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000036">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Religion</rdfs:label>
+        <skos:editorialNote>ohne Konfession</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000037 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000037">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1027"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Russisch</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000038 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000038">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1028"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Sachunterricht</rdfs:label>
+        <skos:editorialNote>Primarstufe</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000039 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000039">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Soziologie</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000040 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000040">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1030"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Spanisch</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000041 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000041">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1031"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Sport</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000042 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000042">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1032"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Türkisch</rdfs:label>
+        <skos:editorialNote>Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000043 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000043">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1010"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1011"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1023"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Welt-Umweltkunde, Geschichte, Geographie, Politik</rdfs:label>
+        <skos:editorialNote>Gymnasium Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000044 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000044">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Wirtschaft-Arbeit-Technik</rdfs:label>
+        <skos:editorialNote>Gymnasium</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000045 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000045">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Wirtschaft/Arbeit/Technik</rdfs:label>
+        <skos:editorialNote>Oberschule</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HB_000046 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_000046">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
+        <rdfs:label>Wirtschaftslehre</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000000 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000000">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Schulfächer (Hessen)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000001 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Alevitische Religion</rdfs:label>
+        <skos:editorialNote>Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000002 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000002">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Arabisch</rdfs:label>
+        <skos:editorialNote>Sek I nur Gymnasium und Realschule</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000003 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000003">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Arbeitslehre </rdfs:label>
+        <skos:editorialNote>Haupt- und Realschulen</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000004 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000004">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Biologie</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000005 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000005">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1002"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Chemie</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000006 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000006">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1003"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Chinesisch</rdfs:label>
+        <skos:editorialNote>nur Gymnasium Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000007 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000007">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1004"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Darstellendes Spiel</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000008 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000008">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1005"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Deutsch</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000009 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000009">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1041"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Deutsche Gebärdensprache</rdfs:label>
+        <skos:editorialNote>Wahlfach</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000010 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000010">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1007"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Englisch</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000011 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000011">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1010"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Erdkunde</rdfs:label>
+        <skos:editorialNote>Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000012 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000012">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1008"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Ethik</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000013 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000013">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1024"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Evangelische Religion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000014 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000014">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1009"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Französisch</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000015 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000015">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1010"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Geographie</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000016 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000016">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1011"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Geschichte</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000017 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000017">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1036"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Griechisch </rdfs:label>
+        <skos:editorialNote>Sek I nur Gymnasium, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000018 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000018">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1013"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Informatik</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000019 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000019">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1013"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Informatik (Wahlunterricht im gymnasialen Bildungsgang)</rdfs:label>
+        <skos:editorialNote>Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000020 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000020">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1025"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Islamische Religion </rdfs:label>
+        <skos:editorialNote>Primarstufe, Sek I</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000021 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000021">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1014"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Italienisch</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000022 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000022">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Jüdische Religion </rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000023 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000023">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1026"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Katholische Religion </rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000024 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000024">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1015"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Kunst</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000025 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000025">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1016"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Latein</rdfs:label>
+        <skos:editorialNote>Sek I nur Gymnasium, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000026 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000026">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Litauisch</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000027 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000027">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1017"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Mathematik</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000028 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000028">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Moderne Fremdsprachen</rdfs:label>
+        <skos:editorialNote>Primarstufe, Sek I - Englisch, Französisch, Italienisch, Russisch, Spanisch, Polnisch, Portugisisch</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000029 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000029">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1020"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Musik</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000030 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000030">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1021"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Philosophie</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000031 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000031">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1022"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Physik</rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000032 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000032">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1023"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Politik und Wirtschaft </rdfs:label>
+        <skos:editorialNote>Sek I, Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000033 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000033">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1037"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Polnisch</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000034 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000034">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1027"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Russisch</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000035 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000035">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1028"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Sachunterricht</rdfs:label>
+        <skos:editorialNote>Primarstufe</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000036 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000036">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1030"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Spanisch</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000037 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000037">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1031"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Sport</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/HE_000038 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_000038">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
+        <rdfs:label>Wirtschaftswissenschaften</rdfs:label>
+        <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+
