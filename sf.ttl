@@ -1,0 +1,2308 @@
+@prefix : <https://w3id.org/schulfach/sf.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix ontology: <https://w3id.org/lehrplan/ontology/> .
+@base <https://w3id.org/schulfach/sf.ttl> .
+
+<https://w3id.org/schulfach/sf.ttl> rdf:type owl:Ontology ;
+                                     owl:versionIRI <https://w3id.org/schulfach/sf/releases/2025-10-21/sf.ttl> ;
+                                     terms:creator <https://orcid.org/0000-0001-6378-2618> ,
+                                                   <https://orcid.org/0000-0001-7192-7143> ,
+                                                   "Almut Steinlein"@de ,
+                                                   "Cindy Bloes"@de ,
+                                                   "Laura Junghanns"@de ;
+                                     terms:description "Ontologie der Schulfächer der Bundesländer."@de ,
+                                                       "Ontology of the German school subjects."@en ;
+                                     terms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+                                     terms:title "German School Subjects Ontology"@en ,
+                                                 "Schulfach Ontologie"@de ;
+                                     owl:versionInfo "2025-10-21" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/bibliographicCitation
+terms:bibliographicCitation rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+terms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+terms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+terms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+terms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+terms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty ;
+                rdfs:label "definition"@en ;
+                skos:definition "A statement or formal explanation of the meaning of a concept."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+skos:editorialNote rdf:type owl:AnnotationProperty ;
+                   rdfs:label "editorial note"@en ;
+                   skos:definition "A note for an editor, translator or maintainer of the vocabulary."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+skos:closeMatch rdf:type owl:ObjectProperty ,
+                         owl:SymmetricProperty ;
+                rdfs:label "has close match"@en ;
+                skos:definition "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+skos:exactMatch rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf skos:closeMatch ;
+                rdf:type owl:SymmetricProperty ,
+                         owl:TransitiveProperty ;
+                rdfs:label "has exact match"@en ;
+                skos:definition "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#hasTopConcept
+skos:hasTopConcept rdf:type owl:ObjectProperty ;
+                   owl:inverseOf skos:topConceptOf ;
+                   rdfs:domain skos:ConceptScheme ;
+                   rdfs:range skos:Concept ;
+                   rdfs:label "has top concept"@en ;
+                   skos:definition "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+skos:topConceptOf rdf:type owl:ObjectProperty ;
+                  rdfs:domain skos:Concept ;
+                  rdfs:range skos:ConceptScheme ;
+                  rdfs:label "is top concept in scheme"@en ;
+                  skos:definition "Relates a concept to the concept scheme that it is a top level concept of."@en .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000029
+ontology:LP_0000029 rdf:type owl:ObjectProperty ;
+                    rdfs:label "von Bundesland"@de .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class ;
+             owl:disjointWith skos:ConceptScheme ;
+             rdfs:label "Concept"@en ;
+             skos:definition "An idea or notion; a unit of thought."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+skos:ConceptScheme rdf:type owl:Class ;
+                   rdfs:label "Concept Scheme"@en ;
+                   skos:definition "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000001
+ontology:LP_0000001 rdf:type owl:Class ;
+                    rdfs:comment """A \"Schulfach\" is an “information content entity”.
+It refers to the designation of a subject taught at school.
+It represents the thematic structure of what is considered general school education.
+A \"Schulfach\" is a subject area that organizes teaching lessons by content.
+Examples of \"Schulfächer\" include German, mathematics, history, and biology."""@en ,
+                                 """Ein “Schulfach” ist eine “Informationseinheit”.
+Es handelt sich um die Bezeichnung eines an der Schule unterrichteten Fachs. 
+Es ist der Ausdruck für die thematische Gliederung dessen, was jeweils unter allgemeiner schulischer Bildung verstanden wird. 
+Das Schulfach ist ein Themengebiet, das den Unterricht inhaltlich unterteilt. Beispiele für Schulfächer sind Deutsch, Mathematik, Geschichte und Biologie."""@de ;
+                    rdfs:label "Schulfach"@de ,
+                               "school subject"@en ;
+                    rdfs:seeAlso <https://de.wikipedia.org/wiki/Unterrichtsfach> ;
+                    skos:altLabel "Fach" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://w3id.org/kim/schulfaecher/s1000
+<http://w3id.org/kim/schulfaecher/s1000> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Alt-Griechisch (KIM-Schulfach)" ;
+                                         skos:prefLabel "Alt-Griechisch"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1001
+<http://w3id.org/kim/schulfaecher/s1001> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Biologie (KIM-Schulfach)" ;
+                                         skos:prefLabel "Biologie"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1002
+<http://w3id.org/kim/schulfaecher/s1002> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Chemie (KIM-Schulfach)" ;
+                                         skos:prefLabel "Chemie"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1003
+<http://w3id.org/kim/schulfaecher/s1003> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Chinesisch (KIM-Schulfach)" ;
+                                         skos:prefLabel "Chinesisch"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1004
+<http://w3id.org/kim/schulfaecher/s1004> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Darstellendes Spiel (KIM-Schulfach)" ;
+                                         skos:altLabel "Theater"@de ;
+                                         skos:prefLabel "Darstellendes Spiel"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1005
+<http://w3id.org/kim/schulfaecher/s1005> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Deutsch (KIM-Schulfach)" ;
+                                         skos:prefLabel "Deutsch"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1006
+<http://w3id.org/kim/schulfaecher/s1006> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Deutsch als Zweitsprache (KIM-Schulfach)" ;
+                                         skos:altLabel "DaZ"@de ;
+                                         skos:prefLabel "Deutsch als Zweitsprache"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1007
+<http://w3id.org/kim/schulfaecher/s1007> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Englisch (KIM-Schulfach)" ;
+                                         skos:prefLabel "Englisch"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1008
+<http://w3id.org/kim/schulfaecher/s1008> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Ethik (KIM-Schulfach)" ;
+                                         skos:altLabel "Werte und Normen"@de ;
+                                         skos:prefLabel "Ethik"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1009
+<http://w3id.org/kim/schulfaecher/s1009> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Französisch (KIM-Schulfach)" ;
+                                         skos:prefLabel "Französisch"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1010
+<http://w3id.org/kim/schulfaecher/s1010> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Geografie (KIM-Schulfach)" ;
+                                         skos:altLabel "Erdkunde"@de ,
+                                                       "Geographie"@de ;
+                                         skos:prefLabel "Geografie"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1011
+<http://w3id.org/kim/schulfaecher/s1011> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Geschichte (KIM-Schulfach)" ;
+                                         skos:prefLabel "Geschichte"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1012
+<http://w3id.org/kim/schulfaecher/s1012> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Gesundheit (KIM-Schulfach)" ;
+                                         skos:altLabel "Gesundheitserziehung"@de ;
+                                         skos:prefLabel "Gesundheit"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1013
+<http://w3id.org/kim/schulfaecher/s1013> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Informatik (KIM-Schulfach)" ;
+                                         skos:altLabel "Informations- und Kommunikationstechnologie"@de ;
+                                         skos:prefLabel "Informatik"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1014
+<http://w3id.org/kim/schulfaecher/s1014> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Italienisch (KIM-Schulfach)" ;
+                                         skos:prefLabel "Italienisch"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1015
+<http://w3id.org/kim/schulfaecher/s1015> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Kunst (KIM-Schulfach)" ;
+                                         skos:altLabel "Bildende Kunst"@de ;
+                                         skos:prefLabel "Kunst"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1016
+<http://w3id.org/kim/schulfaecher/s1016> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Latein (KIM-Schulfach)" ;
+                                         skos:prefLabel "Latein"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1017
+<http://w3id.org/kim/schulfaecher/s1017> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Mathematik (KIM-Schulfach)" ;
+                                         skos:prefLabel "Mathematik"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1019
+<http://w3id.org/kim/schulfaecher/s1019> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "MINT (KIM-Schulfach)" ;
+                                         skos:altLabel "Chemie, Physik, Biologie"@de ,
+                                                       "Naturwissenschaften"@de ;
+                                         skos:prefLabel "MINT"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1020
+<http://w3id.org/kim/schulfaecher/s1020> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Musik (KIM-Schulfach)" ;
+                                         skos:prefLabel "Musik"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1021
+<http://w3id.org/kim/schulfaecher/s1021> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Philosophie (KIM-Schulfach)" ;
+                                         skos:prefLabel "Philosophie"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1022
+<http://w3id.org/kim/schulfaecher/s1022> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Physik (KIM-Schulfach)" ;
+                                         skos:prefLabel "Physik"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1023
+<http://w3id.org/kim/schulfaecher/s1023> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Politik (KIM-Schulfach)" ;
+                                         skos:altLabel "Politische Bildung"@de ,
+                                                       "Sozialkunde"@de ;
+                                         skos:prefLabel "Politik"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1024
+<http://w3id.org/kim/schulfaecher/s1024> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Religionslehre (evangelische) (KIM-Schulfach)" ;
+                                         skos:altLabel "Evangelischer Religionsunterricht"@de ;
+                                         skos:prefLabel "Religionslehre (evangelische)"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1025
+<http://w3id.org/kim/schulfaecher/s1025> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Religionslehre (islamisch) (KIM-Schulfach)" ;
+                                         skos:altLabel "Islamischer Religionsunterricht"@de ;
+                                         skos:editorialNote "EAF 28009 hat hauptsächlich christliche Themen, aber auch einen Abschnitt mit nicht-christlichen Religionen"@de ;
+                                         skos:prefLabel "Religionslehre (islamisch)"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1026
+<http://w3id.org/kim/schulfaecher/s1026> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Religionslehre (katholische) (KIM-Schulfach)" ;
+                                         skos:altLabel "Katholischer Religionsunterricht"@de ;
+                                         skos:prefLabel "Religionslehre (katholische)"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1027
+<http://w3id.org/kim/schulfaecher/s1027> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Russisch (KIM-Schulfach)" ;
+                                         skos:prefLabel "Russisch"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1028
+<http://w3id.org/kim/schulfaecher/s1028> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Sachunterricht (KIM-Schulfach)" ;
+                                         skos:altLabel "Heimatunterricht"@de ,
+                                                       "Sachkunde"@de ;
+                                         skos:prefLabel "Sachunterricht"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1029
+<http://w3id.org/kim/schulfaecher/s1029> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Sexualerziehung (KIM-Schulfach)" ;
+                                         skos:prefLabel "Sexualerziehung"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1030
+<http://w3id.org/kim/schulfaecher/s1030> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Spanisch (KIM-Schulfach)" ;
+                                         skos:prefLabel "Spanisch"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1031
+<http://w3id.org/kim/schulfaecher/s1031> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Sport (KIM-Schulfach)" ;
+                                         skos:prefLabel "Sport"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1032
+<http://w3id.org/kim/schulfaecher/s1032> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Türkisch (KIM-Schulfach)" ;
+                                         skos:prefLabel "Türkisch"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1033
+<http://w3id.org/kim/schulfaecher/s1033> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Wirtschaftskunde (KIM-Schulfach)" ;
+                                         skos:prefLabel "Wirtschaftskunde"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1034
+<http://w3id.org/kim/schulfaecher/s1034> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Hebräisch (KIM-Schulfach)" ;
+                                         skos:prefLabel "Hebräisch"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1035
+<http://w3id.org/kim/schulfaecher/s1035> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Japanisch (KIM-Schulfach)" ;
+                                         skos:prefLabel "Japanisch"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1036
+<http://w3id.org/kim/schulfaecher/s1036> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Neugriechisch (KIM-Schulfach)" ;
+                                         skos:prefLabel "Neugriechisch"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1037
+<http://w3id.org/kim/schulfaecher/s1037> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Polnisch (KIM-Schulfach)" ;
+                                         skos:prefLabel "Polnisch"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1038
+<http://w3id.org/kim/schulfaecher/s1038> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Portugiesisch (KIM-Schulfach)" ;
+                                         skos:prefLabel "Portugiesisch"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1039
+<http://w3id.org/kim/schulfaecher/s1039> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Sorbisch (KIM-Schulfach)" ;
+                                         skos:altLabel "Wendisch"@de ;
+                                         skos:prefLabel "Sorbisch"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1040
+<http://w3id.org/kim/schulfaecher/s1040> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Astronomie (KIM-Schulfach)" ;
+                                         skos:prefLabel "Astronomie"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1041
+<http://w3id.org/kim/schulfaecher/s1041> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Deutsche Gebärdensprache (KIM-Schulfach)" ;
+                                         skos:prefLabel "Deutsche Gebärdensprache"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1042
+<http://w3id.org/kim/schulfaecher/s1042> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Gesellschaftswissenschaften (KIM-Schulfach)" ;
+                                         skos:prefLabel "Gesellschaftswissenschaften"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1043
+<http://w3id.org/kim/schulfaecher/s1043> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Psychologie (KIM-Schulfach)" ;
+                                         skos:prefLabel "Psychologie"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1044
+<http://w3id.org/kim/schulfaecher/s1044> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Ernährung (KIM-Schulfach)" ;
+                                         skos:prefLabel "Ernährung"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1045
+<http://w3id.org/kim/schulfaecher/s1045> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Erziehungswissenschaften (KIM-Schulfach)" ;
+                                         skos:altLabel "Pädagogik"@de ;
+                                         skos:prefLabel "Erziehungswissenschaften"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1046
+<http://w3id.org/kim/schulfaecher/s1046> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Medienbildung (KIM-Schulfach)" ;
+                                         skos:prefLabel "Medienbildung"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1047
+<http://w3id.org/kim/schulfaecher/s1047> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Hauswirtschaft (KIM-Schulfach)" ;
+                                         skos:prefLabel "Hauswirtschaft"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000031
+ontology:LP_3000031 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Thüringen"@de ;
+                    skos:altLabel "TH" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000043
+ontology:LP_3000043 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Niedersachsen"@de ;
+                    skos:altLabel "NI" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000044
+ontology:LP_3000044 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Nordrhein-Westfalen"@de ;
+                    skos:altLabel "NW" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000045
+ontology:LP_3000045 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Hamburg"@de ;
+                    skos:altLabel "HH" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000046
+ontology:LP_3000046 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Rheinland-Pfalz"@de ;
+                    skos:altLabel "RP" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000047
+ontology:LP_3000047 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Sachsen"@de ;
+                    skos:altLabel "SN" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000048
+ontology:LP_3000048 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Berlin"@de ;
+                    skos:altLabel "BE" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000049
+ontology:LP_3000049 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Baden-Württemberg"@de ;
+                    skos:altLabel "BW" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000050
+ontology:LP_3000050 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Hessen"@de ;
+                    skos:altLabel "HE" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000051
+ontology:LP_3000051 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Bayern"@de ;
+                    skos:altLabel "BY" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000052
+ontology:LP_3000052 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Mecklenburg-Vorpommern"@de ;
+                    skos:altLabel "MV" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000053
+ontology:LP_3000053 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Sachsen-Anhalt"@de ;
+                    skos:altLabel "ST" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000054
+ontology:LP_3000054 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Schleswig-Holstein"@de ;
+                    skos:altLabel "SH" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000055
+ontology:LP_3000055 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Saarland"@de ;
+                    skos:altLabel "SL" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000056
+ontology:LP_3000056 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Bremen"@de ;
+                    skos:altLabel "HB" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000057
+ontology:LP_3000057 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Brandenburg"@de ;
+                    skos:altLabel "BB" .
+
+
+###  https://w3id.org/schulfach/BW_000000
+<https://w3id.org/schulfach/BW_000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Schulfächer (Baden-Württemberg)" .
+
+
+###  https://w3id.org/schulfach/BW_000001
+<https://w3id.org/schulfach/BW_000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Alevitische Religionslehre" .
+
+
+###  https://w3id.org/schulfach/BW_000002
+<https://w3id.org/schulfach/BW_000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1044> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Alltagskultur, Ernährung und Soziales (AES) - Wahlpflichtfach" ;
+                                       skos:editorialNote "Sek I (ausser Gymnasium)" .
+
+
+###  https://w3id.org/schulfach/BW_000003
+<https://w3id.org/schulfach/BW_000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Altkatholische Religionslehre" .
+
+
+###  https://w3id.org/schulfach/BW_000004
+<https://w3id.org/schulfach/BW_000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1040> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Astronomie - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000005
+<https://w3id.org/schulfach/BW_000005> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1013> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Aufbaukurs Informatik" ;
+                                       skos:editorialNote "Jahrgangsstufe 7" .
+
+
+###  https://w3id.org/schulfach/BW_000006
+<https://w3id.org/schulfach/BW_000006> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1046> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Basiskurs Medienbildung" ;
+                                       skos:editorialNote "Jahrgangsstufe 5" .
+
+
+###  https://w3id.org/schulfach/BW_000007
+<https://w3id.org/schulfach/BW_000007> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1031> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Bewegung, Spiel und Sport" ;
+                                       skos:editorialNote "nur Primarstufe" .
+
+
+###  https://w3id.org/schulfach/BW_000008
+<https://w3id.org/schulfach/BW_000008> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1015> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Bildende Kunst" ;
+                                       skos:editorialNote "Sek I, Sek II + Profilfach extra" .
+
+
+###  https://w3id.org/schulfach/BW_000009
+<https://w3id.org/schulfach/BW_000009> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1001> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Biologie" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000010
+<https://w3id.org/schulfach/BW_000010> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1001> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Biologie, Naturphänomene und Technik (BNT)" ;
+                                       skos:editorialNote "Jahrgangsstufe 5 und 6" .
+
+
+###  https://w3id.org/schulfach/BW_000011
+<https://w3id.org/schulfach/BW_000011> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1002> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Chemie" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000012
+<https://w3id.org/schulfach/BW_000012> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1003> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Chinesisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000013
+<https://w3id.org/schulfach/BW_000013> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Darstellende Geometrie - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000014
+<https://w3id.org/schulfach/BW_000014> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1005> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Deutsch" .
+
+
+###  https://w3id.org/schulfach/BW_000015
+<https://w3id.org/schulfach/BW_000015> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Deutsch als Fremdsprache" ;
+                                       skos:editorialNote "https://www.schule-bw.de/themen-und-impulse/migration-integration-bildung/vkl_vabo/vkl/mehrsprachigkeit/curriculum" .
+
+
+###  https://w3id.org/schulfach/BW_000016
+<https://w3id.org/schulfach/BW_000016> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Digitale mathematische Werkzeuge (DmW) - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000017
+<https://w3id.org/schulfach/BW_000017> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1007> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Englisch" ;
+                                       skos:editorialNote "Primarstufe, Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000018
+<https://w3id.org/schulfach/BW_000018> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1007> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Englisch als erste Fremdsprache" ;
+                                       skos:editorialNote "Sek I " .
+
+
+###  https://w3id.org/schulfach/BW_000019
+<https://w3id.org/schulfach/BW_000019> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1007> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Englisch als zweite Fremdsprache" ;
+                                       skos:editorialNote "nur Gymnasium" .
+
+
+###  https://w3id.org/schulfach/BW_000020
+<https://w3id.org/schulfach/BW_000020> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1007> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Englisch als zweite Fremdsprache - Wahlpflichtfach" ;
+                                       skos:editorialNote "Sek I (ausser Gymnasium)" .
+
+
+###  https://w3id.org/schulfach/BW_000021
+<https://w3id.org/schulfach/BW_000021> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1008> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Ethik" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000022
+<https://w3id.org/schulfach/BW_000022> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1024> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Evangelische Religionslehre" .
+
+
+###  https://w3id.org/schulfach/BW_000023
+<https://w3id.org/schulfach/BW_000023> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1009> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Französisch" ;
+                                       skos:editorialNote "Primarstufe, Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000024
+<https://w3id.org/schulfach/BW_000024> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1009> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Französisch als dritte Fremdsprache - Profilfach" ;
+                                       skos:editorialNote "nur Gymnasium Sek I" .
+
+
+###  https://w3id.org/schulfach/BW_000025
+<https://w3id.org/schulfach/BW_000025> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1009> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Französisch als erste Fremdsprache" ;
+                                       skos:editorialNote "Sek I" .
+
+
+###  https://w3id.org/schulfach/BW_000026
+<https://w3id.org/schulfach/BW_000026> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1009> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Französisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe " ;
+                                       skos:editorialNote "nur Gymnasium Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000027
+<https://w3id.org/schulfach/BW_000027> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1009> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Französisch als zweite Fremdsprache - Wahlpflichtfach" ;
+                                       skos:editorialNote "Sek I" .
+
+
+###  https://w3id.org/schulfach/BW_000028
+<https://w3id.org/schulfach/BW_000028> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Gemeinschaftskunde" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000029
+<https://w3id.org/schulfach/BW_000029> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1010> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Geographie" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000030
+<https://w3id.org/schulfach/BW_000030> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Geologie - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000031
+<https://w3id.org/schulfach/BW_000031> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1011> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Geschichte" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000032
+<https://w3id.org/schulfach/BW_000032> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1036> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Griechisch als dritte Fremdsprache - Profilfach" ;
+                                       skos:editorialNote "ab Jahrgangsstufe 8 (nur Gymnasium)" .
+
+
+###  https://w3id.org/schulfach/BW_000033
+<https://w3id.org/schulfach/BW_000033> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1036> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Griechisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000034
+<https://w3id.org/schulfach/BW_000034> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1034> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Hebräisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000035
+<https://w3id.org/schulfach/BW_000035> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:closeMatch <http://w3id.org/kim/schulfaecher/s1013> ,
+                                                       <http://w3id.org/kim/schulfaecher/s1017> ,
+                                                       <http://w3id.org/kim/schulfaecher/s1022> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Imformatik, Mathematik, Physik (IMP) - Profilfach" ;
+                                       skos:editorialNote "ab Jahrgangsstufe 8" .
+
+
+###  https://w3id.org/schulfach/BW_000036
+<https://w3id.org/schulfach/BW_000036> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1013> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Informatik - Wahlfach in der Oberstufe (Schulversuch)" ;
+                                       skos:editorialNote "ab Jahrgangsstufe 11" .
+
+
+###  https://w3id.org/schulfach/BW_000037
+<https://w3id.org/schulfach/BW_000037> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1013> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Informatik (Schulversuch)" ;
+                                       skos:editorialNote "ab Jahrgangsstufe 9" .
+
+
+###  https://w3id.org/schulfach/BW_000038
+<https://w3id.org/schulfach/BW_000038> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1025> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Islamische Religionslehre sunnitischer Prägung" .
+
+
+###  https://w3id.org/schulfach/BW_000039
+<https://w3id.org/schulfach/BW_000039> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1014> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Italienisch als dritte Fremdsprache - Profilfach" ;
+                                       skos:editorialNote "ab Jahrgangsstufe 8 (nur Gymnasium)" .
+
+
+###  https://w3id.org/schulfach/BW_000040
+<https://w3id.org/schulfach/BW_000040> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1014> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Italienisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000041
+<https://w3id.org/schulfach/BW_000041> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1035> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Japanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000042
+<https://w3id.org/schulfach/BW_000042> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Jüdische Religionslehre" .
+
+
+###  https://w3id.org/schulfach/BW_000043
+<https://w3id.org/schulfach/BW_000043> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1026> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Katholische Religionslehre" .
+
+
+###  https://w3id.org/schulfach/BW_000044
+<https://w3id.org/schulfach/BW_000044> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1015> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Kunst/Werken" ;
+                                       skos:editorialNote "nur Primarstufe" .
+
+
+###  https://w3id.org/schulfach/BW_000045
+<https://w3id.org/schulfach/BW_000045> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1016> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Latein als dritte Fremdsprache - Profilfach" ;
+                                       skos:editorialNote "ab Jahrgangsstufe 8 (nur Gymnasium)" .
+
+
+###  https://w3id.org/schulfach/BW_000046
+<https://w3id.org/schulfach/BW_000046> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1016> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Latein als erste Fremdsprache" ;
+                                       skos:editorialNote "ab Jahrgangsstufe 5 (nur Gymnasium)" .
+
+
+###  https://w3id.org/schulfach/BW_000047
+<https://w3id.org/schulfach/BW_000047> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1016> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Latein als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000048
+<https://w3id.org/schulfach/BW_000048> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1016> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Latein als zweite Fremdsprache" ;
+                                       skos:editorialNote "ab Jahrgangsstufe 6 (nur Gymnasium)" .
+
+
+###  https://w3id.org/schulfach/BW_000049
+<https://w3id.org/schulfach/BW_000049> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Literatur - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000050
+<https://w3id.org/schulfach/BW_000050> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1004> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Literatur und Theater" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000051
+<https://w3id.org/schulfach/BW_000051> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1017> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Mathematik" .
+
+
+###  https://w3id.org/schulfach/BW_000052
+<https://w3id.org/schulfach/BW_000052> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1020> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Musik" .
+
+
+###  https://w3id.org/schulfach/BW_000053
+<https://w3id.org/schulfach/BW_000053> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1020> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Musik - Profilfach" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000054
+<https://w3id.org/schulfach/BW_000054> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Naturwissenschaft und Technik (NwT) - Basisfach in der Kursstufe" ;
+                                       skos:editorialNote "nur Gymnasium Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000055
+<https://w3id.org/schulfach/BW_000055> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Naturwissenschaft und Technik (NwT) - Profilfach" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000056
+<https://w3id.org/schulfach/BW_000056> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Naturwissenschaft und Technik (NwT) - Schulversuch Leistungsfach in der Kursstufe" ;
+                                       skos:editorialNote "nur Gymnasium Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000057
+<https://w3id.org/schulfach/BW_000057> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Orthodoxe Religionslehre" ;
+                                       skos:editorialNote "Sek I alle Schularten, Sek II nur Gymnasium" .
+
+
+###  https://w3id.org/schulfach/BW_000058
+<https://w3id.org/schulfach/BW_000058> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1021> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Philosophie - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000059
+<https://w3id.org/schulfach/BW_000059> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1022> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Physik" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000060
+<https://w3id.org/schulfach/BW_000060> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1038> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Portugiesisch als dritte Fremdsprache - Profilfach" ;
+                                       skos:editorialNote "ab Jahrgangsstufe 8 (nur Gymnasium)" .
+
+
+###  https://w3id.org/schulfach/BW_000061
+<https://w3id.org/schulfach/BW_000061> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1038> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Portugiesisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000062
+<https://w3id.org/schulfach/BW_000062> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1043> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Psychologie - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000063
+<https://w3id.org/schulfach/BW_000063> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1027> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Russisch als dritte Fremdsprache - Profilfach" ;
+                                       skos:editorialNote "ab Jahrgangsstufe 8 (nur Gymnasium)" .
+
+
+###  https://w3id.org/schulfach/BW_000064
+<https://w3id.org/schulfach/BW_000064> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1027> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Russisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000065
+<https://w3id.org/schulfach/BW_000065> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1027> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Russisch als zweite Fremdsprache" ;
+                                       skos:editorialNote "ab Jahrgangsstufe 6 (nur Gymnasium)" .
+
+
+###  https://w3id.org/schulfach/BW_000066
+<https://w3id.org/schulfach/BW_000066> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1028> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Sachunterricht" ;
+                                       skos:editorialNote "nur Primarstufe" .
+
+
+###  https://w3id.org/schulfach/BW_000067
+<https://w3id.org/schulfach/BW_000067> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1030> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Spanisch als dritte Fremdsprache - Profilfach" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000068
+<https://w3id.org/schulfach/BW_000068> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1030> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Spanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000069
+<https://w3id.org/schulfach/BW_000069> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1031> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Sport" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000070
+<https://w3id.org/schulfach/BW_000070> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1031> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Sport - Profilfach" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000071
+<https://w3id.org/schulfach/BW_000071> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1031> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Sport - Wahlpflichtfach" ;
+                                       skos:editorialNote "nur Realschule" .
+
+
+###  https://w3id.org/schulfach/BW_000072
+<https://w3id.org/schulfach/BW_000072> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Syrisch-Orthodoxe Religionslehre" .
+
+
+###  https://w3id.org/schulfach/BW_000073
+<https://w3id.org/schulfach/BW_000073> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Technik - Wahlpflichtfach " ;
+                                       skos:editorialNote "Sek I" .
+
+
+###  https://w3id.org/schulfach/BW_000074
+<https://w3id.org/schulfach/BW_000074> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1032> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Türkisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000075
+<https://w3id.org/schulfach/BW_000075> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1033> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Wirtschaft" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BW_000076
+<https://w3id.org/schulfach/BW_000076> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1033> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/BW_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Wirtschaft / Berufs- und Studienorientierung (WBS)" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000000
+<https://w3id.org/schulfach/HB_000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Schulfächer (Bremen)" .
+
+
+###  https://w3id.org/schulfach/HB_000001
+<https://w3id.org/schulfach/HB_000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1015> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Ästhetik" ;
+                                       skos:editorialNote "Primarstufe" .
+
+
+###  https://w3id.org/schulfach/HB_000002
+<https://w3id.org/schulfach/HB_000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Bildungsplan fortgeführte Fremdsprachen" ;
+                                       skos:editorialNote "Sek II - Englisch, Spanisch, Türkisch, Russisch, Französisch" .
+
+
+###  https://w3id.org/schulfach/HB_000003
+<https://w3id.org/schulfach/HB_000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1001> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Biologie" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000004
+<https://w3id.org/schulfach/HB_000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1001> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Biologie bilingual" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000005
+<https://w3id.org/schulfach/HB_000005> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1002> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Chemie" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000006
+<https://w3id.org/schulfach/HB_000006> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1003> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Chinesisch" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000007
+<https://w3id.org/schulfach/HB_000007> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1004> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Darstellendes Spiel" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000008
+<https://w3id.org/schulfach/HB_000008> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1005> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Deutsch" .
+
+
+###  https://w3id.org/schulfach/HB_000009
+<https://w3id.org/schulfach/HB_000009> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1006> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Deutsch als Zweitsprache" ;
+                                       skos:editorialNote "Primarstufe" .
+
+
+###  https://w3id.org/schulfach/HB_000010
+<https://w3id.org/schulfach/HB_000010> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1007> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Englisch" ;
+                                       skos:editorialNote "Primarstufe, Sek I" .
+
+
+###  https://w3id.org/schulfach/HB_000011
+<https://w3id.org/schulfach/HB_000011> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "European Studies" ;
+                                       skos:editorialNote "Jahrgangsstufe 8 und 9 Gymnasium" .
+
+
+###  https://w3id.org/schulfach/HB_000012
+<https://w3id.org/schulfach/HB_000012> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1009> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Französisch" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000013
+<https://w3id.org/schulfach/HB_000013> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:closeMatch <http://w3id.org/kim/schulfaecher/s1009> ,
+                                                       <http://w3id.org/kim/schulfaecher/s1030> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Französisch und Spanisch" ;
+                                       skos:editorialNote "Oberschule" .
+
+
+###  https://w3id.org/schulfach/HB_000014
+<https://w3id.org/schulfach/HB_000014> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:closeMatch <http://w3id.org/kim/schulfaecher/s1009> ,
+                                                       <http://w3id.org/kim/schulfaecher/s1030> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Französisch/Spanisch 2. Fremdsprache" ;
+                                       skos:editorialNote "nur Gymnasium Sek I" .
+
+
+###  https://w3id.org/schulfach/HB_000015
+<https://w3id.org/schulfach/HB_000015> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:closeMatch <http://w3id.org/kim/schulfaecher/s1009> ,
+                                                       <http://w3id.org/kim/schulfaecher/s1030> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Französisch/Spanisch 3. Fremdsprache" ;
+                                       skos:editorialNote "nur Gymnasium Sek I" .
+
+
+###  https://w3id.org/schulfach/HB_000016
+<https://w3id.org/schulfach/HB_000016> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1010> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Geographie" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000017
+<https://w3id.org/schulfach/HB_000017> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1011> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Geschichte" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000018
+<https://w3id.org/schulfach/HB_000018> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1011> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Geschichte bilingual" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000019
+<https://w3id.org/schulfach/HB_000019> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:closeMatch <http://w3id.org/kim/schulfaecher/s1023> ,
+                                                       <http://w3id.org/kim/schulfaecher/s1042> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Gesellschaft und Politik" ;
+                                       skos:editorialNote "nur Oberschule Sek I" .
+
+
+###  https://w3id.org/schulfach/HB_000020
+<https://w3id.org/schulfach/HB_000020> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Herkunftssprachen " ;
+                                       skos:editorialNote "Primarstufe" .
+
+
+###  https://w3id.org/schulfach/HB_000021
+<https://w3id.org/schulfach/HB_000021> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1013> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Informatik" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000022
+<https://w3id.org/schulfach/HB_000022> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1015> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Kunst" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000023
+<https://w3id.org/schulfach/HB_000023> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1016> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Latein" ;
+                                       skos:editorialNote "Oberschule, Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000024
+<https://w3id.org/schulfach/HB_000024> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1016> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Latein 2. Fremdsprache" ;
+                                       skos:editorialNote "nur Gymnasium Sek I" .
+
+
+###  https://w3id.org/schulfach/HB_000025
+<https://w3id.org/schulfach/HB_000025> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1016> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Latein 3. Fremdsprache" ;
+                                       skos:editorialNote "nur Gymnasium Sek I" .
+
+
+###  https://w3id.org/schulfach/HB_000026
+<https://w3id.org/schulfach/HB_000026> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1017> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Mathematik" .
+
+
+###  https://w3id.org/schulfach/HB_000027
+<https://w3id.org/schulfach/HB_000027> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1046> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Medienbildung" ;
+                                       skos:editorialNote "Primarstufe" .
+
+
+###  https://w3id.org/schulfach/HB_000028
+<https://w3id.org/schulfach/HB_000028> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1020> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Musik" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000029
+<https://w3id.org/schulfach/HB_000029> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:closeMatch <http://w3id.org/kim/schulfaecher/s1001> ,
+                                                       <http://w3id.org/kim/schulfaecher/s1002> ,
+                                                       <http://w3id.org/kim/schulfaecher/s1022> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Naturwissenschaften, Biologie, Chemie, Physik" ;
+                                       skos:editorialNote "Sek I" .
+
+
+###  https://w3id.org/schulfach/HB_000030
+<https://w3id.org/schulfach/HB_000030> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Pädagogik" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000031
+<https://w3id.org/schulfach/HB_000031> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1021> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Philosophie" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000032
+<https://w3id.org/schulfach/HB_000032> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1022> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Physik" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000033
+<https://w3id.org/schulfach/HB_000033> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1023> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Politik" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000034
+<https://w3id.org/schulfach/HB_000034> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1037> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Polnisch" ;
+                                       skos:editorialNote "Sek I" .
+
+
+###  https://w3id.org/schulfach/HB_000035
+<https://w3id.org/schulfach/HB_000035> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1043> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Psychologie" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000036
+<https://w3id.org/schulfach/HB_000036> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Religion" ;
+                                       skos:editorialNote "ohne Konfession" .
+
+
+###  https://w3id.org/schulfach/HB_000037
+<https://w3id.org/schulfach/HB_000037> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1027> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Russisch" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000038
+<https://w3id.org/schulfach/HB_000038> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1028> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Sachunterricht" ;
+                                       skos:editorialNote "Primarstufe" .
+
+
+###  https://w3id.org/schulfach/HB_000039
+<https://w3id.org/schulfach/HB_000039> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Soziologie" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000040
+<https://w3id.org/schulfach/HB_000040> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1030> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Spanisch" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000041
+<https://w3id.org/schulfach/HB_000041> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1031> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Sport" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/HB_000042
+<https://w3id.org/schulfach/HB_000042> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1032> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Türkisch" ;
+                                       skos:editorialNote "Sek I" .
+
+
+###  https://w3id.org/schulfach/HB_000043
+<https://w3id.org/schulfach/HB_000043> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:closeMatch <http://w3id.org/kim/schulfaecher/s1010> ,
+                                                       <http://w3id.org/kim/schulfaecher/s1011> ,
+                                                       <http://w3id.org/kim/schulfaecher/s1023> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Welt-Umweltkunde, Geschichte, Geographie, Politik" ;
+                                       skos:editorialNote "Gymnasium Sek I" .
+
+
+###  https://w3id.org/schulfach/HB_000044
+<https://w3id.org/schulfach/HB_000044> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1033> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Wirtschaft-Arbeit-Technik" ;
+                                       skos:editorialNote "Gymnasium" .
+
+
+###  https://w3id.org/schulfach/HB_000045
+<https://w3id.org/schulfach/HB_000045> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1033> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Wirtschaft/Arbeit/Technik" ;
+                                       skos:editorialNote "Oberschule" .
+
+
+###  https://w3id.org/schulfach/HB_000046
+<https://w3id.org/schulfach/HB_000046> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1033> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HB_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Wirtschaftslehre" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000000
+<https://w3id.org/schulfach/HE_000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Schulfächer (Hessen)" .
+
+
+###  https://w3id.org/schulfach/HE_000001
+<https://w3id.org/schulfach/HE_000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Alevitische Religion" ;
+                                       skos:editorialNote "Sek I" .
+
+
+###  https://w3id.org/schulfach/HE_000002
+<https://w3id.org/schulfach/HE_000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Arabisch" ;
+                                       skos:editorialNote "Sek I nur Gymnasium und Realschule" .
+
+
+###  https://w3id.org/schulfach/HE_000003
+<https://w3id.org/schulfach/HE_000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Arbeitslehre " ;
+                                       skos:editorialNote "Haupt- und Realschulen" .
+
+
+###  https://w3id.org/schulfach/HE_000004
+<https://w3id.org/schulfach/HE_000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1001> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Biologie" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000005
+<https://w3id.org/schulfach/HE_000005> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1002> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Chemie" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000006
+<https://w3id.org/schulfach/HE_000006> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1003> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Chinesisch" ;
+                                       skos:editorialNote "nur Gymnasium Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000007
+<https://w3id.org/schulfach/HE_000007> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1004> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Darstellendes Spiel" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000008
+<https://w3id.org/schulfach/HE_000008> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1005> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Deutsch" .
+
+
+###  https://w3id.org/schulfach/HE_000009
+<https://w3id.org/schulfach/HE_000009> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1041> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Deutsche Gebärdensprache" ;
+                                       skos:editorialNote "Wahlfach" .
+
+
+###  https://w3id.org/schulfach/HE_000010
+<https://w3id.org/schulfach/HE_000010> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1007> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Englisch" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000011
+<https://w3id.org/schulfach/HE_000011> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1010> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Erdkunde" ;
+                                       skos:editorialNote "Sek I" .
+
+
+###  https://w3id.org/schulfach/HE_000012
+<https://w3id.org/schulfach/HE_000012> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1008> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Ethik" .
+
+
+###  https://w3id.org/schulfach/HE_000013
+<https://w3id.org/schulfach/HE_000013> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1024> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Evangelische Religion" .
+
+
+###  https://w3id.org/schulfach/HE_000014
+<https://w3id.org/schulfach/HE_000014> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1009> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Französisch" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000015
+<https://w3id.org/schulfach/HE_000015> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1010> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Geographie" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000016
+<https://w3id.org/schulfach/HE_000016> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1011> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Geschichte" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000017
+<https://w3id.org/schulfach/HE_000017> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1036> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Griechisch " ;
+                                       skos:editorialNote "Sek I nur Gymnasium, Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000018
+<https://w3id.org/schulfach/HE_000018> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1013> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Informatik" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000019
+<https://w3id.org/schulfach/HE_000019> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1013> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Informatik (Wahlunterricht im gymnasialen Bildungsgang)" ;
+                                       skos:editorialNote "Sek I" .
+
+
+###  https://w3id.org/schulfach/HE_000020
+<https://w3id.org/schulfach/HE_000020> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1025> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Islamische Religion " ;
+                                       skos:editorialNote "Primarstufe, Sek I" .
+
+
+###  https://w3id.org/schulfach/HE_000021
+<https://w3id.org/schulfach/HE_000021> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1014> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Italienisch" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000022
+<https://w3id.org/schulfach/HE_000022> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Jüdische Religion " .
+
+
+###  https://w3id.org/schulfach/HE_000023
+<https://w3id.org/schulfach/HE_000023> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1026> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Katholische Religion " .
+
+
+###  https://w3id.org/schulfach/HE_000024
+<https://w3id.org/schulfach/HE_000024> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1015> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Kunst" .
+
+
+###  https://w3id.org/schulfach/HE_000025
+<https://w3id.org/schulfach/HE_000025> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1016> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Latein" ;
+                                       skos:editorialNote "Sek I nur Gymnasium, Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000026
+<https://w3id.org/schulfach/HE_000026> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Litauisch" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000027
+<https://w3id.org/schulfach/HE_000027> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1017> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Mathematik" .
+
+
+###  https://w3id.org/schulfach/HE_000028
+<https://w3id.org/schulfach/HE_000028> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Moderne Fremdsprachen" ;
+                                       skos:editorialNote "Primarstufe, Sek I - Englisch, Französisch, Italienisch, Russisch, Spanisch, Polnisch, Portugisisch" .
+
+
+###  https://w3id.org/schulfach/HE_000029
+<https://w3id.org/schulfach/HE_000029> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1020> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Musik" .
+
+
+###  https://w3id.org/schulfach/HE_000030
+<https://w3id.org/schulfach/HE_000030> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1021> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Philosophie" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000031
+<https://w3id.org/schulfach/HE_000031> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1022> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Physik" ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000032
+<https://w3id.org/schulfach/HE_000032> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:closeMatch <http://w3id.org/kim/schulfaecher/s1023> ,
+                                                       <http://w3id.org/kim/schulfaecher/s1033> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Politik und Wirtschaft " ;
+                                       skos:editorialNote "Sek I, Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000033
+<https://w3id.org/schulfach/HE_000033> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1037> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Polnisch" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000034
+<https://w3id.org/schulfach/HE_000034> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1027> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Russisch" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000035
+<https://w3id.org/schulfach/HE_000035> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1028> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Sachunterricht" ;
+                                       skos:editorialNote "Primarstufe" .
+
+
+###  https://w3id.org/schulfach/HE_000036
+<https://w3id.org/schulfach/HE_000036> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1030> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Spanisch" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/HE_000037
+<https://w3id.org/schulfach/HE_000037> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1031> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Sport" .
+
+
+###  https://w3id.org/schulfach/HE_000038
+<https://w3id.org/schulfach/HE_000038> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000001 ;
+                                       skos:exactMatch <http://w3id.org/kim/schulfaecher/s1033> ;
+                                       skos:topConceptOf <https://w3id.org/schulfach/HE_000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Wirtschaftswissenschaften" ;
+                                       skos:editorialNote "Sek II" .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi
