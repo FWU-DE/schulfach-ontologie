@@ -1,0 +1,20 @@
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+INSERT {
+  ?scheme <http://purl.org/dc/terms/creator> "Almut Steinlein" .
+  ?scheme <http://purl.org/dc/terms/creator> "Cindy Bloes" .
+  ?scheme <http://purl.org/dc/terms/creator> "Laura Junghans" .
+  ?scheme <http://purl.org/dc/terms/creator> "Steffen Roertgen" .
+  ?scheme <http://purl.org/dc/terms/creator> "Jörg Waitelonis" .
+  ?scheme <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+} WHERE {
+  ?scheme a skos:ConceptScheme .
+};
+
+INSERT {?s skos:prefLabel ?l} 
+WHERE {
+  {?s rdfs:label ?l} 
+};

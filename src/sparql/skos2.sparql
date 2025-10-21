@@ -1,0 +1,14 @@
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+
+# select all SKOS properties and objects
+# do not select the subjects (they do not contain "data")
+
+CONSTRUCT {?s ?p ?o} WHERE
+{
+  
+  ?s ?p ?o .
+  filter ( regex( concat(str(?p), str(?o)), "http://www.w3.org/2004/02/skos|http://purl.org/dc/terms", "i") )
+  filter ( !regex( str(?s), "http://www.w3.org/2004/02/skos", "i" ) )
+  filter ( str(?s)!="https://w3id.org/schulfach" )
+}
