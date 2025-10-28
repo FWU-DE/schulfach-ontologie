@@ -27,6 +27,9 @@
         skos:prefLabel     "Mathematik" ;
         skos:topConceptOf  <https://w3id.org/schulfach/HE_0000000> .
 
+<https://orcid.org/0000-0001-7192-7143>
+        skos:prefLabel  "Jörg Waitelonis" .
+
 <https://w3id.org/schulfach/HE_0000021>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
@@ -110,6 +113,9 @@
         skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1008> ;
         skos:prefLabel     "Ethik" ;
         skos:topConceptOf  <https://w3id.org/schulfach/HE_0000000> .
+
+<https://orcid.org/0000-0001-6378-2618>
+        skos:prefLabel  "Steffen Rörtgen" .
 
 <https://w3id.org/schulfach/HE_0000025>
         a                   skos:Concept ;

@@ -4,7 +4,7 @@ github_org: FWU-DE
 git_main_branch: main
 repo: schulfach-ontologie
 uribase: https://w3id.org/schulfach
-#uribase_suffix: sf
+#uribase_suffix: ontology
 release_artefacts:
   - full
 primary_release: full

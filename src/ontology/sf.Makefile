@@ -71,3 +71,21 @@ skos-%.ttl:
 	$(ROBOT) merge --input $(TMPDIR)/schulfach-$*.ttl query --update ../sparql/skos1.sparql query --query ../sparql/skos2.sparql $@
 
 
+
+CITATION="'German School Subjects Ontology. Version $(VERSION), https://w3id.org/schulfach/'"
+
+ALL_ANNOTATIONS=--annotate-defined-by false \
+	--ontology-iri https://w3id.org/schulfach/ -V https://w3id.org/schulfach/$(VERSION) \
+	--annotation http://purl.org/dc/terms/created "$(TODAY)" \
+	--annotation http://purl.org/dc/terms/bibliographicCitation "$(CITATION)"  \
+#	--link-annotation owl:priorVersion https://w3id.org/lehrplan/ontology/$(PRIOR_VERSION) \
+
+update-ontology-annotations: 
+	$(ROBOT) annotate --input ../../sf.owl $(ALL_ANNOTATIONS) --output ../../sf.owl && \
+	$(ROBOT) annotate --input ../../sf.ttl $(ALL_ANNOTATIONS) --output ../../sf.ttl && \
+	$(ROBOT) annotate --input ../../sf-full.owl $(ALL_ANNOTATIONS) --output ../../sf-full.owl && \
+	$(ROBOT) annotate --input ../../sf-full.ttl $(ALL_ANNOTATIONS) --output ../../sf-full.ttl 
+
+
+
+

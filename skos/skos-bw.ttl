@@ -80,6 +80,9 @@
         skos:prefLabel      "Deutsch als Fremdsprache" ;
         skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
 
+<https://orcid.org/0000-0001-7192-7143>
+        skos:prefLabel  "Jörg Waitelonis" .
+
 <https://w3id.org/schulfach/BW_0000056>
         a                   skos:Concept ;
         skos:editorialNote  "nur Gymnasium Sek II" ;
@@ -231,6 +234,9 @@
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1016> ;
         skos:prefLabel      "Latein als spät beginnende Fremdsprache - Wahlfach in der Oberstufe" ;
         skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
+
+<https://orcid.org/0000-0001-6378-2618>
+        skos:prefLabel  "Steffen Rörtgen" .
 
 <https://w3id.org/schulfach/BW_0000019>
         a                   skos:Concept ;

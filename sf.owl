@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/schulfach/sf/sf-full.owl#"
-     xml:base="https://w3id.org/schulfach/sf/sf-full.owl"
+<rdf:RDF xmlns="https://w3id.org/schulfach/"
+     xml:base="https://w3id.org/schulfach/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -9,19 +9,23 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:ontology="https://w3id.org/lehrplan/ontology/">
-    <owl:Ontology rdf:about="https://w3id.org/schulfach/sf/sf-full.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/schulfach/sf/releases/2025-10-21/sf-full.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/schulfach/">
+        <owl:versionIRI rdf:resource="https://w3id.org/schulfach/2025-10-28"/>
+        <terms:bibliographicCitation>German School Subjects Ontology. Version 2025-10-28, https://w3id.org/schulfach/</terms:bibliographicCitation>
+        <terms:created>2025-10-28</terms:created>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-6378-2618"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <terms:creator xml:lang="de">Almut Steinlein</terms:creator>
         <terms:creator xml:lang="de">Cindy Bloes</terms:creator>
         <terms:creator xml:lang="de">Laura Junghanns</terms:creator>
-        <terms:description xml:lang="de">Ontologie der Schulfächer der Bundesländer.</terms:description>
-        <terms:description xml:lang="en">Ontology of the German school subjects.</terms:description>
+        <terms:description xml:lang="de">Die Schulfach Ontologie ist ein formales Modell zur Definition und Organisation der Schulfächer in den deutschen Bundesländern. Sie stellt ein strukturiertes Vokabular bereit, um Schulfächer und deren Beziehungen zu beschreiben, zu klassifizieren und zu verknüpfen – und ermöglicht dadurch die Interoperabilität von Bildungsdaten über verschiedene Systeme und Institutionen hinweg.
+GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
+        <terms:description xml:lang="en">The German school subjects ontology is a formal semantic model that defines and organizes the school subjects (Schulfächer) used across the German federal states (Bundesländer). It provides a structured vocabulary for describing, categorizing, and interlinking school subjects and their relationships—allowing data interoperability across different educational datasets and systems. 
+GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <terms:title xml:lang="en">German School Subjects Ontology</terms:title>
+        <terms:title xml:lang="en">German school subjects ontology</terms:title>
         <terms:title xml:lang="de">Schulfach Ontologie</terms:title>
-        <owl:versionInfo>2025-10-21</owl:versionInfo>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -7218,6 +7222,23 @@ Das Schulfach ist ein Themengebiet, das den Unterricht inhaltlich unterteilt. Be
         <rdfs:label>Wirtschaftslehre</rdfs:label>
         <skos:editorialNote>Gymnasium Wahlpflichtfach (Sek I, Sek II)</skos:editorialNote>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-6378-2618">
+        <rdfs:label>Steffen Rörtgen</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://orcid.org/0000-0001-7192-7143">
+        <rdfs:label>Jörg Waitelonis</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 

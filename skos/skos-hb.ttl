@@ -55,6 +55,9 @@
         skos:prefLabel      "Darstellendes Spiel" ;
         skos:topConceptOf   <https://w3id.org/schulfach/HB_0000000> .
 
+<https://orcid.org/0000-0001-7192-7143>
+        skos:prefLabel  "Jörg Waitelonis" .
+
 <https://w3id.org/schulfach/HB_0000001>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe" ;
@@ -146,6 +149,9 @@
         skos:editorialNote  "Sek II" ;
         skos:prefLabel      "Soziologie" ;
         skos:topConceptOf   <https://w3id.org/schulfach/HB_0000000> .
+
+<https://orcid.org/0000-0001-6378-2618>
+        skos:prefLabel  "Steffen Rörtgen" .
 
 <https://w3id.org/schulfach/HB_0000020>
         a                   skos:Concept ;

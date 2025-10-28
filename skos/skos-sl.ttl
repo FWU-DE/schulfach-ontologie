@@ -56,6 +56,9 @@
         skos:prefLabel      "Geschichte bilingual deutsch-englisch" ;
         skos:topConceptOf   <https://w3id.org/schulfach/SL_0000000> .
 
+<https://orcid.org/0000-0001-7192-7143>
+        skos:prefLabel  "Jörg Waitelonis" .
+
 <https://w3id.org/schulfach/SL_0000021>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe" ;
@@ -199,6 +202,9 @@
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1007> ;
         skos:prefLabel      "Englisch (1. und 2. Fremdsprache)" ;
         skos:topConceptOf   <https://w3id.org/schulfach/SL_0000000> .
+
+<https://orcid.org/0000-0001-6378-2618>
+        skos:prefLabel  "Steffen Rörtgen" .
 
 <https://w3id.org/schulfach/SL_0000053>
         a                   skos:Concept ;

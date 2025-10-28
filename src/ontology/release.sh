@@ -1,5 +1,15 @@
 
-sh run.sh make -B prepare_release
+
+VERSION=1.0.0
+PRIOR_VERSION=1.0.0
+ONTBASE=https://w3id.org/schulfach
+ANNOTATE_ONTOLOGY_VERSION="annotate -V $ONTBASE/$VERSION/\$@ --annotation owl:versionInfo $VERSION"
+
+
+sh run.sh make -B VERSION=$VERSION ONTBASE=$ONTBASE ANNOTATE_ONTOLOGY_VERSION="$ANNOTATE_ONTOLOGY_VERSION" prepare_release
+
+sh run.sh make update-ontology-annotations
+
 
 #sh run.sh make skos-bb.ttl
 #sh run.sh make skos-be.ttl

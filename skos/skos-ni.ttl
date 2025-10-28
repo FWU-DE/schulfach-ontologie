@@ -47,6 +47,9 @@
         skos:prefLabel      "Profil Wirtschaft" ;
         skos:topConceptOf   <https://w3id.org/schulfach/NI_0000000> .
 
+<https://orcid.org/0000-0001-7192-7143>
+        skos:prefLabel  "Jörg Waitelonis" .
+
 <https://w3id.org/schulfach/NI_0000032>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
@@ -136,6 +139,9 @@
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1010> ;
         skos:prefLabel      "Erdkunde" ;
         skos:topConceptOf   <https://w3id.org/schulfach/NI_0000000> .
+
+<https://orcid.org/0000-0001-6378-2618>
+        skos:prefLabel  "Steffen Rörtgen" .
 
 <https://w3id.org/schulfach/NI_0000023>
         a                  skos:Concept ;

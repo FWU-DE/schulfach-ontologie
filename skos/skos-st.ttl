@@ -26,6 +26,9 @@
         skos:prefLabel      "Angewandte Naturwissenschaften" ;
         skos:topConceptOf   <https://w3id.org/schulfach/ST_0000000> .
 
+<https://orcid.org/0000-0001-7192-7143>
+        skos:prefLabel  "Jörg Waitelonis" .
+
 <https://w3id.org/schulfach/ST_0000014>
         a                   skos:Concept ;
         skos:editorialNote  "Gymnasium Sek I, Sek II" ;
@@ -107,6 +110,9 @@
         skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1005> ;
         skos:prefLabel     "Deutsch" ;
         skos:topConceptOf  <https://w3id.org/schulfach/ST_0000000> .
+
+<https://orcid.org/0000-0001-6378-2618>
+        skos:prefLabel  "Steffen Rörtgen" .
 
 <https://w3id.org/schulfach/ST_0000018>
         a                  skos:Concept ;
