@@ -24,6 +24,7 @@ jobs:
            
            cp public/doc/index-en.html public/doc/index.html
            cp -r public/doc 1.0.0
+           cp -r public/doc/* public/
            mv 1.0.0 public/
 
            pip install mkdocs
