@@ -20,8 +20,8 @@ jobs:
            java -jar widoco.jar -ontFile main/sf.ttl -outFolder public -uniteSections -includeAnnotationProperties -lang en-de  -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
            ls public
            echo -e "\n img { max-width:1000px }" >> public/doc/resources/extra.css
-           cat public/doc/resources/extra.css
-           mv public/doc/* public/
+           #mv public/doc/* public/
+           cat public/resources/extra.css
            cp public/index-en.html public/index.html
            cp -r public 1.0.0
            mv 1.0.0 public/
