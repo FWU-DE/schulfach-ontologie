@@ -8,7 +8,7 @@ ANNOTATE_ONTOLOGY_VERSION="annotate -V $ONTBASE/$VERSION/\$@ --annotation owl:ve
 
 sh run.sh make -B VERSION=$VERSION ONTBASE=$ONTBASE ANNOTATE_ONTOLOGY_VERSION="$ANNOTATE_ONTOLOGY_VERSION" prepare_release
 
-sh run.sh make update-ontology-annotations
+sh run.sh make VERSION=$VERSION ONTBASE=$ONTBASE ANNOTATE_ONTOLOGY_VERSION="$ANNOTATE_ONTOLOGY_VERSION" update-ontology-annotations
 
 
 #sh run.sh make skos-bb.ttl
