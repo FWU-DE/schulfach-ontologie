@@ -1,5 +1,5 @@
 URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
 https://w3id.org/schulfach/HE_0000000	Schulfächer (Hessen)	skos:ConceptScheme		Hessen				
 https://w3id.org/schulfach/HE_0000001	Alevitische Religion	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen			FEHLT	Sek I
 https://w3id.org/schulfach/HE_0000002	Arabisch	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen			FEHLT	Sek I nur Gymnasium und Realschule

@@ -1,5 +1,5 @@
 URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	FEHLT	NOTIZEN
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
 https://w3id.org/schulfach/BY_0000000	Schulfächer (Bayern)	skos:ConceptScheme		Bayern				
 https://w3id.org/schulfach/BY_0000001	Deutsch	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Deutsch (KIM-Schulfach)			
 https://w3id.org/schulfach/BY_0000002	Deutsch als Zweitsprache	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Deutsch als Zweitsprache (KIM-Schulfach)			Grundschule, Mittelschule

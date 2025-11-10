@@ -1,0 +1,772 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/schulfach/BY_0000012>
+        a                   skos:Concept ;
+        skos:editorialNote  "Grundschule, Mittelschule, Realschule, Gymnasium" ;
+        skos:prefLabel      "Orthodoxe Religionslehre"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000081>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule" ;
+        skos:prefLabel      "Gestaltung"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000053>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1043> ;
+        skos:prefLabel      "Psychologie"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000025>
+        a                   skos:Concept ;
+        skos:editorialNote  "Realschule, Fachoberschule, Berufsoberschule" ;
+        skos:prefLabel      "Betriebswirtschaftslehre / Rechnungswesen"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000094>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:prefLabel      "Soziologie"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000066>
+        a                   skos:Concept ;
+        skos:editorialNote  "Wirtschaftsschule, Förderschule" ;
+        skos:prefLabel      "Digitale Bildung"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000038>
+        a                   skos:Concept ;
+        skos:editorialNote  "Realschule, Gymnasium, Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1030> ;
+        skos:prefLabel      "Spanisch"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000079>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule" ;
+        skos:prefLabel      "Fachpraktische Ausbildung"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000104>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Mobilität"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000117>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1015> ;
+        skos:prefLabel      "Werken und Gestalten / Kunst"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000060>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:prefLabel      "Tschechisch"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000032>
+        a                   skos:Concept ;
+        skos:editorialNote  "Realschule" ;
+        skos:prefLabel      "Informationstechnologie"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000004>
+        a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1008> ;
+        skos:prefLabel     "Ethik"@de ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000073>
+        a                   skos:Concept ;
+        skos:editorialNote  "Wirtschaftsschule" ;
+        skos:prefLabel      "Ökonomische Bildung"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000045>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1003> ;
+        skos:prefLabel      "Chinesisch"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000017>
+        a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1010> , <http://w3id.org/kim/schulfaecher/s1011> , <http://w3id.org/kim/schulfaecher/s1023> ;
+        skos:editorialNote  "Mittelschule, Förderschule" ;
+        skos:prefLabel      "Geschichte/Politik/Geographie"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000086>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1023> ;
+        skos:prefLabel      "Internationale Politik"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000058>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:prefLabel      "Tanz- und Bewegungskünstetheater"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000111>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Berufs- und Lebensorientierung - Praxis Technik"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000099>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
+        skos:prefLabel      "Wirtschaft Aktuell"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://orcid.org/0000-0001-7192-7143>
+        skos:prefLabel  "Jörg Waitelonis" .
+
+<https://w3id.org/schulfach/BY_0000011>
+        a                   skos:Concept ;
+        skos:editorialNote  "Grundschule, Mittelschule, Realschule, Gymnasium, Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1020> ;
+        skos:prefLabel      "Musik"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000080>
+        a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1042> , <http://w3id.org/kim/schulfaecher/s1011> , <http://w3id.org/kim/schulfaecher/s1023> ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:prefLabel      "Geschichte/Politik und Gesellschaft (FOS/BOS)"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000109>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1020> ;
+        skos:prefLabel      "Rhythmik und Musik"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000052>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1037> ;
+        skos:prefLabel      "Polnisch"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000024>
+        a                   skos:Concept ;
+        skos:editorialNote  "Mittelschule, Förderschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
+        skos:prefLabel      "Wirtschaft und Kommunikation"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000093>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:prefLabel      "Sozialwirtschaft und Recht"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000065>
+        a                   skos:Concept ;
+        skos:editorialNote  "Wirtschaftsschule" ;
+        skos:prefLabel      "Betriebswirtschaftliche Steuerung und Kontrolle"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000037>
+        a                   skos:Concept ;
+        skos:editorialNote  "Realschule" ;
+        skos:prefLabel      "Sozialwesen"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000009>
+        a                   skos:Concept ;
+        skos:editorialNote  "Grundschule, Mittelschule, Realschule, Gymnasium, Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1015> ;
+        skos:prefLabel      "Kunst"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000078>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule" ;
+        skos:prefLabel      "Experimentelles Gestalten"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000103>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Leben in der Gesellschaft"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000116>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Informations- und Kommunikationstechnische Bildung"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000031>
+        a                   skos:Concept ;
+        skos:editorialNote  "Realschule, Gymnasium, Fachoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1011> ;
+        skos:prefLabel      "Geschichte"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000003>
+        a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1007> ;
+        skos:prefLabel     "Englisch"@de ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000072>
+        a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1010> , <http://w3id.org/kim/schulfaecher/s1033> ;
+        skos:editorialNote  "Wirtschaftsschule" ;
+        skos:prefLabel      "Wirtschaftsgeographie"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000044>
+        a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1002> , <http://w3id.org/kim/schulfaecher/s1001> ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:prefLabel      "Biologisch-chemisches Praktikum"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000016>
+        a                   skos:Concept ;
+        skos:editorialNote  "Mittelschule, Förderschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1044> ;
+        skos:prefLabel      "Ernährung und Soziales"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000085>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:prefLabel      "Internationale Betriebswirtschaftslehre und Volkswirtschaftslehre"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000057>
+        a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1042> , <http://w3id.org/kim/schulfaecher/s1031> ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:prefLabel      "Sport und Gesellschaft"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000029>
+        a                   skos:Concept ;
+        skos:editorialNote  "Realschule, Gymnasium, Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1009> ;
+        skos:prefLabel      "Französisch"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000110>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Berufs- und Lebensorientierung - Praxis Ernährung und Soziales"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000098>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:prefLabel      "Volkswirtschaftslehre"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000010>
+        a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1017> ;
+        skos:prefLabel     "Mathematik"@de ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000108>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Wohnen"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000051>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:prefLabel      "Natur und Technik (Gym)"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000023>
+        a                   skos:Concept ;
+        skos:editorialNote  "Mittelschule, Förderschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
+        skos:prefLabel      "Wirtschaft und Beruf"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000092>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule" ;
+        skos:prefLabel      "Sozialpsychologie"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000064>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:prefLabel      "Wissenschaftspopädeutisches Seminar"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000036>
+        a                   skos:Concept ;
+        skos:editorialNote  "Realschule" ;
+        skos:prefLabel      "Soziallehre"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000008>
+        a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1026> ;
+        skos:prefLabel     "Katholische Religionslehre"@de ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000077>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1007> ;
+        skos:prefLabel      "Englisch Book Club"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000049>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium, Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1014> ;
+        skos:prefLabel      "Italienisch"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000102>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Grundlegender entwicklungsbezogener Unterricht"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://orcid.org/0000-0001-6378-2618>
+        skos:prefLabel  "Steffen Rörtgen" .
+
+<https://w3id.org/schulfach/BY_0000115>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Blindheit und Lebenspraxis"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000030>
+        a                   skos:Concept ;
+        skos:editorialNote  "Realschule, Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1010> ;
+        skos:prefLabel      "Geographie"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000002>
+        a                   skos:Concept ;
+        skos:editorialNote  "Grundschule, Mittelschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1006> ;
+        skos:prefLabel      "Deutsch als Zweitsprache"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000071>
+        a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1015> , <http://w3id.org/kim/schulfaecher/s1020> ;
+        skos:editorialNote  "Wirtschaftsschule" ;
+        skos:prefLabel      "Musisch-ästhetische Bildung"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000043>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:prefLabel      "Berufliche Orientierung"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000015>
+        a                   skos:Concept ;
+        skos:editorialNote  "Mittelschule, Förderschule" ;
+        skos:prefLabel      "Buchführung"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000084>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:prefLabel      "Internatinal Business Studies"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000056>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:prefLabel      "Sozialwissenschaftliche Arbeitsfelder"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000028>
+        a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1012> , <http://w3id.org/kim/schulfaecher/s1044> ;
+        skos:editorialNote  "Realschule" ;
+        skos:prefLabel      "Ernährung und Gesundheit"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000097>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:prefLabel      "Technologie"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000069>
+        a                   skos:Concept ;
+        skos:editorialNote  "Wirtschaftsschule" ;
+        skos:prefLabel      "Mensch, Umwelt, Technik"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000107>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Sport und Bewegung"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000050>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium, Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1016> ;
+        skos:prefLabel      "Latein"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000022>
+        a                   skos:Concept ;
+        skos:editorialNote  "Mittelschule, Förderschule" ;
+        skos:prefLabel      "Technik"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000091>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule" ;
+        skos:prefLabel      "Rechtslehre"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000063>
+        a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1033> , <http://w3id.org/kim/schulfaecher/s1013> ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:prefLabel      "Wirtschaftsinformatik"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000035>
+        a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1042> , <http://w3id.org/kim/schulfaecher/s1023> ;
+        skos:editorialNote  "Realschule, Gymnasium, Fachoberschule, Berufsoberschule, Wirtschaftsschule" ;
+        skos:prefLabel      "Politik und Gesellschaft"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000007>
+        a                   skos:Concept ;
+        skos:editorialNote  "Grundschule, Mittelschule, Realschule, Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1025> ;
+        skos:prefLabel      "Islamischer Unterricht"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000076>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:prefLabel      "Biotechnologie"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000048>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:prefLabel      "Instrumentalensemble"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000101>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Freizeit"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000089>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:prefLabel      "Naturwissenschaften"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000114>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Blindenkurzschrift"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000001>
+        a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1005> ;
+        skos:prefLabel     "Deutsch"@de ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000070>
+        a                   skos:Concept ;
+        skos:editorialNote  "Wirtschaftsschule" ;
+        skos:prefLabel      "Mensch und Umwelt"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000042>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:prefLabel      "Archäologie"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000014>
+        a                   skos:Concept ;
+        skos:editorialNote  "Grundschule, Mittelschule, Förderschule" ;
+        skos:prefLabel      "Werken und Gestalten"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000083>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1012> ;
+        skos:prefLabel      "Gesundheitswissenschaften"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000055>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:prefLabel      "Sozialpraktische Grundbildung"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000027>
+        a                   skos:Concept ;
+        skos:editorialNote  "Realschule, Gymnasium, Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1002> ;
+        skos:prefLabel      "Chemie"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000096>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:prefLabel      "Studier- und Arbeitstechniken"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000068>
+        a                   skos:Concept ;
+        skos:editorialNote  "Wirtschaftsschule" ;
+        skos:prefLabel      "Informationsverarbeitung"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000106>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Sach- und lebensbezogener Unterricht"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000021>
+        a                   skos:Concept ;
+        skos:editorialNote  "Mittelschule, Förderschule" ;
+        skos:prefLabel      "Tastenschreiben (Lehrgang)"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000090>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1043> ;
+        skos:prefLabel      "Pädagogik/Psychologie"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000062>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:prefLabel      "Vokalensemble"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000034>
+        a                   skos:Concept ;
+        skos:editorialNote  "Realschule, Gymnasium, Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1022> ;
+        skos:prefLabel      "Physik"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000006>
+        a                   skos:Concept ;
+        skos:editorialNote  "Grundschule, Förderschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1028> ;
+        skos:prefLabel      "Heimat- und Sachunterricht"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000075>
+        a                   skos:Concept ;
+        skos:editorialNote  "Wirtschaftsschule" ;
+        skos:prefLabel      "Übungsunternehmen"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000047>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1036> ;
+        skos:prefLabel      "Griechisch"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000019>
+        a                   skos:Concept ;
+        skos:editorialNote  "Mittelschule, Förderschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1013> ;
+        skos:prefLabel      "Informatik und digitales Gestalten"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000100>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Beruf und Arbeit"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000088>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1046> ;
+        skos:prefLabel      "Medien"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000113>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Geschichte/Politik/Geographie und Natur und Technik (FS)"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000000>
+        a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" ;
+        <http://purl.org/dc/terms/creator>
+                "Jörg Waitelonis" , "Laura Junghans" , "Almut Steinlein" , "Steffen Roertgen" , "Cindy Bloes" ;
+        <http://purl.org/dc/terms/license>
+                <https://creativecommons.org/licenses/by/4.0/> ;
+        skos:prefLabel  "Schulfächer (Bayern)"@de .
+
+<https://w3id.org/schulfach/BY_0000041>
+        a                   skos:Concept ;
+        skos:editorialNote  "Realschule, Gymnasium, Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
+        skos:prefLabel      "Wirtschaft und Recht"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000013>
+        a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1031> ;
+        skos:prefLabel     "Sport"@de ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000082>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1012> ;
+        skos:prefLabel      "Gesundheitswirtschaft und Recht"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000054>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium, Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1027> ;
+        skos:prefLabel      "Russisch"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000026>
+        a                   skos:Concept ;
+        skos:editorialNote  "Realschule, Gymnasium, Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1001> ;
+        skos:prefLabel      "Biologie"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000095>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1012> ;
+        skos:prefLabel      "Spektrum der Gesundheit"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000067>
+        a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1023> , <http://w3id.org/kim/schulfaecher/s1011> , <http://w3id.org/kim/schulfaecher/s1042> ;
+        skos:editorialNote  "Wirtschaftsschule" ;
+        skos:prefLabel      "Geschichte/Politik und Gesellschaft (WS)"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000039>
+        a                   skos:Concept ;
+        skos:editorialNote  "Realschule" ;
+        skos:prefLabel      "Textiles Gestalten"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000105>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Persönlichkeit und soziale Beziehungen"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000020>
+        a                   skos:Concept ;
+        skos:editorialNote  "Mittelschule, Förderschule" ;
+        skos:prefLabel      "Natur und Technik"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000118>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Ästhetische Bildung"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000061>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1032> ;
+        skos:prefLabel      "Türkisch"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000033>
+        a                   skos:Concept ;
+        skos:editorialNote  "Realschule, Gymnasium" ;
+        skos:prefLabel      "Israelitische Religionslehre"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000005>
+        a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1024> ;
+        skos:prefLabel     "Evangelische Religionslehre"@de ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000074>
+        a                   skos:Concept ;
+        skos:editorialNote  "Wirtschaftsschule" ;
+        skos:prefLabel      "Ökonomische Bildung und Digitale Bildung"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000046>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:prefLabel      "Geologie"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000018>
+        a                   skos:Concept ;
+        skos:editorialNote  "Mittelschule, Gymnasium, Fachoberschule, Berufsoberschule, Förderschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1013> ;
+        skos:prefLabel      "Informatik"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000087>
+        a                   skos:Concept ;
+        skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:prefLabel      "Kommunikation und Interaktion"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000059>
+        a                   skos:Concept ;
+        skos:editorialNote  "Gymnasium" ;
+        skos:prefLabel      "Theater und Film"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000112>
+        a                   skos:Concept ;
+        skos:editorialNote  "Förderschule" ;
+        skos:prefLabel      "Berufs- und Lebensorientierung - Theorie"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000040>
+        a                   skos:Concept ;
+        skos:editorialNote  "Realschule" ;
+        skos:prefLabel      "Werken"@de ;
+        skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .

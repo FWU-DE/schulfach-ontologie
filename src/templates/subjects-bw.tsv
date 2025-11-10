@@ -1,5 +1,5 @@
 URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
 https://w3id.org/schulfach/BW_0000000	Schulfächer (Baden-Württemberg)	skos:ConceptScheme		Baden-Württemberg				
 https://w3id.org/schulfach/BW_0000001	Alevitische Religionslehre	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg			FEHLT	
 https://w3id.org/schulfach/BW_0000002	Alltagskultur, Ernährung und Soziales (AES) - Wahlpflichtfach	Schulfach,skos:Concept	Schulfächer (Baden-Württemberg)	Baden-Württemberg	Ernährung (KIM-Schulfach)		FEHLT	Sek I (ausser Gymnasium)

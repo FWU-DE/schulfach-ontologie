@@ -1,5 +1,5 @@
 URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
 https://w3id.org/schulfach/SH_0000000	Schulfächer (Schleswig-Holstein)	skos:ConceptScheme		Schleswig-Holstein				
 https://w3id.org/schulfach/SH_0000001	Biologie	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Biologie (KIM-Schulfach)			Sek I, Sek II
 https://w3id.org/schulfach/SH_0000002	Chemie	Schulfach,skos:Concept	Schulfächer (Schleswig-Holstein)	Schleswig-Holstein	Chemie (KIM-Schulfach)			Sek I, Sek II

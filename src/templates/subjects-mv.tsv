@@ -1,5 +1,5 @@
 URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
 https://w3id.org/schulfach/MV_0000000	Schulfächer (Mecklenburg-Vorpommern)	skos:ConceptScheme		Mecklenburg-Vorpommern				
 https://w3id.org/schulfach/MV_0000001	Astronomie	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Astronomie (KIM-Schulfach)			nur Jahrgangsstufe 9
 https://w3id.org/schulfach/MV_0000002	AWT	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Sek I ab Jahrgangsstufe 7

@@ -1,5 +1,5 @@
 URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
 https://w3id.org/schulfach/NW_0000000	Schulfächer (Nordrhein-Westfalen)	skos:ConceptScheme		Nordrhein-Westfalen				
 https://w3id.org/schulfach/NW_0000001	Alevitischer Religionsunterricht	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen			FEHLT	Primarstufe, Sek I
 https://w3id.org/schulfach/NW_0000002	Arbeitslehre	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen			FEHLT	Hauptschule, Gesamtschule

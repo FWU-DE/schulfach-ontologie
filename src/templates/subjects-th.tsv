@@ -1,5 +1,5 @@
 URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	FEHLT	NOTIZEN
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
 https://w3id.org/schulfach/TH_0000000	Schulfächer (Thüringen)	skos:ConceptScheme						
 https://w3id.org/schulfach/TH_0000001	Astronomie	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Astronomie (KIM-Schulfach)			Sek I, Sek II
 https://w3id.org/schulfach/TH_0000002	Biologie	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Biologie (KIM-Schulfach)			Sek I, Sek II

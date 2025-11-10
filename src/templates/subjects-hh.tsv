@@ -1,5 +1,5 @@
 URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	FEHLT	NOTIZEN
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
 https://w3id.org/schulfach/HH_0000000	Schulfächer (Hamburg)	skos:ConceptScheme		Hamburg				
 https://w3id.org/schulfach/HH_0000001	Sprachbildung als Querschnittsaufgabe-Rahmenvorgaben	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	
 https://w3id.org/schulfach/HH_0000002	Aufgabengebiete	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	

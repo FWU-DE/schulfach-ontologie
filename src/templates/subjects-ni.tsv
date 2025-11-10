@@ -1,5 +1,5 @@
 URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
 https://w3id.org/schulfach/NI_0000000	Schulfächer (Niedersachsen)	skos:ConceptScheme		Niedersachsen				
 https://w3id.org/schulfach/NI_0000001	Arbeit-Wirtschaft-Technik	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Wirtschaftskunde (KIM-Schulfach)		FEHLT	nur IGS
 https://w3id.org/schulfach/NI_0000002	Biologie	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Biologie (KIM-Schulfach)			Sek I, Sek II

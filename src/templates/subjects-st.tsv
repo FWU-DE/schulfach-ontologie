@@ -1,5 +1,5 @@
 URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
 https://w3id.org/schulfach/ST_0000000	Schulfächer (Sachsen-Anhalt)	skos:ConceptScheme		Sachsen-Anhalt				
 https://w3id.org/schulfach/ST_0000001	Angewandte Naturwissenschaften	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt			FEHLT	Sekundarschule
 https://w3id.org/schulfach/ST_0000002	Astronomie	Schulfach,skos:Concept	Schulfächer (Sachsen-Anhalt)	Sachsen-Anhalt	Astronomie (KIM-Schulfach)			Sekundarschule, Gymnasium Wahlpflichtfach (Sek I, Sek II)

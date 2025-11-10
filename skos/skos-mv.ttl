@@ -4,41 +4,41 @@
 <https://w3id.org/schulfach/MV_0000030>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I, Sek II" ;
-        skos:prefLabel      "Niederdeutsch" ;
+        skos:prefLabel      "Niederdeutsch"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000002>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I ab Jahrgangsstufe 7" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
-        skos:prefLabel      "AWT" ;
+        skos:prefLabel      "AWT"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000043>
         a                   skos:Concept ;
         skos:editorialNote  "nur Jahrgangsstufe 5 und 6" ;
-        skos:prefLabel      "Weltkunde" ;
+        skos:prefLabel      "Weltkunde"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000015>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1011> ;
-        skos:prefLabel      "Geschichte" ;
+        skos:prefLabel      "Geschichte"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000028>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1020> ;
-        skos:prefLabel      "Musikensemble" ;
+        skos:prefLabel      "Musikensemble"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000022>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1015> ;
-        skos:prefLabel      "Kunst" ;
+        skos:prefLabel      "Kunst"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://orcid.org/0000-0001-7192-7143>
@@ -48,67 +48,67 @@
         a                   skos:Concept ;
         skos:editorialNote  "Sek I ab Jahrgangsstufe 7, Sek II" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1027> ;
-        skos:prefLabel      "Russisch" ;
+        skos:prefLabel      "Russisch"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000007>
         a                  skos:Concept ;
         skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1005> ;
-        skos:prefLabel     "Deutsch" ;
+        skos:prefLabel     "Deutsch"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000001>
         a                   skos:Concept ;
         skos:editorialNote  "nur Jahrgangsstufe 9" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1040> ;
-        skos:prefLabel      "Astronomie" ;
+        skos:prefLabel      "Astronomie"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000042>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1004> ;
-        skos:prefLabel      "Theater/Darstellendes Spiel" ;
+        skos:prefLabel      "Theater/Darstellendes Spiel"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000014>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I, Sek II" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1010> ;
-        skos:prefLabel      "Geografie" ;
+        skos:prefLabel      "Geografie"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000027>
         a                  skos:Concept ;
         skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1020> ;
-        skos:prefLabel     "Musik" ;
+        skos:prefLabel     "Musik"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000021>
         a                  skos:Concept ;
         skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1026> ;
-        skos:prefLabel     "Katholische Religion" ;
+        skos:prefLabel     "Katholische Religion"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000034>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I ab Jahrgangsstufe 7, Sek II" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1037> ;
-        skos:prefLabel      "Polnisch" ;
+        skos:prefLabel      "Polnisch"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000006>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe, Sek I" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1004> ;
-        skos:prefLabel      "Darstellendes Spiel" ;
+        skos:prefLabel      "Darstellendes Spiel"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000019>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1013> ;
-        skos:prefLabel      "Informatik" ;
+        skos:prefLabel      "Informatik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000000>
@@ -119,18 +119,18 @@
                 "Laura Junghans" , "Steffen Roertgen" , "Almut Steinlein" , "Jörg Waitelonis" , "Cindy Bloes" ;
         <http://purl.org/dc/terms/license>
                 <https://creativecommons.org/licenses/by/4.0/> ;
-        skos:prefLabel  "Schulfächer (Mecklenburg-Vorpommern)" .
+        skos:prefLabel  "Schulfächer (Mecklenburg-Vorpommern)"@de .
 
 <https://w3id.org/schulfach/MV_0000041>
         a                   skos:Concept ;
         skos:editorialNote  "Wahlpflichtkurs in Jahrgangsstufe 9 und 10 (Gymnasium, Gesamtschule)" ;
-        skos:prefLabel      "System Erde" ;
+        skos:prefLabel      "System Erde"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000013>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe" ;
-        skos:prefLabel      "Fremdsprachen an Grundschulen" ;
+        skos:prefLabel      "Fremdsprachen an Grundschulen"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://orcid.org/0000-0001-6378-2618>
@@ -139,177 +139,177 @@
 <https://w3id.org/schulfach/MV_0000026>
         a                  skos:Concept ;
         skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1019> ;
-        skos:prefLabel     "MINT" ;
+        skos:prefLabel     "MINT"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000039>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I ab Jahrgangsstufe 7, Sek II" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1030> ;
-        skos:prefLabel      "Spanisch" ;
+        skos:prefLabel      "Spanisch"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000020>
         a                   skos:Concept ;
         skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1046> , <http://w3id.org/kim/schulfaecher/s1013> ;
         skos:editorialNote  "Sek I" ;
-        skos:prefLabel      "Informatik und Medienbildung" ;
+        skos:prefLabel      "Informatik und Medienbildung"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000033>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I, Sek II" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1022> ;
-        skos:prefLabel      "Physik" ;
+        skos:prefLabel      "Physik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000005>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I ab Jahrgangsstufe 8, Sek II" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1002> ;
-        skos:prefLabel      "Chemie" ;
+        skos:prefLabel      "Chemie"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000018>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I, Sek II - ab Jahrgangsstufe 7" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1036> ;
-        skos:prefLabel      "Griechisch" ;
+        skos:prefLabel      "Griechisch"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000040>
         a                  skos:Concept ;
         skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1031> ;
-        skos:prefLabel     "Sport" ;
+        skos:prefLabel     "Sport"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000012>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I ab Jahrgangsstufe 7, Sek II" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1009> ;
-        skos:prefLabel      "Französisch" ;
+        skos:prefLabel      "Französisch"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000025>
         a                  skos:Concept ;
         skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1017> ;
-        skos:prefLabel     "Mathematik" ;
+        skos:prefLabel     "Mathematik"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000038>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I ab Jahrgangsstufe 7, Sek II" ;
-        skos:prefLabel      "Sozialkunde" ;
+        skos:prefLabel      "Sozialkunde"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000032>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe Sek I" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1021> ;
-        skos:prefLabel      "Philosophieren mit Kindern" ;
+        skos:prefLabel      "Philosophieren mit Kindern"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000004>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I, Sek II" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1001> ;
-        skos:prefLabel      "Biologie" ;
+        skos:prefLabel      "Biologie"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000045>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
-        skos:prefLabel      "Wirtschaft" ;
+        skos:prefLabel      "Wirtschaft"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000017>
         a                   skos:Concept ;
         skos:editorialNote  "nur Jahrgangsstufe 5 und 6 " ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1042> ;
-        skos:prefLabel      "Gesellschaftswissenschaften" ;
+        skos:prefLabel      "Gesellschaftswissenschaften"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000011>
         a                  skos:Concept ;
         skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1024> ;
-        skos:prefLabel     "Evangelische Religion" ;
+        skos:prefLabel     "Evangelische Religion"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000024>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I, Sek II ab Jahrgangsstufe 5" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1016> ;
-        skos:prefLabel      "Latein" ;
+        skos:prefLabel      "Latein"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000037>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I ab Jahrgangsstufe 7, Sek II" ;
-        skos:prefLabel      "Schwedisch" ;
+        skos:prefLabel      "Schwedisch"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000009>
         a                  skos:Concept ;
         skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1041> ;
-        skos:prefLabel     "Deutsche Gebärdensprache" ;
+        skos:prefLabel     "Deutsche Gebärdensprache"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000031>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1021> ;
-        skos:prefLabel      "Philosophie" ;
+        skos:prefLabel      "Philosophie"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000003>
         a                   skos:Concept ;
         skos:editorialNote  "nur Jahrgangsstufe 11" ;
-        skos:prefLabel      "Berufliche Orientierung" ;
+        skos:prefLabel      "Berufliche Orientierung"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000044>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe, Jahrgangsstufe 5 und 6" ;
-        skos:prefLabel      "Werken" ;
+        skos:prefLabel      "Werken"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000016>
         a                   skos:Concept ;
         skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1011> , <http://w3id.org/kim/schulfaecher/s1023> ;
         skos:editorialNote  "Sek II" ;
-        skos:prefLabel      "Geschichte und politische Bildung" ;
+        skos:prefLabel      "Geschichte und politische Bildung"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000029>
         a                   skos:Concept ;
         skos:editorialNote  "nur Jahrgangsstufe 5 und 6 " ;
-        skos:prefLabel      "Naturwissenschaften" ;
+        skos:prefLabel      "Naturwissenschaften"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000010>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I, Sek II" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1007> ;
-        skos:prefLabel      "Englisch" ;
+        skos:prefLabel      "Englisch"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000023>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I, Sek II" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1015> ;
-        skos:prefLabel      "Kunst und Gestaltung" ;
+        skos:prefLabel      "Kunst und Gestaltung"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000036>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1028> ;
-        skos:prefLabel      "Sachunterricht" ;
+        skos:prefLabel      "Sachunterricht"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000008>
         a                  skos:Concept ;
         skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1006> ;
-        skos:prefLabel     "Deutsch als Zweitsprache" ;
+        skos:prefLabel     "Deutsch als Zweitsprache"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/MV_0000000> .

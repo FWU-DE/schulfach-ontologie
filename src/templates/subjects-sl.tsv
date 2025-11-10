@@ -1,5 +1,5 @@
 URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
 https://w3id.org/schulfach/SL_0000000	Schulfächer (Saarland)	skos:ConceptScheme		Saarland				
 https://w3id.org/schulfach/SL_0000001	Allgemeine Ethik	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Ethik (KIM-Schulfach)			Sek I, Sek II
 https://w3id.org/schulfach/SL_0000002	Arbeitslehre	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland			FEHLT	Gemeinschaftsschule Jahrgangsstufe 5 und 6
