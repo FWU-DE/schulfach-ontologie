@@ -4,14 +4,19 @@
     <uri name="https://w3id.org/schulfach/sf/imports/lp_import.owl" uri="imports/lp_import.owl" />
     <uri name="https://w3id.org/schulfach/sf/imports/kim_import.owl" uri="imports/kim_import.owl" />
     <uri name="https://w3id.org/schulfach/sf/imports/skos_import.owl" uri="imports/skos_import.owl" />
+    <uri name="https://w3id.org/schulfach/sf/components/subjects-by.owl" uri="components/subjects-by.owl" />
     <uri name="https://w3id.org/schulfach/sf/components/subjects-bw.owl" uri="components/subjects-bw.owl" />
     <uri name="https://w3id.org/schulfach/sf/components/subjects-hb.owl" uri="components/subjects-hb.owl" />
     <uri name="https://w3id.org/schulfach/sf/components/subjects-he.owl" uri="components/subjects-he.owl" />
+    <uri name="https://w3id.org/schulfach/sf/components/subjects-hh.owl" uri="components/subjects-hh.owl" />
     <uri name="https://w3id.org/schulfach/sf/components/subjects-mv.owl" uri="components/subjects-mv.owl" />
     <uri name="https://w3id.org/schulfach/sf/components/subjects-ni.owl" uri="components/subjects-ni.owl" />
     <uri name="https://w3id.org/schulfach/sf/components/subjects-nw.owl" uri="components/subjects-nw.owl" />
+    <uri name="https://w3id.org/schulfach/sf/components/subjects-rp.owl" uri="components/subjects-rp.owl" />
     <uri name="https://w3id.org/schulfach/sf/components/subjects-sl.owl" uri="components/subjects-sl.owl" />
+    <uri name="https://w3id.org/schulfach/sf/components/subjects-sn.owl" uri="components/subjects-sn.owl" />
     <uri name="https://w3id.org/schulfach/sf/components/subjects-st.owl" uri="components/subjects-st.owl" />
     <uri name="https://w3id.org/schulfach/sf/components/subjects-sh.owl" uri="components/subjects-sh.owl" />
+    <uri name="https://w3id.org/schulfach/sf/components/subjects-th.owl" uri="components/subjects-th.owl" />
   </group>
 </catalog>

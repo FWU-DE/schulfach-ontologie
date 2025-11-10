@@ -1,0 +1,121 @@
+URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	FEHLT	NOTIZEN
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+https://w3id.org/schulfach/BY_0000000	Schulfächer (Bayern)	skos:ConceptScheme		Bayern				
+https://w3id.org/schulfach/BY_0000001	Deutsch	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Deutsch (KIM-Schulfach)			
+https://w3id.org/schulfach/BY_0000002	Deutsch als Zweitsprache	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Deutsch als Zweitsprache (KIM-Schulfach)			Grundschule, Mittelschule
+https://w3id.org/schulfach/BY_0000003	Englisch	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Englisch (KIM-Schulfach)			
+https://w3id.org/schulfach/BY_0000004	Ethik	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Ethik (KIM-Schulfach)			
+https://w3id.org/schulfach/BY_0000005	Evangelische Religionslehre	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Religionslehre (evangelische) (KIM-Schulfach)			
+https://w3id.org/schulfach/BY_0000006	Heimat- und Sachunterricht	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Sachunterricht (KIM-Schulfach)			Grundschule, Förderschule
+https://w3id.org/schulfach/BY_0000007	Islamischer Unterricht	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Religionslehre (islamisch) (KIM-Schulfach)			Grundschule, Mittelschule, Realschule, Gymnasium
+https://w3id.org/schulfach/BY_0000008	Katholische Religionslehre	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Religionslehre (katholische) (KIM-Schulfach)			
+https://w3id.org/schulfach/BY_0000009	Kunst	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Kunst (KIM-Schulfach)			Grundschule, Mittelschule, Realschule, Gymnasium, Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000010	Mathematik	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Mathematik (KIM-Schulfach)			
+https://w3id.org/schulfach/BY_0000011	Musik	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Musik (KIM-Schulfach)			Grundschule, Mittelschule, Realschule, Gymnasium, Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000012	Orthodoxe Religionslehre	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Grundschule, Mittelschule, Realschule, Gymnasium
+https://w3id.org/schulfach/BY_0000013	Sport	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Sport (KIM-Schulfach)			
+https://w3id.org/schulfach/BY_0000014	Werken und Gestalten	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Grundschule, Mittelschule, Förderschule
+https://w3id.org/schulfach/BY_0000015	Buchführung	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Mittelschule, Förderschule
+https://w3id.org/schulfach/BY_0000016	Ernährung und Soziales	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Ernährung (KIM-Schulfach)		FEHLT	Mittelschule, Förderschule
+https://w3id.org/schulfach/BY_0000017	Geschichte/Politik/Geographie	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern		Geschichte (KIM-Schulfach),Politik (KIM-Schulfach),Geografie (KIM-Schulfach)		Mittelschule, Förderschule
+https://w3id.org/schulfach/BY_0000018	Informatik	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Informatik (KIM-Schulfach)			Mittelschule, Gymnasium, Fachoberschule, Berufsoberschule, Förderschule
+https://w3id.org/schulfach/BY_0000019	Informatik und digitales Gestalten	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Informatik (KIM-Schulfach)			Mittelschule, Förderschule
+https://w3id.org/schulfach/BY_0000020	Natur und Technik	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Mittelschule, Förderschule
+https://w3id.org/schulfach/BY_0000021	Tastenschreiben (Lehrgang)	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Mittelschule, Förderschule
+https://w3id.org/schulfach/BY_0000022	Technik	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Mittelschule, Förderschule
+https://w3id.org/schulfach/BY_0000023	Wirtschaft und Beruf	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Mittelschule, Förderschule
+https://w3id.org/schulfach/BY_0000024	Wirtschaft und Kommunikation	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Mittelschule, Förderschule
+https://w3id.org/schulfach/BY_0000025	Betriebswirtschaftslehre / Rechnungswesen	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Realschule, Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000026	Biologie	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Biologie (KIM-Schulfach)			Realschule, Gymnasium, Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000027	Chemie	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Chemie (KIM-Schulfach)			Realschule, Gymnasium, Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000028	Ernährung und Gesundheit	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern		Ernährung (KIM-Schulfach),Gesundheit (KIM-Schulfach)		Realschule
+https://w3id.org/schulfach/BY_0000029	Französisch	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Französisch (KIM-Schulfach)			Realschule, Gymnasium, Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000030	Geographie	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Geografie (KIM-Schulfach)			Realschule, Gymnasium
+https://w3id.org/schulfach/BY_0000031	Geschichte	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Geschichte (KIM-Schulfach)			Realschule, Gymnasium, Fachoberschule
+https://w3id.org/schulfach/BY_0000032	Informationstechnologie	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Realschule
+https://w3id.org/schulfach/BY_0000033	Israelitische Religionslehre	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Realschule, Gymnasium
+https://w3id.org/schulfach/BY_0000034	Physik	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Physik (KIM-Schulfach)			Realschule, Gymnasium, Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000035	Politik und Gesellschaft	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern		Politik (KIM-Schulfach),Gesellschaftswissenschaften (KIM-Schulfach)		Realschule, Gymnasium, Fachoberschule, Berufsoberschule, Wirtschaftsschule
+https://w3id.org/schulfach/BY_0000036	Soziallehre	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Realschule
+https://w3id.org/schulfach/BY_0000037	Sozialwesen	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Realschule
+https://w3id.org/schulfach/BY_0000038	Spanisch	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Spanisch (KIM-Schulfach)			Realschule, Gymnasium, Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000039	Textiles Gestalten	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Realschule
+https://w3id.org/schulfach/BY_0000040	Werken	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Realschule
+https://w3id.org/schulfach/BY_0000041	Wirtschaft und Recht	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Realschule, Gymnasium, Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000042	Archäologie	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Gymnasium
+https://w3id.org/schulfach/BY_0000043	Berufliche Orientierung	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Gymnasium
+https://w3id.org/schulfach/BY_0000044	Biologisch-chemisches Praktikum	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern		Biologie (KIM-Schulfach),Chemie (KIM-Schulfach)		Gymnasium
+https://w3id.org/schulfach/BY_0000045	Chinesisch	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Chinesisch (KIM-Schulfach)			Gymnasium
+https://w3id.org/schulfach/BY_0000046	Geologie	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Gymnasium
+https://w3id.org/schulfach/BY_0000047	Griechisch	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Neugriechisch (KIM-Schulfach)			Gymnasium
+https://w3id.org/schulfach/BY_0000048	Instrumentalensemble	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Gymnasium
+https://w3id.org/schulfach/BY_0000049	Italienisch	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Italienisch (KIM-Schulfach)			Gymnasium, Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000050	Latein	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Latein (KIM-Schulfach)			Gymnasium, Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000051	Natur und Technik (Gym)	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Gymnasium
+https://w3id.org/schulfach/BY_0000052	Polnisch	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Polnisch (KIM-Schulfach)			Gymnasium
+https://w3id.org/schulfach/BY_0000053	Psychologie	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Psychologie (KIM-Schulfach)			Gymnasium
+https://w3id.org/schulfach/BY_0000054	Russisch	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Russisch (KIM-Schulfach)			Gymnasium, Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000055	Sozialpraktische Grundbildung	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Gymnasium
+https://w3id.org/schulfach/BY_0000056	Sozialwissenschaftliche Arbeitsfelder	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Gymnasium
+https://w3id.org/schulfach/BY_0000057	Sport und Gesellschaft	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern		Sport (KIM-Schulfach),Gesellschaftswissenschaften (KIM-Schulfach)		Gymnasium
+https://w3id.org/schulfach/BY_0000058	Tanz- und Bewegungskünstetheater	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Gymnasium
+https://w3id.org/schulfach/BY_0000059	Theater und Film	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Gymnasium
+https://w3id.org/schulfach/BY_0000060	Tschechisch	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Gymnasium
+https://w3id.org/schulfach/BY_0000061	Türkisch	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Türkisch (KIM-Schulfach)			Gymnasium
+https://w3id.org/schulfach/BY_0000062	Vokalensemble	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Gymnasium
+https://w3id.org/schulfach/BY_0000063	Wirtschaftsinformatik	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern		Wirtschaftskunde (KIM-Schulfach),Informatik (KIM-Schulfach)		Gymnasium
+https://w3id.org/schulfach/BY_0000064	Wissenschaftspopädeutisches Seminar	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Gymnasium
+https://w3id.org/schulfach/BY_0000065	Betriebswirtschaftliche Steuerung und Kontrolle	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Wirtschaftsschule
+https://w3id.org/schulfach/BY_0000066	Digitale Bildung	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Wirtschaftsschule, Förderschule
+https://w3id.org/schulfach/BY_0000067	Geschichte/Politik und Gesellschaft (WS)	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern		Geschichte (KIM-Schulfach),Politik (KIM-Schulfach),Gesellschaftswissenschaften (KIM-Schulfach)		Wirtschaftsschule
+https://w3id.org/schulfach/BY_0000068	Informationsverarbeitung	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Wirtschaftsschule
+https://w3id.org/schulfach/BY_0000069	Mensch, Umwelt, Technik	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Wirtschaftsschule
+https://w3id.org/schulfach/BY_0000070	Mensch und Umwelt	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Wirtschaftsschule
+https://w3id.org/schulfach/BY_0000071	Musisch-ästhetische Bildung	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern		Musik (KIM-Schulfach),Kunst (KIM-Schulfach)		Wirtschaftsschule
+https://w3id.org/schulfach/BY_0000072	Wirtschaftsgeographie	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern		Wirtschaftskunde (KIM-Schulfach), Geografie (KIM-Schulfach)		Wirtschaftsschule
+https://w3id.org/schulfach/BY_0000073	Ökonomische Bildung 	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Wirtschaftsschule
+https://w3id.org/schulfach/BY_0000074	Ökonomische Bildung und Digitale Bildung 	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Wirtschaftsschule
+https://w3id.org/schulfach/BY_0000075	Übungsunternehmen	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Wirtschaftsschule
+https://w3id.org/schulfach/BY_0000076	Biotechnologie	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000077	Englisch Book Club	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Englisch (KIM-Schulfach)			Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000078	Experimentelles Gestalten	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Fachoberschule
+https://w3id.org/schulfach/BY_0000079	Fachpraktische Ausbildung	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Fachoberschule
+https://w3id.org/schulfach/BY_0000080	Geschichte/Politik und Gesellschaft (FOS/BOS)	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern		Geschichte (KIM-Schulfach),Politik (KIM-Schulfach),Gesellschaftswissenschaften (KIM-Schulfach)		Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000081	Gestaltung	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Fachoberschule
+https://w3id.org/schulfach/BY_0000082	Gesundheitswirtschaft und Recht	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Gesundheit (KIM-Schulfach)		FEHLT	Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000083	Gesundheitswissenschaften	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Gesundheit (KIM-Schulfach)			Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000084	Internatinal Business Studies	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000085	Internationale Betriebswirtschaftslehre und Volkswirtschaftslehre	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000086	Internationale Politik	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Politik (KIM-Schulfach)			Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000087	Kommunikation und Interaktion	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000088	Medien	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Medienbildung (KIM-Schulfach)			Fachoberschule
+https://w3id.org/schulfach/BY_0000089	Naturwissenschaften	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000090	Pädagogik/Psychologie	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Psychologie (KIM-Schulfach)		FEHLT	Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000091	Rechtslehre	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Fachoberschule
+https://w3id.org/schulfach/BY_0000092	Sozialpsychologie	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Fachoberschule
+https://w3id.org/schulfach/BY_0000093	Sozialwirtschaft und Recht	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000094	Soziologie	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000095	Spektrum der Gesundheit	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Gesundheit (KIM-Schulfach)			Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000096	Studier- und Arbeitstechniken	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000097	Technologie	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000098	Volkswirtschaftslehre	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000099	Wirtschaft Aktuell	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Wirtschaftskunde (KIM-Schulfach)			Fachoberschule, Berufsoberschule
+https://w3id.org/schulfach/BY_0000100	Beruf und Arbeit	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule
+https://w3id.org/schulfach/BY_0000101	Freizeit	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule
+https://w3id.org/schulfach/BY_0000102	Grundlegender entwicklungsbezogener Unterricht	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule
+https://w3id.org/schulfach/BY_0000103	Leben in der Gesellschaft	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule
+https://w3id.org/schulfach/BY_0000104	Mobilität	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule
+https://w3id.org/schulfach/BY_0000105	Persönlichkeit und soziale Beziehungen	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule
+https://w3id.org/schulfach/BY_0000106	Sach- und lebensbezogener Unterricht	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule
+https://w3id.org/schulfach/BY_0000107	Sport und Bewegung	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule
+https://w3id.org/schulfach/BY_0000108	Wohnen	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule
+https://w3id.org/schulfach/BY_0000109	Rhythmik und Musik	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Musik (KIM-Schulfach)			Förderschule
+https://w3id.org/schulfach/BY_0000110	Berufs- und Lebensorientierung - Praxis Ernährung und Soziales	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule
+https://w3id.org/schulfach/BY_0000111	Berufs- und Lebensorientierung - Praxis Technik	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule
+https://w3id.org/schulfach/BY_0000112	Berufs- und Lebensorientierung - Theorie	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule
+https://w3id.org/schulfach/BY_0000113	Geschichte/Politik/Geographie und Natur und Technik (FS)	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule
+https://w3id.org/schulfach/BY_0000114	Blindenkurzschrift	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule
+https://w3id.org/schulfach/BY_0000115	Blindheit und Lebenspraxis	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule
+https://w3id.org/schulfach/BY_0000116	Informations- und Kommunikationstechnische Bildung	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule
+https://w3id.org/schulfach/BY_0000117	Werken und Gestalten / Kunst	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern	Kunst (KIM-Schulfach)			Förderschule
+https://w3id.org/schulfach/BY_0000118	Ästhetische Bildung	Schulfach,skos:Concept	Schulfächer (Bayern)	Bayern			FEHLT	Förderschule

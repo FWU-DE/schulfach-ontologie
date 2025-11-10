@@ -1,0 +1,51 @@
+URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	FEHLT	NOTIZEN
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+https://w3id.org/schulfach/TH_0000000	Schulfächer (Thüringen)	skos:ConceptScheme						
+https://w3id.org/schulfach/TH_0000001	Astronomie	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Astronomie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/TH_0000002	Biologie	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Biologie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/TH_0000003	Chemie	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Chemie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/TH_0000004	Darstellen und Gestalten	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen			FEHLT	Gymnasium
+https://w3id.org/schulfach/TH_0000005	Deutsch	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Deutsch (KIM-Schulfach)			
+https://w3id.org/schulfach/TH_0000006	Englisch	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Englisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/TH_0000007	Ethik	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Ethik (KIM-Schulfach)			
+https://w3id.org/schulfach/TH_0000008	Evangelische Religionslehre	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Religionslehre (evangelische) (KIM-Schulfach)			
+https://w3id.org/schulfach/TH_0000009	Französisch	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Französisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/TH_0000010	Fremdsprache	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen			FEHLT	Primarstufe
+https://w3id.org/schulfach/TH_0000011	Geografie	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Geografie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/TH_0000012	Geografie in englischer Sprache	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Geografie (KIM-Schulfach)			Gymnasium
+https://w3id.org/schulfach/TH_0000013	Geografie in französischer Sprache	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Geografie (KIM-Schulfach)			Gymnasium
+https://w3id.org/schulfach/TH_0000014	Geschichte	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Geschichte (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/TH_0000015	Geschichte in englischer Sprache	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Geschichte (KIM-Schulfach)			Gymnasium
+https://w3id.org/schulfach/TH_0000016	Geschichte in französischer Sprache	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Geschichte (KIM-Schulfach)			Gymnasium
+https://w3id.org/schulfach/TH_0000017	Griechisch	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Neugriechisch (KIM-Schulfach)			Gymnasium
+https://w3id.org/schulfach/TH_0000018	Heimat- und Sachkunde	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Sachunterricht (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/TH_0000019	Informatik	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Informatik (KIM-Schulfach)			Gymnasium
+https://w3id.org/schulfach/TH_0000020	Italienisch	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Italienisch (KIM-Schulfach)			Gymnasium
+https://w3id.org/schulfach/TH_0000021	Jüdische Religionslehre	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen			FEHLT	
+https://w3id.org/schulfach/TH_0000022	Katholische Religionslehre	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Religionslehre (katholische) (KIM-Schulfach)			
+https://w3id.org/schulfach/TH_0000023	Kunst	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Kunst (KIM-Schulfach)			
+https://w3id.org/schulfach/TH_0000024	Kursplan Medienkunde in der Grundschule	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Medienbildung (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/TH_0000025	Latein	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Latein (KIM-Schulfach)			Gymnasium
+https://w3id.org/schulfach/TH_0000026	Mathematik	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Mathematik (KIM-Schulfach)			
+https://w3id.org/schulfach/TH_0000027	Medienbildung und Informatik 5/6	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Medienbildung (KIM-Schulfach)			Jahrgangsstufe 5 und 6 in Regelschule und Gymnasium
+https://w3id.org/schulfach/TH_0000028	Mensch-Natur-Technik	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen			FEHLT	Gymnasium
+https://w3id.org/schulfach/TH_0000029	Musik	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Musik (KIM-Schulfach)			
+https://w3id.org/schulfach/TH_0000030	Natur und Technik	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen			FEHLT	Regelschule
+https://w3id.org/schulfach/TH_0000031	Physik	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Physik (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/TH_0000032	Russisch	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Russisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/TH_0000033	Schulgarten	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen			FEHLT	Primarstufe
+https://w3id.org/schulfach/TH_0000034	Sozialkunde	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen			FEHLT	Sek I, Sek II
+https://w3id.org/schulfach/TH_0000035	Sozialkunde in englischer Sprache	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen			FEHLT	Gymnasium
+https://w3id.org/schulfach/TH_0000036	Sozialkunde in französischer Sprache	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen			FEHLT	Gymnasium
+https://w3id.org/schulfach/TH_0000037	Sozialwesen	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen			FEHLT	Regelschule
+https://w3id.org/schulfach/TH_0000038	Spanisch	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Spanisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/TH_0000039	Sport	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Sport (KIM-Schulfach)			
+https://w3id.org/schulfach/TH_0000040	Technik TGS	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen			FEHLT	Gemeinschaftsschule
+https://w3id.org/schulfach/TH_0000041	Technisches Werken	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen			FEHLT	Regelschule
+https://w3id.org/schulfach/TH_0000042	Wahlpflichtfach Gesellschaftswissenschaften	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Gesellschaftswissenschaften (KIM-Schulfach)			Gymnasium
+https://w3id.org/schulfach/TH_0000043	Wahlpflichtfach Informatik	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Informatik (KIM-Schulfach)			Regelschule
+https://w3id.org/schulfach/TH_0000044	Wahlpflichtfach Naturwissenschaften und Technik	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen			FEHLT	Gymnasium
+https://w3id.org/schulfach/TH_0000045	Werken	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen			FEHLT	Primarstufe
+https://w3id.org/schulfach/TH_0000046	Wirtschaft und Recht	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Wirtschaftskunde (KIM-Schulfach)			Gymnasium, Gemeinschaftsschule
+https://w3id.org/schulfach/TH_0000047	Wirtschaft-Recht-Technik	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Wirtschaftskunde (KIM-Schulfach)			Regelschule
+https://w3id.org/schulfach/TH_0000048	Wirtschaft-Umwelt-Europa	Schulfach,skos:Concept	Schulfächer (Thüringen)	Thüringen	Wirtschaftskunde (KIM-Schulfach)			Regelschule

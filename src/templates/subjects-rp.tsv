@@ -1,0 +1,66 @@
+URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	FEHLT	NOTIZEN
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+https://w3id.org/schulfach/RP_0000000	Schulfächer (Rheinland-Pfalz)	skos:ConceptScheme		Rheinland-Pfalz				
+https://w3id.org/schulfach/RP_0000001	Arbeitslehre	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz			FEHLT	Hauptschule 7-10, Förderschwerpunkt Lernen
+https://w3id.org/schulfach/RP_0000002	Bildende Kunst	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Kunst (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/RP_0000003	Bildende Kunst/Werken	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Kunst (KIM-Schulfach)			Förderschwerpunkt Lernen
+https://w3id.org/schulfach/RP_0000004	Kunst	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Kunst (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/RP_0000005	Biologie	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Biologie (KIM-Schulfach)			Sek II, Förderschwerpunkt Lernen
+https://w3id.org/schulfach/RP_0000006	Biologie, Chemie, Physik	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz		Biologie (KIM-Schulfach),Chemie (KIM-Schulfach),Physik (KIM-Schulfach)		 Jahrgangsstufe 7-10
+https://w3id.org/schulfach/RP_0000007	Naturwissenschaften	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz			FEHLT	Orientierungsstufe 5-6
+https://w3id.org/schulfach/RP_0000008	Chemie	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Chemie (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/RP_0000009	Physik-Chemie	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz		Chemie (KIM-Schulfach),Physik (KIM-Schulfach)		Förderschwerpunkt Lernen
+https://w3id.org/schulfach/RP_0000010	Darstellendes Spiel	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Darstellendes Spiel (KIM-Schulfach)			Sek I Wahlpflichfach, Sek II
+https://w3id.org/schulfach/RP_0000011	Deutsch	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Deutsch (KIM-Schulfach)			
+https://w3id.org/schulfach/RP_0000012	Deutsch als Zweitsprache	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Deutsch als Zweitsprache (KIM-Schulfach)			
+https://w3id.org/schulfach/RP_0000013	Englisch	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Englisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/RP_0000014	Fremdsprache	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz		Englisch (KIM-Schulfach),Französisch (KIM-Schulfach)		Primarstufe
+https://w3id.org/schulfach/RP_0000015	Erdkunde: Bilingual - Englisch	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Geografie (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/RP_0000016	Gemeinschaftskunde: Bilingual - Englisch	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Gesellschaftswissenschaften (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/RP_0000017	Erdkunde	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Geografie (KIM-Schulfach)			Förderschwerpunkt Lernen
+https://w3id.org/schulfach/RP_0000018	Erdkunde: Bilingual - Französisch	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Geografie (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/RP_0000019	Gemeinschaftskunde: Bilingual - Französisch	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Gesellschaftswissenschaften (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/RP_0000020	Gemeinschaftskunde: Grund- und Leistungskurs	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Gesellschaftswissenschaften (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/RP_0000021	Gesellschaftslehre	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Gesellschaftswissenschaften (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/RP_0000022	Gesellschaftswissenschaftliche Fächer	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz		Geografie (KIM-Schulfach),Geschichte (KIM-Schulfach)	FEHLT	Sek I, Sek II
+https://w3id.org/schulfach/RP_0000023	Ethik	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Ethik (KIM-Schulfach)			
+https://w3id.org/schulfach/RP_0000024	Französisch	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Französisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/RP_0000025	Geschichte-Sozialkunde	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Geschichte (KIM-Schulfach)		FEHLT	Förderschwerpunkt Lernen
+https://w3id.org/schulfach/RP_0000026	Griechisch	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Neugriechisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/RP_0000027	Hauswirtschaft und Sozialwesen	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Hauswirtschaft (KIM-Schulfach)		FEHLT	Realschule Plus (Wahlpflichtfach)
+https://w3id.org/schulfach/RP_0000028	Technik und Naturwissenschaft	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz			FEHLT	Realschule Plus (Wahlpflichtfach)
+https://w3id.org/schulfach/RP_0000029	Wirtschaft und Verwaltung	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Wirtschaftskunde (KIM-Schulfach)			Realschule Plus (Wahlpflichtfach)
+https://w3id.org/schulfach/RP_0000030	Informatik	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Informatik (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/RP_0000031	Italienisch	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Italienisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/RP_0000032	Kommunikation und Medien	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Medienbildung (KIM-Schulfach)			Wahlpflichtfach IGS
+https://w3id.org/schulfach/RP_0000033	Kultur	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz			FEHLT	Wahlpflichtfach Gymnasium 8-9
+https://w3id.org/schulfach/RP_0000034	Latein	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Latein (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/RP_0000035	Mathematik	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Mathematik (KIM-Schulfach)			
+https://w3id.org/schulfach/RP_0000036	Musik	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Musik (KIM-Schulfach)			
+https://w3id.org/schulfach/RP_0000037	Ökologie	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz			FEHLT	Wahlpflichtfach IGS
+https://w3id.org/schulfach/RP_0000038	Ökonomische Bildung an allgemeinbildenden Schulen	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz			FEHLT	
+https://w3id.org/schulfach/RP_0000039	Philosophie	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Philosophie (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/RP_0000040	Physik	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Physik (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/RP_0000041	Evangelische Religion	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Religionslehre (evangelische) (KIM-Schulfach)			
+https://w3id.org/schulfach/RP_0000042	Katholische Religion	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Religionslehre (katholische) (KIM-Schulfach)			
+https://w3id.org/schulfach/RP_0000043	Alevitische Religion	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz			FEHLT	Sek I
+https://w3id.org/schulfach/RP_0000044	Mennonitische Religion	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz			FEHLT	Sek II
+https://w3id.org/schulfach/RP_0000045	Russisch	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Russisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/RP_0000046	Sachunterricht	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Sachunterricht (KIM-Schulfach)			Primarstufe, Förderschwerpunkt Lernen
+https://w3id.org/schulfach/RP_0000047	Sozialpädagogik	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz			FEHLT	Realschule 9-10 Wahlpflichtfach
+https://w3id.org/schulfach/RP_0000048	Spanisch	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Spanisch (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/RP_0000049	Sport	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Sport (KIM-Schulfach)			
+https://w3id.org/schulfach/RP_0000050	Sport und Gesundheit	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz		Sport (KIM-Schulfach),Gesundheit (KIM-Schulfach)		IGS Wahlpflichtfach
+https://w3id.org/schulfach/RP_0000051	Textiles Gestalten	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz			FEHLT	Förderschwerpunkt Lernen
+https://w3id.org/schulfach/RP_0000052	Wirtschafts- und Sozialkunde	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Wahlpflichtsfach Realschule 9-10
+https://w3id.org/schulfach/RP_0000053	Herkunftssprachen-Unterricht	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz			FEHLT	Primarstufe, Sek I
+https://w3id.org/schulfach/RP_0000054	Latein als erste Fremdsprache	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Latein (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/RP_0000055	Latein als zweite Fremdsprache	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Latein (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/RP_0000056	Latein als dritte Fremdsprache	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Latein (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/RP_0000057	Griechisch als dritte fakultative Fremdsprache 9-10	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Neugriechisch (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/RP_0000058	Griechisch als dritte Pflichtfremdsprache 8-10	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Neugriechisch (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/RP_0000059	Erdkunde	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Geografie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/RP_0000060	Geschichte	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Geschichte (KIM-Schulfach)			Jahrgangsstufen 7-10, Sek II
+https://w3id.org/schulfach/RP_0000061	Sozialkunde	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz			FEHLT	Jahrgangsstufen 7-10, Sek II
+https://w3id.org/schulfach/RP_0000062	Russisch als 2. Pflichtfremdsprache	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Russisch (KIM-Schulfach)			Jahrgangsstufe 7-10
+https://w3id.org/schulfach/RP_0000063	Russisch als 3. Pflichtfremdsprache	Schulfach,skos:Concept	Schulfächer (Rheinland-Pfalz)	Rheinland-Pfalz	Russisch (KIM-Schulfach)			ab Jahrgangsstufe 9

@@ -32,6 +32,8 @@ $(IMPORTDIR)/lp_import.owl: $(MIRRORDIR)/lp.owl $(IMPORTDIR)/lp_terms.txt | all_
 		         --method MIREOT \
 		 $(ANNOTATE_CONVERT_FILE)
 
+$(TEMPLATEDIR)/subjects-by.tsv:
+	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=750307268&output=tsv' -o $@
 
 $(TEMPLATEDIR)/subjects-bw.tsv:
 	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=949672233&output=tsv' -o $@
@@ -42,6 +44,9 @@ $(TEMPLATEDIR)/subjects-hb.tsv:
 $(TEMPLATEDIR)/subjects-he.tsv:
 	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=117904402&output=tsv' -o $@
 
+$(TEMPLATEDIR)/subjects-hh.tsv:
+	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=1268565878&output=tsv' -o $@
+
 $(TEMPLATEDIR)/subjects-mv.tsv:
 	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=1177344865&output=tsv' -o $@
 
@@ -51,14 +56,23 @@ $(TEMPLATEDIR)/subjects-ni.tsv:
 $(TEMPLATEDIR)/subjects-nw.tsv:
 	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=33460254&output=tsv' -o $@
 
+$(TEMPLATEDIR)/subjects-rp.tsv:
+	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=1675863626&output=tsv' -o $@
+
 $(TEMPLATEDIR)/subjects-sl.tsv:
 	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=378379644&output=tsv' -o $@
+
+$(TEMPLATEDIR)/subjects-sn.tsv:
+	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=1881400790&output=tsv' -o $@
 
 $(TEMPLATEDIR)/subjects-st.tsv:
 	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=174422951&output=tsv' -o $@
 
 $(TEMPLATEDIR)/subjects-sh.tsv:
 	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=1314666209&output=tsv' -o $@
+
+$(TEMPLATEDIR)/subjects-th.tsv:
+	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=2035558748&output=tsv' -o $@
 
 
 $(IMPORTDIR)/kim_import.owl: 

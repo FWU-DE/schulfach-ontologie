@@ -30,13 +30,19 @@ import_group:
       module_type_slme: SUBSET
 components:
   products:
-    - filename: subjects-bw.owl
+    - filename: subjects-by.owl 
+      use_template: true
+      template_options: --input sf-edit.owl
+    - filename: subjects-bw.owl 
       use_template: true
       template_options: --input sf-edit.owl
     - filename: subjects-hb.owl
       use_template: true
       template_options: --input sf-edit.owl
     - filename: subjects-he.owl
+      use_template: true
+      template_options: --input sf-edit.owl
+    - filename: subjects-hh.owl
       use_template: true
       template_options: --input sf-edit.owl
     - filename: subjects-mv.owl
@@ -48,16 +54,24 @@ components:
     - filename: subjects-nw.owl
       use_template: true
       template_options: --input sf-edit.owl
+    - filename: subjects-rp.owl
+      use_template: true
+      template_options: --input sf-edit.owl
     - filename: subjects-sl.owl
       use_template: true
       template_options: --input sf-edit.owl
+    - filename: subjects-sn.owl
+      use_template: true
+      template_options: --input sf-edit.owl      
     - filename: subjects-st.owl
       use_template: true
       template_options: --input sf-edit.owl
     - filename: subjects-sh.owl
       use_template: true
       template_options: --input sf-edit.owl
-
+    - filename: subjects-th.owl
+      use_template: true
+      template_options: --input sf-edit.owl
 
 
 

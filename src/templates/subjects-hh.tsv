@@ -1,0 +1,54 @@
+URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	FEHLT	NOTIZEN
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+https://w3id.org/schulfach/HH_0000000	Schulfächer (Hamburg)	skos:ConceptScheme		Hamburg				
+https://w3id.org/schulfach/HH_0000001	Sprachbildung als Querschnittsaufgabe-Rahmenvorgaben	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	
+https://w3id.org/schulfach/HH_0000002	Aufgabengebiete	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	
+https://w3id.org/schulfach/HH_0000003	Bildende Kunst	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Kunst (KIM-Schulfach)			
+https://w3id.org/schulfach/HH_0000004	Deutsch	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Deutsch (KIM-Schulfach)			
+https://w3id.org/schulfach/HH_0000005	Deutsch als Zweitsprache in Vorbereitungsklassen	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Deutsch als Zweitsprache (KIM-Schulfach)			Primarstufe, Sek I
+https://w3id.org/schulfach/HH_0000006	Englisch	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Englisch (KIM-Schulfach)			Primarstufe, Sek I
+https://w3id.org/schulfach/HH_0000007	Neuere Fremdsprachen: Englisch	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Englisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HH_0000008	Herkunftssprachen	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	Primarstufe
+https://w3id.org/schulfach/HH_0000009	Mathematik	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Mathematik (KIM-Schulfach)			
+https://w3id.org/schulfach/HH_0000010	Musik	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Musik (KIM-Schulfach)			
+https://w3id.org/schulfach/HH_0000011	Niederdeutsch	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	Primarstufe, Sek I
+https://w3id.org/schulfach/HH_0000012	Religion	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	
+https://w3id.org/schulfach/HH_0000013	Sachunterricht	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Sachunterricht (KIM-Schulfach)			Primarstufe
+https://w3id.org/schulfach/HH_0000014	Sport	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Sport (KIM-Schulfach)			
+https://w3id.org/schulfach/HH_0000015	Theater	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Darstellendes Spiel (KIM-Schulfach)			
+https://w3id.org/schulfach/HH_0000016	Alte Sprachen: Latein	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Latein (KIM-Schulfach)			Sek I
+https://w3id.org/schulfach/HH_0000017	Alte Sprachen	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg		Latein (KIM-Schulfach),Neugriechisch (KIM-Schulfach)		Sek II
+https://w3id.org/schulfach/HH_0000018	Alte Sprachen: Griechisch	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Neugriechisch (KIM-Schulfach)			Gymnasium Sek I
+https://w3id.org/schulfach/HH_0000019	Berufliche Orientierung - Leben, Arbeit, Beruf	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	Stadtteilschule
+https://w3id.org/schulfach/HH_0000020	Biologie	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Biologie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/HH_0000021	Chemie	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Chemie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/HH_0000022	Geographie	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Geografie (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/HH_0000023	Gecshichte	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Geschichte (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/HH_0000024	Informatik	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Informatik (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/HH_0000025	Lernbereich Gesellschaftswissenschaften	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Gesellschaftswissenschaften (KIM-Schulfach)			Stadtteilschule
+https://w3id.org/schulfach/HH_0000026	Lernbereich Naturwissenschatfen und Technik	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	Stadtteilschule
+https://w3id.org/schulfach/HH_0000027	Naturwissenschaften/Technik	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	Sek I
+https://w3id.org/schulfach/HH_0000028	Naturwissenschaftliches Praktikum	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	Sek I
+https://w3id.org/schulfach/HH_0000029	Neuere Sprachen	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg		Chinesisch (KIM-Schulfach),Französisch (KIM-Schulfach),Italienisch (KIM-Schulfach),Polnisch (KIM-Schulfach),Portugiesisch (KIM-Schulfach),Russisch (KIM-Schulfach),Spanisch (KIM-Schulfach),Türkisch (KIM-Schulfach)	FEHLT	Sek I; Albanisch, Arabisch, Farsi, Ukrainisch
+https://w3id.org/schulfach/HH_0000030	Neuere Fremdsprachen: Arabisch	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	Sek II
+https://w3id.org/schulfach/HH_0000031	Neuere Fremdsprachen: Chinesisch	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Chinesisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HH_0000032	Neuere Fremdsprachen: Farsi	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	Sek II
+https://w3id.org/schulfach/HH_0000033	Neuere Fremdsprachen: Französisch	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Französisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HH_0000034	Neuere Fremdsprachen: Italienisch	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Italienisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HH_0000035	Neuere Fremdsprachen: Polnisch	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Polnisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HH_0000036	Neuere Fremdsprachen: Portugiesisch	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Portugiesisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HH_0000037	Neuere Fremdsprachen: Russisch	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Russisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HH_0000038	Neuere Fremdsprachen: Spanisch	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Spanisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HH_0000039	Neuere Fremdsprachen: Türkisch	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Türkisch (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/HH_0000040	Politik/Gesellschaft/Wirtschaft	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg		Politik (KIM-Schulfach),Gesellschaftswissenschaften (KIM-Schulfach),Wirtschaftskunde (KIM-Schulfach)		Sek I, Sek II
+https://w3id.org/schulfach/HH_0000041	Physik	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Physik (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/HH_0000042	Pädagogik	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	Gymnasium
+https://w3id.org/schulfach/HH_0000043	Philosophie	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Philosophie (KIM-Schulfach)			Gymnasium
+https://w3id.org/schulfach/HH_0000044	Rahmenvorgaben für die berufliche Orientierung	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	Sek I
+https://w3id.org/schulfach/HH_0000045	Seminar	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	Stadtteilschule, Sek II
+https://w3id.org/schulfach/HH_0000046	Wirtschaft	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Wirtschaftskunde (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/HH_0000047	Psychologie	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Psychologie (KIM-Schulfach)			Gymnasium
+https://w3id.org/schulfach/HH_0000048	Recht	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	Gymnasium
+https://w3id.org/schulfach/HH_0000049	Fachrichtung Pädagogik/Psychologie an beruflichen Gymnasien	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Psychologie (KIM-Schulfach)		FEHLT	Gymnasium Sek II
+https://w3id.org/schulfach/HH_0000050	Fachrichtung Technik an beruflichen Gymnasien	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg			FEHLT	Gymnasium Sek II
+https://w3id.org/schulfach/HH_0000051	Fachrichtung Wirtschaft an beruflichen Gymnasien	Schulfach,skos:Concept	Schulfächer (Hamburg)	Hamburg	Wirtschaftskunde (KIM-Schulfach)			Gymnasium Sek II

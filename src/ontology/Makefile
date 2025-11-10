@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                ff013e274e2467c9400fd7c474f2c0d5b5cd68c316da1268f203e077529a5a2e
+CONFIG_HASH=                fd00a338257cfb400be7e2e74b7a8b716b7a98ae81253c365755885881829e57
 
 
 # ----------------------------------------
@@ -58,7 +58,7 @@ OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
 ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) convert -f ofn --output $@.tmp.owl && mv $@.tmp.owl $@
-OTHER_SRC =                 $(COMPONENTSDIR)/subjects-bw.owl $(COMPONENTSDIR)/subjects-hb.owl $(COMPONENTSDIR)/subjects-he.owl $(COMPONENTSDIR)/subjects-mv.owl $(COMPONENTSDIR)/subjects-ni.owl $(COMPONENTSDIR)/subjects-nw.owl $(COMPONENTSDIR)/subjects-sl.owl $(COMPONENTSDIR)/subjects-st.owl $(COMPONENTSDIR)/subjects-sh.owl 
+OTHER_SRC =                 $(COMPONENTSDIR)/subjects-by.owl $(COMPONENTSDIR)/subjects-bw.owl $(COMPONENTSDIR)/subjects-hb.owl $(COMPONENTSDIR)/subjects-he.owl $(COMPONENTSDIR)/subjects-hh.owl $(COMPONENTSDIR)/subjects-mv.owl $(COMPONENTSDIR)/subjects-ni.owl $(COMPONENTSDIR)/subjects-nw.owl $(COMPONENTSDIR)/subjects-rp.owl $(COMPONENTSDIR)/subjects-sl.owl $(COMPONENTSDIR)/subjects-sn.owl $(COMPONENTSDIR)/subjects-st.owl $(COMPONENTSDIR)/subjects-sh.owl $(COMPONENTSDIR)/subjects-th.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
@@ -495,28 +495,38 @@ all_components: $(OTHER_SRC)
 
 .PHONY: recreate-components
 recreate-components:
-	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-subjects-bw.owl \
+	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-subjects-by.owl \
+		--assume-new=$(TMPDIR)/stamp-component-subjects-bw.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-hb.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-he.owl \
+		--assume-new=$(TMPDIR)/stamp-component-subjects-hh.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-mv.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-ni.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-nw.owl \
+		--assume-new=$(TMPDIR)/stamp-component-subjects-rp.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-sl.owl \
+		--assume-new=$(TMPDIR)/stamp-component-subjects-sn.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-st.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-sh.owl \
+		--assume-new=$(TMPDIR)/stamp-component-subjects-th.owl \
 		COMP=true IMP=false MIR=true PAT=true all_components
 
 .PHONY: no-mirror-recreate-components
 no-mirror-recreate-components:
-	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-subjects-bw.owl \
+	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-subjects-by.owl \
+		--assume-new=$(TMPDIR)/stamp-component-subjects-bw.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-hb.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-he.owl \
+		--assume-new=$(TMPDIR)/stamp-component-subjects-hh.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-mv.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-ni.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-nw.owl \
+		--assume-new=$(TMPDIR)/stamp-component-subjects-rp.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-sl.owl \
+		--assume-new=$(TMPDIR)/stamp-component-subjects-sn.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-st.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-sh.owl \
+		--assume-new=$(TMPDIR)/stamp-component-subjects-th.owl \
 		COMP=true IMP=false MIR=false PAT=true all_components
 
 .PHONY: recreate-%
@@ -537,6 +547,12 @@ $(TMPDIR)/stamp-component-%.owl: | $(TMPDIR)
 	touch $@
 .PRECIOUS: $(TMPDIR)/stamp-component-%.owl
 
+$(COMPONENTSDIR)/subjects-by.owl: $(TEMPLATEDIR)/subjects-by.tsv $(TMPDIR)/stamp-component-subjects-by.owl
+	$(ROBOT) template --input sf-edit.owl \
+		 --template $(TEMPLATEDIR)/subjects-by.tsv \
+		 $(ANNOTATE_CONVERT_FILE)
+.PRECIOUS: $(COMPONENTSDIR)/subjects-by.owl
+
 $(COMPONENTSDIR)/subjects-bw.owl: $(TEMPLATEDIR)/subjects-bw.tsv $(TMPDIR)/stamp-component-subjects-bw.owl
 	$(ROBOT) template --input sf-edit.owl \
 		 --template $(TEMPLATEDIR)/subjects-bw.tsv \
@@ -554,6 +570,12 @@ $(COMPONENTSDIR)/subjects-he.owl: $(TEMPLATEDIR)/subjects-he.tsv $(TMPDIR)/stamp
 		 --template $(TEMPLATEDIR)/subjects-he.tsv \
 		 $(ANNOTATE_CONVERT_FILE)
 .PRECIOUS: $(COMPONENTSDIR)/subjects-he.owl
+
+$(COMPONENTSDIR)/subjects-hh.owl: $(TEMPLATEDIR)/subjects-hh.tsv $(TMPDIR)/stamp-component-subjects-hh.owl
+	$(ROBOT) template --input sf-edit.owl \
+		 --template $(TEMPLATEDIR)/subjects-hh.tsv \
+		 $(ANNOTATE_CONVERT_FILE)
+.PRECIOUS: $(COMPONENTSDIR)/subjects-hh.owl
 
 $(COMPONENTSDIR)/subjects-mv.owl: $(TEMPLATEDIR)/subjects-mv.tsv $(TMPDIR)/stamp-component-subjects-mv.owl
 	$(ROBOT) template --input sf-edit.owl \
@@ -573,11 +595,23 @@ $(COMPONENTSDIR)/subjects-nw.owl: $(TEMPLATEDIR)/subjects-nw.tsv $(TMPDIR)/stamp
 		 $(ANNOTATE_CONVERT_FILE)
 .PRECIOUS: $(COMPONENTSDIR)/subjects-nw.owl
 
+$(COMPONENTSDIR)/subjects-rp.owl: $(TEMPLATEDIR)/subjects-rp.tsv $(TMPDIR)/stamp-component-subjects-rp.owl
+	$(ROBOT) template --input sf-edit.owl \
+		 --template $(TEMPLATEDIR)/subjects-rp.tsv \
+		 $(ANNOTATE_CONVERT_FILE)
+.PRECIOUS: $(COMPONENTSDIR)/subjects-rp.owl
+
 $(COMPONENTSDIR)/subjects-sl.owl: $(TEMPLATEDIR)/subjects-sl.tsv $(TMPDIR)/stamp-component-subjects-sl.owl
 	$(ROBOT) template --input sf-edit.owl \
 		 --template $(TEMPLATEDIR)/subjects-sl.tsv \
 		 $(ANNOTATE_CONVERT_FILE)
 .PRECIOUS: $(COMPONENTSDIR)/subjects-sl.owl
+
+$(COMPONENTSDIR)/subjects-sn.owl: $(TEMPLATEDIR)/subjects-sn.tsv $(TMPDIR)/stamp-component-subjects-sn.owl
+	$(ROBOT) template --input sf-edit.owl \
+		 --template $(TEMPLATEDIR)/subjects-sn.tsv \
+		 $(ANNOTATE_CONVERT_FILE)
+.PRECIOUS: $(COMPONENTSDIR)/subjects-sn.owl
 
 $(COMPONENTSDIR)/subjects-st.owl: $(TEMPLATEDIR)/subjects-st.tsv $(TMPDIR)/stamp-component-subjects-st.owl
 	$(ROBOT) template --input sf-edit.owl \
@@ -590,6 +624,12 @@ $(COMPONENTSDIR)/subjects-sh.owl: $(TEMPLATEDIR)/subjects-sh.tsv $(TMPDIR)/stamp
 		 --template $(TEMPLATEDIR)/subjects-sh.tsv \
 		 $(ANNOTATE_CONVERT_FILE)
 .PRECIOUS: $(COMPONENTSDIR)/subjects-sh.owl
+
+$(COMPONENTSDIR)/subjects-th.owl: $(TEMPLATEDIR)/subjects-th.tsv $(TMPDIR)/stamp-component-subjects-th.owl
+	$(ROBOT) template --input sf-edit.owl \
+		 --template $(TEMPLATEDIR)/subjects-th.tsv \
+		 $(ANNOTATE_CONVERT_FILE)
+.PRECIOUS: $(COMPONENTSDIR)/subjects-th.owl
 
 endif # COMP=true
 # ----------------------------------------
