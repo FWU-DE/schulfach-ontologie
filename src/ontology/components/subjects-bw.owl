@@ -141,13 +141,13 @@ Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#editorialNot
 
 # Individual: <https://w3id.org/schulfach/BW_0000000> (Schulfächer (Baden-Württemberg))
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000000> "Schulfächer (Baden-Württemberg)")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000000> "Schulfächer (Baden-Württemberg)"@de)
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#ConceptScheme> <https://w3id.org/schulfach/BW_0000000>)
 ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulfach/BW_0000000> <https://w3id.org/lehrplan/ontology/LP_3000049>)
 
 # Individual: <https://w3id.org/schulfach/BW_0000001> (Alevitische Religionslehre)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000001> "Alevitische Religionslehre")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000001> "Alevitische Religionslehre"@de)
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000001>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000001>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulfach/BW_0000001> <https://w3id.org/schulfach/BW_0000000>)
@@ -155,7 +155,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000002> (Alltagskultur, Ernährung und Soziales (AES) - Wahlpflichtfach)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000002> "Alltagskultur, Ernährung und Soziales (AES) - Wahlpflichtfach")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000002> "Alltagskultur, Ernährung und Soziales (AES) - Wahlpflichtfach"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000002> "Sek I (ausser Gymnasium)")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000002>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000002>)
@@ -165,7 +165,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000003> (Altkatholische Religionslehre)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000003> "Altkatholische Religionslehre")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000003> "Altkatholische Religionslehre"@de)
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000003>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000003>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulfach/BW_0000003> <https://w3id.org/schulfach/BW_0000000>)
@@ -173,7 +173,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000004> (Astronomie - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000004> "Astronomie - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000004> "Astronomie - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000004> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000004>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000004>)
@@ -183,7 +183,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000005> (Aufbaukurs Informatik)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000005> "Aufbaukurs Informatik")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000005> "Aufbaukurs Informatik"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000005> "Jahrgangsstufe 7")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000005>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000005>)
@@ -193,7 +193,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000006> (Basiskurs Medienbildung)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000006> "Basiskurs Medienbildung")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000006> "Basiskurs Medienbildung"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000006> "Jahrgangsstufe 5")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000006>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000006>)
@@ -203,7 +203,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000007> (Bewegung, Spiel und Sport)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000007> "Bewegung, Spiel und Sport")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000007> "Bewegung, Spiel und Sport"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000007> "nur Primarstufe")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000007>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000007>)
@@ -213,7 +213,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000008> (Bildende Kunst)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000008> "Bildende Kunst")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000008> "Bildende Kunst"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000008> "Sek I, Sek II + Profilfach extra")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000008>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000008>)
@@ -223,7 +223,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000009> (Biologie)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000009> "Biologie")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000009> "Biologie"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000009> "Sek I, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000009>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000009>)
@@ -233,7 +233,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000010> (Biologie, Naturphänomene und Technik (BNT))
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000010> "Biologie, Naturphänomene und Technik (BNT)")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000010> "Biologie, Naturphänomene und Technik (BNT)"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000010> "Jahrgangsstufe 5 und 6")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000010>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000010>)
@@ -243,7 +243,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000011> (Chemie)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000011> "Chemie")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000011> "Chemie"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000011> "Sek I, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000011>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000011>)
@@ -253,7 +253,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000012> (Chinesisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000012> "Chinesisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000012> "Chinesisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000012> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000012>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000012>)
@@ -263,7 +263,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000013> (Darstellende Geometrie - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000013> "Darstellende Geometrie - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000013> "Darstellende Geometrie - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000013> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000013>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000013>)
@@ -272,7 +272,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000014> (Deutsch)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000014> "Deutsch")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000014> "Deutsch"@de)
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000014>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000014>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulfach/BW_0000014> <http://w3id.org/kim/schulfaecher/s1005>)
@@ -281,7 +281,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000015> (Deutsch als Fremdsprache)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000015> "Deutsch als Fremdsprache")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000015> "Deutsch als Fremdsprache"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000015> "https://www.schule-bw.de/themen-und-impulse/migration-integration-bildung/vkl_vabo/vkl/mehrsprachigkeit/curriculum")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000015>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000015>)
@@ -290,7 +290,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000016> (Digitale mathematische Werkzeuge (DmW) - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000016> "Digitale mathematische Werkzeuge (DmW) - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000016> "Digitale mathematische Werkzeuge (DmW) - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000016> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000016>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000016>)
@@ -299,7 +299,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000017> (Englisch)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000017> "Englisch")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000017> "Englisch"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000017> "Primarstufe, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000017>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000017>)
@@ -309,7 +309,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000018> (Englisch als erste Fremdsprache)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000018> "Englisch als erste Fremdsprache")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000018> "Englisch als erste Fremdsprache"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000018> "Sek I ")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000018>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000018>)
@@ -319,7 +319,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000019> (Englisch als zweite Fremdsprache)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000019> "Englisch als zweite Fremdsprache")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000019> "Englisch als zweite Fremdsprache"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000019> "nur Gymnasium")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000019>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000019>)
@@ -329,7 +329,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000020> (Englisch als zweite Fremdsprache - Wahlpflichtfach)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000020> "Englisch als zweite Fremdsprache - Wahlpflichtfach")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000020> "Englisch als zweite Fremdsprache - Wahlpflichtfach"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000020> "Sek I (ausser Gymnasium)")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000020>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000020>)
@@ -339,7 +339,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000021> (Ethik)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000021> "Ethik")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000021> "Ethik"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000021> "Sek I, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000021>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000021>)
@@ -349,7 +349,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000022> (Evangelische Religionslehre)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000022> "Evangelische Religionslehre")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000022> "Evangelische Religionslehre"@de)
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000022>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000022>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulfach/BW_0000022> <http://w3id.org/kim/schulfaecher/s1024>)
@@ -358,7 +358,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000023> (Französisch)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000023> "Französisch")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000023> "Französisch"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000023> "Primarstufe, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000023>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000023>)
@@ -368,7 +368,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000024> (Französisch als dritte Fremdsprache - Profilfach)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000024> "Französisch als dritte Fremdsprache - Profilfach")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000024> "Französisch als dritte Fremdsprache - Profilfach"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000024> "nur Gymnasium Sek I")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000024>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000024>)
@@ -378,7 +378,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000025> (Französisch als erste Fremdsprache)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000025> "Französisch als erste Fremdsprache")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000025> "Französisch als erste Fremdsprache"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000025> "Sek I")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000025>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000025>)
@@ -386,9 +386,9 @@ ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https:
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulfach/BW_0000025> <https://w3id.org/schulfach/BW_0000000>)
 ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulfach/BW_0000025> <https://w3id.org/lehrplan/ontology/LP_3000049>)
 
-# Individual: <https://w3id.org/schulfach/BW_0000026> (Französisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe )
+# Individual: <https://w3id.org/schulfach/BW_0000026> (Französisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000026> "Französisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe ")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000026> "Französisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000026> "nur Gymnasium Sek I, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000026>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000026>)
@@ -398,7 +398,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000027> (Französisch als zweite Fremdsprache - Wahlpflichtfach)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000027> "Französisch als zweite Fremdsprache - Wahlpflichtfach")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000027> "Französisch als zweite Fremdsprache - Wahlpflichtfach"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000027> "Sek I")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000027>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000027>)
@@ -408,7 +408,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000028> (Gemeinschaftskunde)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000028> "Gemeinschaftskunde")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000028> "Gemeinschaftskunde"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000028> "Sek I, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000028>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000028>)
@@ -417,7 +417,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000029> (Geographie)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000029> "Geographie")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000029> "Geographie"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000029> "Sek I, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000029>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000029>)
@@ -427,7 +427,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000030> (Geologie - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000030> "Geologie - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000030> "Geologie - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000030> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000030>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000030>)
@@ -436,7 +436,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000031> (Geschichte)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000031> "Geschichte")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000031> "Geschichte"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000031> "Sek I, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000031>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000031>)
@@ -446,7 +446,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000032> (Griechisch als dritte Fremdsprache - Profilfach)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000032> "Griechisch als dritte Fremdsprache - Profilfach")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000032> "Griechisch als dritte Fremdsprache - Profilfach"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000032> "ab Jahrgangsstufe 8 (nur Gymnasium)")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000032>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000032>)
@@ -456,7 +456,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000033> (Griechisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000033> "Griechisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000033> "Griechisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000033> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000033>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000033>)
@@ -466,7 +466,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000034> (Hebräisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000034> "Hebräisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000034> "Hebräisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000034> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000034>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000034>)
@@ -476,7 +476,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000035> (Imformatik, Mathematik, Physik (IMP) - Profilfach)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000035> "Imformatik, Mathematik, Physik (IMP) - Profilfach")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000035> "Imformatik, Mathematik, Physik (IMP) - Profilfach"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000035> "ab Jahrgangsstufe 8")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000035>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000035>)
@@ -488,7 +488,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000036> (Informatik - Wahlfach in der Oberstufe (Schulversuch))
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000036> "Informatik - Wahlfach in der Oberstufe (Schulversuch)")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000036> "Informatik - Wahlfach in der Oberstufe (Schulversuch)"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000036> "ab Jahrgangsstufe 11")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000036>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000036>)
@@ -498,7 +498,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000037> (Informatik (Schulversuch))
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000037> "Informatik (Schulversuch)")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000037> "Informatik (Schulversuch)"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000037> "ab Jahrgangsstufe 9")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000037>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000037>)
@@ -508,7 +508,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000038> (Islamische Religionslehre sunnitischer Prägung)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000038> "Islamische Religionslehre sunnitischer Prägung")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000038> "Islamische Religionslehre sunnitischer Prägung"@de)
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000038>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000038>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulfach/BW_0000038> <http://w3id.org/kim/schulfaecher/s1025>)
@@ -517,7 +517,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000039> (Italienisch als dritte Fremdsprache - Profilfach)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000039> "Italienisch als dritte Fremdsprache - Profilfach")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000039> "Italienisch als dritte Fremdsprache - Profilfach"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000039> "ab Jahrgangsstufe 8 (nur Gymnasium)")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000039>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000039>)
@@ -527,7 +527,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000040> (Italienisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000040> "Italienisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000040> "Italienisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000040> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000040>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000040>)
@@ -537,7 +537,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000041> (Japanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000041> "Japanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000041> "Japanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000041> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000041>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000041>)
@@ -547,7 +547,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000042> (Jüdische Religionslehre)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000042> "Jüdische Religionslehre")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000042> "Jüdische Religionslehre"@de)
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000042>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000042>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulfach/BW_0000042> <https://w3id.org/schulfach/BW_0000000>)
@@ -555,7 +555,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000043> (Katholische Religionslehre)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000043> "Katholische Religionslehre")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000043> "Katholische Religionslehre"@de)
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000043>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000043>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulfach/BW_0000043> <http://w3id.org/kim/schulfaecher/s1026>)
@@ -564,7 +564,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000044> (Kunst/Werken)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000044> "Kunst/Werken")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000044> "Kunst/Werken"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000044> "nur Primarstufe")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000044>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000044>)
@@ -574,7 +574,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000045> (Latein als dritte Fremdsprache - Profilfach)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000045> "Latein als dritte Fremdsprache - Profilfach")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000045> "Latein als dritte Fremdsprache - Profilfach"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000045> "ab Jahrgangsstufe 8 (nur Gymnasium)")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000045>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000045>)
@@ -584,7 +584,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000046> (Latein als erste Fremdsprache)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000046> "Latein als erste Fremdsprache")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000046> "Latein als erste Fremdsprache"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000046> "ab Jahrgangsstufe 5 (nur Gymnasium)")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000046>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000046>)
@@ -594,7 +594,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000047> (Latein als spät beginnende Fremdsprache - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000047> "Latein als spät beginnende Fremdsprache - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000047> "Latein als spät beginnende Fremdsprache - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000047> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000047>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000047>)
@@ -604,7 +604,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000048> (Latein als zweite Fremdsprache)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000048> "Latein als zweite Fremdsprache")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000048> "Latein als zweite Fremdsprache"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000048> "ab Jahrgangsstufe 6 (nur Gymnasium)")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000048>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000048>)
@@ -614,7 +614,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000049> (Literatur - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000049> "Literatur - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000049> "Literatur - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000049> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000049>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000049>)
@@ -623,7 +623,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000050> (Literatur und Theater)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000050> "Literatur und Theater")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000050> "Literatur und Theater"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000050> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000050>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000050>)
@@ -633,7 +633,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000051> (Mathematik)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000051> "Mathematik")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000051> "Mathematik"@de)
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000051>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000051>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulfach/BW_0000051> <http://w3id.org/kim/schulfaecher/s1017>)
@@ -642,7 +642,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000052> (Musik)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000052> "Musik")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000052> "Musik"@de)
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000052>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000052>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulfach/BW_0000052> <http://w3id.org/kim/schulfaecher/s1020>)
@@ -651,7 +651,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000053> (Musik - Profilfach)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000053> "Musik - Profilfach")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000053> "Musik - Profilfach"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000053> "Sek I, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000053>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000053>)
@@ -661,7 +661,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000054> (Naturwissenschaft und Technik (NwT) - Basisfach in der Kursstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000054> "Naturwissenschaft und Technik (NwT) - Basisfach in der Kursstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000054> "Naturwissenschaft und Technik (NwT) - Basisfach in der Kursstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000054> "nur Gymnasium Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000054>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000054>)
@@ -670,7 +670,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000055> (Naturwissenschaft und Technik (NwT) - Profilfach)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000055> "Naturwissenschaft und Technik (NwT) - Profilfach")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000055> "Naturwissenschaft und Technik (NwT) - Profilfach"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000055> "Sek I, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000055>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000055>)
@@ -679,7 +679,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000056> (Naturwissenschaft und Technik (NwT) - Schulversuch Leistungsfach in der Kursstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000056> "Naturwissenschaft und Technik (NwT) - Schulversuch Leistungsfach in der Kursstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000056> "Naturwissenschaft und Technik (NwT) - Schulversuch Leistungsfach in der Kursstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000056> "nur Gymnasium Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000056>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000056>)
@@ -688,7 +688,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000057> (Orthodoxe Religionslehre)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000057> "Orthodoxe Religionslehre")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000057> "Orthodoxe Religionslehre"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000057> "Sek I alle Schularten, Sek II nur Gymnasium")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000057>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000057>)
@@ -697,7 +697,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000058> (Philosophie - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000058> "Philosophie - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000058> "Philosophie - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000058> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000058>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000058>)
@@ -707,7 +707,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000059> (Physik)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000059> "Physik")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000059> "Physik"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000059> "Sek I, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000059>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000059>)
@@ -717,7 +717,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000060> (Portugiesisch als dritte Fremdsprache - Profilfach)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000060> "Portugiesisch als dritte Fremdsprache - Profilfach")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000060> "Portugiesisch als dritte Fremdsprache - Profilfach"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000060> "ab Jahrgangsstufe 8 (nur Gymnasium)")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000060>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000060>)
@@ -727,7 +727,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000061> (Portugiesisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000061> "Portugiesisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000061> "Portugiesisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000061> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000061>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000061>)
@@ -737,7 +737,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000062> (Psychologie - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000062> "Psychologie - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000062> "Psychologie - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000062> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000062>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000062>)
@@ -747,7 +747,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000063> (Russisch als dritte Fremdsprache - Profilfach)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000063> "Russisch als dritte Fremdsprache - Profilfach")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000063> "Russisch als dritte Fremdsprache - Profilfach"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000063> "ab Jahrgangsstufe 8 (nur Gymnasium)")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000063>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000063>)
@@ -757,7 +757,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000064> (Russisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000064> "Russisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000064> "Russisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000064> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000064>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000064>)
@@ -767,7 +767,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000065> (Russisch als zweite Fremdsprache)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000065> "Russisch als zweite Fremdsprache")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000065> "Russisch als zweite Fremdsprache"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000065> "ab Jahrgangsstufe 6 (nur Gymnasium)")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000065>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000065>)
@@ -777,7 +777,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000066> (Sachunterricht)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000066> "Sachunterricht")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000066> "Sachunterricht"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000066> "nur Primarstufe")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000066>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000066>)
@@ -787,7 +787,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000067> (Spanisch als dritte Fremdsprache - Profilfach)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000067> "Spanisch als dritte Fremdsprache - Profilfach")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000067> "Spanisch als dritte Fremdsprache - Profilfach"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000067> "Sek I, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000067>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000067>)
@@ -797,7 +797,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000068> (Spanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000068> "Spanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000068> "Spanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000068> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000068>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000068>)
@@ -807,7 +807,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000069> (Sport)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000069> "Sport")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000069> "Sport"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000069> "Sek I, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000069>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000069>)
@@ -817,7 +817,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000070> (Sport - Profilfach)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000070> "Sport - Profilfach")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000070> "Sport - Profilfach"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000070> "Sek I, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000070>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000070>)
@@ -827,7 +827,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000071> (Sport - Wahlpflichtfach)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000071> "Sport - Wahlpflichtfach")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000071> "Sport - Wahlpflichtfach"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000071> "nur Realschule")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000071>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000071>)
@@ -837,15 +837,15 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000072> (Syrisch-Orthodoxe Religionslehre)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000072> "Syrisch-Orthodoxe Religionslehre")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000072> "Syrisch-Orthodoxe Religionslehre"@de)
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000072>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000072>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulfach/BW_0000072> <https://w3id.org/schulfach/BW_0000000>)
 ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulfach/BW_0000072> <https://w3id.org/lehrplan/ontology/LP_3000049>)
 
-# Individual: <https://w3id.org/schulfach/BW_0000073> (Technik - Wahlpflichtfach )
+# Individual: <https://w3id.org/schulfach/BW_0000073> (Technik - Wahlpflichtfach)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000073> "Technik - Wahlpflichtfach ")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000073> "Technik - Wahlpflichtfach"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000073> "Sek I")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000073>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000073>)
@@ -854,7 +854,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000074> (Türkisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000074> "Türkisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000074> "Türkisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000074> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000074>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000074>)
@@ -864,7 +864,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000075> (Wirtschaft)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000075> "Wirtschaft")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000075> "Wirtschaft"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000075> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000075>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000075>)
@@ -874,7 +874,7 @@ ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https:/
 
 # Individual: <https://w3id.org/schulfach/BW_0000076> (Wirtschaft / Berufs- und Studienorientierung (WBS))
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000076> "Wirtschaft / Berufs- und Studienorientierung (WBS)")
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BW_0000076> "Wirtschaft / Berufs- und Studienorientierung (WBS)"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BW_0000076> "Sek I, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BW_0000076>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BW_0000076>)
