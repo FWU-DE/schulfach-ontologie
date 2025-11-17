@@ -33,6 +33,12 @@ components:
     - filename: subjects-by.owl 
       use_template: true
       template_options: --input sf-edit.owl
+    - filename: subjects-be.owl 
+      use_template: true
+      template_options: --input sf-edit.owl
+    - filename: subjects-bb.owl 
+      use_template: true
+      template_options: --input sf-edit.owl
     - filename: subjects-bw.owl 
       use_template: true
       template_options: --input sf-edit.owl

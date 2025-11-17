@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                fd00a338257cfb400be7e2e74b7a8b716b7a98ae81253c365755885881829e57
+CONFIG_HASH=                4a498f1d50fce3268c1bf97e4356085d7375c97e7f96386239f68a42a0e9a276
 
 
 # ----------------------------------------
@@ -58,7 +58,7 @@ OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
 ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) convert -f ofn --output $@.tmp.owl && mv $@.tmp.owl $@
-OTHER_SRC =                 $(COMPONENTSDIR)/subjects-by.owl $(COMPONENTSDIR)/subjects-bw.owl $(COMPONENTSDIR)/subjects-hb.owl $(COMPONENTSDIR)/subjects-he.owl $(COMPONENTSDIR)/subjects-hh.owl $(COMPONENTSDIR)/subjects-mv.owl $(COMPONENTSDIR)/subjects-ni.owl $(COMPONENTSDIR)/subjects-nw.owl $(COMPONENTSDIR)/subjects-rp.owl $(COMPONENTSDIR)/subjects-sl.owl $(COMPONENTSDIR)/subjects-sn.owl $(COMPONENTSDIR)/subjects-st.owl $(COMPONENTSDIR)/subjects-sh.owl $(COMPONENTSDIR)/subjects-th.owl 
+OTHER_SRC =                 $(COMPONENTSDIR)/subjects-by.owl $(COMPONENTSDIR)/subjects-be.owl $(COMPONENTSDIR)/subjects-bb.owl $(COMPONENTSDIR)/subjects-bw.owl $(COMPONENTSDIR)/subjects-hb.owl $(COMPONENTSDIR)/subjects-he.owl $(COMPONENTSDIR)/subjects-hh.owl $(COMPONENTSDIR)/subjects-mv.owl $(COMPONENTSDIR)/subjects-ni.owl $(COMPONENTSDIR)/subjects-nw.owl $(COMPONENTSDIR)/subjects-rp.owl $(COMPONENTSDIR)/subjects-sl.owl $(COMPONENTSDIR)/subjects-sn.owl $(COMPONENTSDIR)/subjects-st.owl $(COMPONENTSDIR)/subjects-sh.owl $(COMPONENTSDIR)/subjects-th.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
@@ -496,6 +496,8 @@ all_components: $(OTHER_SRC)
 .PHONY: recreate-components
 recreate-components:
 	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-subjects-by.owl \
+		--assume-new=$(TMPDIR)/stamp-component-subjects-be.owl \
+		--assume-new=$(TMPDIR)/stamp-component-subjects-bb.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-bw.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-hb.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-he.owl \
@@ -514,6 +516,8 @@ recreate-components:
 .PHONY: no-mirror-recreate-components
 no-mirror-recreate-components:
 	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-subjects-by.owl \
+		--assume-new=$(TMPDIR)/stamp-component-subjects-be.owl \
+		--assume-new=$(TMPDIR)/stamp-component-subjects-bb.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-bw.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-hb.owl \
 		--assume-new=$(TMPDIR)/stamp-component-subjects-he.owl \
@@ -552,6 +556,18 @@ $(COMPONENTSDIR)/subjects-by.owl: $(TEMPLATEDIR)/subjects-by.tsv $(TMPDIR)/stamp
 		 --template $(TEMPLATEDIR)/subjects-by.tsv \
 		 $(ANNOTATE_CONVERT_FILE)
 .PRECIOUS: $(COMPONENTSDIR)/subjects-by.owl
+
+$(COMPONENTSDIR)/subjects-be.owl: $(TEMPLATEDIR)/subjects-be.tsv $(TMPDIR)/stamp-component-subjects-be.owl
+	$(ROBOT) template --input sf-edit.owl \
+		 --template $(TEMPLATEDIR)/subjects-be.tsv \
+		 $(ANNOTATE_CONVERT_FILE)
+.PRECIOUS: $(COMPONENTSDIR)/subjects-be.owl
+
+$(COMPONENTSDIR)/subjects-bb.owl: $(TEMPLATEDIR)/subjects-bb.tsv $(TMPDIR)/stamp-component-subjects-bb.owl
+	$(ROBOT) template --input sf-edit.owl \
+		 --template $(TEMPLATEDIR)/subjects-bb.tsv \
+		 $(ANNOTATE_CONVERT_FILE)
+.PRECIOUS: $(COMPONENTSDIR)/subjects-bb.owl
 
 $(COMPONENTSDIR)/subjects-bw.owl: $(TEMPLATEDIR)/subjects-bw.tsv $(TMPDIR)/stamp-component-subjects-bw.owl
 	$(ROBOT) template --input sf-edit.owl \

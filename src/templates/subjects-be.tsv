@@ -1,0 +1,53 @@
+URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	FEHLT	NOTIZEN
+ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+https://w3id.org/schulfach/BE_0000000	Schulfächer (Berlin)	skos:ConceptScheme		Berlin				
+https://w3id.org/schulfach/BE_0000001	Altgriechisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Alt-Griechisch (KIM-Schulfach)			
+https://w3id.org/schulfach/BE_0000002	Astronomie	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Astronomie (KIM-Schulfach)			nicht Sek II
+https://w3id.org/schulfach/BE_0000003	Biologie	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Biologie (KIM-Schulfach)			
+https://w3id.org/schulfach/BE_0000004	Chemie	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Chemie (KIM-Schulfach)			
+https://w3id.org/schulfach/BE_0000005	Chinesisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Chinesisch (KIM-Schulfach)			1-10, Sek II
+https://w3id.org/schulfach/BE_0000006	Deutsch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Deutsch (KIM-Schulfach)			
+https://w3id.org/schulfach/BE_0000007	Darstellendes Spiel	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Darstellendes Spiel (KIM-Schulfach)			nur Sek II
+https://w3id.org/schulfach/BE_0000008	Deutsche Gebärdensprache	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Deutsche Gebärdensprache (KIM-Schulfach)			nicht Sek II
+https://w3id.org/schulfach/BE_0000009	Englisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Englisch (KIM-Schulfach)			
+https://w3id.org/schulfach/BE_0000010	Französisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Französisch (KIM-Schulfach)			
+https://w3id.org/schulfach/BE_0000011	Geografie	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Geografie (KIM-Schulfach)			7-10, Sek II
+https://w3id.org/schulfach/BE_0000012	Geschichte	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Geschichte (KIM-Schulfach)			7-10, Sek II
+https://w3id.org/schulfach/BE_0000013	Gesellschaftswissenschaften	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Gesellschaftswissenschaften (KIM-Schulfach)			nur Jahrgangsstufe 5 & 6
+https://w3id.org/schulfach/BE_0000014	Hebräisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Hebräisch (KIM-Schulfach)			1-10, Sek II
+https://w3id.org/schulfach/BE_0000015	Informatik	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Informatik (KIM-Schulfach)			Wahlpflichtfach, Sek II
+https://w3id.org/schulfach/BE_0000016	Italienisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Italienisch (KIM-Schulfach)			1-10, Sek II
+https://w3id.org/schulfach/BE_0000017	Japanisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Japanisch (KIM-Schulfach)			1-10, Sek II
+https://w3id.org/schulfach/BE_0000018	Kunst	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Kunst (KIM-Schulfach)			1-10
+https://w3id.org/schulfach/BE_0000019	Latein	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Latein (KIM-Schulfach)			5-10, Sek II
+https://w3id.org/schulfach/BE_0000020	Mathematik	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Mathematik (KIM-Schulfach)			
+https://w3id.org/schulfach/BE_0000021	Musik	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Musik (KIM-Schulfach)			
+https://w3id.org/schulfach/BE_0000022	Naturwissenschaften (5-6)	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin			FEHLT	Jahrgangsstufe 5 & 6
+https://w3id.org/schulfach/BE_0000023	Naturwissenschaften (7-10 Wahlpflichtfach) 	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin			FEHLT	Jahrgangsstufe 7 - 10
+https://w3id.org/schulfach/BE_0000024	Neugriechisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Neugriechisch (KIM-Schulfach)			1-10, Sek II
+https://w3id.org/schulfach/BE_0000025	Philosophie	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Philosophie (KIM-Schulfach)			Wahlpflichfach 9-10, Sek II
+https://w3id.org/schulfach/BE_0000026	Physik	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Physik (KIM-Schulfach)			7-10, Sek II
+https://w3id.org/schulfach/BE_0000027	Politische Bildung	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Politik (KIM-Schulfach)			7-10, Sek II
+https://w3id.org/schulfach/BE_0000028	Polnisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Polnisch (KIM-Schulfach)			
+https://w3id.org/schulfach/BE_0000029	Portugisisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Portugiesisch (KIM-Schulfach)			1-10, Sek II
+https://w3id.org/schulfach/BE_0000030	Psychologie	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Psychologie (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BE_0000031	Russisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Russisch (KIM-Schulfach)			
+https://w3id.org/schulfach/BE_0000032	Recht	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin			FEHLT	nur Sek II
+https://w3id.org/schulfach/BE_0000033	Sachunterricht	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Sachunterricht (KIM-Schulfach)			Jahrgangsstufen 1 - 4
+https://w3id.org/schulfach/BE_0000034	Sorbisch/Wendisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Sorbisch (KIM-Schulfach)			
+https://w3id.org/schulfach/BE_0000035	Moderne Fremdsprachen	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin			FEHLT	
+https://w3id.org/schulfach/BE_0000036	Sozialwissenschaften-Wirtschaftswissenschaft	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Wahlpflichtfach 9-10
+https://w3id.org/schulfach/BE_0000037	Sozialwissenschaften	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin			FEHLT	nur Sek II
+https://w3id.org/schulfach/BE_0000038	Spanisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Spanisch (KIM-Schulfach)			
+https://w3id.org/schulfach/BE_0000039	Sport	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Sport (KIM-Schulfach)			
+https://w3id.org/schulfach/BE_0000040	Studium und Beruf	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin			FEHLT	nur Sek II
+https://w3id.org/schulfach/BE_0000041	Theater	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Darstellendes Spiel (KIM-Schulfach)			Wahlpflichtfach 7 - 10
+https://w3id.org/schulfach/BE_0000042	Türkisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Türkisch (KIM-Schulfach)			1-10, Sek II
+https://w3id.org/schulfach/BE_0000043	Wirtschaft-Arbeit-Technik	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Jahrgangsstufen 7-10
+https://w3id.org/schulfach/BE_0000044	Ukrainisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin			FEHLT	nur Sek II 
+https://w3id.org/schulfach/BE_0000045	Wirtschaftswissenschaften	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Wirtschaftskunde (KIM-Schulfach)			nur Sek II
+https://w3id.org/schulfach/BE_0000046	Bautechnik	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin			FEHLT	nur Sek II
+https://w3id.org/schulfach/BE_0000047	Chemietechnik	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin			FEHLT	nur Sek II
+https://w3id.org/schulfach/BE_0000048	Bildende Kunst	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Kunst (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BE_0000049	Politikwissenschaft	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Politik (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BE_0000050	Ethik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Ethik (KIM-Schulfach)			Jahrgangsstufe 7-10

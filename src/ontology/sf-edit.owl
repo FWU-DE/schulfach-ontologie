@@ -7,6 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/schulfach>
+Import(<https://w3id.org/schulfach/sf/components/subjects-bb.owl>)
+Import(<https://w3id.org/schulfach/sf/components/subjects-be.owl>)
 Import(<https://w3id.org/schulfach/sf/components/subjects-bw.owl>)
 Import(<https://w3id.org/schulfach/sf/components/subjects-by.owl>)
 Import(<https://w3id.org/schulfach/sf/components/subjects-hb.owl>)

@@ -1,0 +1,57 @@
+URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	FEHLT	NOTIZEN
+ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
+https://w3id.org/schulfach/BB_0000000	Schulfächer (Brandenburg)	skos:ConceptScheme		Brandenburg				
+https://w3id.org/schulfach/BB_0000001	Altgriechisch	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Alt-Griechisch (KIM-Schulfach)			
+https://w3id.org/schulfach/BB_0000002	Astronomie	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Astronomie (KIM-Schulfach)			nicht Sek II
+https://w3id.org/schulfach/BB_0000003	Biologie	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Biologie (KIM-Schulfach)			
+https://w3id.org/schulfach/BB_0000004	Chemie	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Chemie (KIM-Schulfach)			
+https://w3id.org/schulfach/BB_0000005	Chinesisch	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Chinesisch (KIM-Schulfach)			1-10
+https://w3id.org/schulfach/BB_0000006	Deutsch	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Deutsch (KIM-Schulfach)			
+https://w3id.org/schulfach/BB_0000007	Darstellendes Spiel	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Darstellendes Spiel (KIM-Schulfach)			nur Sek II
+https://w3id.org/schulfach/BB_0000008	Deutsche Gebärdensprache	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Deutsche Gebärdensprache (KIM-Schulfach)			nicht Sek II
+https://w3id.org/schulfach/BB_0000009	Englisch	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Englisch (KIM-Schulfach)			
+https://w3id.org/schulfach/BB_0000010	Französisch	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Französisch (KIM-Schulfach)			
+https://w3id.org/schulfach/BB_0000011	Geografie	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Geografie (KIM-Schulfach)			7-10, Sek II
+https://w3id.org/schulfach/BB_0000012	Geschichte	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Geschichte (KIM-Schulfach)			7-10, Sek II
+https://w3id.org/schulfach/BB_0000013	Gesellschaftswissenschaften	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Gesellschaftswissenschaften (KIM-Schulfach)			nur Jahrgangsstufe 5 & 6
+https://w3id.org/schulfach/BB_0000014	Hebräisch	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Hebräisch (KIM-Schulfach)			Jahrgangsstufe 1-10
+https://w3id.org/schulfach/BB_0000015	Informatik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Informatik (KIM-Schulfach)			Wahlpflichtfach, Sek II
+https://w3id.org/schulfach/BB_0000016	Italienisch	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Italienisch (KIM-Schulfach)			Jahrgangsstufen 1-10
+https://w3id.org/schulfach/BB_0000017	Japanisch	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Japanisch (KIM-Schulfach)			Jahrgangsstufen 1-10
+https://w3id.org/schulfach/BB_0000018	Kunst	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Kunst (KIM-Schulfach)			Jahrgangsstufen 1-10
+https://w3id.org/schulfach/BB_0000019	Latein	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Latein (KIM-Schulfach)			5-10, Sek II
+https://w3id.org/schulfach/BB_0000020	Lebensgestaltung-Ethik-Religion	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Ethik (KIM-Schulfach)		FEHLT	Jahrgangsstufe 5-10
+https://w3id.org/schulfach/BB_0000021	Mathematik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Mathematik (KIM-Schulfach)			
+https://w3id.org/schulfach/BB_0000022	Musik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Musik (KIM-Schulfach)			
+https://w3id.org/schulfach/BB_0000023	Naturwissenschaften (5-6)	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Jahrgangsstufe 5 & 6
+https://w3id.org/schulfach/BB_0000024	Naturwissenschaften (7-10 Wahlpflichtfach) 	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Jahrgangsstufe 7 - 10
+https://w3id.org/schulfach/BB_0000025	Neugriechisch	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Neugriechisch (KIM-Schulfach)			Jahrgangsstufen 1-10
+https://w3id.org/schulfach/BB_0000026	Philosophie	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Philosophie (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BB_0000027	Physik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Physik (KIM-Schulfach)			7-10, Sek II
+https://w3id.org/schulfach/BB_0000028	Politische Bildung	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Politik (KIM-Schulfach)			7-10, Sek II
+https://w3id.org/schulfach/BB_0000029	Polnisch	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Polnisch (KIM-Schulfach)			
+https://w3id.org/schulfach/BB_0000030	Portugisisch	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Portugiesisch (KIM-Schulfach)			Jahrgangsstufen 1-10
+https://w3id.org/schulfach/BB_0000031	Psychologie	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Psychologie (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BB_0000032	Russisch	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Russisch (KIM-Schulfach)			
+https://w3id.org/schulfach/BB_0000033	Recht	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Sek II
+https://w3id.org/schulfach/BB_0000034	Sachunterricht	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Sachunterricht (KIM-Schulfach)			Jahrgangsstufen 1 - 4
+https://w3id.org/schulfach/BB_0000035	Sorbisch/Wendisch	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Sorbisch (KIM-Schulfach)			
+https://w3id.org/schulfach/BB_0000036	Moderne Fremdsprachen	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	
+https://w3id.org/schulfach/BB_0000037	Sozialwissenschaften	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	nur Sek II
+https://w3id.org/schulfach/BB_0000038	Spanisch	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Spanisch (KIM-Schulfach)			
+https://w3id.org/schulfach/BB_0000039	Sport	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Sport (KIM-Schulfach)			
+https://w3id.org/schulfach/BB_0000040	Theater	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Darstellendes Spiel (KIM-Schulfach)			Wahlpflichtfach 7 - 10
+https://w3id.org/schulfach/BB_0000041	Türkisch	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Türkisch (KIM-Schulfach)			Jahrgangsstufen 1-10
+https://w3id.org/schulfach/BB_0000042	Wirtschaft-Arbeit-Technik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Jahrgangsstufen 5-10
+https://w3id.org/schulfach/BB_0000043	Wirtschaftswissenschaften	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Wirtschaftskunde (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BB_0000044	Bautechnik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Sek II
+https://w3id.org/schulfach/BB_0000045	Chemietechnik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Sek II
+https://w3id.org/schulfach/BB_0000046	Elektrotechnik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Sek II
+https://w3id.org/schulfach/BB_0000047	Gestaltungs- und Medientechnik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Sek II
+https://w3id.org/schulfach/BB_0000048	Maschinentechnik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Sek II
+https://w3id.org/schulfach/BB_0000049	Pädagogik/Pädagogik (b.)	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Sek II
+https://w3id.org/schulfach/BB_0000050	Psychologie/Psychologie (b.)	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Psychologie (KIM-Schulfach)			Sek II
+https://w3id.org/schulfach/BB_0000051	Rechnungswesen	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Sek II
+https://w3id.org/schulfach/BB_0000052	Technik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Sek II
+https://w3id.org/schulfach/BB_0000053	Wirtschaftsinformatik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg		Wirtschaftskunde (KIM-Schulfach),Informatik (KIM-Schulfach)		Sek II
+https://w3id.org/schulfach/BB_0000054	Wirtschaftswissenschaft/Wirtschaftswissenschaft (b.)	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Wirtschaftskunde (KIM-Schulfach)			Sek II

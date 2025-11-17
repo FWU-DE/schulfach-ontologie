@@ -5,6 +5,8 @@
     <uri name="https://w3id.org/schulfach/sf/imports/kim_import.owl" uri="imports/kim_import.owl" />
     <uri name="https://w3id.org/schulfach/sf/imports/skos_import.owl" uri="imports/skos_import.owl" />
     <uri name="https://w3id.org/schulfach/sf/components/subjects-by.owl" uri="components/subjects-by.owl" />
+    <uri name="https://w3id.org/schulfach/sf/components/subjects-be.owl" uri="components/subjects-be.owl" />
+    <uri name="https://w3id.org/schulfach/sf/components/subjects-bb.owl" uri="components/subjects-bb.owl" />
     <uri name="https://w3id.org/schulfach/sf/components/subjects-bw.owl" uri="components/subjects-bw.owl" />
     <uri name="https://w3id.org/schulfach/sf/components/subjects-hb.owl" uri="components/subjects-hb.owl" />
     <uri name="https://w3id.org/schulfach/sf/components/subjects-he.owl" uri="components/subjects-he.owl" />

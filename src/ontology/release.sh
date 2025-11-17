@@ -11,8 +11,8 @@ sh run.sh make -B VERSION=$VERSION ONTBASE=$ONTBASE ANNOTATE_ONTOLOGY_VERSION="$
 sh run.sh make VERSION=$VERSION ONTBASE=$ONTBASE ANNOTATE_ONTOLOGY_VERSION="$ANNOTATE_ONTOLOGY_VERSION" update-ontology-annotations
 
 
-#sh run.sh make skos-bb.ttl
-#sh run.sh make skos-be.ttl
+sh run.sh make skos-bb.ttl
+sh run.sh make skos-be.ttl
 sh run.sh make skos-bw.ttl
 sh run.sh make skos-by.ttl
 sh run.sh make skos-hb.ttl

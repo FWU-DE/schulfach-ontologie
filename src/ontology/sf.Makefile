@@ -35,6 +35,12 @@ $(IMPORTDIR)/lp_import.owl: $(MIRRORDIR)/lp.owl $(IMPORTDIR)/lp_terms.txt | all_
 $(TEMPLATEDIR)/subjects-by.tsv:
 	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=750307268&output=tsv' -o $@
 
+$(TEMPLATEDIR)/subjects-be.tsv:
+	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=1302893279&output=tsv' -o $@
+
+$(TEMPLATEDIR)/subjects-bb.tsv:
+	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=534566584&output=tsv' -o $@
+
 $(TEMPLATEDIR)/subjects-bw.tsv:
 	curl -L 'http://docs.google.com/spreadsheets/d/e/2PACX-1vSzRNSKTRnjC2E2XnYSXuX17RtIoQ3ZW2qvZnRQjREtZdtkXdcrPtXXeb5m8MXIzz_uImm-2oS2m7Dj/pub?gid=949672233&output=tsv' -o $@
 

@@ -1,4 +1,4 @@
-Prefix(:=<https://w3id.org/schulfach/sf/components/subjects-sn.owl#>)
+Prefix(:=<https://w3id.org/schulfach/components/subjects-sn.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,9 +6,9 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<https://w3id.org/schulfach/sf/components/subjects-sn.owl>
-<https://w3id.org/schulfach/sf/releases/2025-11-10/components/subjects-sn.owl>
-Annotation(owl:versionInfo "2025-11-10")
+Ontology(<https://w3id.org/schulfach/components/subjects-sn.owl>
+<https://w3id.org/schulfach/1.0.0/components/subjects-sn.owl>
+Annotation(owl:versionInfo "1.0.0")
 
 Declaration(Class(<http://www.w3.org/2004/02/skos/core#Concept>))
 Declaration(Class(<http://www.w3.org/2004/02/skos/core#ConceptScheme>))
@@ -388,9 +388,9 @@ ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https:
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulfach/SN_0000029> <https://w3id.org/schulfach/SN_0000000>)
 ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulfach/SN_0000029> <https://w3id.org/lehrplan/ontology/LP_3000047>)
 
-# Individual: <https://w3id.org/schulfach/SN_0000030> (2. Fremsprache)
+# Individual: <https://w3id.org/schulfach/SN_0000030> (2. Fremdsprache)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/SN_0000030> "2. Fremsprache"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/SN_0000030> "2. Fremdsprache"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/SN_0000030> "Oberschule")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/SN_0000030>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/SN_0000030>)

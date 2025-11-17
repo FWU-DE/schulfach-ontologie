@@ -321,7 +321,7 @@
 <https://w3id.org/schulfach/SN_0000030>
         a                   skos:Concept ;
         skos:editorialNote  "Oberschule" ;
-        skos:prefLabel      "2. Fremsprache"@de ;
+        skos:prefLabel      "2. Fremdsprache"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SN_0000000> .
 
 <https://w3id.org/schulfach/SN_0000002>
