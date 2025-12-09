@@ -5,19 +5,6 @@ The **German school subjects ontology** provides a standardized framework for **
 This ontology plays a crucial role in advancing data integration and research in education. Because school subjects are defined with unique identifiers and formal relationships, educational platforms, researchers, and policymakers can more easily compare curricula, link learning materials to specific subjects, and conduct analyses across regions and educational contexts. 
 The German school subjects ontology contributes to greater transparency, comparability, and interoperability in educational data management. It serves as a foundational component for the digital transformation of education in Germany — enabling a shared understanding of what is being taught, where, and how, across the diverse landscape of German schooling.
 
-##
-The ontology currently represents the school subjects of the following German federal states:
-
-* BW (Baden-Württemberg)
-* HB (Bremen)
-* HE (Hesse)
-* MV (Mecklenburg-Vorpommern)
-* NI (Lower Saxony)
-* NW (North Rhine-Westphalia)
-* SH (Schleswig-Holstein)
-* SL (Saarland)
-* ST (Saxony-Anhalt)
-
 Each school subject is assigned to its corresponding federal state.
 Additionally, where possible, a mapping has been created to elements of the [KIM school subjects](https://github.com/dini-ag-kim/schulfaecher).
 
