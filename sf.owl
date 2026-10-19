@@ -5,27 +5,28 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:ontology="https://w3id.org/lehrplan/ontology/">
     <owl:Ontology rdf:about="https://w3id.org/schulfach/">
-        <owl:versionIRI rdf:resource="https://w3id.org/schulfach/1.0.0"/>
-        <terms:bibliographicCitation>German School Subjects Ontology. Version 1.0.0, https://w3id.org/schulfach/</terms:bibliographicCitation>
-        <terms:created>2025-11-17</terms:created>
+        <owl:versionIRI rdf:resource="https://w3id.org/schulfach/1.0.1"/>
+        <terms:bibliographicCitation>German School Subjects Ontology. Version 1.0.1, https://w3id.org/schulfach/</terms:bibliographicCitation>
+        <terms:created>2026-10-19</terms:created>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-6378-2618"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <terms:creator xml:lang="de">Almut Steinlein</terms:creator>
         <terms:creator xml:lang="de">Cindy Bloes</terms:creator>
         <terms:creator xml:lang="de">Laura Junghanns</terms:creator>
-        <terms:description xml:lang="de">Die Schulfach Ontologie ist ein formales Modell zur Definition und Organisation der Schulfächer in den deutschen Bundesländern. Sie stellt ein strukturiertes Vokabular bereit, um Schulfächer und deren Beziehungen zu beschreiben, zu klassifizieren und zu verknüpfen – und ermöglicht dadurch die Interoperabilität von Bildungsdaten über verschiedene Systeme und Institutionen hinweg.
-GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
-        <terms:description xml:lang="en">The German school subjects ontology is a formal semantic model that defines and organizes the school subjects (Schulfächer) used across the German federal states (Bundesländer). It provides a structured vocabulary for describing, categorizing, and interlinking school subjects and their relationships—allowing data interoperability across different educational datasets and systems. 
-GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
+        <terms:description xml:lang="de">Die Schulfach Ontologie ist ein formales Modell zur Definition und Organisation der Schulfächer in den deutschen Bundesländern. Sie stellt ein strukturiertes Vokabular bereit, um Schulfächer und deren Beziehungen zu beschreiben, zu klassifizieren und zu verknüpfen – und ermöglicht dadurch die Interoperabilität von Bildungsdaten über verschiedene Systeme und Institutionen hinweg.</terms:description>
+        <terms:description xml:lang="en">The German school subjects ontology is a formal semantic model that defines and organizes the school subjects (Schulfächer) used across the German federal states. It provides a structured vocabulary for describing, categorizing, and interlinking school subjects and their relationships—allowing data interoperability across different educational datasets and systems.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <terms:title xml:lang="en">German school subjects ontology</terms:title>
         <terms:title xml:lang="de">Schulfach Ontologie</terms:title>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <doap:repository rdf:resource="https://github.com/FWU-DE/schulfach-ontologie"/>
+        <owl:priorVersion rdf:resource="https://w3id.org/lehrplan/ontology/"/>
+        <owl:versionInfo>1.0.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -77,9 +78,21 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     
 
 
+    <!-- http://usefulinc.com/ns/doap#repository -->
+
+    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#repository"/>
+    
+
+
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
     
 
 
@@ -97,13 +110,21 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
 
     <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+        <rdfs:comment xml:lang="en">The range of skos:altLabel is the class of RDF plain literals.</rdfs:comment>
+        <rdfs:comment xml:lang="en">skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">alternative label</rdfs:label>
+        <skos:definition xml:lang="en">An alternative lexical label for a resource.</skos:definition>
+        <skos:example xml:lang="en">Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel).</skos:example>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">definition</rdfs:label>
         <skos:definition xml:lang="en">A statement or formal explanation of the meaning of a concept.</skos:definition>
     </owl:AnnotationProperty>
@@ -121,13 +142,23 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
 
     <!-- http://www.w3.org/2004/02/skos/core#example -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">example</rdfs:label>
+        <skos:definition xml:lang="en">An example of the use of a concept.</skos:definition>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#related"/>
     
 
 
@@ -190,6 +221,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <!-- https://w3id.org/lehrplan/ontology/LP_0000029 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/lehrplan/ontology/LP_0000029">
+        <rdfs:label xml:lang="en">of federal state</rdfs:label>
         <rdfs:label xml:lang="de">von Bundesland</rdfs:label>
     </owl:ObjectProperty>
     
@@ -425,9 +457,13 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
 
     <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1019">
         <rdfs:label>MINT (KIM-Schulfach)</rdfs:label>
-        <skos:altLabel xml:lang="de">Chemie, Physik, Biologie</skos:altLabel>
-        <skos:altLabel xml:lang="de">Naturwissenschaften</skos:altLabel>
         <skos:prefLabel xml:lang="de">MINT</skos:prefLabel>
+        <skos:related rdf:resource="http://w3id.org/kim/schulfaecher/s1001"/>
+        <skos:related rdf:resource="http://w3id.org/kim/schulfaecher/s1002"/>
+        <skos:related rdf:resource="http://w3id.org/kim/schulfaecher/s1013"/>
+        <skos:related rdf:resource="http://w3id.org/kim/schulfaecher/s1017"/>
+        <skos:related rdf:resource="http://w3id.org/kim/schulfaecher/s1022"/>
+        <skos:related rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
     </owl:NamedIndividual>
     
 
@@ -464,7 +500,6 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1023">
         <rdfs:label>Politik (KIM-Schulfach)</rdfs:label>
         <skos:altLabel xml:lang="de">Politische Bildung</skos:altLabel>
-        <skos:altLabel xml:lang="de">Sozialkunde</skos:altLabel>
         <skos:prefLabel xml:lang="de">Politik</skos:prefLabel>
     </owl:NamedIndividual>
     
@@ -690,6 +725,156 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1047">
         <rdfs:label>Hauswirtschaft (KIM-Schulfach)</rdfs:label>
         <skos:prefLabel xml:lang="de">Hauswirtschaft</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1048 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1048">
+        <rdfs:label>Arbeitslehre (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Arbeitswelt</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Arbeitslehre</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1049 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1049">
+        <rdfs:label>Berufs- und Studienorientierung (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Beruf</skos:altLabel>
+        <skos:altLabel xml:lang="de">Berufliche Orientierung</skos:altLabel>
+        <skos:altLabel xml:lang="de">Studium und Beruf</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Berufs- und Studienorientierung</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1050 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1050">
+        <rdfs:label>Fremdsprachen (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Fortgeführte Fremdsprachen</skos:altLabel>
+        <skos:altLabel xml:lang="de">Moderne Fremdsprachen</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Fremdsprachen</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1051 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1051">
+        <rdfs:label>Herkunftssprachen (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Herkunftssprachlicher Unterricht</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Herkunftssprachen</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1052 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1052">
+        <rdfs:label>Naturwissenschaften (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Angewandte Naturwissenschaften</skos:altLabel>
+        <skos:altLabel xml:lang="de">Chemie, Physik, Biologie</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Naturwissenschaften</skos:prefLabel>
+        <skos:related rdf:resource="http://w3id.org/kim/schulfaecher/s1001"/>
+        <skos:related rdf:resource="http://w3id.org/kim/schulfaecher/s1002"/>
+        <skos:related rdf:resource="http://w3id.org/kim/schulfaecher/s1022"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1053 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1053">
+        <rdfs:label>Niederdeutsch (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Niederdeutsch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1054 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1054">
+        <rdfs:label>Recht (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Rechtskunde</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Recht</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1055 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1055">
+        <rdfs:label>Religion (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Religion (konfessionslos)</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Religion</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1056 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1056">
+        <rdfs:label>Religionslehre (alevitisch) (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Alevitischer Religionsunterricht</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Religionslehre (alevitisch)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1057 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1057">
+        <rdfs:label>Religionslehre (jüdisch) (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Jüdischer Religionsunterricht</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Religionslehre (jüdisch)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1058 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1058">
+        <rdfs:label>Sozialkunde (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Soziales</skos:altLabel>
+        <skos:altLabel xml:lang="de">Sozialwissenschaft</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Sozialkunde</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1059 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1059">
+        <rdfs:label>Technik (KIM-Schulfach)</rdfs:label>
+        <skos:prefLabel xml:lang="de">Technik</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1060 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1060">
+        <rdfs:label>Textiles Gestalten (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Textilgestaltung</skos:altLabel>
+        <skos:altLabel xml:lang="de">Textillehre</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Textiles Gestalten</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/kim/schulfaecher/s1061 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/kim/schulfaecher/s1061">
+        <rdfs:label>Werken und Gestalten (KIM-Schulfach)</rdfs:label>
+        <skos:altLabel xml:lang="de">Gestalten</skos:altLabel>
+        <skos:altLabel xml:lang="de">Gestaltendes Werken</skos:altLabel>
+        <skos:altLabel xml:lang="de">Planen, Bauen und Gestalten</skos:altLabel>
+        <skos:altLabel xml:lang="de">Werken</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Werken und Gestalten</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -1153,6 +1338,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BB_0000023">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BB_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000057"/>
         <rdfs:label xml:lang="de">Naturwissenschaften (5-6)</rdfs:label>
@@ -1166,6 +1352,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BB_0000024">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BB_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000057"/>
         <rdfs:label xml:lang="de">Naturwissenschaften (7-10 Wahlpflichtfach)</rdfs:label>
@@ -1289,6 +1476,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BB_0000033">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1054"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BB_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000057"/>
         <rdfs:label xml:lang="de">Recht</rdfs:label>
@@ -1329,6 +1517,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BB_0000036">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1050"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BB_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000057"/>
         <rdfs:label xml:lang="de">Moderne Fremdsprachen</rdfs:label>
@@ -1341,6 +1530,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BB_0000037">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BB_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000057"/>
         <rdfs:label xml:lang="de">Sozialwissenschaften</rdfs:label>
@@ -1408,7 +1598,8 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BB_0000042">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
-        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BB_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000057"/>
         <rdfs:label xml:lang="de">Wirtschaft-Arbeit-Technik</rdfs:label>
@@ -1541,6 +1732,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BB_0000052">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BB_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000057"/>
         <rdfs:label xml:lang="de">Technik</rdfs:label>
@@ -1574,6 +1766,31 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000057"/>
         <rdfs:label xml:lang="de">Wirtschaftswissenschaft/Wirtschaftswissenschaft (b.)</rdfs:label>
         <skos:editorialNote>Sek II</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BB_0000055 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BB_0000055">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BB_0000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000057"/>
+        <rdfs:label xml:lang="de">Sprachbildung</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BB_0000056 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BB_0000056">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1046"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BB_0000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000057"/>
+        <rdfs:label xml:lang="de">Medienbildung</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1879,6 +2096,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BE_0000022">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BE_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000048"/>
         <rdfs:label xml:lang="de">Naturwissenschaften (5-6)</rdfs:label>
@@ -1892,6 +2110,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BE_0000023">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BE_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000048"/>
         <rdfs:label xml:lang="de">Naturwissenschaften (7-10 Wahlpflichtfach)</rdfs:label>
@@ -2015,6 +2234,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BE_0000032">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1054"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BE_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000048"/>
         <rdfs:label xml:lang="de">Recht</rdfs:label>
@@ -2055,6 +2275,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BE_0000035">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1050"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BE_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000048"/>
         <rdfs:label xml:lang="de">Moderne Fremdsprachen</rdfs:label>
@@ -2067,7 +2288,8 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BE_0000036">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
-        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BE_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000048"/>
         <rdfs:label xml:lang="de">Sozialwissenschaften-Wirtschaftswissenschaft</rdfs:label>
@@ -2081,6 +2303,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BE_0000037">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BE_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000048"/>
         <rdfs:label xml:lang="de">Sozialwissenschaften</rdfs:label>
@@ -2120,6 +2343,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BE_0000040">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1049"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BE_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000048"/>
         <rdfs:label xml:lang="de">Studium und Beruf</rdfs:label>
@@ -2257,10 +2481,35 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
         <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1008"/>
-        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BB_0000000"/>
-        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000057"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BE_0000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000048"/>
         <rdfs:label xml:lang="de">Ethik</rdfs:label>
         <skos:editorialNote>Jahrgangsstufe 7-10</skos:editorialNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BE_0000051 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BE_0000051">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BE_0000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000048"/>
+        <rdfs:label xml:lang="de">Sprachbildung</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/schulfach/BE_0000052 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BE_0000052">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1046"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BE_0000000"/>
+        <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000048"/>
+        <rdfs:label xml:lang="de">Medienbildung</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2280,6 +2529,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_0000001">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1056"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
         <rdfs:label xml:lang="de">Alevitische Religionslehre</rdfs:label>
@@ -2306,6 +2556,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_0000003">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1026"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
         <rdfs:label xml:lang="de">Altkatholische Religionslehre</rdfs:label>
@@ -2830,7 +3081,6 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_0000041">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
-        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1035"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
         <rdfs:label xml:lang="de">Japanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe</rdfs:label>
@@ -2844,6 +3094,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_0000042">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1057"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
         <rdfs:label xml:lang="de">Jüdische Religionslehre</rdfs:label>
@@ -2869,7 +3120,8 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_0000044">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
-        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1015"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1015"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1061"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
         <rdfs:label xml:lang="de">Kunst/Werken</rdfs:label>
@@ -3006,6 +3258,8 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_0000054">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
         <rdfs:label xml:lang="de">Naturwissenschaft und Technik (NwT) - Basisfach in der Kursstufe</rdfs:label>
@@ -3019,6 +3273,8 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_0000055">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
         <rdfs:label xml:lang="de">Naturwissenschaft und Technik (NwT) - Profilfach</rdfs:label>
@@ -3032,6 +3288,8 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_0000056">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
         <rdfs:label xml:lang="de">Naturwissenschaft und Technik (NwT) - Schulversuch Leistungsfach in der Kursstufe</rdfs:label>
@@ -3266,6 +3524,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_0000073">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
         <rdfs:label xml:lang="de">Technik - Wahlpflichtfach</rdfs:label>
@@ -3307,7 +3566,8 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BW_0000076">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
-        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1049"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000049"/>
         <rdfs:label xml:lang="de">Wirtschaft / Berufs- und Studienorientierung (WBS)</rdfs:label>
@@ -3505,6 +3765,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000014">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1061"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Werken und Gestalten</rdfs:label>
@@ -3589,6 +3850,8 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000020">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Natur und Technik</rdfs:label>
@@ -3615,6 +3878,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000022">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Technik</rdfs:label>
@@ -3809,6 +4073,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000036">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Soziallehre</rdfs:label>
@@ -3822,6 +4087,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000037">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Sozialwesen</rdfs:label>
@@ -3849,6 +4115,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000039">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1060"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Textiles Gestalten</rdfs:label>
@@ -3862,6 +4129,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000040">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1061"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Werken</rdfs:label>
@@ -3902,6 +4170,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000043">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1049"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Berufliche Orientierung</rdfs:label>
@@ -4012,6 +4281,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000051">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Natur und Technik (Gym)</rdfs:label>
@@ -4067,6 +4337,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000055">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Sozialpraktische Grundbildung</rdfs:label>
@@ -4080,6 +4351,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000056">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Sozialwissenschaftliche Arbeitsfelder</rdfs:label>
@@ -4257,6 +4529,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000069">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Mensch, Umwelt, Technik</rdfs:label>
@@ -4529,6 +4802,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000089">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Naturwissenschaften</rdfs:label>
@@ -4556,6 +4830,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000091">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1054"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Rechtslehre</rdfs:label>
@@ -4622,6 +4897,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000096">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1049"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Studier- und Arbeitstechniken</rdfs:label>
@@ -4635,6 +4911,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000097">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Technologie</rdfs:label>
@@ -4675,6 +4952,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000100">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1049"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Beruf und Arbeit</rdfs:label>
@@ -4766,6 +5044,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000107">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1031"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Sport und Bewegung</rdfs:label>
@@ -4897,7 +5176,8 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000117">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
-        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1015"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1015"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1061"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Werken und Gestalten / Kunst</rdfs:label>
@@ -4911,6 +5191,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/BY_0000118">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1015"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/BY_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000051"/>
         <rdfs:label xml:lang="de">Ästhetische Bildung</rdfs:label>
@@ -4948,6 +5229,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_0000002">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1050"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
         <rdfs:label xml:lang="de">Bildungsplan fortgeführte Fremdsprachen</rdfs:label>
@@ -5201,6 +5483,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_0000020">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1051"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
         <rdfs:label xml:lang="de">Herkunftssprachen</rdfs:label>
@@ -5328,6 +5611,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
         <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1001"/>
         <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1002"/>
         <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1022"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
         <rdfs:label xml:lang="de">Naturwissenschaften, Biologie, Chemie, Physik</rdfs:label>
@@ -5424,6 +5708,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_0000036">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1055"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
         <rdfs:label xml:lang="de">Religion</rdfs:label>
@@ -5536,7 +5821,8 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_0000044">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
-        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
         <rdfs:label xml:lang="de">Wirtschaft-Arbeit-Technik</rdfs:label>
@@ -5550,7 +5836,8 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HB_0000045">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
-        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1033"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HB_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000056"/>
         <rdfs:label xml:lang="de">Wirtschaft/Arbeit/Technik</rdfs:label>
@@ -5588,6 +5875,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_0000001">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1056"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
         <rdfs:label xml:lang="de">Alevitische Religion</rdfs:label>
@@ -5876,6 +6164,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_0000022">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1057"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
         <rdfs:label xml:lang="de">Jüdische Religion</rdfs:label>
@@ -5954,6 +6243,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HE_0000028">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1050"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HE_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000050"/>
         <rdfs:label xml:lang="de">Moderne Fremdsprachen</rdfs:label>
@@ -6208,6 +6498,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HH_0000008">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1051"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000045"/>
         <rdfs:label xml:lang="de">Herkunftssprachen</rdfs:label>
@@ -6247,6 +6538,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HH_0000011">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1053"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000045"/>
         <rdfs:label xml:lang="de">Niederdeutsch</rdfs:label>
@@ -6260,6 +6552,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HH_0000012">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1055"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000045"/>
         <rdfs:label xml:lang="de">Religion</rdfs:label>
@@ -6355,6 +6648,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HH_0000019">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1049"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000045"/>
         <rdfs:label xml:lang="de">Berufliche Orientierung - Leben, Arbeit, Beruf</rdfs:label>
@@ -6452,6 +6746,8 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HH_0000026">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000045"/>
         <rdfs:label xml:lang="de">Lernbereich Naturwissenschatfen und Technik</rdfs:label>
@@ -6478,6 +6774,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HH_0000028">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000045"/>
         <rdfs:label xml:lang="de">Naturwissenschaftliches Praktikum</rdfs:label>
@@ -6707,6 +7004,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HH_0000044">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1049"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000045"/>
         <rdfs:label xml:lang="de">Rahmenvorgaben für die berufliche Orientierung</rdfs:label>
@@ -6761,6 +7059,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/HH_0000048">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1054"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/HH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000045"/>
         <rdfs:label xml:lang="de">Recht</rdfs:label>
@@ -6853,6 +7152,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/MV_0000003">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1049"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/MV_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000052"/>
         <rdfs:label xml:lang="de">Berufliche Orientierung</rdfs:label>
@@ -6988,6 +7288,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/MV_0000013">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1050"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/MV_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000052"/>
         <rdfs:label xml:lang="de">Fremdsprachen an Grundschulen</rdfs:label>
@@ -7209,6 +7510,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/MV_0000029">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/MV_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000052"/>
         <rdfs:label xml:lang="de">Naturwissenschaften</rdfs:label>
@@ -7222,6 +7524,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/MV_0000030">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1053"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/MV_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000052"/>
         <rdfs:label xml:lang="de">Niederdeutsch</rdfs:label>
@@ -7332,6 +7635,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/MV_0000038">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/MV_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000052"/>
         <rdfs:label xml:lang="de">Sozialkunde</rdfs:label>
@@ -7412,6 +7716,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/MV_0000044">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1061"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/MV_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000052"/>
         <rdfs:label xml:lang="de">Werken</rdfs:label>
@@ -7641,6 +7946,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NI_0000015">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1061"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NI_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000043"/>
         <rdfs:label xml:lang="de">Gestaltendes Werken</rdfs:label>
@@ -7681,6 +7987,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NI_0000018">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1051"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NI_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000043"/>
         <rdfs:label xml:lang="de">Herkunftssprachlicher Unterricht</rdfs:label>
@@ -7815,6 +8122,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NI_0000028">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NI_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000043"/>
         <rdfs:label xml:lang="de">Naturwissenchaften</rdfs:label>
@@ -7828,6 +8136,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NI_0000029">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1053"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NI_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000043"/>
         <rdfs:label xml:lang="de">Niederdeutsch</rdfs:label>
@@ -7939,6 +8248,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NI_0000037">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NI_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000043"/>
         <rdfs:label xml:lang="de">Profil Technik</rdfs:label>
@@ -7980,6 +8290,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NI_0000040">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1054"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NI_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000043"/>
         <rdfs:label xml:lang="de">Recht</rdfs:label>
@@ -8048,6 +8359,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NI_0000045">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NI_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000043"/>
         <rdfs:label xml:lang="de">Technik</rdfs:label>
@@ -8061,6 +8373,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NI_0000046">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1060"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NI_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000043"/>
         <rdfs:label xml:lang="de">Textiles Gestalten</rdfs:label>
@@ -8139,6 +8452,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NW_0000001">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1056"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000044"/>
         <rdfs:label xml:lang="de">Alevitischer Religionsunterricht</rdfs:label>
@@ -8475,6 +8789,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NW_0000025">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1057"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000044"/>
         <rdfs:label xml:lang="de">Jüdische Religionslehre</rdfs:label>
@@ -8580,6 +8895,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NW_0000033">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000044"/>
         <rdfs:label xml:lang="de">Naturwissenschaften</rdfs:label>
@@ -8716,6 +9032,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NW_0000043">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1054"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000044"/>
         <rdfs:label xml:lang="de">Recht</rdfs:label>
@@ -8811,6 +9128,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NW_0000050">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000044"/>
         <rdfs:label xml:lang="de">Technik</rdfs:label>
@@ -8824,6 +9142,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NW_0000051">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1060"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000044"/>
         <rdfs:label xml:lang="de">Textilgestaltung</rdfs:label>
@@ -8991,6 +9310,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NW_0000063">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000044"/>
         <rdfs:label xml:lang="de">WP Naturwissenschaften</rdfs:label>
@@ -9018,6 +9338,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NW_0000065">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000044"/>
         <rdfs:label xml:lang="de">WP Sozialwissenschaften</rdfs:label>
@@ -9031,6 +9352,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/NW_0000066">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/NW_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000044"/>
         <rdfs:label xml:lang="de">WP Technik</rdfs:label>
@@ -9167,6 +9489,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/RP_0000007">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/RP_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000046"/>
         <rdfs:label xml:lang="de">Naturwissenschaften</rdfs:label>
@@ -9460,6 +9783,8 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/RP_0000028">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/RP_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000046"/>
         <rdfs:label xml:lang="de">Technik und Naturwissenschaft</rdfs:label>
@@ -9661,6 +9986,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/RP_0000043">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1056"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/RP_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000046"/>
         <rdfs:label xml:lang="de">Alevitische Religion</rdfs:label>
@@ -9770,6 +10096,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/RP_0000051">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1060"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/RP_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000046"/>
         <rdfs:label xml:lang="de">Textiles Gestalten</rdfs:label>
@@ -9797,6 +10124,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/RP_0000053">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1051"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/RP_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000046"/>
         <rdfs:label xml:lang="de">Herkunftssprachen-Unterricht</rdfs:label>
@@ -9908,6 +10236,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/RP_0000061">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/RP_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000046"/>
         <rdfs:label xml:lang="de">Sozialkunde</rdfs:label>
@@ -10122,6 +10451,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SH_0000013">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1061"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000054"/>
         <rdfs:label xml:lang="de">Gestalten</rdfs:label>
@@ -10257,6 +10587,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SH_0000023">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000054"/>
         <rdfs:label xml:lang="de">Naturwissenschaften</rdfs:label>
@@ -10352,6 +10683,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SH_0000030">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000054"/>
         <rdfs:label xml:lang="de">Technik</rdfs:label>
@@ -10364,6 +10696,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SH_0000031">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1060"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000054"/>
         <rdfs:label xml:lang="de">Textillehre</rdfs:label>
@@ -10899,6 +11232,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SL_0000034">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1051"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SL_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000055"/>
         <rdfs:label xml:lang="de">Herkunftssprachlicher Unterricht</rdfs:label>
@@ -11105,6 +11439,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SL_0000049">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SL_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000055"/>
         <rdfs:label xml:lang="de">Naturwissenschaften</rdfs:label>
@@ -11202,6 +11537,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SL_0000056">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SL_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000055"/>
         <rdfs:label xml:lang="de">Sozialkunde</rdfs:label>
@@ -11215,6 +11551,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SL_0000057">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SL_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000055"/>
         <rdfs:label xml:lang="de">Sozialkunde bilingual deutsch-englisch</rdfs:label>
@@ -11228,6 +11565,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SL_0000058">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SL_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000055"/>
         <rdfs:label xml:lang="de">Sozialkunde bilingual deutsch-französisch</rdfs:label>
@@ -11241,6 +11579,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SL_0000059">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SL_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000055"/>
         <rdfs:label xml:lang="de">Sozialkunde Themenfelder</rdfs:label>
@@ -11295,6 +11634,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SL_0000063">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SL_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000055"/>
         <rdfs:label xml:lang="de">Technik</rdfs:label>
@@ -11397,6 +11737,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SN_0000006">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1051"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SN_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000047"/>
         <rdfs:label xml:lang="de">Herkunftssprache im Wahlbereich</rdfs:label>
@@ -11437,6 +11778,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SN_0000009">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1057"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SN_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000047"/>
         <rdfs:label xml:lang="de">Jüdische Religion</rdfs:label>
@@ -11541,6 +11883,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SN_0000017">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1061"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SN_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000047"/>
         <rdfs:label xml:lang="de">Werken</rdfs:label>
@@ -11639,6 +11982,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SN_0000024">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1051"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SN_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000047"/>
         <rdfs:label xml:lang="de">Herkunftssprache - Ersatz für 2. Fremdsprache</rdfs:label>
@@ -11694,6 +12038,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SN_0000028">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SN_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000047"/>
         <rdfs:label xml:lang="de">Technik/Computer</rdfs:label>
@@ -11721,6 +12066,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SN_0000030">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1050"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SN_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000047"/>
         <rdfs:label xml:lang="de">2. Fremdsprache</rdfs:label>
@@ -11748,6 +12094,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/SN_0000032">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1049"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/SN_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000047"/>
         <rdfs:label xml:lang="de">Auf dem Weg ins Berufsleben</rdfs:label>
@@ -12019,6 +12366,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/ST_0000001">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/ST_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000053"/>
         <rdfs:label xml:lang="de">Angewandte Naturwissenschaften</rdfs:label>
@@ -12181,6 +12529,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/ST_0000013">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1061"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/ST_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000053"/>
         <rdfs:label xml:lang="de">Gestalten</rdfs:label>
@@ -12290,6 +12639,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/ST_0000021">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1046"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/ST_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000053"/>
         <rdfs:label xml:lang="de">Lernen in der digitalen Welt</rdfs:label>
@@ -12385,6 +12735,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/ST_0000028">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1061"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/ST_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000053"/>
         <rdfs:label xml:lang="de">Planen, Bauen und Gestalten</rdfs:label>
@@ -12412,6 +12763,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/ST_0000030">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1054"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/ST_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000053"/>
         <rdfs:label xml:lang="de">Rechtskunde</rdfs:label>
@@ -12453,6 +12805,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/ST_0000033">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/ST_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000053"/>
         <rdfs:label xml:lang="de">Sozialkunde</rdfs:label>
@@ -12493,6 +12846,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/ST_0000036">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/ST_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000053"/>
         <rdfs:label xml:lang="de">Technik</rdfs:label>
@@ -12585,6 +12939,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/TH_0000004">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1061"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/TH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000031"/>
         <rdfs:label xml:lang="de">Darstellen und Gestalten</rdfs:label>
@@ -12665,6 +13020,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/TH_0000010">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1050"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/TH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000031"/>
         <rdfs:label xml:lang="de">Fremdsprache</rdfs:label>
@@ -12818,6 +13174,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/TH_0000021">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1057"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/TH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000031"/>
         <rdfs:label xml:lang="de">Jüdische Religionslehre</rdfs:label>
@@ -12911,6 +13268,8 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/TH_0000028">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/TH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000031"/>
         <rdfs:label xml:lang="de">Mensch-Natur-Technik</rdfs:label>
@@ -12937,6 +13296,8 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/TH_0000030">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/TH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000031"/>
         <rdfs:label xml:lang="de">Natur und Technik</rdfs:label>
@@ -12991,6 +13352,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/TH_0000034">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/TH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000031"/>
         <rdfs:label xml:lang="de">Sozialkunde</rdfs:label>
@@ -13004,6 +13366,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/TH_0000035">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/TH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000031"/>
         <rdfs:label xml:lang="de">Sozialkunde in englischer Sprache</rdfs:label>
@@ -13017,6 +13380,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/TH_0000036">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1058"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/TH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000031"/>
         <rdfs:label xml:lang="de">Sozialkunde in französischer Sprache</rdfs:label>
@@ -13070,6 +13434,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/TH_0000040">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/TH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000031"/>
         <rdfs:label xml:lang="de">Technik TGS</rdfs:label>
@@ -13124,6 +13489,8 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/TH_0000044">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1052"/>
+        <skos:closeMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1059"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/TH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000031"/>
         <rdfs:label xml:lang="de">Wahlpflichtfach Naturwissenschaften und Technik</rdfs:label>
@@ -13137,6 +13504,7 @@ GitHub: https://fwu-de.github.io/schulfach-ontologie/</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/schulfach/TH_0000045">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000001"/>
+        <skos:exactMatch rdf:resource="http://w3id.org/kim/schulfaecher/s1061"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/schulfach/TH_0000000"/>
         <ontology:LP_0000029 rdf:resource="https://w3id.org/lehrplan/ontology/LP_3000031"/>
         <rdfs:label xml:lang="de">Werken</rdfs:label>

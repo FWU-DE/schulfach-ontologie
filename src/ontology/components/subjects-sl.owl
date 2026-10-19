@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/schulfach/components/subjects-sl.owl>
-<https://w3id.org/schulfach/1.0.0/components/subjects-sl.owl>
-Annotation(owl:versionInfo "1.0.0")
+<https://w3id.org/schulfach/1.0.1/components/subjects-sl.owl>
+Annotation(owl:versionInfo "1.0.1")
 
 Declaration(Class(<http://www.w3.org/2004/02/skos/core#Concept>))
 Declaration(Class(<http://www.w3.org/2004/02/skos/core#ConceptScheme>))
@@ -43,6 +43,10 @@ Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1031>))
 Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1033>))
 Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1036>))
 Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1042>))
+Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1051>))
+Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1052>))
+Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1058>))
+Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1059>))
 Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000055>))
 Declaration(NamedIndividual(<https://w3id.org/schulfach/SL_0000000>))
 Declaration(NamedIndividual(<https://w3id.org/schulfach/SL_0000001>))
@@ -456,6 +460,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/SL_0000034> "Herkunft
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/SL_0000034> "Primarstufe, Sek I")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/SL_0000034>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/SL_0000034>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulfach/SL_0000034> <http://w3id.org/kim/schulfaecher/s1051>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulfach/SL_0000034> <https://w3id.org/schulfach/SL_0000000>)
 ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulfach/SL_0000034> <https://w3id.org/lehrplan/ontology/LP_3000055>)
 
@@ -602,6 +607,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/SL_0000049> "Naturwis
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/SL_0000049> "Sek I (Gymnasium nur Jahrgangsstufe 5 und 6, bei Gemeinschaftsschule bis 8)")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/SL_0000049>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/SL_0000049>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulfach/SL_0000049> <http://w3id.org/kim/schulfaecher/s1052>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulfach/SL_0000049> <https://w3id.org/schulfach/SL_0000000>)
 ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulfach/SL_0000049> <https://w3id.org/lehrplan/ontology/LP_3000055>)
 
@@ -671,6 +677,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/SL_0000056> "Sozialku
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/SL_0000056> "Sek I Gymnasium, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/SL_0000056>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/SL_0000056>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulfach/SL_0000056> <http://w3id.org/kim/schulfaecher/s1058>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulfach/SL_0000056> <https://w3id.org/schulfach/SL_0000000>)
 ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulfach/SL_0000056> <https://w3id.org/lehrplan/ontology/LP_3000055>)
 
@@ -680,6 +687,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/SL_0000057> "Sozialku
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/SL_0000057> "nur G8, Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/SL_0000057>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/SL_0000057>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulfach/SL_0000057> <http://w3id.org/kim/schulfaecher/s1058>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulfach/SL_0000057> <https://w3id.org/schulfach/SL_0000000>)
 ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulfach/SL_0000057> <https://w3id.org/lehrplan/ontology/LP_3000055>)
 
@@ -689,6 +697,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/SL_0000058> "Sozialku
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/SL_0000058> "nur G8")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/SL_0000058>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/SL_0000058>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulfach/SL_0000058> <http://w3id.org/kim/schulfaecher/s1058>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulfach/SL_0000058> <https://w3id.org/schulfach/SL_0000000>)
 ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulfach/SL_0000058> <https://w3id.org/lehrplan/ontology/LP_3000055>)
 
@@ -698,6 +707,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/SL_0000059> "Sozialku
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/SL_0000059> "Gemeinschaftsschule Jahrgangsstufe 9 und 10")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/SL_0000059>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/SL_0000059>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulfach/SL_0000059> <http://w3id.org/kim/schulfaecher/s1058>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulfach/SL_0000059> <https://w3id.org/schulfach/SL_0000000>)
 ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulfach/SL_0000059> <https://w3id.org/lehrplan/ontology/LP_3000055>)
 
@@ -736,6 +746,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/SL_0000063> "Technik"
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/SL_0000063> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/SL_0000063>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/SL_0000063>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulfach/SL_0000063> <http://w3id.org/kim/schulfaecher/s1059>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulfach/SL_0000063> <https://w3id.org/schulfach/SL_0000000>)
 ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulfach/SL_0000063> <https://w3id.org/lehrplan/ontology/LP_3000055>)
 

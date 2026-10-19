@@ -31,7 +31,7 @@
 <https://w3id.org/schulfach/SH_0000000>
         a               skos:ConceptScheme ;
         <http://purl.org/dc/terms/created>
-                "2025-10-21" ;
+                "2026-10-19" ;
         <http://purl.org/dc/terms/creator>
                 "Laura Junghans" , "Cindy Bloes" , "Steffen Roertgen" , "Almut Steinlein" , "Jörg Waitelonis" ;
         <http://purl.org/dc/terms/license>
@@ -90,6 +90,7 @@
 <https://w3id.org/schulfach/SH_0000023>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:prefLabel      "Naturwissenschaften"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SH_0000000> .
 
@@ -114,6 +115,7 @@
 <https://w3id.org/schulfach/SH_0000013>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1061> ;
         skos:prefLabel      "Gestalten"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SH_0000000> .
 
@@ -152,6 +154,7 @@
 
 <https://w3id.org/schulfach/SH_0000031>
         a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1060> ;
         skos:prefLabel     "Textillehre"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/SH_0000000> .
 
@@ -199,6 +202,7 @@
 
 <https://w3id.org/schulfach/SH_0000030>
         a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel     "Technik"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/SH_0000000> .
 

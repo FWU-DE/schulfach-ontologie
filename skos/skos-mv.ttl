@@ -4,6 +4,7 @@
 <https://w3id.org/schulfach/MV_0000030>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1053> ;
         skos:prefLabel      "Niederdeutsch"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
@@ -114,7 +115,7 @@
 <https://w3id.org/schulfach/MV_0000000>
         a               skos:ConceptScheme ;
         <http://purl.org/dc/terms/created>
-                "2025-10-21" ;
+                "2026-10-19" ;
         <http://purl.org/dc/terms/creator>
                 "Laura Junghans" , "Steffen Roertgen" , "Almut Steinlein" , "Jörg Waitelonis" , "Cindy Bloes" ;
         <http://purl.org/dc/terms/license>
@@ -130,6 +131,7 @@
 <https://w3id.org/schulfach/MV_0000013>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1050> ;
         skos:prefLabel      "Fremdsprachen an Grundschulen"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
@@ -199,6 +201,7 @@
 <https://w3id.org/schulfach/MV_0000038>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I ab Jahrgangsstufe 7, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Sozialkunde"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
@@ -265,12 +268,14 @@
 <https://w3id.org/schulfach/MV_0000003>
         a                   skos:Concept ;
         skos:editorialNote  "nur Jahrgangsstufe 11" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1049> ;
         skos:prefLabel      "Berufliche Orientierung"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
 <https://w3id.org/schulfach/MV_0000044>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe, Jahrgangsstufe 5 und 6" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1061> ;
         skos:prefLabel      "Werken"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
@@ -284,6 +289,7 @@
 <https://w3id.org/schulfach/MV_0000029>
         a                   skos:Concept ;
         skos:editorialNote  "nur Jahrgangsstufe 5 und 6 " ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:prefLabel      "Naturwissenschaften"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 

@@ -46,6 +46,7 @@
 <https://w3id.org/schulfach/NW_0000065>
         a                   skos:Concept ;
         skos:editorialNote  "Realschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "WP Sozialwissenschaften"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 
@@ -117,6 +118,7 @@
 <https://w3id.org/schulfach/NW_0000051>
         a                   skos:Concept ;
         skos:editorialNote  "Realschule, Hauptschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1060> ;
         skos:prefLabel      "Textilgestaltung"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 
@@ -166,6 +168,7 @@
 <https://w3id.org/schulfach/NW_0000043>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1054> ;
         skos:prefLabel      "Recht"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 
@@ -192,6 +195,7 @@
 <https://w3id.org/schulfach/NW_0000050>
         a                   skos:Concept ;
         skos:editorialNote  "Gesamtschule, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 
@@ -207,6 +211,7 @@
 <https://w3id.org/schulfach/NW_0000063>
         a                   skos:Concept ;
         skos:editorialNote  "Gesamtschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:prefLabel      "WP Naturwissenschaften"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 
@@ -232,6 +237,7 @@
 <https://w3id.org/schulfach/NW_0000001>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe, Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1056> ;
         skos:prefLabel      "Alevitischer Religionsunterricht"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 
@@ -312,7 +318,7 @@
 <https://w3id.org/schulfach/NW_0000000>
         a               skos:ConceptScheme ;
         <http://purl.org/dc/terms/created>
-                "2025-10-21" ;
+                "2026-10-19" ;
         <http://purl.org/dc/terms/creator>
                 "Jörg Waitelonis" , "Almut Steinlein" , "Laura Junghans" , "Cindy Bloes" , "Steffen Roertgen" ;
         <http://purl.org/dc/terms/license>
@@ -377,6 +383,7 @@
 <https://w3id.org/schulfach/NW_0000033>
         a                   skos:Concept ;
         skos:editorialNote  "Hauptschule, Gesamtschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:prefLabel      "Naturwissenschaften"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 
@@ -430,12 +437,14 @@
 
 <https://w3id.org/schulfach/NW_0000025>
         a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1057> ;
         skos:prefLabel     "Jüdische Religionslehre"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/NW_0000000> .
 
 <https://w3id.org/schulfach/NW_0000066>
         a                   skos:Concept ;
         skos:editorialNote  "Realschule, Gymnasium Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "WP Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 

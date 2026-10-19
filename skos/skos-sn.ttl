@@ -4,6 +4,7 @@
 <https://w3id.org/schulfach/SN_0000028>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "Technik/Computer"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SN_0000000> .
 
@@ -86,6 +87,7 @@
 <https://w3id.org/schulfach/SN_0000006>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe, Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1051> ;
         skos:prefLabel      "Herkunftssprache im Wahlbereich"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SN_0000000> .
 
@@ -105,7 +107,7 @@
 <https://w3id.org/schulfach/SN_0000000>
         a               skos:ConceptScheme ;
         <http://purl.org/dc/terms/created>
-                "2025-10-21" ;
+                "2026-10-19" ;
         <http://purl.org/dc/terms/creator>
                 "Jörg Waitelonis" , "Cindy Bloes" , "Almut Steinlein" , "Laura Junghans" , "Steffen Roertgen" ;
         <http://purl.org/dc/terms/license>
@@ -205,6 +207,7 @@
 <https://w3id.org/schulfach/SN_0000032>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1049> ;
         skos:prefLabel      "Auf dem Weg ins Berufsleben"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SN_0000000> .
 
@@ -224,6 +227,7 @@
 <https://w3id.org/schulfach/SN_0000017>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1061> ;
         skos:prefLabel      "Werken"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SN_0000000> .
 
@@ -236,6 +240,7 @@
 <https://w3id.org/schulfach/SN_0000024>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1051> ;
         skos:prefLabel      "Herkunftssprache - Ersatz für 2. Fremdsprache"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SN_0000000> .
 
@@ -248,6 +253,7 @@
 
 <https://w3id.org/schulfach/SN_0000009>
         a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1057> ;
         skos:prefLabel     "Jüdische Religion"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/SN_0000000> .
 
@@ -321,6 +327,7 @@
 <https://w3id.org/schulfach/SN_0000030>
         a                   skos:Concept ;
         skos:editorialNote  "Oberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1050> ;
         skos:prefLabel      "2. Fremdsprache"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SN_0000000> .
 

@@ -3,6 +3,7 @@
 
 <https://w3id.org/schulfach/TH_0000028>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:editorialNote  "Gymnasium" ;
         skos:prefLabel      "Mensch-Natur-Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/TH_0000000> .
@@ -16,6 +17,7 @@
 <https://w3id.org/schulfach/TH_0000035>
         a                   skos:Concept ;
         skos:editorialNote  "Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Sozialkunde in englischer Sprache"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/TH_0000000> .
 
@@ -65,12 +67,14 @@
 
 <https://w3id.org/schulfach/TH_0000021>
         a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1057> ;
         skos:prefLabel     "Jüdische Religionslehre"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/TH_0000000> .
 
 <https://w3id.org/schulfach/TH_0000034>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Sozialkunde"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/TH_0000000> .
 
@@ -98,7 +102,7 @@
 <https://w3id.org/schulfach/TH_0000000>
         a               skos:ConceptScheme ;
         <http://purl.org/dc/terms/created>
-                "2025-10-21" ;
+                "2026-10-19" ;
         <http://purl.org/dc/terms/creator>
                 "Almut Steinlein" , "Jörg Waitelonis" , "Cindy Bloes" , "Steffen Roertgen" , "Laura Junghans" ;
         <http://purl.org/dc/terms/license>
@@ -169,6 +173,7 @@
 <https://w3id.org/schulfach/TH_0000040>
         a                   skos:Concept ;
         skos:editorialNote  "Gemeinschaftsschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "Technik TGS"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/TH_0000000> .
 
@@ -203,12 +208,14 @@
 <https://w3id.org/schulfach/TH_0000004>
         a                   skos:Concept ;
         skos:editorialNote  "Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1061> ;
         skos:prefLabel      "Darstellen und Gestalten"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/TH_0000000> .
 
 <https://w3id.org/schulfach/TH_0000045>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1061> ;
         skos:prefLabel      "Werken"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/TH_0000000> .
 
@@ -262,6 +269,7 @@
 
 <https://w3id.org/schulfach/TH_0000044>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:editorialNote  "Gymnasium" ;
         skos:prefLabel      "Wahlpflichtfach Naturwissenschaften und Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/TH_0000000> .
@@ -282,6 +290,7 @@
 <https://w3id.org/schulfach/TH_0000010>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1050> ;
         skos:prefLabel      "Fremdsprache"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/TH_0000000> .
 
@@ -294,6 +303,7 @@
 <https://w3id.org/schulfach/TH_0000036>
         a                   skos:Concept ;
         skos:editorialNote  "Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Sozialkunde in französischer Sprache"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/TH_0000000> .
 
@@ -305,6 +315,7 @@
 
 <https://w3id.org/schulfach/TH_0000030>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:editorialNote  "Regelschule" ;
         skos:prefLabel      "Natur und Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/TH_0000000> .

@@ -87,7 +87,7 @@ $(IMPORTDIR)/kim_import.owl:
 
 skos-%.ttl: 
 	$(ROBOT) remove --input sf-edit.owl  --select imports --trim false merge --input components/subjects-$*.owl --output $(TMPDIR)/schulfach-$*.ttl  
-	echo "<https://w3id.org/schulfach/$(shell echo $* | tr  '[:lower:]' '[:upper:]')_0000000> <http://purl.org/dc/terms/created> \"2025-10-21\" ."  >> $(TMPDIR)/schulfach-$*.ttl 
+	echo "<https://w3id.org/schulfach/$(shell echo $* | tr  '[:lower:]' '[:upper:]')_0000000> <http://purl.org/dc/terms/created> \"2026-10-19\" ."  >> $(TMPDIR)/schulfach-$*.ttl 
 	$(ROBOT) merge --input $(TMPDIR)/schulfach-$*.ttl query --update ../sparql/skos1.sparql query --query ../sparql/skos2.sparql $@
 
 
@@ -98,7 +98,7 @@ ALL_ANNOTATIONS=--annotate-defined-by false \
 	--ontology-iri https://w3id.org/schulfach/ -V https://w3id.org/schulfach/$(VERSION) \
 	--annotation http://purl.org/dc/terms/created "$(TODAY)" \
 	--annotation http://purl.org/dc/terms/bibliographicCitation "$(CITATION)"  \
-#	--link-annotation owl:priorVersion https://w3id.org/lehrplan/ontology/$(PRIOR_VERSION) \
+	--link-annotation owl:priorVersion https://w3id.org/lehrplan/ontology/$(PRIOR_VERSION) \
 
 update-ontology-annotations: 
 	$(ROBOT) annotate --input ../../sf.owl $(ALL_ANNOTATIONS) --output ../../sf.owl && \

@@ -11,18 +11,21 @@
 <https://w3id.org/schulfach/NI_0000046>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe, Hauptschule, Realschule, Oberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1060> ;
         skos:prefLabel      "Textiles Gestalten"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NI_0000000> .
 
 <https://w3id.org/schulfach/NI_0000018>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1051> ;
         skos:prefLabel      "Herkunftssprachlicher Unterricht"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NI_0000000> .
 
 <https://w3id.org/schulfach/NI_0000040>
         a                   skos:Concept ;
         skos:editorialNote  "nur EPAS" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1054> ;
         skos:prefLabel      "Recht"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NI_0000000> .
 
@@ -67,6 +70,7 @@
 <https://w3id.org/schulfach/NI_0000045>
         a                   skos:Concept ;
         skos:editorialNote  "Oberschule, Hauptschule, Realschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NI_0000000> .
 
@@ -91,6 +95,7 @@
 <https://w3id.org/schulfach/NI_0000037>
         a                   skos:Concept ;
         skos:editorialNote  "Realschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "Profil Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NI_0000000> .
 
@@ -130,6 +135,7 @@
 <https://w3id.org/schulfach/NI_0000029>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1053> ;
         skos:prefLabel      "Niederdeutsch"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NI_0000000> .
 
@@ -192,12 +198,14 @@
 <https://w3id.org/schulfach/NI_0000015>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe, Hauptschule, Realschule, Oberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1061> ;
         skos:prefLabel      "Gestaltendes Werken"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NI_0000000> .
 
 <https://w3id.org/schulfach/NI_0000028>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:prefLabel      "Naturwissenchaften"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NI_0000000> .
 
@@ -299,7 +307,7 @@
 <https://w3id.org/schulfach/NI_0000000>
         a               skos:ConceptScheme ;
         <http://purl.org/dc/terms/created>
-                "2025-10-21" ;
+                "2026-10-19" ;
         <http://purl.org/dc/terms/creator>
                 "Jörg Waitelonis" , "Cindy Bloes" , "Steffen Roertgen" , "Almut Steinlein" , "Laura Junghans" ;
         <http://purl.org/dc/terms/license>

@@ -23,6 +23,7 @@
 <https://w3id.org/schulfach/ST_0000001>
         a                   skos:Concept ;
         skos:editorialNote  "Sekundarschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:prefLabel      "Angewandte Naturwissenschaften"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/ST_0000000> .
 
@@ -46,6 +47,7 @@
 <https://w3id.org/schulfach/ST_0000021>
         a                   skos:Concept ;
         skos:editorialNote  "Gymnasium Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1046> ;
         skos:prefLabel      "Lernen in der digitalen Welt"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/ST_0000000> .
 
@@ -72,7 +74,7 @@
 <https://w3id.org/schulfach/ST_0000000>
         a               skos:ConceptScheme ;
         <http://purl.org/dc/terms/created>
-                "2025-10-21" ;
+                "2026-10-19" ;
         <http://purl.org/dc/terms/creator>
                 "Jörg Waitelonis" , "Steffen Roertgen" , "Almut Steinlein" , "Laura Junghans" , "Cindy Bloes" ;
         <http://purl.org/dc/terms/license>
@@ -82,6 +84,7 @@
 <https://w3id.org/schulfach/ST_0000013>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1061> ;
         skos:prefLabel      "Gestalten"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/ST_0000000> .
 
@@ -102,6 +105,7 @@
 <https://w3id.org/schulfach/ST_0000033>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Sozialkunde"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/ST_0000000> .
 
@@ -232,6 +236,7 @@
 <https://w3id.org/schulfach/ST_0000036>
         a                   skos:Concept ;
         skos:editorialNote  "Sekundarschule, Gymnasium Wahlpflichtfach (Sek I, Sek II)" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/ST_0000000> .
 
@@ -244,6 +249,7 @@
 <https://w3id.org/schulfach/ST_0000030>
         a                   skos:Concept ;
         skos:editorialNote  "Sekundarschule, Gymnasium Wahlpflichtfach (Sek I, Sek II)" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1054> ;
         skos:prefLabel      "Rechtskunde"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/ST_0000000> .
 
@@ -263,5 +269,6 @@
 <https://w3id.org/schulfach/ST_0000028>
         a                   skos:Concept ;
         skos:editorialNote  "Sekundarschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1061> ;
         skos:prefLabel      "Planen, Bauen und Gestalten"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/ST_0000000> .

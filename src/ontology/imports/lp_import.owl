@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/schulfach/imports/lp_import.owl>
-<https://w3id.org/schulfach/1.0.0/imports/lp_import.owl>
-Annotation(<http://purl.org/dc/terms/bibliographicCitation> "Lehrplan Ontology. Version 1.0.0-7, https://w3id.org/lehrplan/ontology")
-Annotation(<http://purl.org/dc/terms/created> "2025-11-03")
+<https://w3id.org/schulfach/1.0.1/imports/lp_import.owl>
+Annotation(<http://purl.org/dc/terms/bibliographicCitation> "Lehrplan Ontology. Version 1.0.0rc5, https://w3id.org/lehrplan/ontology")
+Annotation(<http://purl.org/dc/terms/created> "2026-09-21")
 Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-6378-2618>)
 Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-7192-7143>)
 Annotation(<http://purl.org/dc/terms/creator> "Almut Steinlein"@de)
@@ -21,8 +21,10 @@ Annotation(<http://purl.org/dc/terms/description> "This ontology is a formal rep
 Annotation(<http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/>)
 Annotation(<http://purl.org/dc/terms/title> "Curriculum Ontology"@en)
 Annotation(<http://purl.org/dc/terms/title> "Lehrplan Ontologie"@de)
-Annotation(owl:versionInfo "1.0.0-7")
-Annotation(owl:versionInfo "1.0.0")
+Annotation(<http://usefulinc.com/ns/doap#repository> <https://github.com/FWU-DE/lehrplan-ontologie>)
+Annotation(owl:priorVersion <https://w3id.org/lehrplan/ontology/>)
+Annotation(owl:versionInfo "1.0.0rc5")
+Annotation(owl:versionInfo "1.0.1")
 
 Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000001>))
 Declaration(ObjectProperty(<https://w3id.org/lehrplan/ontology/LP_0000029>))
@@ -48,18 +50,47 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+Declaration(AnnotationProperty(<http://usefulinc.com/ns/doap#repository>))
 Declaration(AnnotationProperty(rdfs:comment))
+Declaration(AnnotationProperty(rdfs:isDefinedBy))
 Declaration(AnnotationProperty(rdfs:label))
 Declaration(AnnotationProperty(rdfs:seeAlso))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#altLabel>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#definition>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#example>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://www.w3.org/2004/02/skos/core#altLabel> (alternative label)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2004/02/skos/core#altLabel> "The range of skos:altLabel is the class of RDF plain literals."@en)
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2004/02/skos/core#altLabel> "skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/2004/02/skos/core>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2004/02/skos/core#altLabel> "alternative label"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/2004/02/skos/core#altLabel> "An alternative lexical label for a resource."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/2004/02/skos/core#altLabel> "Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel)."@en)
+
+# Annotation Property: <http://www.w3.org/2004/02/skos/core#definition> (definition)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/2004/02/skos/core>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2004/02/skos/core#definition> "definition"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/2004/02/skos/core#definition> "A statement or formal explanation of the meaning of a concept."@en)
+
+# Annotation Property: <http://www.w3.org/2004/02/skos/core#example> (example)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/2004/02/skos/core>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2004/02/skos/core#example> "example"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/2004/02/skos/core#example> "An example of the use of a concept."@en)
+
 
 ############################
 #   Object Properties
 ############################
 
-# Object Property: <https://w3id.org/lehrplan/ontology/LP_0000029> (von Bundesland)
+# Object Property: <https://w3id.org/lehrplan/ontology/LP_0000029> (of federal state)
 
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000029> "of federal state"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000029> "von Bundesland"@de)
 
 

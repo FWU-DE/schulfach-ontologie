@@ -36,7 +36,7 @@
 <https://w3id.org/schulfach/BB_0000000>
         a               skos:ConceptScheme ;
         <http://purl.org/dc/terms/created>
-                "2025-10-21" ;
+                "2026-10-19" ;
         <http://purl.org/dc/terms/creator>
                 "Jörg Waitelonis" , "Cindy Bloes" , "Almut Steinlein" , "Laura Junghans" , "Steffen Roertgen" ;
         <http://purl.org/dc/terms/license>
@@ -90,6 +90,7 @@
 <https://w3id.org/schulfach/BB_0000033>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1054> ;
         skos:prefLabel      "Recht"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BB_0000000> .
 
@@ -185,18 +186,21 @@
 <https://w3id.org/schulfach/BB_0000052>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BB_0000000> .
 
 <https://w3id.org/schulfach/BB_0000024>
         a                   skos:Concept ;
         skos:editorialNote  "Jahrgangsstufe 7 - 10" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:prefLabel      "Naturwissenschaften (7-10 Wahlpflichtfach)"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BB_0000000> .
 
 <https://w3id.org/schulfach/BB_0000037>
         a                   skos:Concept ;
         skos:editorialNote  "nur Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Sozialwissenschaften"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BB_0000000> .
 
@@ -253,11 +257,13 @@
 <https://w3id.org/schulfach/BB_0000023>
         a                   skos:Concept ;
         skos:editorialNote  "Jahrgangsstufe 5 & 6" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:prefLabel      "Naturwissenschaften (5-6)"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BB_0000000> .
 
 <https://w3id.org/schulfach/BB_0000036>
         a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1050> ;
         skos:prefLabel     "Moderne Fremdsprachen"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/BB_0000000> .
 
@@ -301,6 +307,12 @@
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1013> ;
         skos:prefLabel      "Informatik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BB_0000000> .
+
+<https://w3id.org/schulfach/BB_0000056>
+        a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1046> ;
+        skos:prefLabel     "Medienbildung"@de ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BB_0000000> .
 
 <https://w3id.org/schulfach/BB_0000028>
         a                   skos:Concept ;
@@ -349,8 +361,8 @@
 
 <https://w3id.org/schulfach/BB_0000042>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1033> , <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:editorialNote  "Jahrgangsstufen 5-10" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:prefLabel      "Wirtschaft-Arbeit-Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BB_0000000> .
 
@@ -360,6 +372,11 @@
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1034> ;
         skos:prefLabel      "Hebräisch"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BB_0000000> .
+
+<https://w3id.org/schulfach/BB_0000055>
+        a                  skos:Concept ;
+        skos:prefLabel     "Sprachbildung"@de ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BB_0000000> .
 
 <https://w3id.org/schulfach/BB_0000027>
         a                   skos:Concept ;

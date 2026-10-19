@@ -59,8 +59,8 @@
 
 <https://w3id.org/schulfach/BY_0000117>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1061> , <http://w3id.org/kim/schulfaecher/s1015> ;
         skos:editorialNote  "Förderschule" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1015> ;
         skos:prefLabel      "Werken und Gestalten / Kunst"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -181,6 +181,7 @@
 <https://w3id.org/schulfach/BY_0000037>
         a                   skos:Concept ;
         skos:editorialNote  "Realschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Sozialwesen"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -290,6 +291,7 @@
 <https://w3id.org/schulfach/BY_0000051>
         a                   skos:Concept ;
         skos:editorialNote  "Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "Natur und Technik (Gym)"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -315,6 +317,7 @@
 <https://w3id.org/schulfach/BY_0000036>
         a                   skos:Concept ;
         skos:editorialNote  "Realschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Soziallehre"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -377,6 +380,7 @@
 <https://w3id.org/schulfach/BY_0000043>
         a                   skos:Concept ;
         skos:editorialNote  "Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1049> ;
         skos:prefLabel      "Berufliche Orientierung"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -395,6 +399,7 @@
 <https://w3id.org/schulfach/BY_0000056>
         a                   skos:Concept ;
         skos:editorialNote  "Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Sozialwissenschaftliche Arbeitsfelder"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -408,18 +413,21 @@
 <https://w3id.org/schulfach/BY_0000097>
         a                   skos:Concept ;
         skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "Technologie"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
 <https://w3id.org/schulfach/BY_0000069>
         a                   skos:Concept ;
         skos:editorialNote  "Wirtschaftsschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "Mensch, Umwelt, Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
 <https://w3id.org/schulfach/BY_0000107>
         a                   skos:Concept ;
         skos:editorialNote  "Förderschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1031> ;
         skos:prefLabel      "Sport und Bewegung"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -433,12 +441,14 @@
 <https://w3id.org/schulfach/BY_0000022>
         a                   skos:Concept ;
         skos:editorialNote  "Mittelschule, Förderschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
 <https://w3id.org/schulfach/BY_0000091>
         a                   skos:Concept ;
         skos:editorialNote  "Fachoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1054> ;
         skos:prefLabel      "Rechtslehre"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -484,6 +494,7 @@
 <https://w3id.org/schulfach/BY_0000089>
         a                   skos:Concept ;
         skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:prefLabel      "Naturwissenschaften"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -514,6 +525,7 @@
 <https://w3id.org/schulfach/BY_0000014>
         a                   skos:Concept ;
         skos:editorialNote  "Grundschule, Mittelschule, Förderschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1061> ;
         skos:prefLabel      "Werken und Gestalten"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -527,6 +539,7 @@
 <https://w3id.org/schulfach/BY_0000055>
         a                   skos:Concept ;
         skos:editorialNote  "Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Sozialpraktische Grundbildung"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -540,6 +553,7 @@
 <https://w3id.org/schulfach/BY_0000096>
         a                   skos:Concept ;
         skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1049> ;
         skos:prefLabel      "Studier- und Arbeitstechniken"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -611,6 +625,7 @@
 <https://w3id.org/schulfach/BY_0000100>
         a                   skos:Concept ;
         skos:editorialNote  "Förderschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1049> ;
         skos:prefLabel      "Beruf und Arbeit"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -630,7 +645,7 @@
 <https://w3id.org/schulfach/BY_0000000>
         a               skos:ConceptScheme ;
         <http://purl.org/dc/terms/created>
-                "2025-10-21" ;
+                "2026-10-19" ;
         <http://purl.org/dc/terms/creator>
                 "Jörg Waitelonis" , "Laura Junghans" , "Almut Steinlein" , "Steffen Roertgen" , "Cindy Bloes" ;
         <http://purl.org/dc/terms/license>
@@ -688,6 +703,7 @@
 <https://w3id.org/schulfach/BY_0000039>
         a                   skos:Concept ;
         skos:editorialNote  "Realschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1060> ;
         skos:prefLabel      "Textiles Gestalten"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -699,6 +715,7 @@
 
 <https://w3id.org/schulfach/BY_0000020>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:editorialNote  "Mittelschule, Förderschule" ;
         skos:prefLabel      "Natur und Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
@@ -706,6 +723,7 @@
 <https://w3id.org/schulfach/BY_0000118>
         a                   skos:Concept ;
         skos:editorialNote  "Förderschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1015> ;
         skos:prefLabel      "Ästhetische Bildung"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -768,5 +786,6 @@
 <https://w3id.org/schulfach/BY_0000040>
         a                   skos:Concept ;
         skos:editorialNote  "Realschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1061> ;
         skos:prefLabel      "Werken"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .

@@ -4,6 +4,7 @@
 <https://w3id.org/schulfach/RP_0000061>
         a                   skos:Concept ;
         skos:editorialNote  "Jahrgangsstufen 7-10, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Sozialkunde"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/RP_0000000> .
 
@@ -57,6 +58,7 @@
 <https://w3id.org/schulfach/RP_0000053>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe, Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1051> ;
         skos:prefLabel      "Herkunftssprachen-Unterricht"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/RP_0000000> .
 
@@ -204,6 +206,7 @@
 <https://w3id.org/schulfach/RP_0000051>
         a                   skos:Concept ;
         skos:editorialNote  "Förderschwerpunkt Lernen" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1060> ;
         skos:prefLabel      "Textiles Gestalten"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/RP_0000000> .
 
@@ -249,6 +252,7 @@
 <https://w3id.org/schulfach/RP_0000043>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1056> ;
         skos:prefLabel      "Alevitische Religion"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/RP_0000000> .
 
@@ -268,6 +272,7 @@
 
 <https://w3id.org/schulfach/RP_0000028>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1052> , <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:editorialNote  "Realschule Plus (Wahlpflichtfach)" ;
         skos:prefLabel      "Technik und Naturwissenschaft"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/RP_0000000> .
@@ -302,6 +307,7 @@
 <https://w3id.org/schulfach/RP_0000007>
         a                   skos:Concept ;
         skos:editorialNote  "Orientierungsstufe 5-6" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:prefLabel      "Naturwissenschaften"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/RP_0000000> .
 
@@ -389,7 +395,7 @@
 <https://w3id.org/schulfach/RP_0000000>
         a               skos:ConceptScheme ;
         <http://purl.org/dc/terms/created>
-                "2025-10-21" ;
+                "2026-10-19" ;
         <http://purl.org/dc/terms/creator>
                 "Laura Junghans" , "Steffen Roertgen" , "Jörg Waitelonis" , "Almut Steinlein" , "Cindy Bloes" ;
         <http://purl.org/dc/terms/license>

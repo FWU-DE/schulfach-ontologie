@@ -31,18 +31,18 @@ Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-7192-
 Annotation(<http://purl.org/dc/terms/creator> "Almut Steinlein"@de)
 Annotation(<http://purl.org/dc/terms/creator> "Cindy Bloes"@de)
 Annotation(<http://purl.org/dc/terms/creator> "Laura Junghanns"@de)
-Annotation(<http://purl.org/dc/terms/description> "Die Schulfach Ontologie ist ein formales Modell zur Definition und Organisation der Schulfächer in den deutschen Bundesländern. Sie stellt ein strukturiertes Vokabular bereit, um Schulfächer und deren Beziehungen zu beschreiben, zu klassifizieren und zu verknüpfen – und ermöglicht dadurch die Interoperabilität von Bildungsdaten über verschiedene Systeme und Institutionen hinweg.
-GitHub: https://fwu-de.github.io/schulfach-ontologie/"@de)
-Annotation(<http://purl.org/dc/terms/description> "The German school subjects ontology is a formal semantic model that defines and organizes the school subjects (Schulfächer) used across the German federal states (Bundesländer). It provides a structured vocabulary for describing, categorizing, and interlinking school subjects and their relationships—allowing data interoperability across different educational datasets and systems. 
-GitHub: https://fwu-de.github.io/schulfach-ontologie/"@en)
+Annotation(<http://purl.org/dc/terms/description> "Die Schulfach Ontologie ist ein formales Modell zur Definition und Organisation der Schulfächer in den deutschen Bundesländern. Sie stellt ein strukturiertes Vokabular bereit, um Schulfächer und deren Beziehungen zu beschreiben, zu klassifizieren und zu verknüpfen – und ermöglicht dadurch die Interoperabilität von Bildungsdaten über verschiedene Systeme und Institutionen hinweg."@de)
+Annotation(<http://purl.org/dc/terms/description> "The German school subjects ontology is a formal semantic model that defines and organizes the school subjects (Schulfächer) used across the German federal states. It provides a structured vocabulary for describing, categorizing, and interlinking school subjects and their relationships—allowing data interoperability across different educational datasets and systems."@en)
 Annotation(<http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/>)
 Annotation(<http://purl.org/dc/terms/title> "German school subjects ontology"@en)
 Annotation(<http://purl.org/dc/terms/title> "Schulfach Ontologie"@de)
+Annotation(<http://usefulinc.com/ns/doap#repository> <https://github.com/FWU-DE/schulfach-ontologie>)
 
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+Declaration(AnnotationProperty(<http://usefulinc.com/ns/doap#repository>))
 
 
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-6378-2618> "Steffen Rörtgen")

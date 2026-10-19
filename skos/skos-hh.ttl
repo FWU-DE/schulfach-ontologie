@@ -32,13 +32,14 @@
 <https://w3id.org/schulfach/HH_0000019>
         a                   skos:Concept ;
         skos:editorialNote  "Stadtteilschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1049> ;
         skos:prefLabel      "Berufliche Orientierung - Leben, Arbeit, Beruf"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HH_0000000> .
 
 <https://w3id.org/schulfach/HH_0000000>
         a               skos:ConceptScheme ;
         <http://purl.org/dc/terms/created>
-                "2025-10-21" ;
+                "2026-10-19" ;
         <http://purl.org/dc/terms/creator>
                 "Almut Steinlein" , "Steffen Roertgen" , "Jörg Waitelonis" , "Cindy Bloes" , "Laura Junghans" ;
         <http://purl.org/dc/terms/license>
@@ -61,6 +62,7 @@
 
 <https://w3id.org/schulfach/HH_0000026>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:editorialNote  "Stadtteilschule" ;
         skos:prefLabel      "Lernbereich Naturwissenschatfen und Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HH_0000000> .
@@ -119,6 +121,7 @@
 
 <https://w3id.org/schulfach/HH_0000012>
         a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1055> ;
         skos:prefLabel     "Religion"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/HH_0000000> .
 
@@ -167,6 +170,7 @@
 <https://w3id.org/schulfach/HH_0000011>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe, Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1053> ;
         skos:prefLabel      "Niederdeutsch"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HH_0000000> .
 
@@ -206,6 +210,7 @@
 <https://w3id.org/schulfach/HH_0000044>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1049> ;
         skos:prefLabel      "Rahmenvorgaben für die berufliche Orientierung"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HH_0000000> .
 
@@ -253,6 +258,7 @@
 <https://w3id.org/schulfach/HH_0000008>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1051> ;
         skos:prefLabel      "Herkunftssprachen"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HH_0000000> .
 
@@ -290,6 +296,7 @@
 <https://w3id.org/schulfach/HH_0000028>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:prefLabel      "Naturwissenschaftliches Praktikum"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HH_0000000> .
 
@@ -323,6 +330,7 @@
 <https://w3id.org/schulfach/HH_0000048>
         a                   skos:Concept ;
         skos:editorialNote  "Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1054> ;
         skos:prefLabel      "Recht"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HH_0000000> .
 

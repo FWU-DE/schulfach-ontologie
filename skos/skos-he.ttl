@@ -11,6 +11,7 @@
 <https://w3id.org/schulfach/HE_0000001>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1056> ;
         skos:prefLabel      "Alevitische Religion"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HE_0000000> .
 
@@ -61,7 +62,7 @@
 <https://w3id.org/schulfach/HE_0000000>
         a               skos:ConceptScheme ;
         <http://purl.org/dc/terms/created>
-                "2025-10-21" ;
+                "2026-10-19" ;
         <http://purl.org/dc/terms/creator>
                 "Almut Steinlein" , "Laura Junghans" , "Cindy Bloes" , "Steffen Roertgen" , "Jörg Waitelonis" ;
         <http://purl.org/dc/terms/license>
@@ -253,11 +254,13 @@
 <https://w3id.org/schulfach/HE_0000028>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe, Sek I - Englisch, Französisch, Italienisch, Russisch, Spanisch, Polnisch, Portugisisch" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1050> ;
         skos:prefLabel      "Moderne Fremdsprachen"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HE_0000000> .
 
 <https://w3id.org/schulfach/HE_0000022>
         a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1057> ;
         skos:prefLabel     "Jüdische Religion"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/HE_0000000> .
 

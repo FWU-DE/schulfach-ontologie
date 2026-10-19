@@ -75,6 +75,7 @@
 <https://w3id.org/schulfach/SL_0000034>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe, Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1051> ;
         skos:prefLabel      "Herkunftssprachlicher Unterricht"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SL_0000000> .
 
@@ -101,7 +102,7 @@
 <https://w3id.org/schulfach/SL_0000000>
         a               skos:ConceptScheme ;
         <http://purl.org/dc/terms/created>
-                "2025-10-21" ;
+                "2026-10-19" ;
         <http://purl.org/dc/terms/creator>
                 "Laura Junghans" , "Cindy Bloes" , "Almut Steinlein" , "Jörg Waitelonis" , "Steffen Roertgen" ;
         <http://purl.org/dc/terms/license>
@@ -186,6 +187,7 @@
 <https://w3id.org/schulfach/SL_0000059>
         a                   skos:Concept ;
         skos:editorialNote  "Gemeinschaftsschule Jahrgangsstufe 9 und 10" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Sozialkunde Themenfelder"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SL_0000000> .
 
@@ -264,6 +266,7 @@
 <https://w3id.org/schulfach/SL_0000058>
         a                   skos:Concept ;
         skos:editorialNote  "nur G8" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Sozialkunde bilingual deutsch-französisch"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SL_0000000> .
 
@@ -333,6 +336,7 @@
 <https://w3id.org/schulfach/SL_0000057>
         a                   skos:Concept ;
         skos:editorialNote  "nur G8, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Sozialkunde bilingual deutsch-englisch"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SL_0000000> .
 
@@ -387,6 +391,7 @@
 <https://w3id.org/schulfach/SL_0000049>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I (Gymnasium nur Jahrgangsstufe 5 und 6, bei Gemeinschaftsschule bis 8)" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:prefLabel      "Naturwissenschaften"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SL_0000000> .
 
@@ -420,6 +425,7 @@
 <https://w3id.org/schulfach/SL_0000056>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I Gymnasium, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Sozialkunde"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SL_0000000> .
 
@@ -447,5 +453,6 @@
 <https://w3id.org/schulfach/SL_0000063>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SL_0000000> .

@@ -85,6 +85,7 @@
 
 <https://w3id.org/schulfach/BW_0000056>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:editorialNote  "nur Gymnasium Sek II" ;
         skos:prefLabel      "Naturwissenschaft und Technik (NwT) - Schulversuch Leistungsfach in der Kursstufe"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
@@ -138,8 +139,8 @@
 
 <https://w3id.org/schulfach/BW_0000076>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1049> , <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:editorialNote  "Sek I, Sek II" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:prefLabel      "Wirtschaft / Berufs- und Studienorientierung (WBS)"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
 
@@ -152,6 +153,7 @@
 
 <https://w3id.org/schulfach/BW_0000001>
         a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1056> ;
         skos:prefLabel     "Alevitische Religionslehre"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/BW_0000000> .
 
@@ -164,6 +166,7 @@
 
 <https://w3id.org/schulfach/BW_0000042>
         a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1057> ;
         skos:prefLabel     "Jüdische Religionslehre"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/BW_0000000> .
 
@@ -175,6 +178,7 @@
 
 <https://w3id.org/schulfach/BW_0000055>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1052> , <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:editorialNote  "Sek I, Sek II" ;
         skos:prefLabel      "Naturwissenschaft und Technik (NwT) - Profilfach"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
@@ -248,7 +252,7 @@
 <https://w3id.org/schulfach/BW_0000000>
         a               skos:ConceptScheme ;
         <http://purl.org/dc/terms/created>
-                "2025-10-21" ;
+                "2026-10-19" ;
         <http://purl.org/dc/terms/creator>
                 "Laura Junghans" , "Almut Steinlein" , "Jörg Waitelonis" , "Steffen Roertgen" , "Cindy Bloes" ;
         <http://purl.org/dc/terms/license>
@@ -258,7 +262,6 @@
 <https://w3id.org/schulfach/BW_0000041>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1035> ;
         skos:prefLabel      "Japanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
 
@@ -270,6 +273,7 @@
 
 <https://w3id.org/schulfach/BW_0000054>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1052> , <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:editorialNote  "nur Gymnasium Sek II" ;
         skos:prefLabel      "Naturwissenschaft und Technik (NwT) - Basisfach in der Kursstufe"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
@@ -416,6 +420,7 @@
 <https://w3id.org/schulfach/BW_0000073>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "Technik - Wahlpflichtfach"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
 
@@ -490,6 +495,7 @@
 
 <https://w3id.org/schulfach/BW_0000003>
         a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1026> ;
         skos:prefLabel     "Altkatholische Religionslehre"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/BW_0000000> .
 
@@ -500,8 +506,8 @@
 
 <https://w3id.org/schulfach/BW_0000044>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1061> , <http://w3id.org/kim/schulfaecher/s1015> ;
         skos:editorialNote  "nur Primarstufe" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1015> ;
         skos:prefLabel      "Kunst/Werken"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
 

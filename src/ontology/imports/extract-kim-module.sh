@@ -1,5 +1,5 @@
 # Note: For consistent results run with ROBOT v1.91 or higher
-#wget https://github.com/ontodev/robot/releases/download/v1.9.6/robot.jar
+wget https://github.com/ontodev/robot/releases/download/v1.9.8/robot.jar
 
 # Download 
 wget https://raw.githubusercontent.com/dini-ag-kim/schularten/refs/heads/main/schularten.ttl
@@ -9,6 +9,23 @@ wget https://raw.githubusercontent.com/dini-ag-kim/schulabschluesse/refs/heads/m
 echo "<> a <http://www.w3.org/2002/07/owl#Ontology> ." >>  schularten.ttl
 echo "<> a <http://www.w3.org/2002/07/owl#Ontology> ." >>  schulfaecher.ttl
 echo "<> a <http://www.w3.org/2002/07/owl#Ontology> ." >>  schulabschluesse.ttl
+
+
+echo "<http://www.w3.org/2004/02/skos/core#closeMatch> a <http://www.w3.org/2002/07/owl#ObjectProperty> . " >>  schularten.ttl
+echo "<http://www.w3.org/2004/02/skos/core#exactMatch> a <http://www.w3.org/2002/07/owl#ObjectProperty> . " >>  schularten.ttl
+echo "<http://www.w3.org/2004/02/skos/core#hasTopConcept> a <http://www.w3.org/2002/07/owl#ObjectProperty> . " >>  schularten.ttl
+echo "<http://www.w3.org/2004/02/skos/core#topConceptOf> a <http://www.w3.org/2002/07/owl#ObjectProperty> . " >>  schularten.ttl
+
+echo "<http://www.w3.org/2004/02/skos/core#closeMatch> a <http://www.w3.org/2002/07/owl#ObjectProperty> . " >>  schulfaecher.ttl
+echo "<http://www.w3.org/2004/02/skos/core#exactMatch> a <http://www.w3.org/2002/07/owl#ObjectProperty> . " >>  schulfaecher.ttl
+echo "<http://www.w3.org/2004/02/skos/core#hasTopConcept> a <http://www.w3.org/2002/07/owl#ObjectProperty> . " >>  schulfaecher.ttl
+echo "<http://www.w3.org/2004/02/skos/core#topConceptOf> a <http://www.w3.org/2002/07/owl#ObjectProperty> . " >>  schulfaecher.ttl
+
+echo "<http://www.w3.org/2004/02/skos/core#closeMatch> a <http://www.w3.org/2002/07/owl#ObjectProperty> . " >>  schulabschluesse.ttl
+echo "<http://www.w3.org/2004/02/skos/core#exactMatch> a <http://www.w3.org/2002/07/owl#ObjectProperty> . " >>  schulabschluesse.ttl
+echo "<http://www.w3.org/2004/02/skos/core#hasTopConcept> a <http://www.w3.org/2002/07/owl#ObjectProperty> . " >>  schulabschluesse.ttl
+echo "<http://www.w3.org/2004/02/skos/core#topConceptOf> a <http://www.w3.org/2002/07/owl#ObjectProperty> . " >>  schulabschluesse.ttl
+
 
 # Extract the terms 
 #java -jar robot.jar merge --input schularten.ttl  --input schulfaecher.ttl  --input schulabschluesse.ttl  extract --method TOP --term 'http://www.w3.org/2004/02/skos/core#Concept'  --output kim-extracted.ttl

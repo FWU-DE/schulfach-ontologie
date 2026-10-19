@@ -10,6 +10,7 @@
 <https://w3id.org/schulfach/HB_0000002>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II - Englisch, Spanisch, Türkisch, Russisch, Französisch" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1050> ;
         skos:prefLabel      "Bildungsplan fortgeführte Fremdsprachen"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HB_0000000> .
 
@@ -117,7 +118,7 @@
 <https://w3id.org/schulfach/HB_0000000>
         a               skos:ConceptScheme ;
         <http://purl.org/dc/terms/created>
-                "2025-10-21" ;
+                "2026-10-19" ;
         <http://purl.org/dc/terms/creator>
                 "Cindy Bloes" , "Steffen Roertgen" , "Almut Steinlein" , "Jörg Waitelonis" , "Laura Junghans" ;
         <http://purl.org/dc/terms/license>
@@ -156,6 +157,7 @@
 <https://w3id.org/schulfach/HB_0000020>
         a                   skos:Concept ;
         skos:editorialNote  "Primarstufe" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1051> ;
         skos:prefLabel      "Herkunftssprachen"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HB_0000000> .
 
@@ -231,8 +233,8 @@
 
 <https://w3id.org/schulfach/HB_0000045>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:editorialNote  "Oberschule" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:prefLabel      "Wirtschaft/Arbeit/Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HB_0000000> .
 
@@ -286,8 +288,8 @@
 
 <https://w3id.org/schulfach/HB_0000044>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1033> , <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:editorialNote  "Gymnasium" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:prefLabel      "Wirtschaft-Arbeit-Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HB_0000000> .
 
@@ -300,7 +302,7 @@
 
 <https://w3id.org/schulfach/HB_0000029>
         a                   skos:Concept ;
-        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1001> , <http://w3id.org/kim/schulfaecher/s1002> , <http://w3id.org/kim/schulfaecher/s1022> ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1001> , <http://w3id.org/kim/schulfaecher/s1052> , <http://w3id.org/kim/schulfaecher/s1002> , <http://w3id.org/kim/schulfaecher/s1022> ;
         skos:editorialNote  "Sek I" ;
         skos:prefLabel      "Naturwissenschaften, Biologie, Chemie, Physik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HB_0000000> .
@@ -322,6 +324,7 @@
 <https://w3id.org/schulfach/HB_0000036>
         a                   skos:Concept ;
         skos:editorialNote  "ohne Konfession" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1055> ;
         skos:prefLabel      "Religion"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HB_0000000> .
 

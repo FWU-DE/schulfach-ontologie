@@ -1,7 +1,7 @@
 URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
 ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
 https://w3id.org/schulfach/HE_0000000	Schulfächer (Hessen)	skos:ConceptScheme		Hessen				
-https://w3id.org/schulfach/HE_0000001	Alevitische Religion	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen			FEHLT	Sek I
+https://w3id.org/schulfach/HE_0000001	Alevitische Religion	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Religionslehre (alevitisch) (KIM-Schulfach)		FEHLT	Sek I
 https://w3id.org/schulfach/HE_0000002	Arabisch	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen			FEHLT	Sek I nur Gymnasium und Realschule
 https://w3id.org/schulfach/HE_0000003	Arbeitslehre 	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen			FEHLT	Haupt- und Realschulen
 https://w3id.org/schulfach/HE_0000004	Biologie	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Biologie (KIM-Schulfach)			Sek I, Sek II
@@ -22,13 +22,13 @@ https://w3id.org/schulfach/HE_0000018	Informatik	Schulfach,skos:Concept	Schulfä
 https://w3id.org/schulfach/HE_0000019	Informatik (Wahlunterricht im gymnasialen Bildungsgang)	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Informatik (KIM-Schulfach)			Sek I
 https://w3id.org/schulfach/HE_0000020	Islamische Religion 	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Religionslehre (islamisch) (KIM-Schulfach)			Primarstufe, Sek I
 https://w3id.org/schulfach/HE_0000021	Italienisch	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Italienisch (KIM-Schulfach)			Sek II
-https://w3id.org/schulfach/HE_0000022	Jüdische Religion 	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen			FEHLT	
+https://w3id.org/schulfach/HE_0000022	Jüdische Religion 	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Religionslehre (jüdisch) (KIM-Schulfach)		FEHLT	
 https://w3id.org/schulfach/HE_0000023	Katholische Religion 	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Religionslehre (katholische) (KIM-Schulfach)			
 https://w3id.org/schulfach/HE_0000024	Kunst	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Kunst (KIM-Schulfach)			
 https://w3id.org/schulfach/HE_0000025	Latein	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Latein (KIM-Schulfach)			Sek I nur Gymnasium, Sek II
 https://w3id.org/schulfach/HE_0000026	Litauisch	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen			FEHLT	Sek II
 https://w3id.org/schulfach/HE_0000027	Mathematik	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Mathematik (KIM-Schulfach)			
-https://w3id.org/schulfach/HE_0000028	Moderne Fremdsprachen	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen			FEHLT	Primarstufe, Sek I - Englisch, Französisch, Italienisch, Russisch, Spanisch, Polnisch, Portugisisch
+https://w3id.org/schulfach/HE_0000028	Moderne Fremdsprachen	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Fremdsprachen (KIM-Schulfach)		FEHLT	Primarstufe, Sek I - Englisch, Französisch, Italienisch, Russisch, Spanisch, Polnisch, Portugisisch
 https://w3id.org/schulfach/HE_0000029	Musik	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Musik (KIM-Schulfach)			
 https://w3id.org/schulfach/HE_0000030	Philosophie	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Philosophie (KIM-Schulfach)			Sek II
 https://w3id.org/schulfach/HE_0000031	Physik	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Physik (KIM-Schulfach)			Sek I, Sek II

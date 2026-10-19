@@ -67,6 +67,7 @@
 <https://w3id.org/schulfach/BE_0000040>
         a                   skos:Concept ;
         skos:editorialNote  "nur Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1049> ;
         skos:prefLabel      "Studium und Beruf"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BE_0000000> .
 
@@ -93,6 +94,7 @@
 <https://w3id.org/schulfach/BE_0000032>
         a                   skos:Concept ;
         skos:editorialNote  "nur Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1054> ;
         skos:prefLabel      "Recht"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BE_0000000> .
 
@@ -123,6 +125,12 @@
         skos:prefLabel      "Geografie"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BE_0000000> .
 
+<https://w3id.org/schulfach/BE_0000052>
+        a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1046> ;
+        skos:prefLabel     "Medienbildung"@de ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BE_0000000> .
+
 <https://w3id.org/schulfach/BE_0000024>
         a                   skos:Concept ;
         skos:editorialNote  "1-10, Sek II" ;
@@ -133,6 +141,7 @@
 <https://w3id.org/schulfach/BE_0000037>
         a                   skos:Concept ;
         skos:editorialNote  "nur Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Sozialwissenschaften"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BE_0000000> .
 
@@ -183,16 +192,22 @@
         skos:prefLabel     "Französisch"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/BE_0000000> .
 
+<https://w3id.org/schulfach/BE_0000051>
+        a                  skos:Concept ;
+        skos:prefLabel     "Sprachbildung"@de ;
+        skos:topConceptOf  <https://w3id.org/schulfach/BE_0000000> .
+
 <https://w3id.org/schulfach/BE_0000023>
         a                   skos:Concept ;
         skos:editorialNote  "Jahrgangsstufe 7 - 10" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:prefLabel      "Naturwissenschaften (7-10 Wahlpflichtfach)"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BE_0000000> .
 
 <https://w3id.org/schulfach/BE_0000036>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1058> , <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:editorialNote  "Wahlpflichtfach 9-10" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:prefLabel      "Sozialwissenschaften-Wirtschaftswissenschaft"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BE_0000000> .
 
@@ -249,16 +264,18 @@
         skos:editorialNote  "Jahrgangsstufe 7-10" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1008> ;
         skos:prefLabel      "Ethik"@de ;
-        skos:topConceptOf   <https://w3id.org/schulfach/BB_0000000> .
+        skos:topConceptOf   <https://w3id.org/schulfach/BE_0000000> .
 
 <https://w3id.org/schulfach/BE_0000022>
         a                   skos:Concept ;
         skos:editorialNote  "Jahrgangsstufe 5 & 6" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:prefLabel      "Naturwissenschaften (5-6)"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BE_0000000> .
 
 <https://w3id.org/schulfach/BE_0000035>
         a                  skos:Concept ;
+        skos:exactMatch    <http://w3id.org/kim/schulfaecher/s1050> ;
         skos:prefLabel     "Moderne Fremdsprachen"@de ;
         skos:topConceptOf  <https://w3id.org/schulfach/BE_0000000> .
 
@@ -337,7 +354,7 @@
 <https://w3id.org/schulfach/BE_0000000>
         a               skos:ConceptScheme ;
         <http://purl.org/dc/terms/created>
-                "2025-10-21" ;
+                "2026-10-19" ;
         <http://purl.org/dc/terms/creator>
                 "Laura Junghans" , "Almut Steinlein" , "Steffen Roertgen" , "Cindy Bloes" , "Jörg Waitelonis" ;
         <http://purl.org/dc/terms/license>

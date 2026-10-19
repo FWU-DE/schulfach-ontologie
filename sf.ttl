@@ -3,6 +3,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix terms: <http://purl.org/dc/terms/> .
@@ -10,22 +11,22 @@
 @base <https://w3id.org/schulfach/> .
 
 <https://w3id.org/schulfach/> rdf:type owl:Ontology ;
-                               owl:versionIRI <https://w3id.org/schulfach/1.0.0> ;
-                               terms:bibliographicCitation "German School Subjects Ontology. Version 1.0.0, https://w3id.org/schulfach/" ;
-                               terms:created "2025-11-17" ;
+                               owl:versionIRI <https://w3id.org/schulfach/1.0.1> ;
+                               terms:bibliographicCitation "German School Subjects Ontology. Version 1.0.1, https://w3id.org/schulfach/" ;
+                               terms:created "2026-10-19" ;
                                terms:creator <https://orcid.org/0000-0001-6378-2618> ,
                                              <https://orcid.org/0000-0001-7192-7143> ,
                                              "Almut Steinlein"@de ,
                                              "Cindy Bloes"@de ,
                                              "Laura Junghanns"@de ;
-                               terms:description """Die Schulfach Ontologie ist ein formales Modell zur Definition und Organisation der Schulfächer in den deutschen Bundesländern. Sie stellt ein strukturiertes Vokabular bereit, um Schulfächer und deren Beziehungen zu beschreiben, zu klassifizieren und zu verknüpfen – und ermöglicht dadurch die Interoperabilität von Bildungsdaten über verschiedene Systeme und Institutionen hinweg.
-GitHub: https://fwu-de.github.io/schulfach-ontologie/"""@de ,
-                                                 """The German school subjects ontology is a formal semantic model that defines and organizes the school subjects (Schulfächer) used across the German federal states (Bundesländer). It provides a structured vocabulary for describing, categorizing, and interlinking school subjects and their relationships—allowing data interoperability across different educational datasets and systems. 
-GitHub: https://fwu-de.github.io/schulfach-ontologie/"""@en ;
+                               terms:description "Die Schulfach Ontologie ist ein formales Modell zur Definition und Organisation der Schulfächer in den deutschen Bundesländern. Sie stellt ein strukturiertes Vokabular bereit, um Schulfächer und deren Beziehungen zu beschreiben, zu klassifizieren und zu verknüpfen – und ermöglicht dadurch die Interoperabilität von Bildungsdaten über verschiedene Systeme und Institutionen hinweg."@de ,
+                                                 "The German school subjects ontology is a formal semantic model that defines and organizes the school subjects (Schulfächer) used across the German federal states. It provides a structured vocabulary for describing, categorizing, and interlinking school subjects and their relationships—allowing data interoperability across different educational datasets and systems."@en ;
                                terms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
                                terms:title "German school subjects ontology"@en ,
                                            "Schulfach Ontologie"@de ;
-                               owl:versionInfo "1.0.0" .
+                               doap:repository <https://github.com/FWU-DE/schulfach-ontologie> ;
+                               owl:priorVersion ontology: ;
+                               owl:versionInfo "1.0.1" .
 
 #################################################################
 #    Annotation properties
@@ -55,8 +56,16 @@ terms:license rdf:type owl:AnnotationProperty .
 terms:title rdf:type owl:AnnotationProperty .
 
 
+###  http://usefulinc.com/ns/doap#repository
+doap:repository rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2000/01/rdf-schema#comment
 rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+rdfs:isDefinedBy rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#label
@@ -68,11 +77,18 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#altLabel
-skos:altLabel rdf:type owl:AnnotationProperty .
+skos:altLabel rdf:type owl:AnnotationProperty ;
+              rdfs:comment "The range of skos:altLabel is the class of RDF plain literals."@en ,
+                           "skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties."@en ;
+              rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+              rdfs:label "alternative label"@en ;
+              skos:definition "An alternative lexical label for a resource."@en ;
+              skos:example "Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel)."@en .
 
 
 ###  http://www.w3.org/2004/02/skos/core#definition
 skos:definition rdf:type owl:AnnotationProperty ;
+                rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
                 rdfs:label "definition"@en ;
                 skos:definition "A statement or formal explanation of the meaning of a concept."@en .
 
@@ -84,11 +100,18 @@ skos:editorialNote rdf:type owl:AnnotationProperty ;
 
 
 ###  http://www.w3.org/2004/02/skos/core#example
-skos:example rdf:type owl:AnnotationProperty .
+skos:example rdf:type owl:AnnotationProperty ;
+             rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+             rdfs:label "example"@en ;
+             skos:definition "An example of the use of a concept."@en .
 
 
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
 skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#related
+skos:related rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -130,7 +153,8 @@ skos:topConceptOf rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/lehrplan/ontology/LP_0000029
 ontology:LP_0000029 rdf:type owl:ObjectProperty ;
-                    rdfs:label "von Bundesland"@de .
+                    rdfs:label "of federal state"@en ,
+                               "von Bundesland"@de .
 
 
 #################################################################
@@ -285,9 +309,13 @@ ontology:LP_0000001 rdf:type owl:Class ;
 ###  http://w3id.org/kim/schulfaecher/s1019
 <http://w3id.org/kim/schulfaecher/s1019> rdf:type owl:NamedIndividual ;
                                          rdfs:label "MINT (KIM-Schulfach)" ;
-                                         skos:altLabel "Chemie, Physik, Biologie"@de ,
-                                                       "Naturwissenschaften"@de ;
-                                         skos:prefLabel "MINT"@de .
+                                         skos:prefLabel "MINT"@de ;
+                                         skos:related <http://w3id.org/kim/schulfaecher/s1001> ,
+                                                      <http://w3id.org/kim/schulfaecher/s1002> ,
+                                                      <http://w3id.org/kim/schulfaecher/s1013> ,
+                                                      <http://w3id.org/kim/schulfaecher/s1017> ,
+                                                      <http://w3id.org/kim/schulfaecher/s1022> ,
+                                                      <http://w3id.org/kim/schulfaecher/s1059> .
 
 
 ###  http://w3id.org/kim/schulfaecher/s1020
@@ -311,8 +339,7 @@ ontology:LP_0000001 rdf:type owl:Class ;
 ###  http://w3id.org/kim/schulfaecher/s1023
 <http://w3id.org/kim/schulfaecher/s1023> rdf:type owl:NamedIndividual ;
                                          rdfs:label "Politik (KIM-Schulfach)" ;
-                                         skos:altLabel "Politische Bildung"@de ,
-                                                       "Sozialkunde"@de ;
+                                         skos:altLabel "Politische Bildung"@de ;
                                          skos:prefLabel "Politik"@de .
 
 
@@ -466,6 +493,114 @@ ontology:LP_0000001 rdf:type owl:Class ;
 <http://w3id.org/kim/schulfaecher/s1047> rdf:type owl:NamedIndividual ;
                                          rdfs:label "Hauswirtschaft (KIM-Schulfach)" ;
                                          skos:prefLabel "Hauswirtschaft"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1048
+<http://w3id.org/kim/schulfaecher/s1048> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Arbeitslehre (KIM-Schulfach)" ;
+                                         skos:altLabel "Arbeitswelt"@de ;
+                                         skos:prefLabel "Arbeitslehre"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1049
+<http://w3id.org/kim/schulfaecher/s1049> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Berufs- und Studienorientierung (KIM-Schulfach)" ;
+                                         skos:altLabel "Beruf"@de ,
+                                                       "Berufliche Orientierung"@de ,
+                                                       "Studium und Beruf"@de ;
+                                         skos:prefLabel "Berufs- und Studienorientierung"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1050
+<http://w3id.org/kim/schulfaecher/s1050> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Fremdsprachen (KIM-Schulfach)" ;
+                                         skos:altLabel "Fortgeführte Fremdsprachen"@de ,
+                                                       "Moderne Fremdsprachen"@de ;
+                                         skos:prefLabel "Fremdsprachen"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1051
+<http://w3id.org/kim/schulfaecher/s1051> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Herkunftssprachen (KIM-Schulfach)" ;
+                                         skos:altLabel "Herkunftssprachlicher Unterricht"@de ;
+                                         skos:prefLabel "Herkunftssprachen"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1052
+<http://w3id.org/kim/schulfaecher/s1052> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Naturwissenschaften (KIM-Schulfach)" ;
+                                         skos:altLabel "Angewandte Naturwissenschaften"@de ,
+                                                       "Chemie, Physik, Biologie"@de ;
+                                         skos:prefLabel "Naturwissenschaften"@de ;
+                                         skos:related <http://w3id.org/kim/schulfaecher/s1001> ,
+                                                      <http://w3id.org/kim/schulfaecher/s1002> ,
+                                                      <http://w3id.org/kim/schulfaecher/s1022> .
+
+
+###  http://w3id.org/kim/schulfaecher/s1053
+<http://w3id.org/kim/schulfaecher/s1053> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Niederdeutsch (KIM-Schulfach)" ;
+                                         skos:prefLabel "Niederdeutsch"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1054
+<http://w3id.org/kim/schulfaecher/s1054> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Recht (KIM-Schulfach)" ;
+                                         skos:altLabel "Rechtskunde"@de ;
+                                         skos:prefLabel "Recht"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1055
+<http://w3id.org/kim/schulfaecher/s1055> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Religion (KIM-Schulfach)" ;
+                                         skos:altLabel "Religion (konfessionslos)"@de ;
+                                         skos:prefLabel "Religion"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1056
+<http://w3id.org/kim/schulfaecher/s1056> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Religionslehre (alevitisch) (KIM-Schulfach)" ;
+                                         skos:altLabel "Alevitischer Religionsunterricht"@de ;
+                                         skos:prefLabel "Religionslehre (alevitisch)"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1057
+<http://w3id.org/kim/schulfaecher/s1057> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Religionslehre (jüdisch) (KIM-Schulfach)" ;
+                                         skos:altLabel "Jüdischer Religionsunterricht"@de ;
+                                         skos:prefLabel "Religionslehre (jüdisch)"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1058
+<http://w3id.org/kim/schulfaecher/s1058> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Sozialkunde (KIM-Schulfach)" ;
+                                         skos:altLabel "Soziales"@de ,
+                                                       "Sozialwissenschaft"@de ;
+                                         skos:prefLabel "Sozialkunde"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1059
+<http://w3id.org/kim/schulfaecher/s1059> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Technik (KIM-Schulfach)" ;
+                                         skos:prefLabel "Technik"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1060
+<http://w3id.org/kim/schulfaecher/s1060> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Textiles Gestalten (KIM-Schulfach)" ;
+                                         skos:altLabel "Textilgestaltung"@de ,
+                                                       "Textillehre"@de ;
+                                         skos:prefLabel "Textiles Gestalten"@de .
+
+
+###  http://w3id.org/kim/schulfaecher/s1061
+<http://w3id.org/kim/schulfaecher/s1061> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Werken und Gestalten (KIM-Schulfach)" ;
+                                         skos:altLabel "Gestalten"@de ,
+                                                       "Gestaltendes Werken"@de ,
+                                                       "Planen, Bauen und Gestalten"@de ,
+                                                       "Werken"@de ;
+                                         skos:prefLabel "Werken und Gestalten"@de .
 
 
 ###  https://w3id.org/lehrplan/ontology/LP_3000031
@@ -809,6 +944,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BB_0000023 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1052> ;
             skos:topConceptOf :BB_0000000 ;
             ontology:LP_0000029 ontology:LP_3000057 ;
             rdfs:label "Naturwissenschaften (5-6)"@de ;
@@ -819,6 +955,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BB_0000024 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1052> ;
             skos:topConceptOf :BB_0000000 ;
             ontology:LP_0000029 ontology:LP_3000057 ;
             rdfs:label "Naturwissenschaften (7-10 Wahlpflichtfach)"@de ;
@@ -915,6 +1052,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BB_0000033 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1054> ;
             skos:topConceptOf :BB_0000000 ;
             ontology:LP_0000029 ontology:LP_3000057 ;
             rdfs:label "Recht"@de ;
@@ -946,6 +1084,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BB_0000036 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1050> ;
             skos:topConceptOf :BB_0000000 ;
             ontology:LP_0000029 ontology:LP_3000057 ;
             rdfs:label "Moderne Fremdsprachen"@de .
@@ -955,6 +1094,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BB_0000037 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :BB_0000000 ;
             ontology:LP_0000029 ontology:LP_3000057 ;
             rdfs:label "Sozialwissenschaften"@de ;
@@ -1007,7 +1147,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BB_0000042 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
-            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1033> ;
+            skos:closeMatch <http://w3id.org/kim/schulfaecher/s1033> ,
+                            <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :BB_0000000 ;
             ontology:LP_0000029 ontology:LP_3000057 ;
             rdfs:label "Wirtschaft-Arbeit-Technik"@de ;
@@ -1110,6 +1251,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BB_0000052 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :BB_0000000 ;
             ontology:LP_0000029 ontology:LP_3000057 ;
             rdfs:label "Technik"@de ;
@@ -1137,6 +1279,25 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000057 ;
             rdfs:label "Wirtschaftswissenschaft/Wirtschaftswissenschaft (b.)"@de ;
             skos:editorialNote "Sek II" .
+
+
+###  https://w3id.org/schulfach/BB_0000055
+:BB_0000055 rdf:type owl:NamedIndividual ,
+                     skos:Concept ,
+                     ontology:LP_0000001 ;
+            skos:topConceptOf :BB_0000000 ;
+            ontology:LP_0000029 ontology:LP_3000057 ;
+            rdfs:label "Sprachbildung"@de .
+
+
+###  https://w3id.org/schulfach/BB_0000056
+:BB_0000056 rdf:type owl:NamedIndividual ,
+                     skos:Concept ,
+                     ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1046> ;
+            skos:topConceptOf :BB_0000000 ;
+            ontology:LP_0000029 ontology:LP_3000057 ;
+            rdfs:label "Medienbildung"@de .
 
 
 ###  https://w3id.org/schulfach/BE_0000000
@@ -1373,6 +1534,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BE_0000022 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1052> ;
             skos:topConceptOf :BE_0000000 ;
             ontology:LP_0000029 ontology:LP_3000048 ;
             rdfs:label "Naturwissenschaften (5-6)"@de ;
@@ -1383,6 +1545,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BE_0000023 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1052> ;
             skos:topConceptOf :BE_0000000 ;
             ontology:LP_0000029 ontology:LP_3000048 ;
             rdfs:label "Naturwissenschaften (7-10 Wahlpflichtfach)"@de ;
@@ -1479,6 +1642,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BE_0000032 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1054> ;
             skos:topConceptOf :BE_0000000 ;
             ontology:LP_0000029 ontology:LP_3000048 ;
             rdfs:label "Recht"@de ;
@@ -1510,6 +1674,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BE_0000035 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1050> ;
             skos:topConceptOf :BE_0000000 ;
             ontology:LP_0000029 ontology:LP_3000048 ;
             rdfs:label "Moderne Fremdsprachen"@de .
@@ -1519,7 +1684,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BE_0000036 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
-            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1033> ;
+            skos:closeMatch <http://w3id.org/kim/schulfaecher/s1033> ,
+                            <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :BE_0000000 ;
             ontology:LP_0000029 ontology:LP_3000048 ;
             rdfs:label "Sozialwissenschaften-Wirtschaftswissenschaft"@de ;
@@ -1530,6 +1696,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BE_0000037 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :BE_0000000 ;
             ontology:LP_0000029 ontology:LP_3000048 ;
             rdfs:label "Sozialwissenschaften"@de ;
@@ -1560,6 +1727,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BE_0000040 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1049> ;
             skos:topConceptOf :BE_0000000 ;
             ontology:LP_0000029 ontology:LP_3000048 ;
             rdfs:label "Studium und Beruf"@de ;
@@ -1667,10 +1835,29 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                      skos:Concept ,
                      ontology:LP_0000001 ;
             skos:exactMatch <http://w3id.org/kim/schulfaecher/s1008> ;
-            skos:topConceptOf :BB_0000000 ;
-            ontology:LP_0000029 ontology:LP_3000057 ;
+            skos:topConceptOf :BE_0000000 ;
+            ontology:LP_0000029 ontology:LP_3000048 ;
             rdfs:label "Ethik"@de ;
             skos:editorialNote "Jahrgangsstufe 7-10" .
+
+
+###  https://w3id.org/schulfach/BE_0000051
+:BE_0000051 rdf:type owl:NamedIndividual ,
+                     skos:Concept ,
+                     ontology:LP_0000001 ;
+            skos:topConceptOf :BE_0000000 ;
+            ontology:LP_0000029 ontology:LP_3000048 ;
+            rdfs:label "Sprachbildung"@de .
+
+
+###  https://w3id.org/schulfach/BE_0000052
+:BE_0000052 rdf:type owl:NamedIndividual ,
+                     skos:Concept ,
+                     ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1046> ;
+            skos:topConceptOf :BE_0000000 ;
+            ontology:LP_0000029 ontology:LP_3000048 ;
+            rdfs:label "Medienbildung"@de .
 
 
 ###  https://w3id.org/schulfach/BW_0000000
@@ -1684,6 +1871,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BW_0000001 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1056> ;
             skos:topConceptOf :BW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000049 ;
             rdfs:label "Alevitische Religionslehre"@de .
@@ -1704,6 +1892,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BW_0000003 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1026> ;
             skos:topConceptOf :BW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000049 ;
             rdfs:label "Altkatholische Religionslehre"@de .
@@ -2114,7 +2303,6 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BW_0000041 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
-            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1035> ;
             skos:topConceptOf :BW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000049 ;
             rdfs:label "Japanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe"@de ;
@@ -2125,6 +2313,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BW_0000042 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1057> ;
             skos:topConceptOf :BW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000049 ;
             rdfs:label "Jüdische Religionslehre"@de .
@@ -2144,7 +2333,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BW_0000044 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
-            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1015> ;
+            skos:closeMatch <http://w3id.org/kim/schulfaecher/s1015> ,
+                            <http://w3id.org/kim/schulfaecher/s1061> ;
             skos:topConceptOf :BW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000049 ;
             rdfs:label "Kunst/Werken"@de ;
@@ -2251,6 +2441,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BW_0000054 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:closeMatch <http://w3id.org/kim/schulfaecher/s1052> ,
+                            <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :BW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000049 ;
             rdfs:label "Naturwissenschaft und Technik (NwT) - Basisfach in der Kursstufe"@de ;
@@ -2261,6 +2453,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BW_0000055 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:closeMatch <http://w3id.org/kim/schulfaecher/s1052> ,
+                            <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :BW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000049 ;
             rdfs:label "Naturwissenschaft und Technik (NwT) - Profilfach"@de ;
@@ -2271,6 +2465,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BW_0000056 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:closeMatch <http://w3id.org/kim/schulfaecher/s1052> ,
+                            <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :BW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000049 ;
             rdfs:label "Naturwissenschaft und Technik (NwT) - Schulversuch Leistungsfach in der Kursstufe"@de ;
@@ -2454,6 +2650,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BW_0000073 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :BW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000049 ;
             rdfs:label "Technik - Wahlpflichtfach"@de ;
@@ -2486,7 +2683,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BW_0000076 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
-            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1033> ;
+            skos:closeMatch <http://w3id.org/kim/schulfaecher/s1033> ,
+                            <http://w3id.org/kim/schulfaecher/s1049> ;
             skos:topConceptOf :BW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000049 ;
             rdfs:label "Wirtschaft / Berufs- und Studienorientierung (WBS)"@de ;
@@ -2639,6 +2837,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000014 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1061> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Werken und Gestalten"@de ;
@@ -2705,6 +2904,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000020 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:closeMatch <http://w3id.org/kim/schulfaecher/s1052> ,
+                            <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Natur und Technik"@de ;
@@ -2725,6 +2926,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000022 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Technik"@de ;
@@ -2877,6 +3079,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000036 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Soziallehre"@de ;
@@ -2887,6 +3090,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000037 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Sozialwesen"@de ;
@@ -2908,6 +3112,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000039 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1060> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Textiles Gestalten"@de ;
@@ -2918,6 +3123,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000040 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1061> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Werken"@de ;
@@ -2949,6 +3155,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000043 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1049> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Berufliche Orientierung"@de ;
@@ -3035,6 +3242,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000051 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Natur und Technik (Gym)"@de ;
@@ -3078,6 +3286,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000055 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Sozialpraktische Grundbildung"@de ;
@@ -3088,6 +3297,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000056 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Sozialwissenschaftliche Arbeitsfelder"@de ;
@@ -3226,6 +3436,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000069 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Mensch, Umwelt, Technik"@de ;
@@ -3438,6 +3649,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000089 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1052> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Naturwissenschaften"@de ;
@@ -3459,6 +3671,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000091 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1054> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Rechtslehre"@de ;
@@ -3510,6 +3723,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000096 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1049> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Studier- und Arbeitstechniken"@de ;
@@ -3520,6 +3734,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000097 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Technologie"@de ;
@@ -3551,6 +3766,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000100 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1049> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Beruf und Arbeit"@de ;
@@ -3621,6 +3837,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000107 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1031> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Sport und Bewegung"@de ;
@@ -3722,7 +3939,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000117 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
-            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1015> ;
+            skos:closeMatch <http://w3id.org/kim/schulfaecher/s1015> ,
+                            <http://w3id.org/kim/schulfaecher/s1061> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Werken und Gestalten / Kunst"@de ;
@@ -3733,6 +3951,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BY_0000118 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1015> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             rdfs:label "Ästhetische Bildung"@de ;
@@ -3761,6 +3980,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :HB_0000002 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1050> ;
             skos:topConceptOf :HB_0000000 ;
             ontology:LP_0000029 ontology:LP_3000056 ;
             rdfs:label "Bildungsplan fortgeführte Fremdsprachen"@de ;
@@ -3960,6 +4180,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :HB_0000020 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1051> ;
             skos:topConceptOf :HB_0000000 ;
             ontology:LP_0000029 ontology:LP_3000056 ;
             rdfs:label "Herkunftssprachen"@de ;
@@ -4059,7 +4280,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                      ontology:LP_0000001 ;
             skos:closeMatch <http://w3id.org/kim/schulfaecher/s1001> ,
                             <http://w3id.org/kim/schulfaecher/s1002> ,
-                            <http://w3id.org/kim/schulfaecher/s1022> ;
+                            <http://w3id.org/kim/schulfaecher/s1022> ,
+                            <http://w3id.org/kim/schulfaecher/s1052> ;
             skos:topConceptOf :HB_0000000 ;
             ontology:LP_0000029 ontology:LP_3000056 ;
             rdfs:label "Naturwissenschaften, Biologie, Chemie, Physik"@de ;
@@ -4135,6 +4357,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :HB_0000036 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1055> ;
             skos:topConceptOf :HB_0000000 ;
             ontology:LP_0000029 ontology:LP_3000056 ;
             rdfs:label "Religion"@de ;
@@ -4223,7 +4446,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :HB_0000044 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
-            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1033> ;
+            skos:closeMatch <http://w3id.org/kim/schulfaecher/s1033> ,
+                            <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :HB_0000000 ;
             ontology:LP_0000029 ontology:LP_3000056 ;
             rdfs:label "Wirtschaft-Arbeit-Technik"@de ;
@@ -4234,7 +4458,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :HB_0000045 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
-            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1033> ;
+            skos:closeMatch <http://w3id.org/kim/schulfaecher/s1033> ,
+                            <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :HB_0000000 ;
             ontology:LP_0000029 ontology:LP_3000056 ;
             rdfs:label "Wirtschaft/Arbeit/Technik"@de ;
@@ -4263,6 +4488,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :HE_0000001 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1056> ;
             skos:topConceptOf :HE_0000000 ;
             ontology:LP_0000029 ontology:LP_3000050 ;
             rdfs:label "Alevitische Religion"@de ;
@@ -4488,6 +4714,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :HE_0000022 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1057> ;
             skos:topConceptOf :HE_0000000 ;
             ontology:LP_0000029 ontology:LP_3000050 ;
             rdfs:label "Jüdische Religion"@de .
@@ -4548,6 +4775,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :HE_0000028 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1050> ;
             skos:topConceptOf :HE_0000000 ;
             ontology:LP_0000029 ontology:LP_3000050 ;
             rdfs:label "Moderne Fremdsprachen"@de ;
@@ -4745,6 +4973,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :HH_0000008 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1051> ;
             skos:topConceptOf :HH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000045 ;
             rdfs:label "Herkunftssprachen"@de ;
@@ -4775,6 +5004,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :HH_0000011 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1053> ;
             skos:topConceptOf :HH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000045 ;
             rdfs:label "Niederdeutsch"@de ;
@@ -4785,6 +5015,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :HH_0000012 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1055> ;
             skos:topConceptOf :HH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000045 ;
             rdfs:label "Religion"@de .
@@ -4859,6 +5090,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :HH_0000019 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1049> ;
             skos:topConceptOf :HH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000045 ;
             rdfs:label "Berufliche Orientierung - Leben, Arbeit, Beruf"@de ;
@@ -4935,6 +5167,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :HH_0000026 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:closeMatch <http://w3id.org/kim/schulfaecher/s1052> ,
+                            <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :HH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000045 ;
             rdfs:label "Lernbereich Naturwissenschatfen und Technik"@de ;
@@ -4955,6 +5189,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :HH_0000028 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1052> ;
             skos:topConceptOf :HH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000045 ;
             rdfs:label "Naturwissenschaftliches Praktikum"@de ;
@@ -5136,6 +5371,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :HH_0000044 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1049> ;
             skos:topConceptOf :HH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000045 ;
             rdfs:label "Rahmenvorgaben für die berufliche Orientierung"@de ;
@@ -5178,6 +5414,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :HH_0000048 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1054> ;
             skos:topConceptOf :HH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000045 ;
             rdfs:label "Recht"@de ;
@@ -5249,6 +5486,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :MV_0000003 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1049> ;
             skos:topConceptOf :MV_0000000 ;
             ontology:LP_0000029 ontology:LP_3000052 ;
             rdfs:label "Berufliche Orientierung"@de ;
@@ -5354,6 +5592,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :MV_0000013 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1050> ;
             skos:topConceptOf :MV_0000000 ;
             ontology:LP_0000029 ontology:LP_3000052 ;
             rdfs:label "Fremdsprachen an Grundschulen"@de ;
@@ -5527,6 +5766,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :MV_0000029 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1052> ;
             skos:topConceptOf :MV_0000000 ;
             ontology:LP_0000029 ontology:LP_3000052 ;
             rdfs:label "Naturwissenschaften"@de ;
@@ -5537,6 +5777,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :MV_0000030 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1053> ;
             skos:topConceptOf :MV_0000000 ;
             ontology:LP_0000029 ontology:LP_3000052 ;
             rdfs:label "Niederdeutsch"@de ;
@@ -5623,6 +5864,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :MV_0000038 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :MV_0000000 ;
             ontology:LP_0000029 ontology:LP_3000052 ;
             rdfs:label "Sozialkunde"@de ;
@@ -5685,6 +5927,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :MV_0000044 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1061> ;
             skos:topConceptOf :MV_0000000 ;
             ontology:LP_0000029 ontology:LP_3000052 ;
             rdfs:label "Werken"@de ;
@@ -5863,6 +6106,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NI_0000015 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1061> ;
             skos:topConceptOf :NI_0000000 ;
             ontology:LP_0000029 ontology:LP_3000043 ;
             rdfs:label "Gestaltendes Werken"@de ;
@@ -5894,6 +6138,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NI_0000018 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1051> ;
             skos:topConceptOf :NI_0000000 ;
             ontology:LP_0000029 ontology:LP_3000043 ;
             rdfs:label "Herkunftssprachlicher Unterricht"@de ;
@@ -5998,6 +6243,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NI_0000028 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1052> ;
             skos:topConceptOf :NI_0000000 ;
             ontology:LP_0000029 ontology:LP_3000043 ;
             rdfs:label "Naturwissenchaften"@de ;
@@ -6008,6 +6254,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NI_0000029 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1053> ;
             skos:topConceptOf :NI_0000000 ;
             ontology:LP_0000029 ontology:LP_3000043 ;
             rdfs:label "Niederdeutsch"@de ;
@@ -6095,6 +6342,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NI_0000037 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :NI_0000000 ;
             ontology:LP_0000029 ontology:LP_3000043 ;
             rdfs:label "Profil Technik"@de ;
@@ -6127,6 +6375,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NI_0000040 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1054> ;
             skos:topConceptOf :NI_0000000 ;
             ontology:LP_0000029 ontology:LP_3000043 ;
             rdfs:label "Recht"@de ;
@@ -6180,6 +6429,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NI_0000045 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :NI_0000000 ;
             ontology:LP_0000029 ontology:LP_3000043 ;
             rdfs:label "Technik"@de ;
@@ -6190,6 +6440,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NI_0000046 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1060> ;
             skos:topConceptOf :NI_0000000 ;
             ontology:LP_0000029 ontology:LP_3000043 ;
             rdfs:label "Textiles Gestalten"@de ;
@@ -6250,6 +6501,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NW_0000001 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1056> ;
             skos:topConceptOf :NW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000044 ;
             rdfs:label "Alevitischer Religionsunterricht"@de ;
@@ -6514,6 +6766,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NW_0000025 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1057> ;
             skos:topConceptOf :NW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000044 ;
             rdfs:label "Jüdische Religionslehre"@de .
@@ -6595,6 +6848,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NW_0000033 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1052> ;
             skos:topConceptOf :NW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000044 ;
             rdfs:label "Naturwissenschaften"@de ;
@@ -6701,6 +6955,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NW_0000043 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1054> ;
             skos:topConceptOf :NW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000044 ;
             rdfs:label "Recht"@de ;
@@ -6775,6 +7030,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NW_0000050 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :NW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000044 ;
             rdfs:label "Technik"@de ;
@@ -6785,6 +7041,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NW_0000051 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1060> ;
             skos:topConceptOf :NW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000044 ;
             rdfs:label "Textilgestaltung"@de ;
@@ -6916,6 +7173,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NW_0000063 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1052> ;
             skos:topConceptOf :NW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000044 ;
             rdfs:label "WP Naturwissenschaften"@de ;
@@ -6937,6 +7195,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NW_0000065 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :NW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000044 ;
             rdfs:label "WP Sozialwissenschaften"@de ;
@@ -6947,6 +7206,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :NW_0000066 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :NW_0000000 ;
             ontology:LP_0000029 ontology:LP_3000044 ;
             rdfs:label "WP Technik"@de ;
@@ -7053,6 +7313,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :RP_0000007 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1052> ;
             skos:topConceptOf :RP_0000000 ;
             ontology:LP_0000029 ontology:LP_3000046 ;
             rdfs:label "Naturwissenschaften"@de ;
@@ -7283,6 +7544,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :RP_0000028 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:closeMatch <http://w3id.org/kim/schulfaecher/s1052> ,
+                            <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :RP_0000000 ;
             ontology:LP_0000029 ontology:LP_3000046 ;
             rdfs:label "Technik und Naturwissenschaft"@de ;
@@ -7439,6 +7702,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :RP_0000043 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1056> ;
             skos:topConceptOf :RP_0000000 ;
             ontology:LP_0000029 ontology:LP_3000046 ;
             rdfs:label "Alevitische Religion"@de ;
@@ -7524,6 +7788,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :RP_0000051 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1060> ;
             skos:topConceptOf :RP_0000000 ;
             ontology:LP_0000029 ontology:LP_3000046 ;
             rdfs:label "Textiles Gestalten"@de ;
@@ -7545,6 +7810,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :RP_0000053 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1051> ;
             skos:topConceptOf :RP_0000000 ;
             ontology:LP_0000029 ontology:LP_3000046 ;
             rdfs:label "Herkunftssprachen-Unterricht"@de ;
@@ -7632,6 +7898,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :RP_0000061 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :RP_0000000 ;
             ontology:LP_0000029 ontology:LP_3000046 ;
             rdfs:label "Sozialkunde"@de ;
@@ -7798,6 +8065,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SH_0000013 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1061> ;
             skos:topConceptOf :SH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000054 ;
             rdfs:label "Gestalten"@de ;
@@ -7903,6 +8171,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SH_0000023 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1052> ;
             skos:topConceptOf :SH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000054 ;
             rdfs:label "Naturwissenschaften"@de ;
@@ -7977,6 +8246,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SH_0000030 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :SH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000054 ;
             rdfs:label "Technik"@de .
@@ -7986,6 +8256,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SH_0000031 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1060> ;
             skos:topConceptOf :SH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000054 ;
             rdfs:label "Textillehre"@de .
@@ -8404,6 +8675,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SL_0000034 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1051> ;
             skos:topConceptOf :SL_0000000 ;
             ontology:LP_0000029 ontology:LP_3000055 ;
             rdfs:label "Herkunftssprachlicher Unterricht"@de ;
@@ -8565,6 +8837,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SL_0000049 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1052> ;
             skos:topConceptOf :SL_0000000 ;
             ontology:LP_0000029 ontology:LP_3000055 ;
             rdfs:label "Naturwissenschaften"@de ;
@@ -8641,6 +8914,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SL_0000056 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :SL_0000000 ;
             ontology:LP_0000029 ontology:LP_3000055 ;
             rdfs:label "Sozialkunde"@de ;
@@ -8651,6 +8925,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SL_0000057 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :SL_0000000 ;
             ontology:LP_0000029 ontology:LP_3000055 ;
             rdfs:label "Sozialkunde bilingual deutsch-englisch"@de ;
@@ -8661,6 +8936,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SL_0000058 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :SL_0000000 ;
             ontology:LP_0000029 ontology:LP_3000055 ;
             rdfs:label "Sozialkunde bilingual deutsch-französisch"@de ;
@@ -8671,6 +8947,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SL_0000059 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :SL_0000000 ;
             ontology:LP_0000029 ontology:LP_3000055 ;
             rdfs:label "Sozialkunde Themenfelder"@de ;
@@ -8713,6 +8990,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SL_0000063 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :SL_0000000 ;
             ontology:LP_0000029 ontology:LP_3000055 ;
             rdfs:label "Technik"@de ;
@@ -8791,6 +9069,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SN_0000006 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1051> ;
             skos:topConceptOf :SN_0000000 ;
             ontology:LP_0000029 ontology:LP_3000047 ;
             rdfs:label "Herkunftssprache im Wahlbereich"@de ;
@@ -8822,6 +9101,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SN_0000009 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1057> ;
             skos:topConceptOf :SN_0000000 ;
             ontology:LP_0000029 ontology:LP_3000047 ;
             rdfs:label "Jüdische Religion"@de .
@@ -8902,6 +9182,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SN_0000017 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1061> ;
             skos:topConceptOf :SN_0000000 ;
             ontology:LP_0000029 ontology:LP_3000047 ;
             rdfs:label "Werken"@de ;
@@ -8979,6 +9260,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SN_0000024 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1051> ;
             skos:topConceptOf :SN_0000000 ;
             ontology:LP_0000029 ontology:LP_3000047 ;
             rdfs:label "Herkunftssprache - Ersatz für 2. Fremdsprache"@de ;
@@ -9022,6 +9304,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SN_0000028 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :SN_0000000 ;
             ontology:LP_0000029 ontology:LP_3000047 ;
             rdfs:label "Technik/Computer"@de ;
@@ -9043,6 +9326,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SN_0000030 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1050> ;
             skos:topConceptOf :SN_0000000 ;
             ontology:LP_0000029 ontology:LP_3000047 ;
             rdfs:label "2. Fremdsprache"@de ;
@@ -9064,6 +9348,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :SN_0000032 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1049> ;
             skos:topConceptOf :SN_0000000 ;
             ontology:LP_0000029 ontology:LP_3000047 ;
             rdfs:label "Auf dem Weg ins Berufsleben"@de ;
@@ -9275,6 +9560,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :ST_0000001 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1052> ;
             skos:topConceptOf :ST_0000000 ;
             ontology:LP_0000029 ontology:LP_3000053 ;
             rdfs:label "Angewandte Naturwissenschaften"@de ;
@@ -9401,6 +9687,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :ST_0000013 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1061> ;
             skos:topConceptOf :ST_0000000 ;
             ontology:LP_0000029 ontology:LP_3000053 ;
             rdfs:label "Gestalten"@de ;
@@ -9486,6 +9773,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :ST_0000021 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1046> ;
             skos:topConceptOf :ST_0000000 ;
             ontology:LP_0000029 ontology:LP_3000053 ;
             rdfs:label "Lernen in der digitalen Welt"@de ;
@@ -9560,6 +9848,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :ST_0000028 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1061> ;
             skos:topConceptOf :ST_0000000 ;
             ontology:LP_0000029 ontology:LP_3000053 ;
             rdfs:label "Planen, Bauen und Gestalten"@de ;
@@ -9581,6 +9870,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :ST_0000030 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1054> ;
             skos:topConceptOf :ST_0000000 ;
             ontology:LP_0000029 ontology:LP_3000053 ;
             rdfs:label "Rechtskunde"@de ;
@@ -9613,6 +9903,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :ST_0000033 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :ST_0000000 ;
             ontology:LP_0000029 ontology:LP_3000053 ;
             rdfs:label "Sozialkunde"@de ;
@@ -9644,6 +9935,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :ST_0000036 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :ST_0000000 ;
             ontology:LP_0000029 ontology:LP_3000053 ;
             rdfs:label "Technik"@de ;
@@ -9715,6 +10007,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :TH_0000004 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1061> ;
             skos:topConceptOf :TH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000031 ;
             rdfs:label "Darstellen und Gestalten"@de ;
@@ -9777,6 +10070,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :TH_0000010 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1050> ;
             skos:topConceptOf :TH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000031 ;
             rdfs:label "Fremdsprache"@de ;
@@ -9897,6 +10191,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :TH_0000021 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1057> ;
             skos:topConceptOf :TH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000031 ;
             rdfs:label "Jüdische Religionslehre"@de .
@@ -9969,6 +10264,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :TH_0000028 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:closeMatch <http://w3id.org/kim/schulfaecher/s1052> ,
+                            <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :TH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000031 ;
             rdfs:label "Mensch-Natur-Technik"@de ;
@@ -9989,6 +10286,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :TH_0000030 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:closeMatch <http://w3id.org/kim/schulfaecher/s1052> ,
+                            <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :TH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000031 ;
             rdfs:label "Natur und Technik"@de ;
@@ -10031,6 +10330,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :TH_0000034 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :TH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000031 ;
             rdfs:label "Sozialkunde"@de ;
@@ -10041,6 +10341,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :TH_0000035 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :TH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000031 ;
             rdfs:label "Sozialkunde in englischer Sprache"@de ;
@@ -10051,6 +10352,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :TH_0000036 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1058> ;
             skos:topConceptOf :TH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000031 ;
             rdfs:label "Sozialkunde in französischer Sprache"@de ;
@@ -10092,6 +10394,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :TH_0000040 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :TH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000031 ;
             rdfs:label "Technik TGS"@de ;
@@ -10134,6 +10437,8 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :TH_0000044 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:closeMatch <http://w3id.org/kim/schulfaecher/s1052> ,
+                            <http://w3id.org/kim/schulfaecher/s1059> ;
             skos:topConceptOf :TH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000031 ;
             rdfs:label "Wahlpflichtfach Naturwissenschaften und Technik"@de ;
@@ -10144,6 +10449,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :TH_0000045 rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      ontology:LP_0000001 ;
+            skos:exactMatch <http://w3id.org/kim/schulfaecher/s1061> ;
             skos:topConceptOf :TH_0000000 ;
             ontology:LP_0000029 ontology:LP_3000031 ;
             rdfs:label "Werken"@de ;
