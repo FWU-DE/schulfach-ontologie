@@ -3,8 +3,8 @@
 
 <https://w3id.org/schulfach/BW_0000010>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1052> , <http://w3id.org/kim/schulfaecher/s1001> , <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:editorialNote  "Jahrgangsstufe 5 und 6" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1001> ;
         skos:prefLabel      "Biologie, Naturphänomene und Technik (BNT)"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
 
@@ -56,8 +56,8 @@
 
 <https://w3id.org/schulfach/BW_0000002>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1058> , <http://w3id.org/kim/schulfaecher/s1044> ;
         skos:editorialNote  "Sek I (ausser Gymnasium)" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1044> ;
         skos:prefLabel      "Alltagskultur, Ernährung und Soziales (AES) - Wahlpflichtfach"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
 
@@ -93,6 +93,7 @@
 <https://w3id.org/schulfach/BW_0000028>
         a                   skos:Concept ;
         skos:editorialNote  "Sek I, Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1042> ;
         skos:prefLabel      "Gemeinschaftskunde"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
 
@@ -262,6 +263,7 @@
 <https://w3id.org/schulfach/BW_0000041>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1035> ;
         skos:prefLabel      "Japanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BW_0000000> .
 

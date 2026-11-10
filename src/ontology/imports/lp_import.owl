@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/schulfach/imports/lp_import.owl>
-<https://w3id.org/schulfach/1.0.1/imports/lp_import.owl>
-Annotation(<http://purl.org/dc/terms/bibliographicCitation> "Lehrplan Ontology. Version 1.0.0rc5, https://w3id.org/lehrplan/ontology")
-Annotation(<http://purl.org/dc/terms/created> "2026-09-21")
+<https://w3id.org/schulfach/1.0.2/imports/lp_import.owl>
+Annotation(<http://purl.org/dc/terms/bibliographicCitation> "Lehrplan Ontology. Version 1.0.0rc6, https://w3id.org/lehrplan/ontology")
+Annotation(<http://purl.org/dc/terms/created> "2026-10-25")
 Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-6378-2618>)
 Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-7192-7143>)
 Annotation(<http://purl.org/dc/terms/creator> "Almut Steinlein"@de)
@@ -23,8 +23,8 @@ Annotation(<http://purl.org/dc/terms/title> "Curriculum Ontology"@en)
 Annotation(<http://purl.org/dc/terms/title> "Lehrplan Ontologie"@de)
 Annotation(<http://usefulinc.com/ns/doap#repository> <https://github.com/FWU-DE/lehrplan-ontologie>)
 Annotation(owl:priorVersion <https://w3id.org/lehrplan/ontology/>)
-Annotation(owl:versionInfo "1.0.0rc5")
-Annotation(owl:versionInfo "1.0.1")
+Annotation(owl:versionInfo "1.0.0rc6")
+Annotation(owl:versionInfo "1.0.2")
 
 Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000001>))
 Declaration(ObjectProperty(<https://w3id.org/lehrplan/ontology/LP_0000029>))
@@ -51,7 +51,6 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 Declaration(AnnotationProperty(<http://usefulinc.com/ns/doap#repository>))
-Declaration(AnnotationProperty(rdfs:comment))
 Declaration(AnnotationProperty(rdfs:isDefinedBy))
 Declaration(AnnotationProperty(rdfs:label))
 Declaration(AnnotationProperty(rdfs:seeAlso))
@@ -64,8 +63,6 @@ Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#example>))
 
 # Annotation Property: <http://www.w3.org/2004/02/skos/core#altLabel> (alternative label)
 
-AnnotationAssertion(rdfs:comment <http://www.w3.org/2004/02/skos/core#altLabel> "The range of skos:altLabel is the class of RDF plain literals."@en)
-AnnotationAssertion(rdfs:comment <http://www.w3.org/2004/02/skos/core#altLabel> "skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties."@en)
 AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/2004/02/skos/core>)
 AnnotationAssertion(rdfs:label <http://www.w3.org/2004/02/skos/core#altLabel> "alternative label"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/2004/02/skos/core#altLabel> "An alternative lexical label for a resource."@en)
@@ -101,13 +98,13 @@ AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000029> "
 
 # Class: <https://w3id.org/lehrplan/ontology/LP_0000001> (school subject)
 
-AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000001> "A school subject is an information content entity that designates and organizes the thematic areas of knowledge constituting general school education, serving as the conceptual framework for structuring teaching and learning activities."@en)
-AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000001> "Ein Schulfach ist eine Informationseinheit, die die Bezeichnung eines an Schulen unterrichteten Fachgebiets darstellt, welches die thematische Gliederung der allgemeinen schulischen Bildung widerspiegelt und der inhaltlichen Strukturierung des Unterrichts dient."@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000001> "Schulfach"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000001> "school subject"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/lehrplan/ontology/LP_0000001> <https://de.wikipedia.org/wiki/Unterrichtsfach>)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/lehrplan/ontology/LP_0000001> <https://github.com/FWU-DE/schulfach-ontologie>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0000001> "Fach")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/lehrplan/ontology/LP_0000001> "A school subject is an information content entity that designates and organizes the thematic areas of knowledge constituting general school education, serving as the conceptual framework for structuring teaching and learning activities."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/lehrplan/ontology/LP_0000001> "Ein Schulfach ist eine Informationseinheit, die die Bezeichnung eines an Schulen unterrichteten Fachgebiets darstellt, welches die thematische Gliederung der allgemeinen schulischen Bildung widerspiegelt und der inhaltlichen Strukturierung des Unterrichts dient."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/lehrplan/ontology/LP_0000001> "Examples of school subjects include German, mathematics, history, and biology."@en)
 
 

@@ -314,8 +314,8 @@
 
 <https://w3id.org/schulfach/SL_0000003>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1033> , <http://w3id.org/kim/schulfaecher/s1048> ;
         skos:editorialNote  "Gemeinschaftsschule Jahrgangsstufe 7-10" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:prefLabel      "Beruf und Wirtschaft"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SL_0000000> .
 
@@ -405,6 +405,7 @@
 <https://w3id.org/schulfach/SL_0000002>
         a                   skos:Concept ;
         skos:editorialNote  "Gemeinschaftsschule Jahrgangsstufe 5 und 6" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1048> ;
         skos:prefLabel      "Arbeitslehre"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SL_0000000> .
 

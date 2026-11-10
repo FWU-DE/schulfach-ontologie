@@ -2,7 +2,7 @@ URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTI
 ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
 https://w3id.org/schulfach/NW_0000000	Schulfächer (Nordrhein-Westfalen)	skos:ConceptScheme		Nordrhein-Westfalen				
 https://w3id.org/schulfach/NW_0000001	Alevitischer Religionsunterricht	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Religionslehre (alevitisch) (KIM-Schulfach)		FEHLT	Primarstufe, Sek I
-https://w3id.org/schulfach/NW_0000002	Arbeitslehre	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen			FEHLT	Hauptschule, Gesamtschule
+https://w3id.org/schulfach/NW_0000002	Arbeitslehre	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Arbeitslehre (KIM-Schulfach)		FEHLT	Hauptschule, Gesamtschule
 https://w3id.org/schulfach/NW_0000003	Biologie	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Biologie (KIM-Schulfach)			Realschule, Gymnasium, Sek II
 https://w3id.org/schulfach/NW_0000004	Chemie	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Chemie (KIM-Schulfach)			Realschule, Gymnasium, Sek II
 https://w3id.org/schulfach/NW_0000005	Chinesisch	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Chinesisch (KIM-Schulfach)			Gesamtschule, Realschule, Gymnasium, Sek II
@@ -18,8 +18,8 @@ https://w3id.org/schulfach/NW_0000014	Geographie	Schulfach,skos:Concept	Schulfä
 https://w3id.org/schulfach/NW_0000015	Geschichte	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Geschichte (KIM-Schulfach)			Realschule, Gymnasium, Sek II
 https://w3id.org/schulfach/NW_0000016	Gesellschaftslehre (Erkunde, Geschichte, Politik)	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen		Gesellschaftswissenschaften (KIM-Schulfach),Geografie (KIM-Schulfach),Geschichte (KIM-Schulfach),Politik (KIM-Schulfach)		Hauptschule
 https://w3id.org/schulfach/NW_0000017	Gesellschaftslehre (Wirtschaft-Politik, Erdkunde, Geschichte)	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen		Gesellschaftswissenschaften (KIM-Schulfach),Geografie (KIM-Schulfach),Geschichte (KIM-Schulfach),Politik (KIM-Schulfach),Wirtschaftskunde (KIM-Schulfach)		Gesamtschule
-https://w3id.org/schulfach/NW_0000018	Griechisch	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Neugriechisch (KIM-Schulfach)			Gymnasium Sek I, Sek II
-https://w3id.org/schulfach/NW_0000019	Hauswirtschaft	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen			FEHLT	Gesamtschule
+https://w3id.org/schulfach/NW_0000018	Griechisch	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Alt-Griechisch (KIM-Schulfach)			Gymnasium Sek I, Sek II
+https://w3id.org/schulfach/NW_0000019	Hauswirtschaft	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Hauswirtschaft (KIM-Schulfach)		FEHLT	Gesamtschule
 https://w3id.org/schulfach/NW_0000020	Hebräisch	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Hebräisch (KIM-Schulfach)			Sek II
 https://w3id.org/schulfach/NW_0000021	Informatik	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Informatik (KIM-Schulfach)			Sek I, Sek II
 https://w3id.org/schulfach/NW_0000022	Islamischer Religionsunterricht	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Religionslehre (islamisch) (KIM-Schulfach)			
@@ -46,7 +46,7 @@ https://w3id.org/schulfach/NW_0000042	Psychologie	Schulfach,skos:Concept	Schulf�
 https://w3id.org/schulfach/NW_0000043	Recht	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Recht (KIM-Schulfach)		FEHLT	Sek II
 https://w3id.org/schulfach/NW_0000044	Russisch	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Russisch (KIM-Schulfach)			Sek I, Sek II
 https://w3id.org/schulfach/NW_0000045	Sachunterricht	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Sachunterricht (KIM-Schulfach)			Primarstufe
-https://w3id.org/schulfach/NW_0000046	Sozialwissenschaften und Sozialwissenschaften/Wirtschaft	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Sek II
+https://w3id.org/schulfach/NW_0000046	Sozialwissenschaften und Sozialwissenschaften/Wirtschaft	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen		Sozialkunde (KIM-Schulfach),Wirtschaftskunde (KIM-Schulfach)	FEHLT	Sek II
 https://w3id.org/schulfach/NW_0000047	Spanisch	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Spanisch (KIM-Schulfach)			Gesamtschule, Realschule, Gymnasium, Sek II
 https://w3id.org/schulfach/NW_0000048	Sport	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Sport (KIM-Schulfach)			
 https://w3id.org/schulfach/NW_0000049	Syrisch-Orthodoxe Religionslehre	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen			FEHLT	Primarstufe, Sek I
@@ -54,12 +54,12 @@ https://w3id.org/schulfach/NW_0000050	Technik	Schulfach,skos:Concept	Schulfäche
 https://w3id.org/schulfach/NW_0000051	Textilgestaltung	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Textiles Gestalten (KIM-Schulfach)		FEHLT	Realschule, Hauptschule
 https://w3id.org/schulfach/NW_0000052	Türkisch	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Türkisch (KIM-Schulfach)			Sek I, Sek II
 https://w3id.org/schulfach/NW_0000053	Wirtschaft	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Wirtschaftskunde (KIM-Schulfach)			Realschule
-https://w3id.org/schulfach/NW_0000054	Wirtschaft und Arbeitswelt (Wirtschaft, Hauswirtschaft, Technik)	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Hauptschule
+https://w3id.org/schulfach/NW_0000054	Wirtschaft und Arbeitswelt (Wirtschaft, Hauswirtschaft, Technik)	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen		Wirtschaftskunde (KIM-Schulfach),Hauswirtschaft (KIM-Schulfach),Technik (KIM-Schulfach),Arbeitslehre (KIM-Schulfach)	FEHLT	Hauptschule
 https://w3id.org/schulfach/NW_0000055	Wirtschaft-Politik	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen		Politik (KIM-Schulfach),Wirtschaftskunde (KIM-Schulfach)		Gymnasium Sek I
-https://w3id.org/schulfach/NW_0000056	WP Arbeitslehre	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen			FEHLT	Gesamtschule
+https://w3id.org/schulfach/NW_0000056	WP Arbeitslehre	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Arbeitslehre (KIM-Schulfach)		FEHLT	Gesamtschule
 https://w3id.org/schulfach/NW_0000057	WP Biologie	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Biologie (KIM-Schulfach)			Realschule
 https://w3id.org/schulfach/NW_0000058	WP Chemie	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Chemie (KIM-Schulfach)			Realschule
-https://w3id.org/schulfach/NW_0000059	WP Darstellen und Gestalten	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Kunst (KIM-Schulfach)			Gesamtschule
+https://w3id.org/schulfach/NW_0000059	WP Darstellen und Gestalten	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen		Kunst (KIM-Schulfach),Werken und Gestalten (KIM-Schulfach)		Gesamtschule
 https://w3id.org/schulfach/NW_0000060	WP Informatik 	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Informatik (KIM-Schulfach)			Sek I
 https://w3id.org/schulfach/NW_0000061	WP Kunst	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Kunst (KIM-Schulfach)			Realschule, Gymnasium Sek I
 https://w3id.org/schulfach/NW_0000062	WP Musik	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Musik (KIM-Schulfach)			Realschule, Gymnasium Sek I
@@ -68,4 +68,4 @@ https://w3id.org/schulfach/NW_0000064	WP Physik	Schulfach,skos:Concept	Schulfäc
 https://w3id.org/schulfach/NW_0000065	WP Sozialwissenschaften	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Sozialkunde (KIM-Schulfach)		FEHLT	Realschule
 https://w3id.org/schulfach/NW_0000066	WP Technik	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Technik (KIM-Schulfach)		FEHLT	Realschule, Gymnasium Sek I
 https://w3id.org/schulfach/NW_0000067	WP Wirschaft	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Wirtschaftskunde (KIM-Schulfach)			Realschule, Gymnasium
-https://w3id.org/schulfach/NW_0000068	WP Wirtschaft und Arbeitswelt (Wirtschaft, Hauswirtschaft, Technik)	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Hauptschule, Gesamtschule
+https://w3id.org/schulfach/NW_0000068	WP Wirtschaft und Arbeitswelt (Wirtschaft, Hauswirtschaft, Technik)	Schulfach,skos:Concept	Schulfächer (Nordrhein-Westfalen)	Nordrhein-Westfalen		Wirtschaftskunde (KIM-Schulfach),Hauswirtschaft (KIM-Schulfach),Technik (KIM-Schulfach),Arbeitslehre (KIM-Schulfach)	FEHLT	Hauptschule, Gesamtschule

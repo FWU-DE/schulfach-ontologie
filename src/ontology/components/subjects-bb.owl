@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/schulfach/components/subjects-bb.owl>
-<https://w3id.org/schulfach/1.0.1/components/subjects-bb.owl>
-Annotation(owl:versionInfo "1.0.1")
+<https://w3id.org/schulfach/1.0.2/components/subjects-bb.owl>
+Annotation(owl:versionInfo "1.0.2")
 
 Declaration(Class(<http://www.w3.org/2004/02/skos/core#Concept>))
 Declaration(Class(<http://www.w3.org/2004/02/skos/core#ConceptScheme>))
@@ -53,7 +53,9 @@ Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1040>))
 Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1041>))
 Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1042>))
 Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1043>))
+Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1045>))
 Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1046>))
+Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1048>))
 Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1050>))
 Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1052>))
 Declaration(NamedIndividual(<http://w3id.org/kim/schulfaecher/s1054>))
@@ -535,6 +537,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https:/
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BB_0000042>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BB_0000042>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/schulfach/BB_0000042> <http://w3id.org/kim/schulfaecher/s1033>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/schulfach/BB_0000042> <http://w3id.org/kim/schulfaecher/s1048>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/schulfach/BB_0000042> <http://w3id.org/kim/schulfaecher/s1059>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulfach/BB_0000042> <https://w3id.org/schulfach/BB_0000000>)
 ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulfach/BB_0000042> <https://w3id.org/lehrplan/ontology/LP_3000057>)
@@ -564,6 +567,8 @@ AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BB_0000045> "Chemiete
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BB_0000045> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BB_0000045>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BB_0000045>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/schulfach/BB_0000045> <http://w3id.org/kim/schulfaecher/s1002>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/schulfach/BB_0000045> <http://w3id.org/kim/schulfaecher/s1059>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulfach/BB_0000045> <https://w3id.org/schulfach/BB_0000000>)
 ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulfach/BB_0000045> <https://w3id.org/lehrplan/ontology/LP_3000057>)
 
@@ -600,6 +605,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/schulfach/BB_0000049> "Pädagog
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/schulfach/BB_0000049> "Sek II")
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulfach/BB_0000049>)
 ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000001> <https://w3id.org/schulfach/BB_0000049>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulfach/BB_0000049> <http://w3id.org/kim/schulfaecher/s1045>)
 ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulfach/BB_0000049> <https://w3id.org/schulfach/BB_0000000>)
 ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulfach/BB_0000049> <https://w3id.org/lehrplan/ontology/LP_3000057>)
 

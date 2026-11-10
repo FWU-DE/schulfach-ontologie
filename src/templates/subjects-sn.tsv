@@ -20,8 +20,8 @@ https://w3id.org/schulfach/SN_0000016	Sport	Schulfach,skos:Concept	Schulfächer 
 https://w3id.org/schulfach/SN_0000017	Werken	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen	Werken und Gestalten (KIM-Schulfach)		FEHLT	Primarstufe
 https://w3id.org/schulfach/SN_0000018	Biologie	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen	Biologie (KIM-Schulfach)			Sek I, Sek II
 https://w3id.org/schulfach/SN_0000019	Chemie	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen	Chemie (KIM-Schulfach)			Sek I, Sek II
-https://w3id.org/schulfach/SN_0000020	Gemeinschaftskunde/Rechtserziehung	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen	Gesellschaftswissenschaften (KIM-Schulfach)		FEHLT	Oberschule
-https://w3id.org/schulfach/SN_0000021	Gemeinschaftskunde/Rechtserziehung/Wirtschaft	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen		Gesellschaftswissenschaften (KIM-Schulfach),Wirtschaftskunde (KIM-Schulfach)		Gymnasium
+https://w3id.org/schulfach/SN_0000020	Gemeinschaftskunde/Rechtserziehung	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen		Gesellschaftswissenschaften (KIM-Schulfach),Recht (KIM-Schulfach)	FEHLT	Oberschule
+https://w3id.org/schulfach/SN_0000021	Gemeinschaftskunde/Rechtserziehung/Wirtschaft	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen		Gesellschaftswissenschaften (KIM-Schulfach),Wirtschaftskunde (KIM-Schulfach),Recht (KIM-Schulfach)		Gymnasium
 https://w3id.org/schulfach/SN_0000022	Geographie	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen	Geografie (KIM-Schulfach)			Sek I, Sek II
 https://w3id.org/schulfach/SN_0000023	Geschichte	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen	Geschichte (KIM-Schulfach)			Sek I, Sek II
 https://w3id.org/schulfach/SN_0000024	Herkunftssprache - Ersatz für 2. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen	Herkunftssprachen (KIM-Schulfach)		FEHLT	Sek I
@@ -29,7 +29,7 @@ https://w3id.org/schulfach/SN_0000025	Informatik	Schulfach,skos:Concept	Schulfä
 https://w3id.org/schulfach/SN_0000026	Physik	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen	Physik (KIM-Schulfach)			Sek I, Sek II
 https://w3id.org/schulfach/SN_0000027	Sorbisch im Wahlbereich	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen	Sorbisch (KIM-Schulfach)			Sek I, Sek II
 https://w3id.org/schulfach/SN_0000028	Technik/Computer	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen	Technik (KIM-Schulfach)		FEHLT	Sek I, Sek II
-https://w3id.org/schulfach/SN_0000029	Wirtschaft-Technik-Haushalt/Soziales	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Oberschule
+https://w3id.org/schulfach/SN_0000029	Wirtschaft-Technik-Haushalt/Soziales	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen		Wirtschaftskunde (KIM-Schulfach),Technik (KIM-Schulfach),Hauswirtschaft (KIM-Schulfach),Sozialkunde (KIM-Schulfach)	FEHLT	Oberschule
 https://w3id.org/schulfach/SN_0000030	2. Fremdsprache	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen	Fremdsprachen (KIM-Schulfach)		FEHLT	Oberschule
 https://w3id.org/schulfach/SN_0000031	Astronomie	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen	Astronomie (KIM-Schulfach)			Gymnasium 7-12
 https://w3id.org/schulfach/SN_0000032	Auf dem Weg ins Berufsleben	Schulfach,skos:Concept	Schulfächer (Sachsen)	Sachsen	Berufs- und Studienorientierung (KIM-Schulfach)		FEHLT	Sek II

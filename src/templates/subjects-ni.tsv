@@ -1,7 +1,7 @@
 URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTIZEN
 ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
 https://w3id.org/schulfach/NI_0000000	Schulfächer (Niedersachsen)	skos:ConceptScheme		Niedersachsen				
-https://w3id.org/schulfach/NI_0000001	Arbeit-Wirtschaft-Technik	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Wirtschaftskunde (KIM-Schulfach)		FEHLT	nur IGS
+https://w3id.org/schulfach/NI_0000001	Arbeit-Wirtschaft-Technik	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen		Wirtschaftskunde (KIM-Schulfach),Technik (KIM-Schulfach),Arbeitslehre (KIM-Schulfach)	FEHLT	nur IGS
 https://w3id.org/schulfach/NI_0000002	Biologie	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Biologie (KIM-Schulfach)			Sek I, Sek II
 https://w3id.org/schulfach/NI_0000003	Chemie	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Chemie (KIM-Schulfach)			Sek I Sek II
 https://w3id.org/schulfach/NI_0000004	Chinesisch	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Chinesisch (KIM-Schulfach)			Sek, Sek II
@@ -17,7 +17,7 @@ https://w3id.org/schulfach/NI_0000013	Geschichte	Schulfach,skos:Concept	Schulfä
 https://w3id.org/schulfach/NI_0000014	Gesellschaftslehre	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Gesellschaftswissenschaften (KIM-Schulfach)			nur IGS
 https://w3id.org/schulfach/NI_0000015	Gestaltendes Werken	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Werken und Gestalten (KIM-Schulfach)		FEHLT	Primarstufe, Hauptschule, Realschule, Oberschule
 https://w3id.org/schulfach/NI_0000016	Griechisch	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Neugriechisch (KIM-Schulfach)			Sek I nur Gymnasium ab Jahrgangsstufe 8, Sek II
-https://w3id.org/schulfach/NI_0000017	Hauswirtschaft	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen			FEHLT	Oberschule, Hauptschule, Realschule
+https://w3id.org/schulfach/NI_0000017	Hauswirtschaft	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Hauswirtschaft (KIM-Schulfach)		FEHLT	Oberschule, Hauptschule, Realschule
 https://w3id.org/schulfach/NI_0000018	Herkunftssprachlicher Unterricht 	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Herkunftssprachen (KIM-Schulfach)		FEHLT	Primarstufe
 https://w3id.org/schulfach/NI_0000019	Informatik	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Informatik (KIM-Schulfach)			Sek I, Sek II
 https://w3id.org/schulfach/NI_0000020	Islamische Religion	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Religionslehre (islamisch) (KIM-Schulfach)			
@@ -36,7 +36,7 @@ https://w3id.org/schulfach/NI_0000032	Physik	Schulfach,skos:Concept	Schulfächer
 https://w3id.org/schulfach/NI_0000033	Politik	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Politik (KIM-Schulfach)			Sek I Oberschule, Realschule und Hauptschule
 https://w3id.org/schulfach/NI_0000034	Politik-Wirtschaft	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen		Politik (KIM-Schulfach),Wirtschaftskunde (KIM-Schulfach)		Sek I Gymnasium, Sek II
 https://w3id.org/schulfach/NI_0000035	Polnisch	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Polnisch (KIM-Schulfach)			nur EPAS
-https://w3id.org/schulfach/NI_0000036	Profil Gesundheit und Soziales	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Gesundheit (KIM-Schulfach)		FEHLT	Realschule
+https://w3id.org/schulfach/NI_0000036	Profil Gesundheit und Soziales	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen		Gesundheit (KIM-Schulfach),Sozialkunde (KIM-Schulfach)	FEHLT	Realschule
 https://w3id.org/schulfach/NI_0000037	Profil Technik	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Technik (KIM-Schulfach)		FEHLT	Realschule
 https://w3id.org/schulfach/NI_0000038	Profil Wirtschaft	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Wirtschaftskunde (KIM-Schulfach)			Realschule
 https://w3id.org/schulfach/NI_0000039	Psychologie	Schulfach,skos:Concept	Schulfächer (Niedersachsen)	Niedersachsen	Psychologie (KIM-Schulfach)			nur EPAS

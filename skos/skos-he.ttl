@@ -189,6 +189,7 @@
 <https://w3id.org/schulfach/HE_0000003>
         a                   skos:Concept ;
         skos:editorialNote  "Haupt- und Realschulen" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1048> ;
         skos:prefLabel      "Arbeitslehre"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HE_0000000> .
 

@@ -241,8 +241,8 @@
 
 <https://w3id.org/schulfach/BE_0000043>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1033> , <http://w3id.org/kim/schulfaecher/s1048> , <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:editorialNote  "Jahrgangsstufen 7-10" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:prefLabel      "Wirtschaft-Arbeit-Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BE_0000000> .
 
@@ -340,6 +340,7 @@
 
 <https://w3id.org/schulfach/BE_0000047>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1002> ;
         skos:editorialNote  "nur Sek II" ;
         skos:prefLabel      "Chemietechnik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BE_0000000> .

@@ -64,8 +64,8 @@
 
 <https://w3id.org/schulfach/RP_0000025>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1011> , <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:editorialNote  "Förderschwerpunkt Lernen" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1011> ;
         skos:prefLabel      "Geschichte-Sozialkunde"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/RP_0000000> .
 
@@ -127,8 +127,8 @@
 
 <https://w3id.org/schulfach/RP_0000052>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1033> , <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:editorialNote  "Wahlpflichtsfach Realschule 9-10" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:prefLabel      "Wirtschafts- und Sozialkunde"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/RP_0000000> .
 
@@ -161,8 +161,8 @@
 
 <https://w3id.org/schulfach/RP_0000003>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1015> , <http://w3id.org/kim/schulfaecher/s1061> ;
         skos:editorialNote  "Förderschwerpunkt Lernen" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1015> ;
         skos:prefLabel      "Bildende Kunst/Werken"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/RP_0000000> .
 
@@ -321,6 +321,7 @@
 <https://w3id.org/schulfach/RP_0000001>
         a                   skos:Concept ;
         skos:editorialNote  "Hauptschule 7-10, Förderschwerpunkt Lernen" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1048> ;
         skos:prefLabel      "Arbeitslehre"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/RP_0000000> .
 
@@ -346,8 +347,8 @@
 
 <https://w3id.org/schulfach/RP_0000027>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1058> , <http://w3id.org/kim/schulfaecher/s1047> ;
         skos:editorialNote  "Realschule Plus (Wahlpflichtfach)" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1047> ;
         skos:prefLabel      "Hauswirtschaft und Sozialwesen"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/RP_0000000> .
 
@@ -374,13 +375,14 @@
 
 <https://w3id.org/schulfach/RP_0000006>
         a                   skos:Concept ;
-        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1022> , <http://w3id.org/kim/schulfaecher/s1002> , <http://w3id.org/kim/schulfaecher/s1001> ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1052> , <http://w3id.org/kim/schulfaecher/s1022> , <http://w3id.org/kim/schulfaecher/s1002> , <http://w3id.org/kim/schulfaecher/s1001> ;
         skos:editorialNote  " Jahrgangsstufe 7-10" ;
         skos:prefLabel      "Biologie, Chemie, Physik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/RP_0000000> .
 
 <https://w3id.org/schulfach/RP_0000047>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1045> , <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:editorialNote  "Realschule 9-10 Wahlpflichtfach" ;
         skos:prefLabel      "Sozialpädagogik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/RP_0000000> .

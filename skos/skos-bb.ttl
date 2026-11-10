@@ -165,6 +165,7 @@
 
 <https://w3id.org/schulfach/BB_0000045>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1002> ;
         skos:editorialNote  "Sek II" ;
         skos:prefLabel      "Chemietechnik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BB_0000000> .
@@ -277,6 +278,7 @@
 <https://w3id.org/schulfach/BB_0000049>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1045> ;
         skos:prefLabel      "Pädagogik/Pädagogik (b.)"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BB_0000000> .
 
@@ -361,7 +363,7 @@
 
 <https://w3id.org/schulfach/BB_0000042>
         a                   skos:Concept ;
-        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1033> , <http://w3id.org/kim/schulfaecher/s1059> ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1048> , <http://w3id.org/kim/schulfaecher/s1033> , <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:editorialNote  "Jahrgangsstufen 5-10" ;
         skos:prefLabel      "Wirtschaft-Arbeit-Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BB_0000000> .

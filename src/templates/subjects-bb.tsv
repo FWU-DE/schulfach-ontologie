@@ -42,14 +42,14 @@ https://w3id.org/schulfach/BB_0000038	Spanisch	Schulfach,skos:Concept	Schulfäch
 https://w3id.org/schulfach/BB_0000039	Sport	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Sport (KIM-Schulfach)			
 https://w3id.org/schulfach/BB_0000040	Theater	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Darstellendes Spiel (KIM-Schulfach)			Wahlpflichtfach 7 - 10
 https://w3id.org/schulfach/BB_0000041	Türkisch	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Türkisch (KIM-Schulfach)			Jahrgangsstufen 1-10
-https://w3id.org/schulfach/BB_0000042	Wirtschaft-Arbeit-Technik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg		Wirtschaftskunde (KIM-Schulfach),Technik (KIM-Schulfach)	FEHLT	Jahrgangsstufen 5-10
+https://w3id.org/schulfach/BB_0000042	Wirtschaft-Arbeit-Technik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg		Wirtschaftskunde (KIM-Schulfach),Technik (KIM-Schulfach),Arbeitslehre (KIM-Schulfach)	FEHLT	Jahrgangsstufen 5-10
 https://w3id.org/schulfach/BB_0000043	Wirtschaftswissenschaften	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Wirtschaftskunde (KIM-Schulfach)			Sek II
 https://w3id.org/schulfach/BB_0000044	Bautechnik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Sek II
-https://w3id.org/schulfach/BB_0000045	Chemietechnik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Sek II
+https://w3id.org/schulfach/BB_0000045	Chemietechnik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg		Chemie (KIM-Schulfach),Technik (KIM-Schulfach)	FEHLT	Sek II
 https://w3id.org/schulfach/BB_0000046	Elektrotechnik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Sek II
 https://w3id.org/schulfach/BB_0000047	Gestaltungs- und Medientechnik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Sek II
 https://w3id.org/schulfach/BB_0000048	Maschinentechnik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Sek II
-https://w3id.org/schulfach/BB_0000049	Pädagogik/Pädagogik (b.)	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Sek II
+https://w3id.org/schulfach/BB_0000049	Pädagogik/Pädagogik (b.)	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Erziehungswissenschaften (KIM-Schulfach)		FEHLT	Sek II
 https://w3id.org/schulfach/BB_0000050	Psychologie/Psychologie (b.)	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Psychologie (KIM-Schulfach)			Sek II
 https://w3id.org/schulfach/BB_0000051	Rechnungswesen	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg			FEHLT	Sek II
 https://w3id.org/schulfach/BB_0000052	Technik	Schulfach,skos:Concept	Schulfächer (Brandenburg)	Brandenburg	Technik (KIM-Schulfach)		FEHLT	Sek II

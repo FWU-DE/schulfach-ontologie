@@ -29,6 +29,7 @@
 <https://w3id.org/schulfach/BY_0000094>
         a                   skos:Concept ;
         skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Soziologie"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -168,6 +169,7 @@
 
 <https://w3id.org/schulfach/BY_0000093>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1054> , <http://w3id.org/kim/schulfaecher/s1033> , <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
         skos:prefLabel      "Sozialwirtschaft und Recht"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
@@ -201,6 +203,7 @@
 <https://w3id.org/schulfach/BY_0000103>
         a                   skos:Concept ;
         skos:editorialNote  "Förderschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1042> ;
         skos:prefLabel      "Leben in der Gesellschaft"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -239,8 +242,8 @@
 
 <https://w3id.org/schulfach/BY_0000016>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1044> , <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:editorialNote  "Mittelschule, Förderschule" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1044> ;
         skos:prefLabel      "Ernährung und Soziales"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -290,8 +293,8 @@
 
 <https://w3id.org/schulfach/BY_0000051>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:editorialNote  "Gymnasium" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "Natur und Technik (Gym)"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -304,6 +307,7 @@
 
 <https://w3id.org/schulfach/BY_0000092>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1058> , <http://w3id.org/kim/schulfaecher/s1043> ;
         skos:editorialNote  "Fachoberschule" ;
         skos:prefLabel      "Sozialpsychologie"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
@@ -419,8 +423,8 @@
 
 <https://w3id.org/schulfach/BY_0000069>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1058> , <http://w3id.org/kim/schulfaecher/s1042> , <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:editorialNote  "Wirtschaftsschule" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "Mensch, Umwelt, Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -512,6 +516,7 @@
 
 <https://w3id.org/schulfach/BY_0000070>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1058> , <http://w3id.org/kim/schulfaecher/s1042> ;
         skos:editorialNote  "Wirtschaftsschule" ;
         skos:prefLabel      "Mensch und Umwelt"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
@@ -577,8 +582,8 @@
 
 <https://w3id.org/schulfach/BY_0000090>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1045> , <http://w3id.org/kim/schulfaecher/s1043> ;
         skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1043> ;
         skos:prefLabel      "Pädagogik/Psychologie"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -638,6 +643,7 @@
 
 <https://w3id.org/schulfach/BY_0000113>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1011> , <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1023> , <http://w3id.org/kim/schulfaecher/s1010> ;
         skos:editorialNote  "Förderschule" ;
         skos:prefLabel      "Geschichte/Politik/Geographie und Natur und Technik (FS)"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
@@ -654,8 +660,8 @@
 
 <https://w3id.org/schulfach/BY_0000041>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1054> , <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:editorialNote  "Realschule, Gymnasium, Fachoberschule, Berufsoberschule" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:prefLabel      "Wirtschaft und Recht"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 
@@ -667,8 +673,8 @@
 
 <https://w3id.org/schulfach/BY_0000082>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1012> , <http://w3id.org/kim/schulfaecher/s1054> , <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:editorialNote  "Fachoberschule, Berufsoberschule" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1012> ;
         skos:prefLabel      "Gesundheitswirtschaft und Recht"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/BY_0000000> .
 

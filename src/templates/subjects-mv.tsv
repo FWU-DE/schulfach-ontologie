@@ -2,7 +2,7 @@ URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTI
 ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
 https://w3id.org/schulfach/MV_0000000	Schulfächer (Mecklenburg-Vorpommern)	skos:ConceptScheme		Mecklenburg-Vorpommern				
 https://w3id.org/schulfach/MV_0000001	Astronomie	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Astronomie (KIM-Schulfach)			nur Jahrgangsstufe 9
-https://w3id.org/schulfach/MV_0000002	AWT	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Sek I ab Jahrgangsstufe 7
+https://w3id.org/schulfach/MV_0000002	AWT	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern		Arbeitslehre (KIM-Schulfach),Wirtschaftskunde (KIM-Schulfach),Technik (KIM-Schulfach)	FEHLT	Sek I ab Jahrgangsstufe 7
 https://w3id.org/schulfach/MV_0000003	Berufliche Orientierung	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Berufs- und Studienorientierung (KIM-Schulfach)		FEHLT	nur Jahrgangsstufe 11
 https://w3id.org/schulfach/MV_0000004	Biologie	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Biologie (KIM-Schulfach)			Sek I, Sek II
 https://w3id.org/schulfach/MV_0000005	Chemie	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Chemie (KIM-Schulfach)			Sek I ab Jahrgangsstufe 8, Sek II
@@ -23,7 +23,7 @@ https://w3id.org/schulfach/MV_0000019	Informatik	Schulfach,skos:Concept	Schulfä
 https://w3id.org/schulfach/MV_0000020	Informatik und Medienbildung	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern		Informatik (KIM-Schulfach),Medienbildung (KIM-Schulfach)		Sek I
 https://w3id.org/schulfach/MV_0000021	Katholische Religion	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Religionslehre (katholische) (KIM-Schulfach)			
 https://w3id.org/schulfach/MV_0000022	Kunst	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Kunst (KIM-Schulfach)			Primarstufe
-https://w3id.org/schulfach/MV_0000023	Kunst und Gestaltung	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Kunst (KIM-Schulfach)			Sek I, Sek II
+https://w3id.org/schulfach/MV_0000023	Kunst und Gestaltung	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern		Kunst (KIM-Schulfach),Werken und Gestalten (KIM-Schulfach)		Sek I, Sek II
 https://w3id.org/schulfach/MV_0000024	Latein	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Latein (KIM-Schulfach)			Sek I, Sek II ab Jahrgangsstufe 5
 https://w3id.org/schulfach/MV_0000025	Mathematik	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Mathematik (KIM-Schulfach)			
 https://w3id.org/schulfach/MV_0000026	MINT	Schulfach,skos:Concept	Schulfächer (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	MINT (KIM-Schulfach)			

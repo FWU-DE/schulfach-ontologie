@@ -72,7 +72,7 @@
 
 <https://w3id.org/schulfach/SN_0000021>
         a                   skos:Concept ;
-        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1042> , <http://w3id.org/kim/schulfaecher/s1033> ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1054> , <http://w3id.org/kim/schulfaecher/s1042> , <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:editorialNote  "Gymnasium" ;
         skos:prefLabel      "Gemeinschaftskunde/Rechtserziehung/Wirtschaft"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SN_0000000> .
@@ -143,8 +143,8 @@
 
 <https://w3id.org/schulfach/SN_0000020>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1042> , <http://w3id.org/kim/schulfaecher/s1054> ;
         skos:editorialNote  "Oberschule" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1042> ;
         skos:prefLabel      "Gemeinschaftskunde/Rechtserziehung"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SN_0000000> .
 
@@ -285,8 +285,8 @@
 
 <https://w3id.org/schulfach/SN_0000029>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1058> , <http://w3id.org/kim/schulfaecher/s1047> , <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:editorialNote  "Oberschule" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:prefLabel      "Wirtschaft-Technik-Haushalt/Soziales"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/SN_0000000> .
 

@@ -23,9 +23,9 @@ jobs:
            cat public/doc/resources/extra.css
            
            cp public/doc/index-en.html public/doc/index.html
-           cp -r public/doc 1.0.0
+           cp -r public/doc 1.0.2
            cp -r public/doc/* public/
-           mv 1.0.0 public/
+           mv 1.0.2 public/
 
            pip install mkdocs
            cd main
@@ -37,17 +37,31 @@ jobs:
 
 # pattern for old versions
 #
-#    - uses: actions/checkout@v3
-#      with:
-#        ref: v1.0.0
-#        path: v1.0.0
-#    - name: Build HTML for 1.0.0
-#      run: |
-#           mkdir public/1.0.0
-#           java -jar widoco.jar -ontFile v1.0.0/nfdicore.ttl -outFolder public/1.0.0  -uniteSections -includeAnnotationProperties -lang en-de  -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
-#           ls public/1.0.0/
-#           mv public/1.0.0/doc/* public/1.0.0/
-#           cp public/1.0.0/index-en.html public/1.0.0/index.html
+
+   - uses: actions/checkout@v3
+      with:
+        ref: v1.0.1
+        path: v1.0.1
+    - name: Build HTML for 1.0.1
+      run: |
+           mkdir public/1.0.1
+           java -jar widoco.jar -ontFile v1.0.1/sf.ttl -outFolder public/1.0.1  -uniteSections -includeAnnotationProperties -lang en-de  -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
+           ls public/1.0.1/
+           mv public/1.0.1/doc/* public/1.0.1/
+           cp public/1.0.1/index-en.html public/1.0.1/index.html
+
+
+    - uses: actions/checkout@v3
+      with:
+        ref: v1.0.0
+        path: v1.0.0
+    - name: Build HTML for 1.0.0
+      run: |
+           mkdir public/1.0.0
+           java -jar widoco.jar -ontFile v1.0.0/sf.ttl -outFolder public/1.0.0  -uniteSections -includeAnnotationProperties -lang en-de  -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
+           ls public/1.0.0/
+           mv public/1.0.0/doc/* public/1.0.0/
+           cp public/1.0.0/index-en.html public/1.0.0/index.html
 
 
     - name: Deploy to GitHub Pages

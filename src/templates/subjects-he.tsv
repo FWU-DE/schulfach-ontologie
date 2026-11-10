@@ -3,7 +3,7 @@ ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exa
 https://w3id.org/schulfach/HE_0000000	Schulfächer (Hessen)	skos:ConceptScheme		Hessen				
 https://w3id.org/schulfach/HE_0000001	Alevitische Religion	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Religionslehre (alevitisch) (KIM-Schulfach)		FEHLT	Sek I
 https://w3id.org/schulfach/HE_0000002	Arabisch	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen			FEHLT	Sek I nur Gymnasium und Realschule
-https://w3id.org/schulfach/HE_0000003	Arbeitslehre 	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen			FEHLT	Haupt- und Realschulen
+https://w3id.org/schulfach/HE_0000003	Arbeitslehre 	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Arbeitslehre (KIM-Schulfach)		FEHLT	Haupt- und Realschulen
 https://w3id.org/schulfach/HE_0000004	Biologie	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Biologie (KIM-Schulfach)			Sek I, Sek II
 https://w3id.org/schulfach/HE_0000005	Chemie	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Chemie (KIM-Schulfach)			Sek I, Sek II
 https://w3id.org/schulfach/HE_0000006	Chinesisch	Schulfach,skos:Concept	Schulfächer (Hessen)	Hessen	Chinesisch (KIM-Schulfach)			nur Gymnasium Sek I, Sek II

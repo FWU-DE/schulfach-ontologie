@@ -4,6 +4,7 @@
 <https://w3id.org/schulfach/HB_0000030>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1045> ;
         skos:prefLabel      "Pädagogik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HB_0000000> .
 
@@ -148,6 +149,7 @@
 <https://w3id.org/schulfach/HB_0000039>
         a                   skos:Concept ;
         skos:editorialNote  "Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:prefLabel      "Soziologie"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HB_0000000> .
 
@@ -233,7 +235,7 @@
 
 <https://w3id.org/schulfach/HB_0000045>
         a                   skos:Concept ;
-        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1033> ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1048> , <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:editorialNote  "Oberschule" ;
         skos:prefLabel      "Wirtschaft/Arbeit/Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HB_0000000> .
@@ -288,7 +290,7 @@
 
 <https://w3id.org/schulfach/HB_0000044>
         a                   skos:Concept ;
-        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1033> , <http://w3id.org/kim/schulfaecher/s1059> ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1033> , <http://w3id.org/kim/schulfaecher/s1048> , <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:editorialNote  "Gymnasium" ;
         skos:prefLabel      "Wirtschaft-Arbeit-Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HB_0000000> .

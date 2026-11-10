@@ -43,11 +43,11 @@ https://w3id.org/schulfach/BE_0000039	Sport	Schulfach,skos:Concept	Schulfächer 
 https://w3id.org/schulfach/BE_0000040	Studium und Beruf	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Berufs- und Studienorientierung (KIM-Schulfach)		FEHLT	nur Sek II
 https://w3id.org/schulfach/BE_0000041	Theater	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Darstellendes Spiel (KIM-Schulfach)			Wahlpflichtfach 7 - 10
 https://w3id.org/schulfach/BE_0000042	Türkisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Türkisch (KIM-Schulfach)			1-10, Sek II
-https://w3id.org/schulfach/BE_0000043	Wirtschaft-Arbeit-Technik	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Jahrgangsstufen 7-10
+https://w3id.org/schulfach/BE_0000043	Wirtschaft-Arbeit-Technik	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin		Wirtschaftskunde (KIM-Schulfach),Technik (KIM-Schulfach),Arbeitslehre (KIM-Schulfach)	FEHLT	Jahrgangsstufen 7-10
 https://w3id.org/schulfach/BE_0000044	Ukrainisch	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin			FEHLT	nur Sek II 
 https://w3id.org/schulfach/BE_0000045	Wirtschaftswissenschaften	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Wirtschaftskunde (KIM-Schulfach)			nur Sek II
 https://w3id.org/schulfach/BE_0000046	Bautechnik	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin			FEHLT	nur Sek II
-https://w3id.org/schulfach/BE_0000047	Chemietechnik	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin			FEHLT	nur Sek II
+https://w3id.org/schulfach/BE_0000047	Chemietechnik	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin		Chemie (KIM-Schulfach),Technik (KIM-Schulfach)	FEHLT	nur Sek II
 https://w3id.org/schulfach/BE_0000048	Bildende Kunst	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Kunst (KIM-Schulfach)			Sek II
 https://w3id.org/schulfach/BE_0000049	Politikwissenschaft	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Politik (KIM-Schulfach)			Sek II
 https://w3id.org/schulfach/BE_0000050	Ethik	Schulfach,skos:Concept	Schulfächer (Berlin)	Berlin	Ethik (KIM-Schulfach)			Jahrgangsstufe 7-10

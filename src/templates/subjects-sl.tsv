@@ -2,8 +2,8 @@ URI	FACH	Type	Top Konzept	Bundesland	KIM-Fach exact	KIM-Fach exact	GEFUNDEN	NOTI
 ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,		A skos:editorialNote
 https://w3id.org/schulfach/SL_0000000	Schulfächer (Saarland)	skos:ConceptScheme		Saarland				
 https://w3id.org/schulfach/SL_0000001	Allgemeine Ethik	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Ethik (KIM-Schulfach)			Sek I, Sek II
-https://w3id.org/schulfach/SL_0000002	Arbeitslehre	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland			FEHLT	Gemeinschaftsschule Jahrgangsstufe 5 und 6
-https://w3id.org/schulfach/SL_0000003	Beruf und Wirtschaft	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Wirtschaftskunde (KIM-Schulfach)		FEHLT	Gemeinschaftsschule Jahrgangsstufe 7-10
+https://w3id.org/schulfach/SL_0000002	Arbeitslehre	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Arbeitslehre (KIM-Schulfach)		FEHLT	Gemeinschaftsschule Jahrgangsstufe 5 und 6
+https://w3id.org/schulfach/SL_0000003	Beruf und Wirtschaft	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland		Wirtschaftskunde (KIM-Schulfach),Arbeitslehre (KIM-Schulfach)	FEHLT	Gemeinschaftsschule Jahrgangsstufe 7-10
 https://w3id.org/schulfach/SL_0000004	Bildende Kunst	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Kunst (KIM-Schulfach)			
 https://w3id.org/schulfach/SL_0000005	Biologie	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Biologie (KIM-Schulfach)			Gymnasium ab Jahrgangsstufe7 (G9) ab 8 (G8), Sek II
 https://w3id.org/schulfach/SL_0000006	Biologie Themenfelder	Schulfach,skos:Concept	Schulfächer (Saarland)	Saarland	Biologie (KIM-Schulfach)			Gemeinschaftsschule Jahrgangsstufe 9 und 10

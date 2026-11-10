@@ -263,6 +263,7 @@
 <https://w3id.org/schulfach/ST_0000015>
         a                   skos:Concept ;
         skos:editorialNote  "Sekundarschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1047> ;
         skos:prefLabel      "Hauswirtschaft"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/ST_0000000> .
 

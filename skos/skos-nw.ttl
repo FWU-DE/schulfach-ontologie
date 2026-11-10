@@ -162,6 +162,7 @@
 <https://w3id.org/schulfach/NW_0000002>
         a                   skos:Concept ;
         skos:editorialNote  "Hauptschule, Gesamtschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1048> ;
         skos:prefLabel      "Arbeitslehre"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 
@@ -182,6 +183,7 @@
 <https://w3id.org/schulfach/NW_0000056>
         a                   skos:Concept ;
         skos:editorialNote  "Gesamtschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1048> ;
         skos:prefLabel      "WP Arbeitslehre"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 
@@ -270,8 +272,8 @@
 
 <https://w3id.org/schulfach/NW_0000068>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1048> , <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1047> , <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:editorialNote  "Hauptschule, Gesamtschule" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:prefLabel      "WP Wirtschaft und Arbeitswelt (Wirtschaft, Hauswirtschaft, Technik)"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 
@@ -312,6 +314,7 @@
 <https://w3id.org/schulfach/NW_0000019>
         a                   skos:Concept ;
         skos:editorialNote  "Gesamtschule" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1047> ;
         skos:prefLabel      "Hauswirtschaft"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 
@@ -341,8 +344,8 @@
 
 <https://w3id.org/schulfach/NW_0000054>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1047> , <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1033> , <http://w3id.org/kim/schulfaecher/s1048> ;
         skos:editorialNote  "Hauptschule" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:prefLabel      "Wirtschaft und Arbeitswelt (Wirtschaft, Hauswirtschaft, Technik)"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 
@@ -396,22 +399,22 @@
 
 <https://w3id.org/schulfach/NW_0000046>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1033> , <http://w3id.org/kim/schulfaecher/s1058> ;
         skos:editorialNote  "Sek II" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:prefLabel      "Sozialwissenschaften und Sozialwissenschaften/Wirtschaft"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 
 <https://w3id.org/schulfach/NW_0000018>
         a                   skos:Concept ;
         skos:editorialNote  "Gymnasium Sek I, Sek II" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1036> ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1000> ;
         skos:prefLabel      "Griechisch"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 
 <https://w3id.org/schulfach/NW_0000059>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1015> , <http://w3id.org/kim/schulfaecher/s1061> ;
         skos:editorialNote  "Gesamtschule" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1015> ;
         skos:prefLabel      "WP Darstellen und Gestalten"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/NW_0000000> .
 

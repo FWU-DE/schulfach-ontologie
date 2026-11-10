@@ -64,7 +64,7 @@
         a                   skos:Concept ;
         skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:editorialNote  "Stadtteilschule" ;
-        skos:prefLabel      "Lernbereich Naturwissenschatfen und Technik"@de ;
+        skos:prefLabel      "Lernbereich Naturwissenschaften und Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HH_0000000> .
 
 <https://orcid.org/0000-0001-7192-7143>
@@ -108,7 +108,7 @@
 <https://w3id.org/schulfach/HH_0000018>
         a                   skos:Concept ;
         skos:editorialNote  "Gymnasium Sek I" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1036> ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1000> ;
         skos:prefLabel      "Alte Sprachen: Griechisch"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HH_0000000> .
 
@@ -159,7 +159,7 @@
 
 <https://w3id.org/schulfach/HH_0000017>
         a                   skos:Concept ;
-        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1016> , <http://w3id.org/kim/schulfaecher/s1036> ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1000> , <http://w3id.org/kim/schulfaecher/s1016> ;
         skos:editorialNote  "Sek II" ;
         skos:prefLabel      "Alte Sprachen"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HH_0000000> .
@@ -245,7 +245,7 @@
         a                   skos:Concept ;
         skos:editorialNote  "Sek I, Sek II" ;
         skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1011> ;
-        skos:prefLabel      "Gecshichte"@de ;
+        skos:prefLabel      "Geschichte"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HH_0000000> .
 
 <https://w3id.org/schulfach/HH_0000036>
@@ -264,8 +264,8 @@
 
 <https://w3id.org/schulfach/HH_0000049>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1043> , <http://w3id.org/kim/schulfaecher/s1045> ;
         skos:editorialNote  "Gymnasium Sek II" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1043> ;
         skos:prefLabel      "Fachrichtung Pädagogik/Psychologie an beruflichen Gymnasien"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HH_0000000> .
 
@@ -303,6 +303,7 @@
 <https://w3id.org/schulfach/HH_0000050>
         a                   skos:Concept ;
         skos:editorialNote  "Gymnasium Sek II" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:prefLabel      "Fachrichtung Technik an beruflichen Gymnasien"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HH_0000000> .
 
@@ -342,6 +343,7 @@
 <https://w3id.org/schulfach/HH_0000042>
         a                   skos:Concept ;
         skos:editorialNote  "Gymnasium" ;
+        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1045> ;
         skos:prefLabel      "Pädagogik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HH_0000000> .
 
@@ -353,6 +355,7 @@
 
 <https://w3id.org/schulfach/HH_0000027>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1059> , <http://w3id.org/kim/schulfaecher/s1052> ;
         skos:editorialNote  "Sek I" ;
         skos:prefLabel      "Naturwissenschaften/Technik"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/HH_0000000> .

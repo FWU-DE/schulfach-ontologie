@@ -10,8 +10,8 @@
 
 <https://w3id.org/schulfach/MV_0000002>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1048> , <http://w3id.org/kim/schulfaecher/s1033> , <http://w3id.org/kim/schulfaecher/s1059> ;
         skos:editorialNote  "Sek I ab Jahrgangsstufe 7" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1033> ;
         skos:prefLabel      "AWT"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
@@ -302,8 +302,8 @@
 
 <https://w3id.org/schulfach/MV_0000023>
         a                   skos:Concept ;
+        skos:closeMatch     <http://w3id.org/kim/schulfaecher/s1061> , <http://w3id.org/kim/schulfaecher/s1015> ;
         skos:editorialNote  "Sek I, Sek II" ;
-        skos:exactMatch     <http://w3id.org/kim/schulfaecher/s1015> ;
         skos:prefLabel      "Kunst und Gestaltung"@de ;
         skos:topConceptOf   <https://w3id.org/schulfach/MV_0000000> .
 
