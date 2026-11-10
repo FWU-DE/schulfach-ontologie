@@ -38,7 +38,7 @@ jobs:
 # pattern for old versions
 #
 
-   - uses: actions/checkout@v3
+    - uses: actions/checkout@v3
       with:
         ref: v1.0.1
         path: v1.0.1
